@@ -125,7 +125,7 @@ class SnapdException implements Exception {
 
 /// Describes an app provided by a snap.
 @freezed
-class SnapApp with _$SnapApp {
+sealed class SnapApp with _$SnapApp {
   const factory SnapApp({
     required String name,
     String? snap,
@@ -142,7 +142,7 @@ class SnapApp with _$SnapApp {
 
 /// Describes an category this snap is part of.
 @freezed
-class SnapCategory with _$SnapCategory {
+sealed class SnapCategory with _$SnapCategory {
   const factory SnapCategory({
     required String name,
     @Default(false) bool featured,
@@ -154,7 +154,7 @@ class SnapCategory with _$SnapCategory {
 
 /// Describes a snap category.
 @freezed
-class SnapCategoryDetails with _$SnapCategoryDetails {
+sealed class SnapCategoryDetails with _$SnapCategoryDetails {
   const factory SnapCategoryDetails({
     required String name,
   }) = _SnapCategoryDetails;
@@ -165,7 +165,7 @@ class SnapCategoryDetails with _$SnapCategoryDetails {
 
 /// Describes a channel available for a snap.
 @freezed
-class SnapChannel with _$SnapChannel {
+sealed class SnapChannel with _$SnapChannel {
   const factory SnapChannel({
     required DateTime releasedAt,
     @JsonKey(unknownEnumValue: SnapConfinement.unknown)
@@ -182,7 +182,7 @@ class SnapChannel with _$SnapChannel {
 
 /// Describes a snap publisher.
 @freezed
-class SnapPublisher with _$SnapPublisher {
+sealed class SnapPublisher with _$SnapPublisher {
   const factory SnapPublisher({
     required String id,
     required String displayName,
@@ -196,7 +196,7 @@ class SnapPublisher with _$SnapPublisher {
 
 /// Describes a piece of media associated with a snap.
 @freezed
-class SnapMedia with _$SnapMedia {
+sealed class SnapMedia with _$SnapMedia {
   const factory SnapMedia({
     required String type,
     required String url,
@@ -208,7 +208,7 @@ class SnapMedia with _$SnapMedia {
 }
 
 @freezed
-class Snap with _$Snap {
+sealed class Snap with _$Snap {
   const factory Snap({
     required String id,
     required String name,
@@ -267,7 +267,7 @@ class Snap with _$Snap {
 
 /// Image data for snap icons.
 @freezed
-class SnapIcon with _$SnapIcon {
+sealed class SnapIcon with _$SnapIcon {
   const factory SnapIcon({
     required String contentType,
     required Uint8List bytes,
@@ -276,7 +276,7 @@ class SnapIcon with _$SnapIcon {
 
 /// Response received from snap-declaration assertions.
 @freezed
-class SnapDeclaration with _$SnapDeclaration {
+sealed class SnapDeclaration with _$SnapDeclaration {
   const factory SnapDeclaration({
     required String snapId,
     String? type,
@@ -295,7 +295,7 @@ class SnapDeclaration with _$SnapDeclaration {
 
 /// Response received when getting system information.
 @freezed
-class SnapdSystemInfoResponse with _$SnapdSystemInfoResponse {
+sealed class SnapdSystemInfoResponse with _$SnapdSystemInfoResponse {
   const factory SnapdSystemInfoResponse({
     required SnapdSystemRefreshInfo refresh,
     String? architecture,
@@ -318,7 +318,7 @@ class SnapdSystemInfoResponse with _$SnapdSystemInfoResponse {
 
 /// Contains information about refreshes.
 @freezed
-class SnapdSystemRefreshInfo with _$SnapdSystemRefreshInfo {
+sealed class SnapdSystemRefreshInfo with _$SnapdSystemRefreshInfo {
   const factory SnapdSystemRefreshInfo({
     @_SnapdDateTimeConverter() required DateTime next,
     DateTime? last,
@@ -330,7 +330,7 @@ class SnapdSystemRefreshInfo with _$SnapdSystemRefreshInfo {
 
 /// Response received when logging in.
 @freezed
-class SnapdLoginResponse with _$SnapdLoginResponse {
+sealed class SnapdLoginResponse with _$SnapdLoginResponse {
   const factory SnapdLoginResponse({
     required int id,
     String? username,
@@ -346,7 +346,7 @@ class SnapdLoginResponse with _$SnapdLoginResponse {
 
 /// Information on a snap plug.
 @freezed
-class SnapPlug with _$SnapPlug {
+sealed class SnapPlug with _$SnapPlug {
   const factory SnapPlug({
     required String snap,
     required String plug,
@@ -361,7 +361,7 @@ class SnapPlug with _$SnapPlug {
 
 /// Information on a snap slot.
 @freezed
-class SnapSlot with _$SnapSlot {
+sealed class SnapSlot with _$SnapSlot {
   const factory SnapSlot({
     required String snap,
     required String slot,
@@ -376,7 +376,7 @@ class SnapSlot with _$SnapSlot {
 
 /// Information on a connection between a snap plugs and slots.
 @freezed
-class SnapConnection with _$SnapConnection {
+sealed class SnapConnection with _$SnapConnection {
   const factory SnapConnection({
     required SnapSlot slot,
     required SnapPlug plug,
@@ -396,7 +396,7 @@ class SnapConnection with _$SnapConnection {
 
 /// Response received when getting connections.
 @freezed
-class SnapdConnectionsResponse with _$SnapdConnectionsResponse {
+sealed class SnapdConnectionsResponse with _$SnapdConnectionsResponse {
   const factory SnapdConnectionsResponse({
     @Default([]) List<SnapConnection> established,
     @Default([]) List<SnapPlug> plugs,
@@ -410,7 +410,7 @@ class SnapdConnectionsResponse with _$SnapdConnectionsResponse {
 
 /// Gives the state of an asynchronous operation.
 @freezed
-class SnapdChange with _$SnapdChange {
+sealed class SnapdChange with _$SnapdChange {
   const factory SnapdChange({
     required String id,
     DateTime? spawnTime,
@@ -445,7 +445,7 @@ class SnapdChange with _$SnapdChange {
 
 /// Information about a task in a [SnapdChange].
 @freezed
-class SnapdTask with _$SnapdTask {
+sealed class SnapdTask with _$SnapdTask {
   const factory SnapdTask({
     required String id,
     DateTime? spawnTime,
@@ -462,7 +462,7 @@ class SnapdTask with _$SnapdTask {
 
 /// Progress of a [SnapdTask].
 @freezed
-class SnapdTaskProgress with _$SnapdTaskProgress {
+sealed class SnapdTaskProgress with _$SnapdTaskProgress {
   const factory SnapdTaskProgress({
     @Default('') String label,
     @Default(0) int done,
@@ -475,7 +475,7 @@ class SnapdTaskProgress with _$SnapdTaskProgress {
 
 /// Details of a prompting rule.
 @freezed
-class SnapdRule with _$SnapdRule {
+sealed class SnapdRule with _$SnapdRule {
   const factory SnapdRule({
     required String id,
     required DateTime timestamp,
@@ -495,7 +495,7 @@ class SnapdRule with _$SnapdRule {
 
 /// Mask for a creating or adding a prompting rule.
 @freezed
-class SnapdRuleMask with _$SnapdRuleMask {
+sealed class SnapdRuleMask with _$SnapdRuleMask {
   const factory SnapdRuleMask({
     required String snap,
     required String interface,
@@ -507,7 +507,7 @@ class SnapdRuleMask with _$SnapdRuleMask {
 }
 
 @freezed
-class SnapdNotice with _$SnapdNotice {
+sealed class SnapdNotice with _$SnapdNotice {
   const factory SnapdNotice({
     required String id,
     required SnapdNoticeType type,
@@ -527,7 +527,7 @@ class SnapdNotice with _$SnapdNotice {
 
 /// A class to model a generate-recovery-key response from snapd
 @freezed
-class SnapdGenerateRecoveryKeyResponse with _$SnapdGenerateRecoveryKeyResponse {
+sealed class SnapdGenerateRecoveryKeyResponse with _$SnapdGenerateRecoveryKeyResponse {
   const factory SnapdGenerateRecoveryKeyResponse({
     required String recoveryKey,
     required String keyId,
@@ -541,7 +541,7 @@ class SnapdGenerateRecoveryKeyResponse with _$SnapdGenerateRecoveryKeyResponse {
 
 /// A snapd system volume.
 @freezed
-class SnapdSystemVolume with _$SnapdSystemVolume {
+sealed class SnapdSystemVolume with _$SnapdSystemVolume {
   const factory SnapdSystemVolume({
     required String volumeName,
     required String name,
@@ -555,7 +555,7 @@ class SnapdSystemVolume with _$SnapdSystemVolume {
 
 /// A class to model a targeted key slot to preform an action against.
 @freezed
-class SnapdSystemVolumeTargetKeySlot with _$SnapdSystemVolumeTargetKeySlot {
+sealed class SnapdSystemVolumeTargetKeySlot with _$SnapdSystemVolumeTargetKeySlot {
   const factory SnapdSystemVolumeTargetKeySlot({
     @JsonKey(name: 'container-role') required String containerRole,
     required String name,
@@ -567,7 +567,7 @@ class SnapdSystemVolumeTargetKeySlot with _$SnapdSystemVolumeTargetKeySlot {
 
 /// A class to model the key slot on a LUKS container.
 @freezed
-class SnapdSystemVolumeKeySlot with _$SnapdSystemVolumeKeySlot {
+sealed class SnapdSystemVolumeKeySlot with _$SnapdSystemVolumeKeySlot {
   const factory SnapdSystemVolumeKeySlot({
     /// The key slot name, used to identify the key slot.
     required SnapdSystemVolumeKeySlotType type,
@@ -582,7 +582,7 @@ class SnapdSystemVolumeKeySlot with _$SnapdSystemVolumeKeySlot {
 
 /// A class to model responses to keyslot enumeration requests.
 @freezed
-class SnapdSystemVolumesResponse with _$SnapdSystemVolumesResponse {
+sealed class SnapdSystemVolumesResponse with _$SnapdSystemVolumesResponse {
   const factory SnapdSystemVolumesResponse({
     @Default({}) Map<String, SnapdSystemVolume> byContainerRole,
   }) = _SnapdSystemVolumesResponse;
@@ -592,7 +592,7 @@ class SnapdSystemVolumesResponse with _$SnapdSystemVolumesResponse {
 }
 
 @freezed
-class SnapdEntropyResponse with _$SnapdEntropyResponse {
+sealed class SnapdEntropyResponse with _$SnapdEntropyResponse {
   const factory SnapdEntropyResponse({
     required int entropyBits,
     required int minEntropyBits,
@@ -605,7 +605,7 @@ class SnapdEntropyResponse with _$SnapdEntropyResponse {
 
 /// Response received when getting TPM backed FDE status.
 @freezed
-class SnapdStorageEncryptedResponse with _$SnapdStorageEncryptedResponse {
+sealed class SnapdStorageEncryptedResponse with _$SnapdStorageEncryptedResponse {
   const factory SnapdStorageEncryptedResponse({
     required SnapdStorageEncryptionStatus status,
   }) = _SnapdStorageEncryptedResponse;
@@ -617,7 +617,7 @@ class SnapdStorageEncryptedResponse with _$SnapdStorageEncryptedResponse {
 /// Contains proceed-time which is the date and time after which a refresh is
 /// forced for a running snap in the next auto-refresh in RFC3339 UTC format.
 @freezed
-class RefreshInhibit with _$RefreshInhibit {
+sealed class RefreshInhibit with _$RefreshInhibit {
   const factory RefreshInhibit({
     @_SnapdDateTimeConverter() required DateTime proceedTime,
   }) = _RefreshInhibit;
