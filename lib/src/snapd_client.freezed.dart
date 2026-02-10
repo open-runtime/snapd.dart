@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,7921 +9,8602 @@ part of 'snapd_client.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-SnapApp _$SnapAppFromJson(Map<String, dynamic> json) {
-  return _SnapApp.fromJson(json);
-}
 
 /// @nodoc
 mixin _$SnapApp {
-  String get name => throw _privateConstructorUsedError;
-  String? get snap => throw _privateConstructorUsedError;
-  String? get desktopFile => throw _privateConstructorUsedError;
-  String? get daemon => throw _privateConstructorUsedError;
-  bool get enabled => throw _privateConstructorUsedError;
-  bool get active => throw _privateConstructorUsedError;
-  String? get commonId => throw _privateConstructorUsedError;
+
+ String get name; String? get snap; String? get desktopFile; String? get daemon; bool get enabled; bool get active; String? get commonId;
+/// Create a copy of SnapApp
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapAppCopyWith<SnapApp> get copyWith => _$SnapAppCopyWithImpl<SnapApp>(this as SnapApp, _$identity);
 
   /// Serializes this SnapApp to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapApp
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapAppCopyWith<SnapApp> get copyWith => throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapApp&&(identical(other.name, name) || other.name == name)&&(identical(other.snap, snap) || other.snap == snap)&&(identical(other.desktopFile, desktopFile) || other.desktopFile == desktopFile)&&(identical(other.daemon, daemon) || other.daemon == daemon)&&(identical(other.enabled, enabled) || other.enabled == enabled)&&(identical(other.active, active) || other.active == active)&&(identical(other.commonId, commonId) || other.commonId == commonId));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,name,snap,desktopFile,daemon,enabled,active,commonId);
+
+@override
+String toString() {
+  return 'SnapApp(name: $name, snap: $snap, desktopFile: $desktopFile, daemon: $daemon, enabled: $enabled, active: $active, commonId: $commonId)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapAppCopyWith<$Res> {
-  factory $SnapAppCopyWith(SnapApp value, $Res Function(SnapApp) then) =
-      _$SnapAppCopyWithImpl<$Res, SnapApp>;
-  @useResult
-  $Res call(
-      {String name,
-      String? snap,
-      String? desktopFile,
-      String? daemon,
-      bool enabled,
-      bool active,
-      String? commonId});
-}
+abstract mixin class $SnapAppCopyWith<$Res>  {
+  factory $SnapAppCopyWith(SnapApp value, $Res Function(SnapApp) _then) = _$SnapAppCopyWithImpl;
+@useResult
+$Res call({
+ String name, String? snap, String? desktopFile, String? daemon, bool enabled, bool active, String? commonId
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapAppCopyWithImpl<$Res, $Val extends SnapApp>
+class _$SnapAppCopyWithImpl<$Res>
     implements $SnapAppCopyWith<$Res> {
-  _$SnapAppCopyWithImpl(this._value, this._then);
+  _$SnapAppCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapApp _self;
+  final $Res Function(SnapApp) _then;
 
-  /// Create a copy of SnapApp
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? name = null,
-    Object? snap = freezed,
-    Object? desktopFile = freezed,
-    Object? daemon = freezed,
-    Object? enabled = null,
-    Object? active = null,
-    Object? commonId = freezed,
-  }) {
-    return _then(_value.copyWith(
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      snap: freezed == snap
-          ? _value.snap
-          : snap // ignore: cast_nullable_to_non_nullable
-              as String?,
-      desktopFile: freezed == desktopFile
-          ? _value.desktopFile
-          : desktopFile // ignore: cast_nullable_to_non_nullable
-              as String?,
-      daemon: freezed == daemon
-          ? _value.daemon
-          : daemon // ignore: cast_nullable_to_non_nullable
-              as String?,
-      enabled: null == enabled
-          ? _value.enabled
-          : enabled // ignore: cast_nullable_to_non_nullable
-              as bool,
-      active: null == active
-          ? _value.active
-          : active // ignore: cast_nullable_to_non_nullable
-              as bool,
-      commonId: freezed == commonId
-          ? _value.commonId
-          : commonId // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
-  }
+/// Create a copy of SnapApp
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? name = null,Object? snap = freezed,Object? desktopFile = freezed,Object? daemon = freezed,Object? enabled = null,Object? active = null,Object? commonId = freezed,}) {
+  return _then(_self.copyWith(
+name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,snap: freezed == snap ? _self.snap : snap // ignore: cast_nullable_to_non_nullable
+as String?,desktopFile: freezed == desktopFile ? _self.desktopFile : desktopFile // ignore: cast_nullable_to_non_nullable
+as String?,daemon: freezed == daemon ? _self.daemon : daemon // ignore: cast_nullable_to_non_nullable
+as String?,enabled: null == enabled ? _self.enabled : enabled // ignore: cast_nullable_to_non_nullable
+as bool,active: null == active ? _self.active : active // ignore: cast_nullable_to_non_nullable
+as bool,commonId: freezed == commonId ? _self.commonId : commonId // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapAppImplCopyWith<$Res> implements $SnapAppCopyWith<$Res> {
-  factory _$$SnapAppImplCopyWith(
-          _$SnapAppImpl value, $Res Function(_$SnapAppImpl) then) =
-      __$$SnapAppImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String name,
-      String? snap,
-      String? desktopFile,
-      String? daemon,
-      bool enabled,
-      bool active,
-      String? commonId});
 }
 
-/// @nodoc
-class __$$SnapAppImplCopyWithImpl<$Res>
-    extends _$SnapAppCopyWithImpl<$Res, _$SnapAppImpl>
-    implements _$$SnapAppImplCopyWith<$Res> {
-  __$$SnapAppImplCopyWithImpl(
-      _$SnapAppImpl _value, $Res Function(_$SnapAppImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapApp
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? name = null,
-    Object? snap = freezed,
-    Object? desktopFile = freezed,
-    Object? daemon = freezed,
-    Object? enabled = null,
-    Object? active = null,
-    Object? commonId = freezed,
-  }) {
-    return _then(_$SnapAppImpl(
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      snap: freezed == snap
-          ? _value.snap
-          : snap // ignore: cast_nullable_to_non_nullable
-              as String?,
-      desktopFile: freezed == desktopFile
-          ? _value.desktopFile
-          : desktopFile // ignore: cast_nullable_to_non_nullable
-              as String?,
-      daemon: freezed == daemon
-          ? _value.daemon
-          : daemon // ignore: cast_nullable_to_non_nullable
-              as String?,
-      enabled: null == enabled
-          ? _value.enabled
-          : enabled // ignore: cast_nullable_to_non_nullable
-              as bool,
-      active: null == active
-          ? _value.active
-          : active // ignore: cast_nullable_to_non_nullable
-              as bool,
-      commonId: freezed == commonId
-          ? _value.commonId
-          : commonId // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapApp].
+extension SnapAppPatterns on SnapApp {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapApp value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapApp() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapApp value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapApp():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapApp value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapApp() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String name,  String? snap,  String? desktopFile,  String? daemon,  bool enabled,  bool active,  String? commonId)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapApp() when $default != null:
+return $default(_that.name,_that.snap,_that.desktopFile,_that.daemon,_that.enabled,_that.active,_that.commonId);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String name,  String? snap,  String? desktopFile,  String? daemon,  bool enabled,  bool active,  String? commonId)  $default,) {final _that = this;
+switch (_that) {
+case _SnapApp():
+return $default(_that.name,_that.snap,_that.desktopFile,_that.daemon,_that.enabled,_that.active,_that.commonId);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String name,  String? snap,  String? desktopFile,  String? daemon,  bool enabled,  bool active,  String? commonId)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapApp() when $default != null:
+return $default(_that.name,_that.snap,_that.desktopFile,_that.daemon,_that.enabled,_that.active,_that.commonId);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapAppImpl implements _SnapApp {
-  const _$SnapAppImpl(
-      {required this.name,
-      this.snap,
-      this.desktopFile,
-      this.daemon,
-      this.enabled = true,
-      this.active = true,
-      this.commonId});
 
-  factory _$SnapAppImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapAppImplFromJson(json);
+class _SnapApp implements SnapApp {
+  const _SnapApp({required this.name, this.snap, this.desktopFile, this.daemon, this.enabled = true, this.active = true, this.commonId});
+  factory _SnapApp.fromJson(Map<String, dynamic> json) => _$SnapAppFromJson(json);
 
-  @override
-  final String name;
-  @override
-  final String? snap;
-  @override
-  final String? desktopFile;
-  @override
-  final String? daemon;
-  @override
-  @JsonKey()
-  final bool enabled;
-  @override
-  @JsonKey()
-  final bool active;
-  @override
-  final String? commonId;
+@override final  String name;
+@override final  String? snap;
+@override final  String? desktopFile;
+@override final  String? daemon;
+@override@JsonKey() final  bool enabled;
+@override@JsonKey() final  bool active;
+@override final  String? commonId;
 
-  @override
-  String toString() {
-    return 'SnapApp(name: $name, snap: $snap, desktopFile: $desktopFile, daemon: $daemon, enabled: $enabled, active: $active, commonId: $commonId)';
-  }
+/// Create a copy of SnapApp
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapAppCopyWith<_SnapApp> get copyWith => __$SnapAppCopyWithImpl<_SnapApp>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapAppImpl &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.snap, snap) || other.snap == snap) &&
-            (identical(other.desktopFile, desktopFile) ||
-                other.desktopFile == desktopFile) &&
-            (identical(other.daemon, daemon) || other.daemon == daemon) &&
-            (identical(other.enabled, enabled) || other.enabled == enabled) &&
-            (identical(other.active, active) || other.active == active) &&
-            (identical(other.commonId, commonId) ||
-                other.commonId == commonId));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType, name, snap, desktopFile, daemon, enabled, active, commonId);
-
-  /// Create a copy of SnapApp
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapAppImplCopyWith<_$SnapAppImpl> get copyWith =>
-      __$$SnapAppImplCopyWithImpl<_$SnapAppImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapAppImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapAppToJson(this, );
 }
 
-abstract class _SnapApp implements SnapApp {
-  const factory _SnapApp(
-      {required final String name,
-      final String? snap,
-      final String? desktopFile,
-      final String? daemon,
-      final bool enabled,
-      final bool active,
-      final String? commonId}) = _$SnapAppImpl;
-
-  factory _SnapApp.fromJson(Map<String, dynamic> json) = _$SnapAppImpl.fromJson;
-
-  @override
-  String get name;
-  @override
-  String? get snap;
-  @override
-  String? get desktopFile;
-  @override
-  String? get daemon;
-  @override
-  bool get enabled;
-  @override
-  bool get active;
-  @override
-  String? get commonId;
-
-  /// Create a copy of SnapApp
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapAppImplCopyWith<_$SnapAppImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapApp&&(identical(other.name, name) || other.name == name)&&(identical(other.snap, snap) || other.snap == snap)&&(identical(other.desktopFile, desktopFile) || other.desktopFile == desktopFile)&&(identical(other.daemon, daemon) || other.daemon == daemon)&&(identical(other.enabled, enabled) || other.enabled == enabled)&&(identical(other.active, active) || other.active == active)&&(identical(other.commonId, commonId) || other.commonId == commonId));
 }
 
-SnapCategory _$SnapCategoryFromJson(Map<String, dynamic> json) {
-  return _SnapCategory.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,name,snap,desktopFile,daemon,enabled,active,commonId);
+
+@override
+String toString() {
+  return 'SnapApp(name: $name, snap: $snap, desktopFile: $desktopFile, daemon: $daemon, enabled: $enabled, active: $active, commonId: $commonId)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapAppCopyWith<$Res> implements $SnapAppCopyWith<$Res> {
+  factory _$SnapAppCopyWith(_SnapApp value, $Res Function(_SnapApp) _then) = __$SnapAppCopyWithImpl;
+@override @useResult
+$Res call({
+ String name, String? snap, String? desktopFile, String? daemon, bool enabled, bool active, String? commonId
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapAppCopyWithImpl<$Res>
+    implements _$SnapAppCopyWith<$Res> {
+  __$SnapAppCopyWithImpl(this._self, this._then);
+
+  final _SnapApp _self;
+  final $Res Function(_SnapApp) _then;
+
+/// Create a copy of SnapApp
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? name = null,Object? snap = freezed,Object? desktopFile = freezed,Object? daemon = freezed,Object? enabled = null,Object? active = null,Object? commonId = freezed,}) {
+  return _then(_SnapApp(
+name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,snap: freezed == snap ? _self.snap : snap // ignore: cast_nullable_to_non_nullable
+as String?,desktopFile: freezed == desktopFile ? _self.desktopFile : desktopFile // ignore: cast_nullable_to_non_nullable
+as String?,daemon: freezed == daemon ? _self.daemon : daemon // ignore: cast_nullable_to_non_nullable
+as String?,enabled: null == enabled ? _self.enabled : enabled // ignore: cast_nullable_to_non_nullable
+as bool,active: null == active ? _self.active : active // ignore: cast_nullable_to_non_nullable
+as bool,commonId: freezed == commonId ? _self.commonId : commonId // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapCategory {
-  String get name => throw _privateConstructorUsedError;
-  bool get featured => throw _privateConstructorUsedError;
+
+ String get name; bool get featured;
+/// Create a copy of SnapCategory
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapCategoryCopyWith<SnapCategory> get copyWith => _$SnapCategoryCopyWithImpl<SnapCategory>(this as SnapCategory, _$identity);
 
   /// Serializes this SnapCategory to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapCategory
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapCategoryCopyWith<SnapCategory> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapCategory&&(identical(other.name, name) || other.name == name)&&(identical(other.featured, featured) || other.featured == featured));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,name,featured);
+
+@override
+String toString() {
+  return 'SnapCategory(name: $name, featured: $featured)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapCategoryCopyWith<$Res> {
-  factory $SnapCategoryCopyWith(
-          SnapCategory value, $Res Function(SnapCategory) then) =
-      _$SnapCategoryCopyWithImpl<$Res, SnapCategory>;
-  @useResult
-  $Res call({String name, bool featured});
-}
+abstract mixin class $SnapCategoryCopyWith<$Res>  {
+  factory $SnapCategoryCopyWith(SnapCategory value, $Res Function(SnapCategory) _then) = _$SnapCategoryCopyWithImpl;
+@useResult
+$Res call({
+ String name, bool featured
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapCategoryCopyWithImpl<$Res, $Val extends SnapCategory>
+class _$SnapCategoryCopyWithImpl<$Res>
     implements $SnapCategoryCopyWith<$Res> {
-  _$SnapCategoryCopyWithImpl(this._value, this._then);
+  _$SnapCategoryCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapCategory _self;
+  final $Res Function(SnapCategory) _then;
 
-  /// Create a copy of SnapCategory
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? name = null,
-    Object? featured = null,
-  }) {
-    return _then(_value.copyWith(
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      featured: null == featured
-          ? _value.featured
-          : featured // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ) as $Val);
-  }
+/// Create a copy of SnapCategory
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? name = null,Object? featured = null,}) {
+  return _then(_self.copyWith(
+name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,featured: null == featured ? _self.featured : featured // ignore: cast_nullable_to_non_nullable
+as bool,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapCategoryImplCopyWith<$Res>
-    implements $SnapCategoryCopyWith<$Res> {
-  factory _$$SnapCategoryImplCopyWith(
-          _$SnapCategoryImpl value, $Res Function(_$SnapCategoryImpl) then) =
-      __$$SnapCategoryImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String name, bool featured});
 }
 
-/// @nodoc
-class __$$SnapCategoryImplCopyWithImpl<$Res>
-    extends _$SnapCategoryCopyWithImpl<$Res, _$SnapCategoryImpl>
-    implements _$$SnapCategoryImplCopyWith<$Res> {
-  __$$SnapCategoryImplCopyWithImpl(
-      _$SnapCategoryImpl _value, $Res Function(_$SnapCategoryImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapCategory
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? name = null,
-    Object? featured = null,
-  }) {
-    return _then(_$SnapCategoryImpl(
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      featured: null == featured
-          ? _value.featured
-          : featured // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapCategory].
+extension SnapCategoryPatterns on SnapCategory {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapCategory value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapCategory() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapCategory value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapCategory():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapCategory value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapCategory() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String name,  bool featured)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapCategory() when $default != null:
+return $default(_that.name,_that.featured);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String name,  bool featured)  $default,) {final _that = this;
+switch (_that) {
+case _SnapCategory():
+return $default(_that.name,_that.featured);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String name,  bool featured)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapCategory() when $default != null:
+return $default(_that.name,_that.featured);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapCategoryImpl implements _SnapCategory {
-  const _$SnapCategoryImpl({required this.name, this.featured = false});
 
-  factory _$SnapCategoryImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapCategoryImplFromJson(json);
+class _SnapCategory implements SnapCategory {
+  const _SnapCategory({required this.name, this.featured = false});
+  factory _SnapCategory.fromJson(Map<String, dynamic> json) => _$SnapCategoryFromJson(json);
 
-  @override
-  final String name;
-  @override
-  @JsonKey()
-  final bool featured;
+@override final  String name;
+@override@JsonKey() final  bool featured;
 
-  @override
-  String toString() {
-    return 'SnapCategory(name: $name, featured: $featured)';
-  }
+/// Create a copy of SnapCategory
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapCategoryCopyWith<_SnapCategory> get copyWith => __$SnapCategoryCopyWithImpl<_SnapCategory>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapCategoryImpl &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.featured, featured) ||
-                other.featured == featured));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, name, featured);
-
-  /// Create a copy of SnapCategory
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapCategoryImplCopyWith<_$SnapCategoryImpl> get copyWith =>
-      __$$SnapCategoryImplCopyWithImpl<_$SnapCategoryImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapCategoryImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapCategoryToJson(this, );
 }
 
-abstract class _SnapCategory implements SnapCategory {
-  const factory _SnapCategory(
-      {required final String name, final bool featured}) = _$SnapCategoryImpl;
-
-  factory _SnapCategory.fromJson(Map<String, dynamic> json) =
-      _$SnapCategoryImpl.fromJson;
-
-  @override
-  String get name;
-  @override
-  bool get featured;
-
-  /// Create a copy of SnapCategory
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapCategoryImplCopyWith<_$SnapCategoryImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapCategory&&(identical(other.name, name) || other.name == name)&&(identical(other.featured, featured) || other.featured == featured));
 }
 
-SnapCategoryDetails _$SnapCategoryDetailsFromJson(Map<String, dynamic> json) {
-  return _SnapCategoryDetails.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,name,featured);
+
+@override
+String toString() {
+  return 'SnapCategory(name: $name, featured: $featured)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapCategoryCopyWith<$Res> implements $SnapCategoryCopyWith<$Res> {
+  factory _$SnapCategoryCopyWith(_SnapCategory value, $Res Function(_SnapCategory) _then) = __$SnapCategoryCopyWithImpl;
+@override @useResult
+$Res call({
+ String name, bool featured
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapCategoryCopyWithImpl<$Res>
+    implements _$SnapCategoryCopyWith<$Res> {
+  __$SnapCategoryCopyWithImpl(this._self, this._then);
+
+  final _SnapCategory _self;
+  final $Res Function(_SnapCategory) _then;
+
+/// Create a copy of SnapCategory
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? name = null,Object? featured = null,}) {
+  return _then(_SnapCategory(
+name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,featured: null == featured ? _self.featured : featured // ignore: cast_nullable_to_non_nullable
+as bool,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapCategoryDetails {
-  String get name => throw _privateConstructorUsedError;
+
+ String get name;
+/// Create a copy of SnapCategoryDetails
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapCategoryDetailsCopyWith<SnapCategoryDetails> get copyWith => _$SnapCategoryDetailsCopyWithImpl<SnapCategoryDetails>(this as SnapCategoryDetails, _$identity);
 
   /// Serializes this SnapCategoryDetails to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapCategoryDetails
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapCategoryDetailsCopyWith<SnapCategoryDetails> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapCategoryDetails&&(identical(other.name, name) || other.name == name));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,name);
+
+@override
+String toString() {
+  return 'SnapCategoryDetails(name: $name)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapCategoryDetailsCopyWith<$Res> {
-  factory $SnapCategoryDetailsCopyWith(
-          SnapCategoryDetails value, $Res Function(SnapCategoryDetails) then) =
-      _$SnapCategoryDetailsCopyWithImpl<$Res, SnapCategoryDetails>;
-  @useResult
-  $Res call({String name});
-}
+abstract mixin class $SnapCategoryDetailsCopyWith<$Res>  {
+  factory $SnapCategoryDetailsCopyWith(SnapCategoryDetails value, $Res Function(SnapCategoryDetails) _then) = _$SnapCategoryDetailsCopyWithImpl;
+@useResult
+$Res call({
+ String name
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapCategoryDetailsCopyWithImpl<$Res, $Val extends SnapCategoryDetails>
+class _$SnapCategoryDetailsCopyWithImpl<$Res>
     implements $SnapCategoryDetailsCopyWith<$Res> {
-  _$SnapCategoryDetailsCopyWithImpl(this._value, this._then);
+  _$SnapCategoryDetailsCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapCategoryDetails _self;
+  final $Res Function(SnapCategoryDetails) _then;
 
-  /// Create a copy of SnapCategoryDetails
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? name = null,
-  }) {
-    return _then(_value.copyWith(
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
+/// Create a copy of SnapCategoryDetails
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? name = null,}) {
+  return _then(_self.copyWith(
+name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapCategoryDetailsImplCopyWith<$Res>
-    implements $SnapCategoryDetailsCopyWith<$Res> {
-  factory _$$SnapCategoryDetailsImplCopyWith(_$SnapCategoryDetailsImpl value,
-          $Res Function(_$SnapCategoryDetailsImpl) then) =
-      __$$SnapCategoryDetailsImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String name});
 }
 
-/// @nodoc
-class __$$SnapCategoryDetailsImplCopyWithImpl<$Res>
-    extends _$SnapCategoryDetailsCopyWithImpl<$Res, _$SnapCategoryDetailsImpl>
-    implements _$$SnapCategoryDetailsImplCopyWith<$Res> {
-  __$$SnapCategoryDetailsImplCopyWithImpl(_$SnapCategoryDetailsImpl _value,
-      $Res Function(_$SnapCategoryDetailsImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapCategoryDetails
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? name = null,
-  }) {
-    return _then(_$SnapCategoryDetailsImpl(
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapCategoryDetails].
+extension SnapCategoryDetailsPatterns on SnapCategoryDetails {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapCategoryDetails value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapCategoryDetails() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapCategoryDetails value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapCategoryDetails():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapCategoryDetails value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapCategoryDetails() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String name)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapCategoryDetails() when $default != null:
+return $default(_that.name);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String name)  $default,) {final _that = this;
+switch (_that) {
+case _SnapCategoryDetails():
+return $default(_that.name);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String name)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapCategoryDetails() when $default != null:
+return $default(_that.name);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapCategoryDetailsImpl implements _SnapCategoryDetails {
-  const _$SnapCategoryDetailsImpl({required this.name});
 
-  factory _$SnapCategoryDetailsImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapCategoryDetailsImplFromJson(json);
+class _SnapCategoryDetails implements SnapCategoryDetails {
+  const _SnapCategoryDetails({required this.name});
+  factory _SnapCategoryDetails.fromJson(Map<String, dynamic> json) => _$SnapCategoryDetailsFromJson(json);
 
-  @override
-  final String name;
+@override final  String name;
 
-  @override
-  String toString() {
-    return 'SnapCategoryDetails(name: $name)';
-  }
+/// Create a copy of SnapCategoryDetails
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapCategoryDetailsCopyWith<_SnapCategoryDetails> get copyWith => __$SnapCategoryDetailsCopyWithImpl<_SnapCategoryDetails>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapCategoryDetailsImpl &&
-            (identical(other.name, name) || other.name == name));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, name);
-
-  /// Create a copy of SnapCategoryDetails
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapCategoryDetailsImplCopyWith<_$SnapCategoryDetailsImpl> get copyWith =>
-      __$$SnapCategoryDetailsImplCopyWithImpl<_$SnapCategoryDetailsImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapCategoryDetailsImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapCategoryDetailsToJson(this, );
 }
 
-abstract class _SnapCategoryDetails implements SnapCategoryDetails {
-  const factory _SnapCategoryDetails({required final String name}) =
-      _$SnapCategoryDetailsImpl;
-
-  factory _SnapCategoryDetails.fromJson(Map<String, dynamic> json) =
-      _$SnapCategoryDetailsImpl.fromJson;
-
-  @override
-  String get name;
-
-  /// Create a copy of SnapCategoryDetails
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapCategoryDetailsImplCopyWith<_$SnapCategoryDetailsImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapCategoryDetails&&(identical(other.name, name) || other.name == name));
 }
 
-SnapChannel _$SnapChannelFromJson(Map<String, dynamic> json) {
-  return _SnapChannel.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,name);
+
+@override
+String toString() {
+  return 'SnapCategoryDetails(name: $name)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapCategoryDetailsCopyWith<$Res> implements $SnapCategoryDetailsCopyWith<$Res> {
+  factory _$SnapCategoryDetailsCopyWith(_SnapCategoryDetails value, $Res Function(_SnapCategoryDetails) _then) = __$SnapCategoryDetailsCopyWithImpl;
+@override @useResult
+$Res call({
+ String name
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapCategoryDetailsCopyWithImpl<$Res>
+    implements _$SnapCategoryDetailsCopyWith<$Res> {
+  __$SnapCategoryDetailsCopyWithImpl(this._self, this._then);
+
+  final _SnapCategoryDetails _self;
+  final $Res Function(_SnapCategoryDetails) _then;
+
+/// Create a copy of SnapCategoryDetails
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? name = null,}) {
+  return _then(_SnapCategoryDetails(
+name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapChannel {
-  DateTime get releasedAt => throw _privateConstructorUsedError;
-  @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-  SnapConfinement get confinement => throw _privateConstructorUsedError;
-  String? get revision => throw _privateConstructorUsedError;
-  int get size => throw _privateConstructorUsedError;
-  String? get version => throw _privateConstructorUsedError;
+
+ DateTime get releasedAt;@JsonKey(unknownEnumValue: SnapConfinement.unknown) SnapConfinement get confinement; String? get revision; int get size; String? get version;
+/// Create a copy of SnapChannel
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapChannelCopyWith<SnapChannel> get copyWith => _$SnapChannelCopyWithImpl<SnapChannel>(this as SnapChannel, _$identity);
 
   /// Serializes this SnapChannel to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapChannel
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapChannelCopyWith<SnapChannel> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapChannel&&(identical(other.releasedAt, releasedAt) || other.releasedAt == releasedAt)&&(identical(other.confinement, confinement) || other.confinement == confinement)&&(identical(other.revision, revision) || other.revision == revision)&&(identical(other.size, size) || other.size == size)&&(identical(other.version, version) || other.version == version));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,releasedAt,confinement,revision,size,version);
+
+@override
+String toString() {
+  return 'SnapChannel(releasedAt: $releasedAt, confinement: $confinement, revision: $revision, size: $size, version: $version)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapChannelCopyWith<$Res> {
-  factory $SnapChannelCopyWith(
-          SnapChannel value, $Res Function(SnapChannel) then) =
-      _$SnapChannelCopyWithImpl<$Res, SnapChannel>;
-  @useResult
-  $Res call(
-      {DateTime releasedAt,
-      @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-      SnapConfinement confinement,
-      String? revision,
-      int size,
-      String? version});
-}
+abstract mixin class $SnapChannelCopyWith<$Res>  {
+  factory $SnapChannelCopyWith(SnapChannel value, $Res Function(SnapChannel) _then) = _$SnapChannelCopyWithImpl;
+@useResult
+$Res call({
+ DateTime releasedAt,@JsonKey(unknownEnumValue: SnapConfinement.unknown) SnapConfinement confinement, String? revision, int size, String? version
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapChannelCopyWithImpl<$Res, $Val extends SnapChannel>
+class _$SnapChannelCopyWithImpl<$Res>
     implements $SnapChannelCopyWith<$Res> {
-  _$SnapChannelCopyWithImpl(this._value, this._then);
+  _$SnapChannelCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapChannel _self;
+  final $Res Function(SnapChannel) _then;
 
-  /// Create a copy of SnapChannel
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? releasedAt = null,
-    Object? confinement = null,
-    Object? revision = freezed,
-    Object? size = null,
-    Object? version = freezed,
-  }) {
-    return _then(_value.copyWith(
-      releasedAt: null == releasedAt
-          ? _value.releasedAt
-          : releasedAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      confinement: null == confinement
-          ? _value.confinement
-          : confinement // ignore: cast_nullable_to_non_nullable
-              as SnapConfinement,
-      revision: freezed == revision
-          ? _value.revision
-          : revision // ignore: cast_nullable_to_non_nullable
-              as String?,
-      size: null == size
-          ? _value.size
-          : size // ignore: cast_nullable_to_non_nullable
-              as int,
-      version: freezed == version
-          ? _value.version
-          : version // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
-  }
+/// Create a copy of SnapChannel
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? releasedAt = null,Object? confinement = null,Object? revision = freezed,Object? size = null,Object? version = freezed,}) {
+  return _then(_self.copyWith(
+releasedAt: null == releasedAt ? _self.releasedAt : releasedAt // ignore: cast_nullable_to_non_nullable
+as DateTime,confinement: null == confinement ? _self.confinement : confinement // ignore: cast_nullable_to_non_nullable
+as SnapConfinement,revision: freezed == revision ? _self.revision : revision // ignore: cast_nullable_to_non_nullable
+as String?,size: null == size ? _self.size : size // ignore: cast_nullable_to_non_nullable
+as int,version: freezed == version ? _self.version : version // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapChannelImplCopyWith<$Res>
-    implements $SnapChannelCopyWith<$Res> {
-  factory _$$SnapChannelImplCopyWith(
-          _$SnapChannelImpl value, $Res Function(_$SnapChannelImpl) then) =
-      __$$SnapChannelImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {DateTime releasedAt,
-      @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-      SnapConfinement confinement,
-      String? revision,
-      int size,
-      String? version});
 }
 
-/// @nodoc
-class __$$SnapChannelImplCopyWithImpl<$Res>
-    extends _$SnapChannelCopyWithImpl<$Res, _$SnapChannelImpl>
-    implements _$$SnapChannelImplCopyWith<$Res> {
-  __$$SnapChannelImplCopyWithImpl(
-      _$SnapChannelImpl _value, $Res Function(_$SnapChannelImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapChannel
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? releasedAt = null,
-    Object? confinement = null,
-    Object? revision = freezed,
-    Object? size = null,
-    Object? version = freezed,
-  }) {
-    return _then(_$SnapChannelImpl(
-      releasedAt: null == releasedAt
-          ? _value.releasedAt
-          : releasedAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      confinement: null == confinement
-          ? _value.confinement
-          : confinement // ignore: cast_nullable_to_non_nullable
-              as SnapConfinement,
-      revision: freezed == revision
-          ? _value.revision
-          : revision // ignore: cast_nullable_to_non_nullable
-              as String?,
-      size: null == size
-          ? _value.size
-          : size // ignore: cast_nullable_to_non_nullable
-              as int,
-      version: freezed == version
-          ? _value.version
-          : version // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapChannel].
+extension SnapChannelPatterns on SnapChannel {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapChannel value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapChannel() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapChannel value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapChannel():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapChannel value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapChannel() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( DateTime releasedAt, @JsonKey(unknownEnumValue: SnapConfinement.unknown)  SnapConfinement confinement,  String? revision,  int size,  String? version)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapChannel() when $default != null:
+return $default(_that.releasedAt,_that.confinement,_that.revision,_that.size,_that.version);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( DateTime releasedAt, @JsonKey(unknownEnumValue: SnapConfinement.unknown)  SnapConfinement confinement,  String? revision,  int size,  String? version)  $default,) {final _that = this;
+switch (_that) {
+case _SnapChannel():
+return $default(_that.releasedAt,_that.confinement,_that.revision,_that.size,_that.version);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( DateTime releasedAt, @JsonKey(unknownEnumValue: SnapConfinement.unknown)  SnapConfinement confinement,  String? revision,  int size,  String? version)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapChannel() when $default != null:
+return $default(_that.releasedAt,_that.confinement,_that.revision,_that.size,_that.version);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapChannelImpl implements _SnapChannel {
-  const _$SnapChannelImpl(
-      {required this.releasedAt,
-      @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-      this.confinement = SnapConfinement.unknown,
-      this.revision,
-      this.size = 0,
-      this.version});
 
-  factory _$SnapChannelImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapChannelImplFromJson(json);
+class _SnapChannel implements SnapChannel {
+  const _SnapChannel({required this.releasedAt, @JsonKey(unknownEnumValue: SnapConfinement.unknown) this.confinement = SnapConfinement.unknown, this.revision, this.size = 0, this.version});
+  factory _SnapChannel.fromJson(Map<String, dynamic> json) => _$SnapChannelFromJson(json);
 
-  @override
-  final DateTime releasedAt;
-  @override
-  @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-  final SnapConfinement confinement;
-  @override
-  final String? revision;
-  @override
-  @JsonKey()
-  final int size;
-  @override
-  final String? version;
+@override final  DateTime releasedAt;
+@override@JsonKey(unknownEnumValue: SnapConfinement.unknown) final  SnapConfinement confinement;
+@override final  String? revision;
+@override@JsonKey() final  int size;
+@override final  String? version;
 
-  @override
-  String toString() {
-    return 'SnapChannel(releasedAt: $releasedAt, confinement: $confinement, revision: $revision, size: $size, version: $version)';
-  }
+/// Create a copy of SnapChannel
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapChannelCopyWith<_SnapChannel> get copyWith => __$SnapChannelCopyWithImpl<_SnapChannel>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapChannelImpl &&
-            (identical(other.releasedAt, releasedAt) ||
-                other.releasedAt == releasedAt) &&
-            (identical(other.confinement, confinement) ||
-                other.confinement == confinement) &&
-            (identical(other.revision, revision) ||
-                other.revision == revision) &&
-            (identical(other.size, size) || other.size == size) &&
-            (identical(other.version, version) || other.version == version));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType, releasedAt, confinement, revision, size, version);
-
-  /// Create a copy of SnapChannel
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapChannelImplCopyWith<_$SnapChannelImpl> get copyWith =>
-      __$$SnapChannelImplCopyWithImpl<_$SnapChannelImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapChannelImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapChannelToJson(this, );
 }
 
-abstract class _SnapChannel implements SnapChannel {
-  const factory _SnapChannel(
-      {required final DateTime releasedAt,
-      @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-      final SnapConfinement confinement,
-      final String? revision,
-      final int size,
-      final String? version}) = _$SnapChannelImpl;
-
-  factory _SnapChannel.fromJson(Map<String, dynamic> json) =
-      _$SnapChannelImpl.fromJson;
-
-  @override
-  DateTime get releasedAt;
-  @override
-  @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-  SnapConfinement get confinement;
-  @override
-  String? get revision;
-  @override
-  int get size;
-  @override
-  String? get version;
-
-  /// Create a copy of SnapChannel
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapChannelImplCopyWith<_$SnapChannelImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapChannel&&(identical(other.releasedAt, releasedAt) || other.releasedAt == releasedAt)&&(identical(other.confinement, confinement) || other.confinement == confinement)&&(identical(other.revision, revision) || other.revision == revision)&&(identical(other.size, size) || other.size == size)&&(identical(other.version, version) || other.version == version));
 }
 
-SnapPublisher _$SnapPublisherFromJson(Map<String, dynamic> json) {
-  return _SnapPublisher.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,releasedAt,confinement,revision,size,version);
+
+@override
+String toString() {
+  return 'SnapChannel(releasedAt: $releasedAt, confinement: $confinement, revision: $revision, size: $size, version: $version)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapChannelCopyWith<$Res> implements $SnapChannelCopyWith<$Res> {
+  factory _$SnapChannelCopyWith(_SnapChannel value, $Res Function(_SnapChannel) _then) = __$SnapChannelCopyWithImpl;
+@override @useResult
+$Res call({
+ DateTime releasedAt,@JsonKey(unknownEnumValue: SnapConfinement.unknown) SnapConfinement confinement, String? revision, int size, String? version
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapChannelCopyWithImpl<$Res>
+    implements _$SnapChannelCopyWith<$Res> {
+  __$SnapChannelCopyWithImpl(this._self, this._then);
+
+  final _SnapChannel _self;
+  final $Res Function(_SnapChannel) _then;
+
+/// Create a copy of SnapChannel
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? releasedAt = null,Object? confinement = null,Object? revision = freezed,Object? size = null,Object? version = freezed,}) {
+  return _then(_SnapChannel(
+releasedAt: null == releasedAt ? _self.releasedAt : releasedAt // ignore: cast_nullable_to_non_nullable
+as DateTime,confinement: null == confinement ? _self.confinement : confinement // ignore: cast_nullable_to_non_nullable
+as SnapConfinement,revision: freezed == revision ? _self.revision : revision // ignore: cast_nullable_to_non_nullable
+as String?,size: null == size ? _self.size : size // ignore: cast_nullable_to_non_nullable
+as int,version: freezed == version ? _self.version : version // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapPublisher {
-  String get id => throw _privateConstructorUsedError;
-  String get displayName => throw _privateConstructorUsedError;
-  String? get username => throw _privateConstructorUsedError;
-  String? get validation => throw _privateConstructorUsedError;
+
+ String get id; String get displayName; String? get username; String? get validation;
+/// Create a copy of SnapPublisher
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapPublisherCopyWith<SnapPublisher> get copyWith => _$SnapPublisherCopyWithImpl<SnapPublisher>(this as SnapPublisher, _$identity);
 
   /// Serializes this SnapPublisher to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapPublisher
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapPublisherCopyWith<SnapPublisher> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapPublisher&&(identical(other.id, id) || other.id == id)&&(identical(other.displayName, displayName) || other.displayName == displayName)&&(identical(other.username, username) || other.username == username)&&(identical(other.validation, validation) || other.validation == validation));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,displayName,username,validation);
+
+@override
+String toString() {
+  return 'SnapPublisher(id: $id, displayName: $displayName, username: $username, validation: $validation)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapPublisherCopyWith<$Res> {
-  factory $SnapPublisherCopyWith(
-          SnapPublisher value, $Res Function(SnapPublisher) then) =
-      _$SnapPublisherCopyWithImpl<$Res, SnapPublisher>;
-  @useResult
-  $Res call(
-      {String id, String displayName, String? username, String? validation});
-}
+abstract mixin class $SnapPublisherCopyWith<$Res>  {
+  factory $SnapPublisherCopyWith(SnapPublisher value, $Res Function(SnapPublisher) _then) = _$SnapPublisherCopyWithImpl;
+@useResult
+$Res call({
+ String id, String displayName, String? username, String? validation
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapPublisherCopyWithImpl<$Res, $Val extends SnapPublisher>
+class _$SnapPublisherCopyWithImpl<$Res>
     implements $SnapPublisherCopyWith<$Res> {
-  _$SnapPublisherCopyWithImpl(this._value, this._then);
+  _$SnapPublisherCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapPublisher _self;
+  final $Res Function(SnapPublisher) _then;
 
-  /// Create a copy of SnapPublisher
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? displayName = null,
-    Object? username = freezed,
-    Object? validation = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      displayName: null == displayName
-          ? _value.displayName
-          : displayName // ignore: cast_nullable_to_non_nullable
-              as String,
-      username: freezed == username
-          ? _value.username
-          : username // ignore: cast_nullable_to_non_nullable
-              as String?,
-      validation: freezed == validation
-          ? _value.validation
-          : validation // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
-  }
+/// Create a copy of SnapPublisher
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? displayName = null,Object? username = freezed,Object? validation = freezed,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,displayName: null == displayName ? _self.displayName : displayName // ignore: cast_nullable_to_non_nullable
+as String,username: freezed == username ? _self.username : username // ignore: cast_nullable_to_non_nullable
+as String?,validation: freezed == validation ? _self.validation : validation // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapPublisherImplCopyWith<$Res>
-    implements $SnapPublisherCopyWith<$Res> {
-  factory _$$SnapPublisherImplCopyWith(
-          _$SnapPublisherImpl value, $Res Function(_$SnapPublisherImpl) then) =
-      __$$SnapPublisherImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String id, String displayName, String? username, String? validation});
 }
 
-/// @nodoc
-class __$$SnapPublisherImplCopyWithImpl<$Res>
-    extends _$SnapPublisherCopyWithImpl<$Res, _$SnapPublisherImpl>
-    implements _$$SnapPublisherImplCopyWith<$Res> {
-  __$$SnapPublisherImplCopyWithImpl(
-      _$SnapPublisherImpl _value, $Res Function(_$SnapPublisherImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapPublisher
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? displayName = null,
-    Object? username = freezed,
-    Object? validation = freezed,
-  }) {
-    return _then(_$SnapPublisherImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      displayName: null == displayName
-          ? _value.displayName
-          : displayName // ignore: cast_nullable_to_non_nullable
-              as String,
-      username: freezed == username
-          ? _value.username
-          : username // ignore: cast_nullable_to_non_nullable
-              as String?,
-      validation: freezed == validation
-          ? _value.validation
-          : validation // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapPublisher].
+extension SnapPublisherPatterns on SnapPublisher {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapPublisher value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapPublisher() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapPublisher value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapPublisher():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapPublisher value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapPublisher() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  String displayName,  String? username,  String? validation)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapPublisher() when $default != null:
+return $default(_that.id,_that.displayName,_that.username,_that.validation);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String displayName,  String? username,  String? validation)  $default,) {final _that = this;
+switch (_that) {
+case _SnapPublisher():
+return $default(_that.id,_that.displayName,_that.username,_that.validation);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  String displayName,  String? username,  String? validation)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapPublisher() when $default != null:
+return $default(_that.id,_that.displayName,_that.username,_that.validation);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapPublisherImpl implements _SnapPublisher {
-  const _$SnapPublisherImpl(
-      {required this.id,
-      required this.displayName,
-      this.username,
-      this.validation});
 
-  factory _$SnapPublisherImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapPublisherImplFromJson(json);
+class _SnapPublisher implements SnapPublisher {
+  const _SnapPublisher({required this.id, required this.displayName, this.username, this.validation});
+  factory _SnapPublisher.fromJson(Map<String, dynamic> json) => _$SnapPublisherFromJson(json);
 
-  @override
-  final String id;
-  @override
-  final String displayName;
-  @override
-  final String? username;
-  @override
-  final String? validation;
+@override final  String id;
+@override final  String displayName;
+@override final  String? username;
+@override final  String? validation;
 
-  @override
-  String toString() {
-    return 'SnapPublisher(id: $id, displayName: $displayName, username: $username, validation: $validation)';
-  }
+/// Create a copy of SnapPublisher
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapPublisherCopyWith<_SnapPublisher> get copyWith => __$SnapPublisherCopyWithImpl<_SnapPublisher>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapPublisherImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.displayName, displayName) ||
-                other.displayName == displayName) &&
-            (identical(other.username, username) ||
-                other.username == username) &&
-            (identical(other.validation, validation) ||
-                other.validation == validation));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, id, displayName, username, validation);
-
-  /// Create a copy of SnapPublisher
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapPublisherImplCopyWith<_$SnapPublisherImpl> get copyWith =>
-      __$$SnapPublisherImplCopyWithImpl<_$SnapPublisherImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapPublisherImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapPublisherToJson(this, );
 }
 
-abstract class _SnapPublisher implements SnapPublisher {
-  const factory _SnapPublisher(
-      {required final String id,
-      required final String displayName,
-      final String? username,
-      final String? validation}) = _$SnapPublisherImpl;
-
-  factory _SnapPublisher.fromJson(Map<String, dynamic> json) =
-      _$SnapPublisherImpl.fromJson;
-
-  @override
-  String get id;
-  @override
-  String get displayName;
-  @override
-  String? get username;
-  @override
-  String? get validation;
-
-  /// Create a copy of SnapPublisher
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapPublisherImplCopyWith<_$SnapPublisherImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapPublisher&&(identical(other.id, id) || other.id == id)&&(identical(other.displayName, displayName) || other.displayName == displayName)&&(identical(other.username, username) || other.username == username)&&(identical(other.validation, validation) || other.validation == validation));
 }
 
-SnapMedia _$SnapMediaFromJson(Map<String, dynamic> json) {
-  return _SnapMedia.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,displayName,username,validation);
+
+@override
+String toString() {
+  return 'SnapPublisher(id: $id, displayName: $displayName, username: $username, validation: $validation)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapPublisherCopyWith<$Res> implements $SnapPublisherCopyWith<$Res> {
+  factory _$SnapPublisherCopyWith(_SnapPublisher value, $Res Function(_SnapPublisher) _then) = __$SnapPublisherCopyWithImpl;
+@override @useResult
+$Res call({
+ String id, String displayName, String? username, String? validation
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapPublisherCopyWithImpl<$Res>
+    implements _$SnapPublisherCopyWith<$Res> {
+  __$SnapPublisherCopyWithImpl(this._self, this._then);
+
+  final _SnapPublisher _self;
+  final $Res Function(_SnapPublisher) _then;
+
+/// Create a copy of SnapPublisher
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? displayName = null,Object? username = freezed,Object? validation = freezed,}) {
+  return _then(_SnapPublisher(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,displayName: null == displayName ? _self.displayName : displayName // ignore: cast_nullable_to_non_nullable
+as String,username: freezed == username ? _self.username : username // ignore: cast_nullable_to_non_nullable
+as String?,validation: freezed == validation ? _self.validation : validation // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapMedia {
-  String get type => throw _privateConstructorUsedError;
-  String get url => throw _privateConstructorUsedError;
-  int? get width => throw _privateConstructorUsedError;
-  int? get height => throw _privateConstructorUsedError;
+
+ String get type; String get url; int? get width; int? get height;
+/// Create a copy of SnapMedia
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapMediaCopyWith<SnapMedia> get copyWith => _$SnapMediaCopyWithImpl<SnapMedia>(this as SnapMedia, _$identity);
 
   /// Serializes this SnapMedia to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapMedia
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapMediaCopyWith<SnapMedia> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapMedia&&(identical(other.type, type) || other.type == type)&&(identical(other.url, url) || other.url == url)&&(identical(other.width, width) || other.width == width)&&(identical(other.height, height) || other.height == height));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,type,url,width,height);
+
+@override
+String toString() {
+  return 'SnapMedia(type: $type, url: $url, width: $width, height: $height)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapMediaCopyWith<$Res> {
-  factory $SnapMediaCopyWith(SnapMedia value, $Res Function(SnapMedia) then) =
-      _$SnapMediaCopyWithImpl<$Res, SnapMedia>;
-  @useResult
-  $Res call({String type, String url, int? width, int? height});
-}
+abstract mixin class $SnapMediaCopyWith<$Res>  {
+  factory $SnapMediaCopyWith(SnapMedia value, $Res Function(SnapMedia) _then) = _$SnapMediaCopyWithImpl;
+@useResult
+$Res call({
+ String type, String url, int? width, int? height
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapMediaCopyWithImpl<$Res, $Val extends SnapMedia>
+class _$SnapMediaCopyWithImpl<$Res>
     implements $SnapMediaCopyWith<$Res> {
-  _$SnapMediaCopyWithImpl(this._value, this._then);
+  _$SnapMediaCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapMedia _self;
+  final $Res Function(SnapMedia) _then;
 
-  /// Create a copy of SnapMedia
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? type = null,
-    Object? url = null,
-    Object? width = freezed,
-    Object? height = freezed,
-  }) {
-    return _then(_value.copyWith(
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as String,
-      url: null == url
-          ? _value.url
-          : url // ignore: cast_nullable_to_non_nullable
-              as String,
-      width: freezed == width
-          ? _value.width
-          : width // ignore: cast_nullable_to_non_nullable
-              as int?,
-      height: freezed == height
-          ? _value.height
-          : height // ignore: cast_nullable_to_non_nullable
-              as int?,
-    ) as $Val);
-  }
+/// Create a copy of SnapMedia
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? type = null,Object? url = null,Object? width = freezed,Object? height = freezed,}) {
+  return _then(_self.copyWith(
+type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as String,url: null == url ? _self.url : url // ignore: cast_nullable_to_non_nullable
+as String,width: freezed == width ? _self.width : width // ignore: cast_nullable_to_non_nullable
+as int?,height: freezed == height ? _self.height : height // ignore: cast_nullable_to_non_nullable
+as int?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapMediaImplCopyWith<$Res>
-    implements $SnapMediaCopyWith<$Res> {
-  factory _$$SnapMediaImplCopyWith(
-          _$SnapMediaImpl value, $Res Function(_$SnapMediaImpl) then) =
-      __$$SnapMediaImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String type, String url, int? width, int? height});
 }
 
-/// @nodoc
-class __$$SnapMediaImplCopyWithImpl<$Res>
-    extends _$SnapMediaCopyWithImpl<$Res, _$SnapMediaImpl>
-    implements _$$SnapMediaImplCopyWith<$Res> {
-  __$$SnapMediaImplCopyWithImpl(
-      _$SnapMediaImpl _value, $Res Function(_$SnapMediaImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapMedia
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? type = null,
-    Object? url = null,
-    Object? width = freezed,
-    Object? height = freezed,
-  }) {
-    return _then(_$SnapMediaImpl(
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as String,
-      url: null == url
-          ? _value.url
-          : url // ignore: cast_nullable_to_non_nullable
-              as String,
-      width: freezed == width
-          ? _value.width
-          : width // ignore: cast_nullable_to_non_nullable
-              as int?,
-      height: freezed == height
-          ? _value.height
-          : height // ignore: cast_nullable_to_non_nullable
-              as int?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapMedia].
+extension SnapMediaPatterns on SnapMedia {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapMedia value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapMedia() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapMedia value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapMedia():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapMedia value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapMedia() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String type,  String url,  int? width,  int? height)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapMedia() when $default != null:
+return $default(_that.type,_that.url,_that.width,_that.height);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String type,  String url,  int? width,  int? height)  $default,) {final _that = this;
+switch (_that) {
+case _SnapMedia():
+return $default(_that.type,_that.url,_that.width,_that.height);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String type,  String url,  int? width,  int? height)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapMedia() when $default != null:
+return $default(_that.type,_that.url,_that.width,_that.height);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapMediaImpl implements _SnapMedia {
-  const _$SnapMediaImpl(
-      {required this.type, required this.url, this.width, this.height});
 
-  factory _$SnapMediaImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapMediaImplFromJson(json);
+class _SnapMedia implements SnapMedia {
+  const _SnapMedia({required this.type, required this.url, this.width, this.height});
+  factory _SnapMedia.fromJson(Map<String, dynamic> json) => _$SnapMediaFromJson(json);
 
-  @override
-  final String type;
-  @override
-  final String url;
-  @override
-  final int? width;
-  @override
-  final int? height;
+@override final  String type;
+@override final  String url;
+@override final  int? width;
+@override final  int? height;
 
-  @override
-  String toString() {
-    return 'SnapMedia(type: $type, url: $url, width: $width, height: $height)';
-  }
+/// Create a copy of SnapMedia
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapMediaCopyWith<_SnapMedia> get copyWith => __$SnapMediaCopyWithImpl<_SnapMedia>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapMediaImpl &&
-            (identical(other.type, type) || other.type == type) &&
-            (identical(other.url, url) || other.url == url) &&
-            (identical(other.width, width) || other.width == width) &&
-            (identical(other.height, height) || other.height == height));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, type, url, width, height);
-
-  /// Create a copy of SnapMedia
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapMediaImplCopyWith<_$SnapMediaImpl> get copyWith =>
-      __$$SnapMediaImplCopyWithImpl<_$SnapMediaImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapMediaImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapMediaToJson(this, );
 }
 
-abstract class _SnapMedia implements SnapMedia {
-  const factory _SnapMedia(
-      {required final String type,
-      required final String url,
-      final int? width,
-      final int? height}) = _$SnapMediaImpl;
-
-  factory _SnapMedia.fromJson(Map<String, dynamic> json) =
-      _$SnapMediaImpl.fromJson;
-
-  @override
-  String get type;
-  @override
-  String get url;
-  @override
-  int? get width;
-  @override
-  int? get height;
-
-  /// Create a copy of SnapMedia
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapMediaImplCopyWith<_$SnapMediaImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapMedia&&(identical(other.type, type) || other.type == type)&&(identical(other.url, url) || other.url == url)&&(identical(other.width, width) || other.width == width)&&(identical(other.height, height) || other.height == height));
 }
 
-Snap _$SnapFromJson(Map<String, dynamic> json) {
-  return _Snap.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,type,url,width,height);
+
+@override
+String toString() {
+  return 'SnapMedia(type: $type, url: $url, width: $width, height: $height)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapMediaCopyWith<$Res> implements $SnapMediaCopyWith<$Res> {
+  factory _$SnapMediaCopyWith(_SnapMedia value, $Res Function(_SnapMedia) _then) = __$SnapMediaCopyWithImpl;
+@override @useResult
+$Res call({
+ String type, String url, int? width, int? height
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapMediaCopyWithImpl<$Res>
+    implements _$SnapMediaCopyWith<$Res> {
+  __$SnapMediaCopyWithImpl(this._self, this._then);
+
+  final _SnapMedia _self;
+  final $Res Function(_SnapMedia) _then;
+
+/// Create a copy of SnapMedia
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? type = null,Object? url = null,Object? width = freezed,Object? height = freezed,}) {
+  return _then(_SnapMedia(
+type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as String,url: null == url ? _self.url : url // ignore: cast_nullable_to_non_nullable
+as String,width: freezed == width ? _self.width : width // ignore: cast_nullable_to_non_nullable
+as int?,height: freezed == height ? _self.height : height // ignore: cast_nullable_to_non_nullable
+as int?,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$Snap {
-  String get id => throw _privateConstructorUsedError;
-  String get name => throw _privateConstructorUsedError;
-  String get version => throw _privateConstructorUsedError;
-  String get channel => throw _privateConstructorUsedError;
-  String get type => throw _privateConstructorUsedError;
-  @JsonKey(fromJson: Snap._parseRevision)
-  int get revision => throw _privateConstructorUsedError;
-  String get contact => throw _privateConstructorUsedError;
-  String get description => throw _privateConstructorUsedError;
-  String get summary => throw _privateConstructorUsedError;
-  Map<String, SnapChannel> get channels => throw _privateConstructorUsedError;
-  List<SnapApp> get apps => throw _privateConstructorUsedError;
-  List<SnapCategory> get categories => throw _privateConstructorUsedError;
-  List<String> get tracks => throw _privateConstructorUsedError;
-  List<String> get commonIds => throw _privateConstructorUsedError;
-  Map<String, List<String>> get links => throw _privateConstructorUsedError;
-  List<SnapMedia> get media => throw _privateConstructorUsedError;
-  @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-  SnapConfinement get confinement => throw _privateConstructorUsedError;
-  SnapStatus get status => throw _privateConstructorUsedError;
-  bool get devmode => throw _privateConstructorUsedError;
-  bool get jailmode => throw _privateConstructorUsedError;
-  bool get private => throw _privateConstructorUsedError;
-  String? get base => throw _privateConstructorUsedError;
-  String? get title => throw _privateConstructorUsedError;
-  String? get trackingChannel => throw _privateConstructorUsedError;
-  String? get website => throw _privateConstructorUsedError;
-  String? get license => throw _privateConstructorUsedError;
-  String? get mountedFrom => throw _privateConstructorUsedError;
-  String? get storeUrl => throw _privateConstructorUsedError;
-  DateTime? get hold => throw _privateConstructorUsedError;
-  DateTime? get installDate => throw _privateConstructorUsedError;
-  int? get downloadSize => throw _privateConstructorUsedError;
-  int? get installedSize => throw _privateConstructorUsedError;
-  SnapPublisher? get publisher => throw _privateConstructorUsedError;
-  RefreshInhibit? get refreshInhibit => throw _privateConstructorUsedError;
+
+ String get id; String get name; String get version; String get channel; String get type;@JsonKey(fromJson: Snap._parseRevision) int get revision; String get contact; String get description; String get summary; Map<String, SnapChannel> get channels; List<SnapApp> get apps; List<SnapCategory> get categories; List<String> get tracks; List<String> get commonIds; Map<String, List<String>> get links; List<SnapMedia> get media;@JsonKey(unknownEnumValue: SnapConfinement.unknown) SnapConfinement get confinement; SnapStatus get status; bool get devmode; bool get jailmode; bool get private; String? get base; String? get title; String? get trackingChannel; String? get website; String? get license; String? get mountedFrom; String? get storeUrl; DateTime? get hold; DateTime? get installDate; int? get downloadSize; int? get installedSize; SnapPublisher? get publisher; RefreshInhibit? get refreshInhibit;
+/// Create a copy of Snap
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapCopyWith<Snap> get copyWith => _$SnapCopyWithImpl<Snap>(this as Snap, _$identity);
 
   /// Serializes this Snap to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of Snap
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapCopyWith<Snap> get copyWith => throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is Snap&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.version, version) || other.version == version)&&(identical(other.channel, channel) || other.channel == channel)&&(identical(other.type, type) || other.type == type)&&(identical(other.revision, revision) || other.revision == revision)&&(identical(other.contact, contact) || other.contact == contact)&&(identical(other.description, description) || other.description == description)&&(identical(other.summary, summary) || other.summary == summary)&&const DeepCollectionEquality().equals(other.channels, channels)&&const DeepCollectionEquality().equals(other.apps, apps)&&const DeepCollectionEquality().equals(other.categories, categories)&&const DeepCollectionEquality().equals(other.tracks, tracks)&&const DeepCollectionEquality().equals(other.commonIds, commonIds)&&const DeepCollectionEquality().equals(other.links, links)&&const DeepCollectionEquality().equals(other.media, media)&&(identical(other.confinement, confinement) || other.confinement == confinement)&&(identical(other.status, status) || other.status == status)&&(identical(other.devmode, devmode) || other.devmode == devmode)&&(identical(other.jailmode, jailmode) || other.jailmode == jailmode)&&(identical(other.private, private) || other.private == private)&&(identical(other.base, base) || other.base == base)&&(identical(other.title, title) || other.title == title)&&(identical(other.trackingChannel, trackingChannel) || other.trackingChannel == trackingChannel)&&(identical(other.website, website) || other.website == website)&&(identical(other.license, license) || other.license == license)&&(identical(other.mountedFrom, mountedFrom) || other.mountedFrom == mountedFrom)&&(identical(other.storeUrl, storeUrl) || other.storeUrl == storeUrl)&&(identical(other.hold, hold) || other.hold == hold)&&(identical(other.installDate, installDate) || other.installDate == installDate)&&(identical(other.downloadSize, downloadSize) || other.downloadSize == downloadSize)&&(identical(other.installedSize, installedSize) || other.installedSize == installedSize)&&(identical(other.publisher, publisher) || other.publisher == publisher)&&(identical(other.refreshInhibit, refreshInhibit) || other.refreshInhibit == refreshInhibit));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hashAll([runtimeType,id,name,version,channel,type,revision,contact,description,summary,const DeepCollectionEquality().hash(channels),const DeepCollectionEquality().hash(apps),const DeepCollectionEquality().hash(categories),const DeepCollectionEquality().hash(tracks),const DeepCollectionEquality().hash(commonIds),const DeepCollectionEquality().hash(links),const DeepCollectionEquality().hash(media),confinement,status,devmode,jailmode,private,base,title,trackingChannel,website,license,mountedFrom,storeUrl,hold,installDate,downloadSize,installedSize,publisher,refreshInhibit]);
+
+@override
+String toString() {
+  return 'Snap(id: $id, name: $name, version: $version, channel: $channel, type: $type, revision: $revision, contact: $contact, description: $description, summary: $summary, channels: $channels, apps: $apps, categories: $categories, tracks: $tracks, commonIds: $commonIds, links: $links, media: $media, confinement: $confinement, status: $status, devmode: $devmode, jailmode: $jailmode, private: $private, base: $base, title: $title, trackingChannel: $trackingChannel, website: $website, license: $license, mountedFrom: $mountedFrom, storeUrl: $storeUrl, hold: $hold, installDate: $installDate, downloadSize: $downloadSize, installedSize: $installedSize, publisher: $publisher, refreshInhibit: $refreshInhibit)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapCopyWith<$Res> {
-  factory $SnapCopyWith(Snap value, $Res Function(Snap) then) =
-      _$SnapCopyWithImpl<$Res, Snap>;
-  @useResult
-  $Res call(
-      {String id,
-      String name,
-      String version,
-      String channel,
-      String type,
-      @JsonKey(fromJson: Snap._parseRevision) int revision,
-      String contact,
-      String description,
-      String summary,
-      Map<String, SnapChannel> channels,
-      List<SnapApp> apps,
-      List<SnapCategory> categories,
-      List<String> tracks,
-      List<String> commonIds,
-      Map<String, List<String>> links,
-      List<SnapMedia> media,
-      @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-      SnapConfinement confinement,
-      SnapStatus status,
-      bool devmode,
-      bool jailmode,
-      bool private,
-      String? base,
-      String? title,
-      String? trackingChannel,
-      String? website,
-      String? license,
-      String? mountedFrom,
-      String? storeUrl,
-      DateTime? hold,
-      DateTime? installDate,
-      int? downloadSize,
-      int? installedSize,
-      SnapPublisher? publisher,
-      RefreshInhibit? refreshInhibit});
+abstract mixin class $SnapCopyWith<$Res>  {
+  factory $SnapCopyWith(Snap value, $Res Function(Snap) _then) = _$SnapCopyWithImpl;
+@useResult
+$Res call({
+ String id, String name, String version, String channel, String type,@JsonKey(fromJson: Snap._parseRevision) int revision, String contact, String description, String summary, Map<String, SnapChannel> channels, List<SnapApp> apps, List<SnapCategory> categories, List<String> tracks, List<String> commonIds, Map<String, List<String>> links, List<SnapMedia> media,@JsonKey(unknownEnumValue: SnapConfinement.unknown) SnapConfinement confinement, SnapStatus status, bool devmode, bool jailmode, bool private, String? base, String? title, String? trackingChannel, String? website, String? license, String? mountedFrom, String? storeUrl, DateTime? hold, DateTime? installDate, int? downloadSize, int? installedSize, SnapPublisher? publisher, RefreshInhibit? refreshInhibit
+});
 
-  $SnapPublisherCopyWith<$Res>? get publisher;
-  $RefreshInhibitCopyWith<$Res>? get refreshInhibit;
+
+$SnapPublisherCopyWith<$Res>? get publisher;$RefreshInhibitCopyWith<$Res>? get refreshInhibit;
+
 }
-
 /// @nodoc
-class _$SnapCopyWithImpl<$Res, $Val extends Snap>
+class _$SnapCopyWithImpl<$Res>
     implements $SnapCopyWith<$Res> {
-  _$SnapCopyWithImpl(this._value, this._then);
+  _$SnapCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final Snap _self;
+  final $Res Function(Snap) _then;
 
-  /// Create a copy of Snap
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? name = null,
-    Object? version = null,
-    Object? channel = null,
-    Object? type = null,
-    Object? revision = null,
-    Object? contact = null,
-    Object? description = null,
-    Object? summary = null,
-    Object? channels = null,
-    Object? apps = null,
-    Object? categories = null,
-    Object? tracks = null,
-    Object? commonIds = null,
-    Object? links = null,
-    Object? media = null,
-    Object? confinement = null,
-    Object? status = null,
-    Object? devmode = null,
-    Object? jailmode = null,
-    Object? private = null,
-    Object? base = freezed,
-    Object? title = freezed,
-    Object? trackingChannel = freezed,
-    Object? website = freezed,
-    Object? license = freezed,
-    Object? mountedFrom = freezed,
-    Object? storeUrl = freezed,
-    Object? hold = freezed,
-    Object? installDate = freezed,
-    Object? downloadSize = freezed,
-    Object? installedSize = freezed,
-    Object? publisher = freezed,
-    Object? refreshInhibit = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      version: null == version
-          ? _value.version
-          : version // ignore: cast_nullable_to_non_nullable
-              as String,
-      channel: null == channel
-          ? _value.channel
-          : channel // ignore: cast_nullable_to_non_nullable
-              as String,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as String,
-      revision: null == revision
-          ? _value.revision
-          : revision // ignore: cast_nullable_to_non_nullable
-              as int,
-      contact: null == contact
-          ? _value.contact
-          : contact // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: null == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      summary: null == summary
-          ? _value.summary
-          : summary // ignore: cast_nullable_to_non_nullable
-              as String,
-      channels: null == channels
-          ? _value.channels
-          : channels // ignore: cast_nullable_to_non_nullable
-              as Map<String, SnapChannel>,
-      apps: null == apps
-          ? _value.apps
-          : apps // ignore: cast_nullable_to_non_nullable
-              as List<SnapApp>,
-      categories: null == categories
-          ? _value.categories
-          : categories // ignore: cast_nullable_to_non_nullable
-              as List<SnapCategory>,
-      tracks: null == tracks
-          ? _value.tracks
-          : tracks // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-      commonIds: null == commonIds
-          ? _value.commonIds
-          : commonIds // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-      links: null == links
-          ? _value.links
-          : links // ignore: cast_nullable_to_non_nullable
-              as Map<String, List<String>>,
-      media: null == media
-          ? _value.media
-          : media // ignore: cast_nullable_to_non_nullable
-              as List<SnapMedia>,
-      confinement: null == confinement
-          ? _value.confinement
-          : confinement // ignore: cast_nullable_to_non_nullable
-              as SnapConfinement,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as SnapStatus,
-      devmode: null == devmode
-          ? _value.devmode
-          : devmode // ignore: cast_nullable_to_non_nullable
-              as bool,
-      jailmode: null == jailmode
-          ? _value.jailmode
-          : jailmode // ignore: cast_nullable_to_non_nullable
-              as bool,
-      private: null == private
-          ? _value.private
-          : private // ignore: cast_nullable_to_non_nullable
-              as bool,
-      base: freezed == base
-          ? _value.base
-          : base // ignore: cast_nullable_to_non_nullable
-              as String?,
-      title: freezed == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String?,
-      trackingChannel: freezed == trackingChannel
-          ? _value.trackingChannel
-          : trackingChannel // ignore: cast_nullable_to_non_nullable
-              as String?,
-      website: freezed == website
-          ? _value.website
-          : website // ignore: cast_nullable_to_non_nullable
-              as String?,
-      license: freezed == license
-          ? _value.license
-          : license // ignore: cast_nullable_to_non_nullable
-              as String?,
-      mountedFrom: freezed == mountedFrom
-          ? _value.mountedFrom
-          : mountedFrom // ignore: cast_nullable_to_non_nullable
-              as String?,
-      storeUrl: freezed == storeUrl
-          ? _value.storeUrl
-          : storeUrl // ignore: cast_nullable_to_non_nullable
-              as String?,
-      hold: freezed == hold
-          ? _value.hold
-          : hold // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      installDate: freezed == installDate
-          ? _value.installDate
-          : installDate // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      downloadSize: freezed == downloadSize
-          ? _value.downloadSize
-          : downloadSize // ignore: cast_nullable_to_non_nullable
-              as int?,
-      installedSize: freezed == installedSize
-          ? _value.installedSize
-          : installedSize // ignore: cast_nullable_to_non_nullable
-              as int?,
-      publisher: freezed == publisher
-          ? _value.publisher
-          : publisher // ignore: cast_nullable_to_non_nullable
-              as SnapPublisher?,
-      refreshInhibit: freezed == refreshInhibit
-          ? _value.refreshInhibit
-          : refreshInhibit // ignore: cast_nullable_to_non_nullable
-              as RefreshInhibit?,
-    ) as $Val);
+/// Create a copy of Snap
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? name = null,Object? version = null,Object? channel = null,Object? type = null,Object? revision = null,Object? contact = null,Object? description = null,Object? summary = null,Object? channels = null,Object? apps = null,Object? categories = null,Object? tracks = null,Object? commonIds = null,Object? links = null,Object? media = null,Object? confinement = null,Object? status = null,Object? devmode = null,Object? jailmode = null,Object? private = null,Object? base = freezed,Object? title = freezed,Object? trackingChannel = freezed,Object? website = freezed,Object? license = freezed,Object? mountedFrom = freezed,Object? storeUrl = freezed,Object? hold = freezed,Object? installDate = freezed,Object? downloadSize = freezed,Object? installedSize = freezed,Object? publisher = freezed,Object? refreshInhibit = freezed,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,version: null == version ? _self.version : version // ignore: cast_nullable_to_non_nullable
+as String,channel: null == channel ? _self.channel : channel // ignore: cast_nullable_to_non_nullable
+as String,type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as String,revision: null == revision ? _self.revision : revision // ignore: cast_nullable_to_non_nullable
+as int,contact: null == contact ? _self.contact : contact // ignore: cast_nullable_to_non_nullable
+as String,description: null == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String,summary: null == summary ? _self.summary : summary // ignore: cast_nullable_to_non_nullable
+as String,channels: null == channels ? _self.channels : channels // ignore: cast_nullable_to_non_nullable
+as Map<String, SnapChannel>,apps: null == apps ? _self.apps : apps // ignore: cast_nullable_to_non_nullable
+as List<SnapApp>,categories: null == categories ? _self.categories : categories // ignore: cast_nullable_to_non_nullable
+as List<SnapCategory>,tracks: null == tracks ? _self.tracks : tracks // ignore: cast_nullable_to_non_nullable
+as List<String>,commonIds: null == commonIds ? _self.commonIds : commonIds // ignore: cast_nullable_to_non_nullable
+as List<String>,links: null == links ? _self.links : links // ignore: cast_nullable_to_non_nullable
+as Map<String, List<String>>,media: null == media ? _self.media : media // ignore: cast_nullable_to_non_nullable
+as List<SnapMedia>,confinement: null == confinement ? _self.confinement : confinement // ignore: cast_nullable_to_non_nullable
+as SnapConfinement,status: null == status ? _self.status : status // ignore: cast_nullable_to_non_nullable
+as SnapStatus,devmode: null == devmode ? _self.devmode : devmode // ignore: cast_nullable_to_non_nullable
+as bool,jailmode: null == jailmode ? _self.jailmode : jailmode // ignore: cast_nullable_to_non_nullable
+as bool,private: null == private ? _self.private : private // ignore: cast_nullable_to_non_nullable
+as bool,base: freezed == base ? _self.base : base // ignore: cast_nullable_to_non_nullable
+as String?,title: freezed == title ? _self.title : title // ignore: cast_nullable_to_non_nullable
+as String?,trackingChannel: freezed == trackingChannel ? _self.trackingChannel : trackingChannel // ignore: cast_nullable_to_non_nullable
+as String?,website: freezed == website ? _self.website : website // ignore: cast_nullable_to_non_nullable
+as String?,license: freezed == license ? _self.license : license // ignore: cast_nullable_to_non_nullable
+as String?,mountedFrom: freezed == mountedFrom ? _self.mountedFrom : mountedFrom // ignore: cast_nullable_to_non_nullable
+as String?,storeUrl: freezed == storeUrl ? _self.storeUrl : storeUrl // ignore: cast_nullable_to_non_nullable
+as String?,hold: freezed == hold ? _self.hold : hold // ignore: cast_nullable_to_non_nullable
+as DateTime?,installDate: freezed == installDate ? _self.installDate : installDate // ignore: cast_nullable_to_non_nullable
+as DateTime?,downloadSize: freezed == downloadSize ? _self.downloadSize : downloadSize // ignore: cast_nullable_to_non_nullable
+as int?,installedSize: freezed == installedSize ? _self.installedSize : installedSize // ignore: cast_nullable_to_non_nullable
+as int?,publisher: freezed == publisher ? _self.publisher : publisher // ignore: cast_nullable_to_non_nullable
+as SnapPublisher?,refreshInhibit: freezed == refreshInhibit ? _self.refreshInhibit : refreshInhibit // ignore: cast_nullable_to_non_nullable
+as RefreshInhibit?,
+  ));
+}
+/// Create a copy of Snap
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$SnapPublisherCopyWith<$Res>? get publisher {
+    if (_self.publisher == null) {
+    return null;
   }
 
-  /// Create a copy of Snap
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $SnapPublisherCopyWith<$Res>? get publisher {
-    if (_value.publisher == null) {
-      return null;
-    }
-
-    return $SnapPublisherCopyWith<$Res>(_value.publisher!, (value) {
-      return _then(_value.copyWith(publisher: value) as $Val);
-    });
+  return $SnapPublisherCopyWith<$Res>(_self.publisher!, (value) {
+    return _then(_self.copyWith(publisher: value));
+  });
+}/// Create a copy of Snap
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$RefreshInhibitCopyWith<$Res>? get refreshInhibit {
+    if (_self.refreshInhibit == null) {
+    return null;
   }
 
-  /// Create a copy of Snap
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $RefreshInhibitCopyWith<$Res>? get refreshInhibit {
-    if (_value.refreshInhibit == null) {
-      return null;
-    }
-
-    return $RefreshInhibitCopyWith<$Res>(_value.refreshInhibit!, (value) {
-      return _then(_value.copyWith(refreshInhibit: value) as $Val);
-    });
-  }
+  return $RefreshInhibitCopyWith<$Res>(_self.refreshInhibit!, (value) {
+    return _then(_self.copyWith(refreshInhibit: value));
+  });
+}
 }
 
-/// @nodoc
-abstract class _$$SnapImplCopyWith<$Res> implements $SnapCopyWith<$Res> {
-  factory _$$SnapImplCopyWith(
-          _$SnapImpl value, $Res Function(_$SnapImpl) then) =
-      __$$SnapImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String id,
-      String name,
-      String version,
-      String channel,
-      String type,
-      @JsonKey(fromJson: Snap._parseRevision) int revision,
-      String contact,
-      String description,
-      String summary,
-      Map<String, SnapChannel> channels,
-      List<SnapApp> apps,
-      List<SnapCategory> categories,
-      List<String> tracks,
-      List<String> commonIds,
-      Map<String, List<String>> links,
-      List<SnapMedia> media,
-      @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-      SnapConfinement confinement,
-      SnapStatus status,
-      bool devmode,
-      bool jailmode,
-      bool private,
-      String? base,
-      String? title,
-      String? trackingChannel,
-      String? website,
-      String? license,
-      String? mountedFrom,
-      String? storeUrl,
-      DateTime? hold,
-      DateTime? installDate,
-      int? downloadSize,
-      int? installedSize,
-      SnapPublisher? publisher,
-      RefreshInhibit? refreshInhibit});
 
-  @override
-  $SnapPublisherCopyWith<$Res>? get publisher;
-  @override
-  $RefreshInhibitCopyWith<$Res>? get refreshInhibit;
+/// Adds pattern-matching-related methods to [Snap].
+extension SnapPatterns on Snap {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _Snap value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _Snap() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _Snap value)  $default,){
+final _that = this;
+switch (_that) {
+case _Snap():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _Snap value)?  $default,){
+final _that = this;
+switch (_that) {
+case _Snap() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  String name,  String version,  String channel,  String type, @JsonKey(fromJson: Snap._parseRevision)  int revision,  String contact,  String description,  String summary,  Map<String, SnapChannel> channels,  List<SnapApp> apps,  List<SnapCategory> categories,  List<String> tracks,  List<String> commonIds,  Map<String, List<String>> links,  List<SnapMedia> media, @JsonKey(unknownEnumValue: SnapConfinement.unknown)  SnapConfinement confinement,  SnapStatus status,  bool devmode,  bool jailmode,  bool private,  String? base,  String? title,  String? trackingChannel,  String? website,  String? license,  String? mountedFrom,  String? storeUrl,  DateTime? hold,  DateTime? installDate,  int? downloadSize,  int? installedSize,  SnapPublisher? publisher,  RefreshInhibit? refreshInhibit)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _Snap() when $default != null:
+return $default(_that.id,_that.name,_that.version,_that.channel,_that.type,_that.revision,_that.contact,_that.description,_that.summary,_that.channels,_that.apps,_that.categories,_that.tracks,_that.commonIds,_that.links,_that.media,_that.confinement,_that.status,_that.devmode,_that.jailmode,_that.private,_that.base,_that.title,_that.trackingChannel,_that.website,_that.license,_that.mountedFrom,_that.storeUrl,_that.hold,_that.installDate,_that.downloadSize,_that.installedSize,_that.publisher,_that.refreshInhibit);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String name,  String version,  String channel,  String type, @JsonKey(fromJson: Snap._parseRevision)  int revision,  String contact,  String description,  String summary,  Map<String, SnapChannel> channels,  List<SnapApp> apps,  List<SnapCategory> categories,  List<String> tracks,  List<String> commonIds,  Map<String, List<String>> links,  List<SnapMedia> media, @JsonKey(unknownEnumValue: SnapConfinement.unknown)  SnapConfinement confinement,  SnapStatus status,  bool devmode,  bool jailmode,  bool private,  String? base,  String? title,  String? trackingChannel,  String? website,  String? license,  String? mountedFrom,  String? storeUrl,  DateTime? hold,  DateTime? installDate,  int? downloadSize,  int? installedSize,  SnapPublisher? publisher,  RefreshInhibit? refreshInhibit)  $default,) {final _that = this;
+switch (_that) {
+case _Snap():
+return $default(_that.id,_that.name,_that.version,_that.channel,_that.type,_that.revision,_that.contact,_that.description,_that.summary,_that.channels,_that.apps,_that.categories,_that.tracks,_that.commonIds,_that.links,_that.media,_that.confinement,_that.status,_that.devmode,_that.jailmode,_that.private,_that.base,_that.title,_that.trackingChannel,_that.website,_that.license,_that.mountedFrom,_that.storeUrl,_that.hold,_that.installDate,_that.downloadSize,_that.installedSize,_that.publisher,_that.refreshInhibit);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  String name,  String version,  String channel,  String type, @JsonKey(fromJson: Snap._parseRevision)  int revision,  String contact,  String description,  String summary,  Map<String, SnapChannel> channels,  List<SnapApp> apps,  List<SnapCategory> categories,  List<String> tracks,  List<String> commonIds,  Map<String, List<String>> links,  List<SnapMedia> media, @JsonKey(unknownEnumValue: SnapConfinement.unknown)  SnapConfinement confinement,  SnapStatus status,  bool devmode,  bool jailmode,  bool private,  String? base,  String? title,  String? trackingChannel,  String? website,  String? license,  String? mountedFrom,  String? storeUrl,  DateTime? hold,  DateTime? installDate,  int? downloadSize,  int? installedSize,  SnapPublisher? publisher,  RefreshInhibit? refreshInhibit)?  $default,) {final _that = this;
+switch (_that) {
+case _Snap() when $default != null:
+return $default(_that.id,_that.name,_that.version,_that.channel,_that.type,_that.revision,_that.contact,_that.description,_that.summary,_that.channels,_that.apps,_that.categories,_that.tracks,_that.commonIds,_that.links,_that.media,_that.confinement,_that.status,_that.devmode,_that.jailmode,_that.private,_that.base,_that.title,_that.trackingChannel,_that.website,_that.license,_that.mountedFrom,_that.storeUrl,_that.hold,_that.installDate,_that.downloadSize,_that.installedSize,_that.publisher,_that.refreshInhibit);case _:
+  return null;
+
+}
 }
 
-/// @nodoc
-class __$$SnapImplCopyWithImpl<$Res>
-    extends _$SnapCopyWithImpl<$Res, _$SnapImpl>
-    implements _$$SnapImplCopyWith<$Res> {
-  __$$SnapImplCopyWithImpl(_$SnapImpl _value, $Res Function(_$SnapImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of Snap
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? name = null,
-    Object? version = null,
-    Object? channel = null,
-    Object? type = null,
-    Object? revision = null,
-    Object? contact = null,
-    Object? description = null,
-    Object? summary = null,
-    Object? channels = null,
-    Object? apps = null,
-    Object? categories = null,
-    Object? tracks = null,
-    Object? commonIds = null,
-    Object? links = null,
-    Object? media = null,
-    Object? confinement = null,
-    Object? status = null,
-    Object? devmode = null,
-    Object? jailmode = null,
-    Object? private = null,
-    Object? base = freezed,
-    Object? title = freezed,
-    Object? trackingChannel = freezed,
-    Object? website = freezed,
-    Object? license = freezed,
-    Object? mountedFrom = freezed,
-    Object? storeUrl = freezed,
-    Object? hold = freezed,
-    Object? installDate = freezed,
-    Object? downloadSize = freezed,
-    Object? installedSize = freezed,
-    Object? publisher = freezed,
-    Object? refreshInhibit = freezed,
-  }) {
-    return _then(_$SnapImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      version: null == version
-          ? _value.version
-          : version // ignore: cast_nullable_to_non_nullable
-              as String,
-      channel: null == channel
-          ? _value.channel
-          : channel // ignore: cast_nullable_to_non_nullable
-              as String,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as String,
-      revision: null == revision
-          ? _value.revision
-          : revision // ignore: cast_nullable_to_non_nullable
-              as int,
-      contact: null == contact
-          ? _value.contact
-          : contact // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: null == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      summary: null == summary
-          ? _value.summary
-          : summary // ignore: cast_nullable_to_non_nullable
-              as String,
-      channels: null == channels
-          ? _value._channels
-          : channels // ignore: cast_nullable_to_non_nullable
-              as Map<String, SnapChannel>,
-      apps: null == apps
-          ? _value._apps
-          : apps // ignore: cast_nullable_to_non_nullable
-              as List<SnapApp>,
-      categories: null == categories
-          ? _value._categories
-          : categories // ignore: cast_nullable_to_non_nullable
-              as List<SnapCategory>,
-      tracks: null == tracks
-          ? _value._tracks
-          : tracks // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-      commonIds: null == commonIds
-          ? _value._commonIds
-          : commonIds // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-      links: null == links
-          ? _value._links
-          : links // ignore: cast_nullable_to_non_nullable
-              as Map<String, List<String>>,
-      media: null == media
-          ? _value._media
-          : media // ignore: cast_nullable_to_non_nullable
-              as List<SnapMedia>,
-      confinement: null == confinement
-          ? _value.confinement
-          : confinement // ignore: cast_nullable_to_non_nullable
-              as SnapConfinement,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as SnapStatus,
-      devmode: null == devmode
-          ? _value.devmode
-          : devmode // ignore: cast_nullable_to_non_nullable
-              as bool,
-      jailmode: null == jailmode
-          ? _value.jailmode
-          : jailmode // ignore: cast_nullable_to_non_nullable
-              as bool,
-      private: null == private
-          ? _value.private
-          : private // ignore: cast_nullable_to_non_nullable
-              as bool,
-      base: freezed == base
-          ? _value.base
-          : base // ignore: cast_nullable_to_non_nullable
-              as String?,
-      title: freezed == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String?,
-      trackingChannel: freezed == trackingChannel
-          ? _value.trackingChannel
-          : trackingChannel // ignore: cast_nullable_to_non_nullable
-              as String?,
-      website: freezed == website
-          ? _value.website
-          : website // ignore: cast_nullable_to_non_nullable
-              as String?,
-      license: freezed == license
-          ? _value.license
-          : license // ignore: cast_nullable_to_non_nullable
-              as String?,
-      mountedFrom: freezed == mountedFrom
-          ? _value.mountedFrom
-          : mountedFrom // ignore: cast_nullable_to_non_nullable
-              as String?,
-      storeUrl: freezed == storeUrl
-          ? _value.storeUrl
-          : storeUrl // ignore: cast_nullable_to_non_nullable
-              as String?,
-      hold: freezed == hold
-          ? _value.hold
-          : hold // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      installDate: freezed == installDate
-          ? _value.installDate
-          : installDate // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      downloadSize: freezed == downloadSize
-          ? _value.downloadSize
-          : downloadSize // ignore: cast_nullable_to_non_nullable
-              as int?,
-      installedSize: freezed == installedSize
-          ? _value.installedSize
-          : installedSize // ignore: cast_nullable_to_non_nullable
-              as int?,
-      publisher: freezed == publisher
-          ? _value.publisher
-          : publisher // ignore: cast_nullable_to_non_nullable
-              as SnapPublisher?,
-      refreshInhibit: freezed == refreshInhibit
-          ? _value.refreshInhibit
-          : refreshInhibit // ignore: cast_nullable_to_non_nullable
-              as RefreshInhibit?,
-    ));
-  }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapImpl implements _Snap {
-  const _$SnapImpl(
-      {required this.id,
-      required this.name,
-      required this.version,
-      required this.channel,
-      required this.type,
-      @JsonKey(fromJson: Snap._parseRevision) required this.revision,
-      this.contact = '',
-      this.description = '',
-      this.summary = '',
-      final Map<String, SnapChannel> channels = const {},
-      final List<SnapApp> apps = const [],
-      final List<SnapCategory> categories = const [],
-      final List<String> tracks = const [],
-      final List<String> commonIds = const [],
-      final Map<String, List<String>> links = const {},
-      final List<SnapMedia> media = const [],
-      @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-      this.confinement = SnapConfinement.unknown,
-      this.status = SnapStatus.unknown,
-      this.devmode = false,
-      this.jailmode = false,
-      this.private = false,
-      this.base,
-      this.title,
-      this.trackingChannel,
-      this.website,
-      this.license,
-      this.mountedFrom,
-      this.storeUrl,
-      this.hold,
-      this.installDate,
-      this.downloadSize,
-      this.installedSize,
-      this.publisher,
-      this.refreshInhibit})
-      : _channels = channels,
-        _apps = apps,
-        _categories = categories,
-        _tracks = tracks,
-        _commonIds = commonIds,
-        _links = links,
-        _media = media;
 
-  factory _$SnapImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapImplFromJson(json);
+class _Snap implements Snap {
+  const _Snap({required this.id, required this.name, required this.version, required this.channel, required this.type, @JsonKey(fromJson: Snap._parseRevision) required this.revision, this.contact = '', this.description = '', this.summary = '', final  Map<String, SnapChannel> channels = const {}, final  List<SnapApp> apps = const [], final  List<SnapCategory> categories = const [], final  List<String> tracks = const [], final  List<String> commonIds = const [], final  Map<String, List<String>> links = const {}, final  List<SnapMedia> media = const [], @JsonKey(unknownEnumValue: SnapConfinement.unknown) this.confinement = SnapConfinement.unknown, this.status = SnapStatus.unknown, this.devmode = false, this.jailmode = false, this.private = false, this.base, this.title, this.trackingChannel, this.website, this.license, this.mountedFrom, this.storeUrl, this.hold, this.installDate, this.downloadSize, this.installedSize, this.publisher, this.refreshInhibit}): _channels = channels,_apps = apps,_categories = categories,_tracks = tracks,_commonIds = commonIds,_links = links,_media = media;
+  factory _Snap.fromJson(Map<String, dynamic> json) => _$SnapFromJson(json);
 
-  @override
-  final String id;
-  @override
-  final String name;
-  @override
-  final String version;
-  @override
-  final String channel;
-  @override
-  final String type;
-  @override
-  @JsonKey(fromJson: Snap._parseRevision)
-  final int revision;
-  @override
-  @JsonKey()
-  final String contact;
-  @override
-  @JsonKey()
-  final String description;
-  @override
-  @JsonKey()
-  final String summary;
-  final Map<String, SnapChannel> _channels;
-  @override
-  @JsonKey()
-  Map<String, SnapChannel> get channels {
-    if (_channels is EqualUnmodifiableMapView) return _channels;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_channels);
-  }
-
-  final List<SnapApp> _apps;
-  @override
-  @JsonKey()
-  List<SnapApp> get apps {
-    if (_apps is EqualUnmodifiableListView) return _apps;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_apps);
-  }
-
-  final List<SnapCategory> _categories;
-  @override
-  @JsonKey()
-  List<SnapCategory> get categories {
-    if (_categories is EqualUnmodifiableListView) return _categories;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_categories);
-  }
-
-  final List<String> _tracks;
-  @override
-  @JsonKey()
-  List<String> get tracks {
-    if (_tracks is EqualUnmodifiableListView) return _tracks;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_tracks);
-  }
-
-  final List<String> _commonIds;
-  @override
-  @JsonKey()
-  List<String> get commonIds {
-    if (_commonIds is EqualUnmodifiableListView) return _commonIds;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_commonIds);
-  }
-
-  final Map<String, List<String>> _links;
-  @override
-  @JsonKey()
-  Map<String, List<String>> get links {
-    if (_links is EqualUnmodifiableMapView) return _links;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_links);
-  }
-
-  final List<SnapMedia> _media;
-  @override
-  @JsonKey()
-  List<SnapMedia> get media {
-    if (_media is EqualUnmodifiableListView) return _media;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_media);
-  }
-
-  @override
-  @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-  final SnapConfinement confinement;
-  @override
-  @JsonKey()
-  final SnapStatus status;
-  @override
-  @JsonKey()
-  final bool devmode;
-  @override
-  @JsonKey()
-  final bool jailmode;
-  @override
-  @JsonKey()
-  final bool private;
-  @override
-  final String? base;
-  @override
-  final String? title;
-  @override
-  final String? trackingChannel;
-  @override
-  final String? website;
-  @override
-  final String? license;
-  @override
-  final String? mountedFrom;
-  @override
-  final String? storeUrl;
-  @override
-  final DateTime? hold;
-  @override
-  final DateTime? installDate;
-  @override
-  final int? downloadSize;
-  @override
-  final int? installedSize;
-  @override
-  final SnapPublisher? publisher;
-  @override
-  final RefreshInhibit? refreshInhibit;
-
-  @override
-  String toString() {
-    return 'Snap(id: $id, name: $name, version: $version, channel: $channel, type: $type, revision: $revision, contact: $contact, description: $description, summary: $summary, channels: $channels, apps: $apps, categories: $categories, tracks: $tracks, commonIds: $commonIds, links: $links, media: $media, confinement: $confinement, status: $status, devmode: $devmode, jailmode: $jailmode, private: $private, base: $base, title: $title, trackingChannel: $trackingChannel, website: $website, license: $license, mountedFrom: $mountedFrom, storeUrl: $storeUrl, hold: $hold, installDate: $installDate, downloadSize: $downloadSize, installedSize: $installedSize, publisher: $publisher, refreshInhibit: $refreshInhibit)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.version, version) || other.version == version) &&
-            (identical(other.channel, channel) || other.channel == channel) &&
-            (identical(other.type, type) || other.type == type) &&
-            (identical(other.revision, revision) ||
-                other.revision == revision) &&
-            (identical(other.contact, contact) || other.contact == contact) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            (identical(other.summary, summary) || other.summary == summary) &&
-            const DeepCollectionEquality().equals(other._channels, _channels) &&
-            const DeepCollectionEquality().equals(other._apps, _apps) &&
-            const DeepCollectionEquality()
-                .equals(other._categories, _categories) &&
-            const DeepCollectionEquality().equals(other._tracks, _tracks) &&
-            const DeepCollectionEquality()
-                .equals(other._commonIds, _commonIds) &&
-            const DeepCollectionEquality().equals(other._links, _links) &&
-            const DeepCollectionEquality().equals(other._media, _media) &&
-            (identical(other.confinement, confinement) ||
-                other.confinement == confinement) &&
-            (identical(other.status, status) || other.status == status) &&
-            (identical(other.devmode, devmode) || other.devmode == devmode) &&
-            (identical(other.jailmode, jailmode) ||
-                other.jailmode == jailmode) &&
-            (identical(other.private, private) || other.private == private) &&
-            (identical(other.base, base) || other.base == base) &&
-            (identical(other.title, title) || other.title == title) &&
-            (identical(other.trackingChannel, trackingChannel) ||
-                other.trackingChannel == trackingChannel) &&
-            (identical(other.website, website) || other.website == website) &&
-            (identical(other.license, license) || other.license == license) &&
-            (identical(other.mountedFrom, mountedFrom) ||
-                other.mountedFrom == mountedFrom) &&
-            (identical(other.storeUrl, storeUrl) ||
-                other.storeUrl == storeUrl) &&
-            (identical(other.hold, hold) || other.hold == hold) &&
-            (identical(other.installDate, installDate) ||
-                other.installDate == installDate) &&
-            (identical(other.downloadSize, downloadSize) ||
-                other.downloadSize == downloadSize) &&
-            (identical(other.installedSize, installedSize) ||
-                other.installedSize == installedSize) &&
-            (identical(other.publisher, publisher) ||
-                other.publisher == publisher) &&
-            (identical(other.refreshInhibit, refreshInhibit) ||
-                other.refreshInhibit == refreshInhibit));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hashAll([
-        runtimeType,
-        id,
-        name,
-        version,
-        channel,
-        type,
-        revision,
-        contact,
-        description,
-        summary,
-        const DeepCollectionEquality().hash(_channels),
-        const DeepCollectionEquality().hash(_apps),
-        const DeepCollectionEquality().hash(_categories),
-        const DeepCollectionEquality().hash(_tracks),
-        const DeepCollectionEquality().hash(_commonIds),
-        const DeepCollectionEquality().hash(_links),
-        const DeepCollectionEquality().hash(_media),
-        confinement,
-        status,
-        devmode,
-        jailmode,
-        private,
-        base,
-        title,
-        trackingChannel,
-        website,
-        license,
-        mountedFrom,
-        storeUrl,
-        hold,
-        installDate,
-        downloadSize,
-        installedSize,
-        publisher,
-        refreshInhibit
-      ]);
-
-  /// Create a copy of Snap
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapImplCopyWith<_$SnapImpl> get copyWith =>
-      __$$SnapImplCopyWithImpl<_$SnapImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapImplToJson(
-      this,
-    );
-  }
+@override final  String id;
+@override final  String name;
+@override final  String version;
+@override final  String channel;
+@override final  String type;
+@override@JsonKey(fromJson: Snap._parseRevision) final  int revision;
+@override@JsonKey() final  String contact;
+@override@JsonKey() final  String description;
+@override@JsonKey() final  String summary;
+ final  Map<String, SnapChannel> _channels;
+@override@JsonKey() Map<String, SnapChannel> get channels {
+  if (_channels is EqualUnmodifiableMapView) return _channels;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(_channels);
 }
 
-abstract class _Snap implements Snap {
-  const factory _Snap(
-      {required final String id,
-      required final String name,
-      required final String version,
-      required final String channel,
-      required final String type,
-      @JsonKey(fromJson: Snap._parseRevision) required final int revision,
-      final String contact,
-      final String description,
-      final String summary,
-      final Map<String, SnapChannel> channels,
-      final List<SnapApp> apps,
-      final List<SnapCategory> categories,
-      final List<String> tracks,
-      final List<String> commonIds,
-      final Map<String, List<String>> links,
-      final List<SnapMedia> media,
-      @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-      final SnapConfinement confinement,
-      final SnapStatus status,
-      final bool devmode,
-      final bool jailmode,
-      final bool private,
-      final String? base,
-      final String? title,
-      final String? trackingChannel,
-      final String? website,
-      final String? license,
-      final String? mountedFrom,
-      final String? storeUrl,
-      final DateTime? hold,
-      final DateTime? installDate,
-      final int? downloadSize,
-      final int? installedSize,
-      final SnapPublisher? publisher,
-      final RefreshInhibit? refreshInhibit}) = _$SnapImpl;
+ final  List<SnapApp> _apps;
+@override@JsonKey() List<SnapApp> get apps {
+  if (_apps is EqualUnmodifiableListView) return _apps;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_apps);
+}
 
-  factory _Snap.fromJson(Map<String, dynamic> json) = _$SnapImpl.fromJson;
+ final  List<SnapCategory> _categories;
+@override@JsonKey() List<SnapCategory> get categories {
+  if (_categories is EqualUnmodifiableListView) return _categories;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_categories);
+}
 
-  @override
-  String get id;
-  @override
-  String get name;
-  @override
-  String get version;
-  @override
-  String get channel;
-  @override
-  String get type;
-  @override
-  @JsonKey(fromJson: Snap._parseRevision)
-  int get revision;
-  @override
-  String get contact;
-  @override
-  String get description;
-  @override
-  String get summary;
-  @override
-  Map<String, SnapChannel> get channels;
-  @override
-  List<SnapApp> get apps;
-  @override
-  List<SnapCategory> get categories;
-  @override
-  List<String> get tracks;
-  @override
-  List<String> get commonIds;
-  @override
-  Map<String, List<String>> get links;
-  @override
-  List<SnapMedia> get media;
-  @override
-  @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-  SnapConfinement get confinement;
-  @override
-  SnapStatus get status;
-  @override
-  bool get devmode;
-  @override
-  bool get jailmode;
-  @override
-  bool get private;
-  @override
-  String? get base;
-  @override
-  String? get title;
-  @override
-  String? get trackingChannel;
-  @override
-  String? get website;
-  @override
-  String? get license;
-  @override
-  String? get mountedFrom;
-  @override
-  String? get storeUrl;
-  @override
-  DateTime? get hold;
-  @override
-  DateTime? get installDate;
-  @override
-  int? get downloadSize;
-  @override
-  int? get installedSize;
-  @override
-  SnapPublisher? get publisher;
-  @override
-  RefreshInhibit? get refreshInhibit;
+ final  List<String> _tracks;
+@override@JsonKey() List<String> get tracks {
+  if (_tracks is EqualUnmodifiableListView) return _tracks;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_tracks);
+}
 
-  /// Create a copy of Snap
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapImplCopyWith<_$SnapImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+ final  List<String> _commonIds;
+@override@JsonKey() List<String> get commonIds {
+  if (_commonIds is EqualUnmodifiableListView) return _commonIds;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_commonIds);
+}
+
+ final  Map<String, List<String>> _links;
+@override@JsonKey() Map<String, List<String>> get links {
+  if (_links is EqualUnmodifiableMapView) return _links;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(_links);
+}
+
+ final  List<SnapMedia> _media;
+@override@JsonKey() List<SnapMedia> get media {
+  if (_media is EqualUnmodifiableListView) return _media;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_media);
+}
+
+@override@JsonKey(unknownEnumValue: SnapConfinement.unknown) final  SnapConfinement confinement;
+@override@JsonKey() final  SnapStatus status;
+@override@JsonKey() final  bool devmode;
+@override@JsonKey() final  bool jailmode;
+@override@JsonKey() final  bool private;
+@override final  String? base;
+@override final  String? title;
+@override final  String? trackingChannel;
+@override final  String? website;
+@override final  String? license;
+@override final  String? mountedFrom;
+@override final  String? storeUrl;
+@override final  DateTime? hold;
+@override final  DateTime? installDate;
+@override final  int? downloadSize;
+@override final  int? installedSize;
+@override final  SnapPublisher? publisher;
+@override final  RefreshInhibit? refreshInhibit;
+
+/// Create a copy of Snap
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapCopyWith<_Snap> get copyWith => __$SnapCopyWithImpl<_Snap>(this, _$identity);
+
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapToJson(this, );
+}
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Snap&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.version, version) || other.version == version)&&(identical(other.channel, channel) || other.channel == channel)&&(identical(other.type, type) || other.type == type)&&(identical(other.revision, revision) || other.revision == revision)&&(identical(other.contact, contact) || other.contact == contact)&&(identical(other.description, description) || other.description == description)&&(identical(other.summary, summary) || other.summary == summary)&&const DeepCollectionEquality().equals(other._channels, _channels)&&const DeepCollectionEquality().equals(other._apps, _apps)&&const DeepCollectionEquality().equals(other._categories, _categories)&&const DeepCollectionEquality().equals(other._tracks, _tracks)&&const DeepCollectionEquality().equals(other._commonIds, _commonIds)&&const DeepCollectionEquality().equals(other._links, _links)&&const DeepCollectionEquality().equals(other._media, _media)&&(identical(other.confinement, confinement) || other.confinement == confinement)&&(identical(other.status, status) || other.status == status)&&(identical(other.devmode, devmode) || other.devmode == devmode)&&(identical(other.jailmode, jailmode) || other.jailmode == jailmode)&&(identical(other.private, private) || other.private == private)&&(identical(other.base, base) || other.base == base)&&(identical(other.title, title) || other.title == title)&&(identical(other.trackingChannel, trackingChannel) || other.trackingChannel == trackingChannel)&&(identical(other.website, website) || other.website == website)&&(identical(other.license, license) || other.license == license)&&(identical(other.mountedFrom, mountedFrom) || other.mountedFrom == mountedFrom)&&(identical(other.storeUrl, storeUrl) || other.storeUrl == storeUrl)&&(identical(other.hold, hold) || other.hold == hold)&&(identical(other.installDate, installDate) || other.installDate == installDate)&&(identical(other.downloadSize, downloadSize) || other.downloadSize == downloadSize)&&(identical(other.installedSize, installedSize) || other.installedSize == installedSize)&&(identical(other.publisher, publisher) || other.publisher == publisher)&&(identical(other.refreshInhibit, refreshInhibit) || other.refreshInhibit == refreshInhibit));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hashAll([runtimeType,id,name,version,channel,type,revision,contact,description,summary,const DeepCollectionEquality().hash(_channels),const DeepCollectionEquality().hash(_apps),const DeepCollectionEquality().hash(_categories),const DeepCollectionEquality().hash(_tracks),const DeepCollectionEquality().hash(_commonIds),const DeepCollectionEquality().hash(_links),const DeepCollectionEquality().hash(_media),confinement,status,devmode,jailmode,private,base,title,trackingChannel,website,license,mountedFrom,storeUrl,hold,installDate,downloadSize,installedSize,publisher,refreshInhibit]);
+
+@override
+String toString() {
+  return 'Snap(id: $id, name: $name, version: $version, channel: $channel, type: $type, revision: $revision, contact: $contact, description: $description, summary: $summary, channels: $channels, apps: $apps, categories: $categories, tracks: $tracks, commonIds: $commonIds, links: $links, media: $media, confinement: $confinement, status: $status, devmode: $devmode, jailmode: $jailmode, private: $private, base: $base, title: $title, trackingChannel: $trackingChannel, website: $website, license: $license, mountedFrom: $mountedFrom, storeUrl: $storeUrl, hold: $hold, installDate: $installDate, downloadSize: $downloadSize, installedSize: $installedSize, publisher: $publisher, refreshInhibit: $refreshInhibit)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapCopyWith<$Res> implements $SnapCopyWith<$Res> {
+  factory _$SnapCopyWith(_Snap value, $Res Function(_Snap) _then) = __$SnapCopyWithImpl;
+@override @useResult
+$Res call({
+ String id, String name, String version, String channel, String type,@JsonKey(fromJson: Snap._parseRevision) int revision, String contact, String description, String summary, Map<String, SnapChannel> channels, List<SnapApp> apps, List<SnapCategory> categories, List<String> tracks, List<String> commonIds, Map<String, List<String>> links, List<SnapMedia> media,@JsonKey(unknownEnumValue: SnapConfinement.unknown) SnapConfinement confinement, SnapStatus status, bool devmode, bool jailmode, bool private, String? base, String? title, String? trackingChannel, String? website, String? license, String? mountedFrom, String? storeUrl, DateTime? hold, DateTime? installDate, int? downloadSize, int? installedSize, SnapPublisher? publisher, RefreshInhibit? refreshInhibit
+});
+
+
+@override $SnapPublisherCopyWith<$Res>? get publisher;@override $RefreshInhibitCopyWith<$Res>? get refreshInhibit;
+
+}
+/// @nodoc
+class __$SnapCopyWithImpl<$Res>
+    implements _$SnapCopyWith<$Res> {
+  __$SnapCopyWithImpl(this._self, this._then);
+
+  final _Snap _self;
+  final $Res Function(_Snap) _then;
+
+/// Create a copy of Snap
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? name = null,Object? version = null,Object? channel = null,Object? type = null,Object? revision = null,Object? contact = null,Object? description = null,Object? summary = null,Object? channels = null,Object? apps = null,Object? categories = null,Object? tracks = null,Object? commonIds = null,Object? links = null,Object? media = null,Object? confinement = null,Object? status = null,Object? devmode = null,Object? jailmode = null,Object? private = null,Object? base = freezed,Object? title = freezed,Object? trackingChannel = freezed,Object? website = freezed,Object? license = freezed,Object? mountedFrom = freezed,Object? storeUrl = freezed,Object? hold = freezed,Object? installDate = freezed,Object? downloadSize = freezed,Object? installedSize = freezed,Object? publisher = freezed,Object? refreshInhibit = freezed,}) {
+  return _then(_Snap(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,version: null == version ? _self.version : version // ignore: cast_nullable_to_non_nullable
+as String,channel: null == channel ? _self.channel : channel // ignore: cast_nullable_to_non_nullable
+as String,type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as String,revision: null == revision ? _self.revision : revision // ignore: cast_nullable_to_non_nullable
+as int,contact: null == contact ? _self.contact : contact // ignore: cast_nullable_to_non_nullable
+as String,description: null == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String,summary: null == summary ? _self.summary : summary // ignore: cast_nullable_to_non_nullable
+as String,channels: null == channels ? _self._channels : channels // ignore: cast_nullable_to_non_nullable
+as Map<String, SnapChannel>,apps: null == apps ? _self._apps : apps // ignore: cast_nullable_to_non_nullable
+as List<SnapApp>,categories: null == categories ? _self._categories : categories // ignore: cast_nullable_to_non_nullable
+as List<SnapCategory>,tracks: null == tracks ? _self._tracks : tracks // ignore: cast_nullable_to_non_nullable
+as List<String>,commonIds: null == commonIds ? _self._commonIds : commonIds // ignore: cast_nullable_to_non_nullable
+as List<String>,links: null == links ? _self._links : links // ignore: cast_nullable_to_non_nullable
+as Map<String, List<String>>,media: null == media ? _self._media : media // ignore: cast_nullable_to_non_nullable
+as List<SnapMedia>,confinement: null == confinement ? _self.confinement : confinement // ignore: cast_nullable_to_non_nullable
+as SnapConfinement,status: null == status ? _self.status : status // ignore: cast_nullable_to_non_nullable
+as SnapStatus,devmode: null == devmode ? _self.devmode : devmode // ignore: cast_nullable_to_non_nullable
+as bool,jailmode: null == jailmode ? _self.jailmode : jailmode // ignore: cast_nullable_to_non_nullable
+as bool,private: null == private ? _self.private : private // ignore: cast_nullable_to_non_nullable
+as bool,base: freezed == base ? _self.base : base // ignore: cast_nullable_to_non_nullable
+as String?,title: freezed == title ? _self.title : title // ignore: cast_nullable_to_non_nullable
+as String?,trackingChannel: freezed == trackingChannel ? _self.trackingChannel : trackingChannel // ignore: cast_nullable_to_non_nullable
+as String?,website: freezed == website ? _self.website : website // ignore: cast_nullable_to_non_nullable
+as String?,license: freezed == license ? _self.license : license // ignore: cast_nullable_to_non_nullable
+as String?,mountedFrom: freezed == mountedFrom ? _self.mountedFrom : mountedFrom // ignore: cast_nullable_to_non_nullable
+as String?,storeUrl: freezed == storeUrl ? _self.storeUrl : storeUrl // ignore: cast_nullable_to_non_nullable
+as String?,hold: freezed == hold ? _self.hold : hold // ignore: cast_nullable_to_non_nullable
+as DateTime?,installDate: freezed == installDate ? _self.installDate : installDate // ignore: cast_nullable_to_non_nullable
+as DateTime?,downloadSize: freezed == downloadSize ? _self.downloadSize : downloadSize // ignore: cast_nullable_to_non_nullable
+as int?,installedSize: freezed == installedSize ? _self.installedSize : installedSize // ignore: cast_nullable_to_non_nullable
+as int?,publisher: freezed == publisher ? _self.publisher : publisher // ignore: cast_nullable_to_non_nullable
+as SnapPublisher?,refreshInhibit: freezed == refreshInhibit ? _self.refreshInhibit : refreshInhibit // ignore: cast_nullable_to_non_nullable
+as RefreshInhibit?,
+  ));
+}
+
+/// Create a copy of Snap
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$SnapPublisherCopyWith<$Res>? get publisher {
+    if (_self.publisher == null) {
+    return null;
+  }
+
+  return $SnapPublisherCopyWith<$Res>(_self.publisher!, (value) {
+    return _then(_self.copyWith(publisher: value));
+  });
+}/// Create a copy of Snap
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$RefreshInhibitCopyWith<$Res>? get refreshInhibit {
+    if (_self.refreshInhibit == null) {
+    return null;
+  }
+
+  return $RefreshInhibitCopyWith<$Res>(_self.refreshInhibit!, (value) {
+    return _then(_self.copyWith(refreshInhibit: value));
+  });
+}
 }
 
 /// @nodoc
 mixin _$SnapIcon {
-  String get contentType => throw _privateConstructorUsedError;
-  Uint8List get bytes => throw _privateConstructorUsedError;
 
-  /// Create a copy of SnapIcon
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapIconCopyWith<SnapIcon> get copyWith =>
-      throw _privateConstructorUsedError;
+ String get contentType; Uint8List get bytes;
+/// Create a copy of SnapIcon
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapIconCopyWith<SnapIcon> get copyWith => _$SnapIconCopyWithImpl<SnapIcon>(this as SnapIcon, _$identity);
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapIcon&&(identical(other.contentType, contentType) || other.contentType == contentType)&&const DeepCollectionEquality().equals(other.bytes, bytes));
+}
+
+
+@override
+int get hashCode => Object.hash(runtimeType,contentType,const DeepCollectionEquality().hash(bytes));
+
+@override
+String toString() {
+  return 'SnapIcon(contentType: $contentType, bytes: $bytes)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapIconCopyWith<$Res> {
-  factory $SnapIconCopyWith(SnapIcon value, $Res Function(SnapIcon) then) =
-      _$SnapIconCopyWithImpl<$Res, SnapIcon>;
-  @useResult
-  $Res call({String contentType, Uint8List bytes});
-}
+abstract mixin class $SnapIconCopyWith<$Res>  {
+  factory $SnapIconCopyWith(SnapIcon value, $Res Function(SnapIcon) _then) = _$SnapIconCopyWithImpl;
+@useResult
+$Res call({
+ String contentType, Uint8List bytes
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapIconCopyWithImpl<$Res, $Val extends SnapIcon>
+class _$SnapIconCopyWithImpl<$Res>
     implements $SnapIconCopyWith<$Res> {
-  _$SnapIconCopyWithImpl(this._value, this._then);
+  _$SnapIconCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapIcon _self;
+  final $Res Function(SnapIcon) _then;
 
-  /// Create a copy of SnapIcon
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? contentType = null,
-    Object? bytes = null,
-  }) {
-    return _then(_value.copyWith(
-      contentType: null == contentType
-          ? _value.contentType
-          : contentType // ignore: cast_nullable_to_non_nullable
-              as String,
-      bytes: null == bytes
-          ? _value.bytes
-          : bytes // ignore: cast_nullable_to_non_nullable
-              as Uint8List,
-    ) as $Val);
-  }
+/// Create a copy of SnapIcon
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? contentType = null,Object? bytes = null,}) {
+  return _then(_self.copyWith(
+contentType: null == contentType ? _self.contentType : contentType // ignore: cast_nullable_to_non_nullable
+as String,bytes: null == bytes ? _self.bytes : bytes // ignore: cast_nullable_to_non_nullable
+as Uint8List,
+  ));
+}
+
+}
+
+
+/// Adds pattern-matching-related methods to [SnapIcon].
+extension SnapIconPatterns on SnapIcon {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapIcon value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapIcon() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapIcon value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapIcon():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapIcon value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapIcon() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String contentType,  Uint8List bytes)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapIcon() when $default != null:
+return $default(_that.contentType,_that.bytes);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String contentType,  Uint8List bytes)  $default,) {final _that = this;
+switch (_that) {
+case _SnapIcon():
+return $default(_that.contentType,_that.bytes);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String contentType,  Uint8List bytes)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapIcon() when $default != null:
+return $default(_that.contentType,_that.bytes);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
-abstract class _$$SnapIconImplCopyWith<$Res>
-    implements $SnapIconCopyWith<$Res> {
-  factory _$$SnapIconImplCopyWith(
-          _$SnapIconImpl value, $Res Function(_$SnapIconImpl) then) =
-      __$$SnapIconImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String contentType, Uint8List bytes});
+
+
+class _SnapIcon implements SnapIcon {
+  const _SnapIcon({required this.contentType, required this.bytes});
+  
+
+@override final  String contentType;
+@override final  Uint8List bytes;
+
+/// Create a copy of SnapIcon
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapIconCopyWith<_SnapIcon> get copyWith => __$SnapIconCopyWithImpl<_SnapIcon>(this, _$identity);
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapIcon&&(identical(other.contentType, contentType) || other.contentType == contentType)&&const DeepCollectionEquality().equals(other.bytes, bytes));
+}
+
+
+@override
+int get hashCode => Object.hash(runtimeType,contentType,const DeepCollectionEquality().hash(bytes));
+
+@override
+String toString() {
+  return 'SnapIcon(contentType: $contentType, bytes: $bytes)';
+}
+
+
 }
 
 /// @nodoc
-class __$$SnapIconImplCopyWithImpl<$Res>
-    extends _$SnapIconCopyWithImpl<$Res, _$SnapIconImpl>
-    implements _$$SnapIconImplCopyWith<$Res> {
-  __$$SnapIconImplCopyWithImpl(
-      _$SnapIconImpl _value, $Res Function(_$SnapIconImpl) _then)
-      : super(_value, _then);
+abstract mixin class _$SnapIconCopyWith<$Res> implements $SnapIconCopyWith<$Res> {
+  factory _$SnapIconCopyWith(_SnapIcon value, $Res Function(_SnapIcon) _then) = __$SnapIconCopyWithImpl;
+@override @useResult
+$Res call({
+ String contentType, Uint8List bytes
+});
 
-  /// Create a copy of SnapIcon
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? contentType = null,
-    Object? bytes = null,
-  }) {
-    return _then(_$SnapIconImpl(
-      contentType: null == contentType
-          ? _value.contentType
-          : contentType // ignore: cast_nullable_to_non_nullable
-              as String,
-      bytes: null == bytes
-          ? _value.bytes
-          : bytes // ignore: cast_nullable_to_non_nullable
-              as Uint8List,
-    ));
-  }
+
+
+
 }
-
 /// @nodoc
+class __$SnapIconCopyWithImpl<$Res>
+    implements _$SnapIconCopyWith<$Res> {
+  __$SnapIconCopyWithImpl(this._self, this._then);
 
-class _$SnapIconImpl implements _SnapIcon {
-  const _$SnapIconImpl({required this.contentType, required this.bytes});
+  final _SnapIcon _self;
+  final $Res Function(_SnapIcon) _then;
 
-  @override
-  final String contentType;
-  @override
-  final Uint8List bytes;
-
-  @override
-  String toString() {
-    return 'SnapIcon(contentType: $contentType, bytes: $bytes)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapIconImpl &&
-            (identical(other.contentType, contentType) ||
-                other.contentType == contentType) &&
-            const DeepCollectionEquality().equals(other.bytes, bytes));
-  }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType, contentType, const DeepCollectionEquality().hash(bytes));
-
-  /// Create a copy of SnapIcon
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapIconImplCopyWith<_$SnapIconImpl> get copyWith =>
-      __$$SnapIconImplCopyWithImpl<_$SnapIconImpl>(this, _$identity);
+/// Create a copy of SnapIcon
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? contentType = null,Object? bytes = null,}) {
+  return _then(_SnapIcon(
+contentType: null == contentType ? _self.contentType : contentType // ignore: cast_nullable_to_non_nullable
+as String,bytes: null == bytes ? _self.bytes : bytes // ignore: cast_nullable_to_non_nullable
+as Uint8List,
+  ));
 }
 
-abstract class _SnapIcon implements SnapIcon {
-  const factory _SnapIcon(
-      {required final String contentType,
-      required final Uint8List bytes}) = _$SnapIconImpl;
 
-  @override
-  String get contentType;
-  @override
-  Uint8List get bytes;
-
-  /// Create a copy of SnapIcon
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapIconImplCopyWith<_$SnapIconImpl> get copyWith =>
-      throw _privateConstructorUsedError;
 }
 
-SnapDeclaration _$SnapDeclarationFromJson(Map<String, dynamic> json) {
-  return _SnapDeclaration.fromJson(json);
-}
 
 /// @nodoc
 mixin _$SnapDeclaration {
-  String get snapId => throw _privateConstructorUsedError;
-  String? get type => throw _privateConstructorUsedError;
-  String? get authorityId => throw _privateConstructorUsedError;
-  int get revision => throw _privateConstructorUsedError;
-  int get series => throw _privateConstructorUsedError;
-  String? get publisherId => throw _privateConstructorUsedError;
-  String? get snapName => throw _privateConstructorUsedError;
-  String? get timestamp => throw _privateConstructorUsedError;
-  String? get signKey => throw _privateConstructorUsedError;
+
+ String get snapId; String? get type; String? get authorityId; int get revision; int get series; String? get publisherId; String? get snapName; String? get timestamp; String? get signKey;
+/// Create a copy of SnapDeclaration
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapDeclarationCopyWith<SnapDeclaration> get copyWith => _$SnapDeclarationCopyWithImpl<SnapDeclaration>(this as SnapDeclaration, _$identity);
 
   /// Serializes this SnapDeclaration to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapDeclaration
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapDeclarationCopyWith<SnapDeclaration> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapDeclaration&&(identical(other.snapId, snapId) || other.snapId == snapId)&&(identical(other.type, type) || other.type == type)&&(identical(other.authorityId, authorityId) || other.authorityId == authorityId)&&(identical(other.revision, revision) || other.revision == revision)&&(identical(other.series, series) || other.series == series)&&(identical(other.publisherId, publisherId) || other.publisherId == publisherId)&&(identical(other.snapName, snapName) || other.snapName == snapName)&&(identical(other.timestamp, timestamp) || other.timestamp == timestamp)&&(identical(other.signKey, signKey) || other.signKey == signKey));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,snapId,type,authorityId,revision,series,publisherId,snapName,timestamp,signKey);
+
+@override
+String toString() {
+  return 'SnapDeclaration(snapId: $snapId, type: $type, authorityId: $authorityId, revision: $revision, series: $series, publisherId: $publisherId, snapName: $snapName, timestamp: $timestamp, signKey: $signKey)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapDeclarationCopyWith<$Res> {
-  factory $SnapDeclarationCopyWith(
-          SnapDeclaration value, $Res Function(SnapDeclaration) then) =
-      _$SnapDeclarationCopyWithImpl<$Res, SnapDeclaration>;
-  @useResult
-  $Res call(
-      {String snapId,
-      String? type,
-      String? authorityId,
-      int revision,
-      int series,
-      String? publisherId,
-      String? snapName,
-      String? timestamp,
-      String? signKey});
-}
+abstract mixin class $SnapDeclarationCopyWith<$Res>  {
+  factory $SnapDeclarationCopyWith(SnapDeclaration value, $Res Function(SnapDeclaration) _then) = _$SnapDeclarationCopyWithImpl;
+@useResult
+$Res call({
+ String snapId, String? type, String? authorityId, int revision, int series, String? publisherId, String? snapName, String? timestamp, String? signKey
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapDeclarationCopyWithImpl<$Res, $Val extends SnapDeclaration>
+class _$SnapDeclarationCopyWithImpl<$Res>
     implements $SnapDeclarationCopyWith<$Res> {
-  _$SnapDeclarationCopyWithImpl(this._value, this._then);
+  _$SnapDeclarationCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapDeclaration _self;
+  final $Res Function(SnapDeclaration) _then;
 
-  /// Create a copy of SnapDeclaration
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? snapId = null,
-    Object? type = freezed,
-    Object? authorityId = freezed,
-    Object? revision = null,
-    Object? series = null,
-    Object? publisherId = freezed,
-    Object? snapName = freezed,
-    Object? timestamp = freezed,
-    Object? signKey = freezed,
-  }) {
-    return _then(_value.copyWith(
-      snapId: null == snapId
-          ? _value.snapId
-          : snapId // ignore: cast_nullable_to_non_nullable
-              as String,
-      type: freezed == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as String?,
-      authorityId: freezed == authorityId
-          ? _value.authorityId
-          : authorityId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      revision: null == revision
-          ? _value.revision
-          : revision // ignore: cast_nullable_to_non_nullable
-              as int,
-      series: null == series
-          ? _value.series
-          : series // ignore: cast_nullable_to_non_nullable
-              as int,
-      publisherId: freezed == publisherId
-          ? _value.publisherId
-          : publisherId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      snapName: freezed == snapName
-          ? _value.snapName
-          : snapName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      timestamp: freezed == timestamp
-          ? _value.timestamp
-          : timestamp // ignore: cast_nullable_to_non_nullable
-              as String?,
-      signKey: freezed == signKey
-          ? _value.signKey
-          : signKey // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
-  }
+/// Create a copy of SnapDeclaration
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? snapId = null,Object? type = freezed,Object? authorityId = freezed,Object? revision = null,Object? series = null,Object? publisherId = freezed,Object? snapName = freezed,Object? timestamp = freezed,Object? signKey = freezed,}) {
+  return _then(_self.copyWith(
+snapId: null == snapId ? _self.snapId : snapId // ignore: cast_nullable_to_non_nullable
+as String,type: freezed == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as String?,authorityId: freezed == authorityId ? _self.authorityId : authorityId // ignore: cast_nullable_to_non_nullable
+as String?,revision: null == revision ? _self.revision : revision // ignore: cast_nullable_to_non_nullable
+as int,series: null == series ? _self.series : series // ignore: cast_nullable_to_non_nullable
+as int,publisherId: freezed == publisherId ? _self.publisherId : publisherId // ignore: cast_nullable_to_non_nullable
+as String?,snapName: freezed == snapName ? _self.snapName : snapName // ignore: cast_nullable_to_non_nullable
+as String?,timestamp: freezed == timestamp ? _self.timestamp : timestamp // ignore: cast_nullable_to_non_nullable
+as String?,signKey: freezed == signKey ? _self.signKey : signKey // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapDeclarationImplCopyWith<$Res>
-    implements $SnapDeclarationCopyWith<$Res> {
-  factory _$$SnapDeclarationImplCopyWith(_$SnapDeclarationImpl value,
-          $Res Function(_$SnapDeclarationImpl) then) =
-      __$$SnapDeclarationImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String snapId,
-      String? type,
-      String? authorityId,
-      int revision,
-      int series,
-      String? publisherId,
-      String? snapName,
-      String? timestamp,
-      String? signKey});
 }
 
-/// @nodoc
-class __$$SnapDeclarationImplCopyWithImpl<$Res>
-    extends _$SnapDeclarationCopyWithImpl<$Res, _$SnapDeclarationImpl>
-    implements _$$SnapDeclarationImplCopyWith<$Res> {
-  __$$SnapDeclarationImplCopyWithImpl(
-      _$SnapDeclarationImpl _value, $Res Function(_$SnapDeclarationImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapDeclaration
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? snapId = null,
-    Object? type = freezed,
-    Object? authorityId = freezed,
-    Object? revision = null,
-    Object? series = null,
-    Object? publisherId = freezed,
-    Object? snapName = freezed,
-    Object? timestamp = freezed,
-    Object? signKey = freezed,
-  }) {
-    return _then(_$SnapDeclarationImpl(
-      snapId: null == snapId
-          ? _value.snapId
-          : snapId // ignore: cast_nullable_to_non_nullable
-              as String,
-      type: freezed == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as String?,
-      authorityId: freezed == authorityId
-          ? _value.authorityId
-          : authorityId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      revision: null == revision
-          ? _value.revision
-          : revision // ignore: cast_nullable_to_non_nullable
-              as int,
-      series: null == series
-          ? _value.series
-          : series // ignore: cast_nullable_to_non_nullable
-              as int,
-      publisherId: freezed == publisherId
-          ? _value.publisherId
-          : publisherId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      snapName: freezed == snapName
-          ? _value.snapName
-          : snapName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      timestamp: freezed == timestamp
-          ? _value.timestamp
-          : timestamp // ignore: cast_nullable_to_non_nullable
-              as String?,
-      signKey: freezed == signKey
-          ? _value.signKey
-          : signKey // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapDeclaration].
+extension SnapDeclarationPatterns on SnapDeclaration {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapDeclaration value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapDeclaration() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapDeclaration value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapDeclaration():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapDeclaration value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapDeclaration() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String snapId,  String? type,  String? authorityId,  int revision,  int series,  String? publisherId,  String? snapName,  String? timestamp,  String? signKey)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapDeclaration() when $default != null:
+return $default(_that.snapId,_that.type,_that.authorityId,_that.revision,_that.series,_that.publisherId,_that.snapName,_that.timestamp,_that.signKey);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String snapId,  String? type,  String? authorityId,  int revision,  int series,  String? publisherId,  String? snapName,  String? timestamp,  String? signKey)  $default,) {final _that = this;
+switch (_that) {
+case _SnapDeclaration():
+return $default(_that.snapId,_that.type,_that.authorityId,_that.revision,_that.series,_that.publisherId,_that.snapName,_that.timestamp,_that.signKey);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String snapId,  String? type,  String? authorityId,  int revision,  int series,  String? publisherId,  String? snapName,  String? timestamp,  String? signKey)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapDeclaration() when $default != null:
+return $default(_that.snapId,_that.type,_that.authorityId,_that.revision,_that.series,_that.publisherId,_that.snapName,_that.timestamp,_that.signKey);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapDeclarationImpl implements _SnapDeclaration {
-  const _$SnapDeclarationImpl(
-      {required this.snapId,
-      this.type,
-      this.authorityId,
-      this.revision = 0,
-      this.series = 0,
-      this.publisherId,
-      this.snapName,
-      this.timestamp,
-      this.signKey});
 
-  factory _$SnapDeclarationImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapDeclarationImplFromJson(json);
+class _SnapDeclaration implements SnapDeclaration {
+  const _SnapDeclaration({required this.snapId, this.type, this.authorityId, this.revision = 0, this.series = 0, this.publisherId, this.snapName, this.timestamp, this.signKey});
+  factory _SnapDeclaration.fromJson(Map<String, dynamic> json) => _$SnapDeclarationFromJson(json);
 
-  @override
-  final String snapId;
-  @override
-  final String? type;
-  @override
-  final String? authorityId;
-  @override
-  @JsonKey()
-  final int revision;
-  @override
-  @JsonKey()
-  final int series;
-  @override
-  final String? publisherId;
-  @override
-  final String? snapName;
-  @override
-  final String? timestamp;
-  @override
-  final String? signKey;
+@override final  String snapId;
+@override final  String? type;
+@override final  String? authorityId;
+@override@JsonKey() final  int revision;
+@override@JsonKey() final  int series;
+@override final  String? publisherId;
+@override final  String? snapName;
+@override final  String? timestamp;
+@override final  String? signKey;
 
-  @override
-  String toString() {
-    return 'SnapDeclaration(snapId: $snapId, type: $type, authorityId: $authorityId, revision: $revision, series: $series, publisherId: $publisherId, snapName: $snapName, timestamp: $timestamp, signKey: $signKey)';
-  }
+/// Create a copy of SnapDeclaration
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapDeclarationCopyWith<_SnapDeclaration> get copyWith => __$SnapDeclarationCopyWithImpl<_SnapDeclaration>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapDeclarationImpl &&
-            (identical(other.snapId, snapId) || other.snapId == snapId) &&
-            (identical(other.type, type) || other.type == type) &&
-            (identical(other.authorityId, authorityId) ||
-                other.authorityId == authorityId) &&
-            (identical(other.revision, revision) ||
-                other.revision == revision) &&
-            (identical(other.series, series) || other.series == series) &&
-            (identical(other.publisherId, publisherId) ||
-                other.publisherId == publisherId) &&
-            (identical(other.snapName, snapName) ||
-                other.snapName == snapName) &&
-            (identical(other.timestamp, timestamp) ||
-                other.timestamp == timestamp) &&
-            (identical(other.signKey, signKey) || other.signKey == signKey));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, snapId, type, authorityId,
-      revision, series, publisherId, snapName, timestamp, signKey);
-
-  /// Create a copy of SnapDeclaration
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapDeclarationImplCopyWith<_$SnapDeclarationImpl> get copyWith =>
-      __$$SnapDeclarationImplCopyWithImpl<_$SnapDeclarationImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapDeclarationImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapDeclarationToJson(this, );
 }
 
-abstract class _SnapDeclaration implements SnapDeclaration {
-  const factory _SnapDeclaration(
-      {required final String snapId,
-      final String? type,
-      final String? authorityId,
-      final int revision,
-      final int series,
-      final String? publisherId,
-      final String? snapName,
-      final String? timestamp,
-      final String? signKey}) = _$SnapDeclarationImpl;
-
-  factory _SnapDeclaration.fromJson(Map<String, dynamic> json) =
-      _$SnapDeclarationImpl.fromJson;
-
-  @override
-  String get snapId;
-  @override
-  String? get type;
-  @override
-  String? get authorityId;
-  @override
-  int get revision;
-  @override
-  int get series;
-  @override
-  String? get publisherId;
-  @override
-  String? get snapName;
-  @override
-  String? get timestamp;
-  @override
-  String? get signKey;
-
-  /// Create a copy of SnapDeclaration
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapDeclarationImplCopyWith<_$SnapDeclarationImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapDeclaration&&(identical(other.snapId, snapId) || other.snapId == snapId)&&(identical(other.type, type) || other.type == type)&&(identical(other.authorityId, authorityId) || other.authorityId == authorityId)&&(identical(other.revision, revision) || other.revision == revision)&&(identical(other.series, series) || other.series == series)&&(identical(other.publisherId, publisherId) || other.publisherId == publisherId)&&(identical(other.snapName, snapName) || other.snapName == snapName)&&(identical(other.timestamp, timestamp) || other.timestamp == timestamp)&&(identical(other.signKey, signKey) || other.signKey == signKey));
 }
 
-SnapdSystemInfoResponse _$SnapdSystemInfoResponseFromJson(
-    Map<String, dynamic> json) {
-  return _SnapdSystemInfoResponse.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,snapId,type,authorityId,revision,series,publisherId,snapName,timestamp,signKey);
+
+@override
+String toString() {
+  return 'SnapDeclaration(snapId: $snapId, type: $type, authorityId: $authorityId, revision: $revision, series: $series, publisherId: $publisherId, snapName: $snapName, timestamp: $timestamp, signKey: $signKey)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapDeclarationCopyWith<$Res> implements $SnapDeclarationCopyWith<$Res> {
+  factory _$SnapDeclarationCopyWith(_SnapDeclaration value, $Res Function(_SnapDeclaration) _then) = __$SnapDeclarationCopyWithImpl;
+@override @useResult
+$Res call({
+ String snapId, String? type, String? authorityId, int revision, int series, String? publisherId, String? snapName, String? timestamp, String? signKey
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapDeclarationCopyWithImpl<$Res>
+    implements _$SnapDeclarationCopyWith<$Res> {
+  __$SnapDeclarationCopyWithImpl(this._self, this._then);
+
+  final _SnapDeclaration _self;
+  final $Res Function(_SnapDeclaration) _then;
+
+/// Create a copy of SnapDeclaration
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? snapId = null,Object? type = freezed,Object? authorityId = freezed,Object? revision = null,Object? series = null,Object? publisherId = freezed,Object? snapName = freezed,Object? timestamp = freezed,Object? signKey = freezed,}) {
+  return _then(_SnapDeclaration(
+snapId: null == snapId ? _self.snapId : snapId // ignore: cast_nullable_to_non_nullable
+as String,type: freezed == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as String?,authorityId: freezed == authorityId ? _self.authorityId : authorityId // ignore: cast_nullable_to_non_nullable
+as String?,revision: null == revision ? _self.revision : revision // ignore: cast_nullable_to_non_nullable
+as int,series: null == series ? _self.series : series // ignore: cast_nullable_to_non_nullable
+as int,publisherId: freezed == publisherId ? _self.publisherId : publisherId // ignore: cast_nullable_to_non_nullable
+as String?,snapName: freezed == snapName ? _self.snapName : snapName // ignore: cast_nullable_to_non_nullable
+as String?,timestamp: freezed == timestamp ? _self.timestamp : timestamp // ignore: cast_nullable_to_non_nullable
+as String?,signKey: freezed == signKey ? _self.signKey : signKey // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapdSystemInfoResponse {
-  SnapdSystemRefreshInfo get refresh => throw _privateConstructorUsedError;
-  String? get architecture => throw _privateConstructorUsedError;
-  String? get buildId => throw _privateConstructorUsedError;
-  @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-  SnapConfinement get confinement => throw _privateConstructorUsedError;
-  Map<String, dynamic>? get features => throw _privateConstructorUsedError;
-  String? get kernelVersion => throw _privateConstructorUsedError;
-  bool get managed => throw _privateConstructorUsedError;
-  bool get onClassic => throw _privateConstructorUsedError;
-  String? get series => throw _privateConstructorUsedError;
-  String? get systemMode => throw _privateConstructorUsedError;
-  String? get version => throw _privateConstructorUsedError;
+
+ SnapdSystemRefreshInfo get refresh; String? get architecture; String? get buildId;@JsonKey(unknownEnumValue: SnapConfinement.unknown) SnapConfinement get confinement; Map<String, dynamic>? get features; String? get kernelVersion; bool get managed; bool get onClassic; String? get series; String? get systemMode; String? get version;
+/// Create a copy of SnapdSystemInfoResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapdSystemInfoResponseCopyWith<SnapdSystemInfoResponse> get copyWith => _$SnapdSystemInfoResponseCopyWithImpl<SnapdSystemInfoResponse>(this as SnapdSystemInfoResponse, _$identity);
 
   /// Serializes this SnapdSystemInfoResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapdSystemInfoResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapdSystemInfoResponseCopyWith<SnapdSystemInfoResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapdSystemInfoResponse&&(identical(other.refresh, refresh) || other.refresh == refresh)&&(identical(other.architecture, architecture) || other.architecture == architecture)&&(identical(other.buildId, buildId) || other.buildId == buildId)&&(identical(other.confinement, confinement) || other.confinement == confinement)&&const DeepCollectionEquality().equals(other.features, features)&&(identical(other.kernelVersion, kernelVersion) || other.kernelVersion == kernelVersion)&&(identical(other.managed, managed) || other.managed == managed)&&(identical(other.onClassic, onClassic) || other.onClassic == onClassic)&&(identical(other.series, series) || other.series == series)&&(identical(other.systemMode, systemMode) || other.systemMode == systemMode)&&(identical(other.version, version) || other.version == version));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,refresh,architecture,buildId,confinement,const DeepCollectionEquality().hash(features),kernelVersion,managed,onClassic,series,systemMode,version);
+
+@override
+String toString() {
+  return 'SnapdSystemInfoResponse(refresh: $refresh, architecture: $architecture, buildId: $buildId, confinement: $confinement, features: $features, kernelVersion: $kernelVersion, managed: $managed, onClassic: $onClassic, series: $series, systemMode: $systemMode, version: $version)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapdSystemInfoResponseCopyWith<$Res> {
-  factory $SnapdSystemInfoResponseCopyWith(SnapdSystemInfoResponse value,
-          $Res Function(SnapdSystemInfoResponse) then) =
-      _$SnapdSystemInfoResponseCopyWithImpl<$Res, SnapdSystemInfoResponse>;
-  @useResult
-  $Res call(
-      {SnapdSystemRefreshInfo refresh,
-      String? architecture,
-      String? buildId,
-      @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-      SnapConfinement confinement,
-      Map<String, dynamic>? features,
-      String? kernelVersion,
-      bool managed,
-      bool onClassic,
-      String? series,
-      String? systemMode,
-      String? version});
+abstract mixin class $SnapdSystemInfoResponseCopyWith<$Res>  {
+  factory $SnapdSystemInfoResponseCopyWith(SnapdSystemInfoResponse value, $Res Function(SnapdSystemInfoResponse) _then) = _$SnapdSystemInfoResponseCopyWithImpl;
+@useResult
+$Res call({
+ SnapdSystemRefreshInfo refresh, String? architecture, String? buildId,@JsonKey(unknownEnumValue: SnapConfinement.unknown) SnapConfinement confinement, Map<String, dynamic>? features, String? kernelVersion, bool managed, bool onClassic, String? series, String? systemMode, String? version
+});
 
-  $SnapdSystemRefreshInfoCopyWith<$Res> get refresh;
+
+$SnapdSystemRefreshInfoCopyWith<$Res> get refresh;
+
 }
-
 /// @nodoc
-class _$SnapdSystemInfoResponseCopyWithImpl<$Res,
-        $Val extends SnapdSystemInfoResponse>
+class _$SnapdSystemInfoResponseCopyWithImpl<$Res>
     implements $SnapdSystemInfoResponseCopyWith<$Res> {
-  _$SnapdSystemInfoResponseCopyWithImpl(this._value, this._then);
+  _$SnapdSystemInfoResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapdSystemInfoResponse _self;
+  final $Res Function(SnapdSystemInfoResponse) _then;
 
-  /// Create a copy of SnapdSystemInfoResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? refresh = null,
-    Object? architecture = freezed,
-    Object? buildId = freezed,
-    Object? confinement = null,
-    Object? features = freezed,
-    Object? kernelVersion = freezed,
-    Object? managed = null,
-    Object? onClassic = null,
-    Object? series = freezed,
-    Object? systemMode = freezed,
-    Object? version = freezed,
-  }) {
-    return _then(_value.copyWith(
-      refresh: null == refresh
-          ? _value.refresh
-          : refresh // ignore: cast_nullable_to_non_nullable
-              as SnapdSystemRefreshInfo,
-      architecture: freezed == architecture
-          ? _value.architecture
-          : architecture // ignore: cast_nullable_to_non_nullable
-              as String?,
-      buildId: freezed == buildId
-          ? _value.buildId
-          : buildId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      confinement: null == confinement
-          ? _value.confinement
-          : confinement // ignore: cast_nullable_to_non_nullable
-              as SnapConfinement,
-      features: freezed == features
-          ? _value.features
-          : features // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-      kernelVersion: freezed == kernelVersion
-          ? _value.kernelVersion
-          : kernelVersion // ignore: cast_nullable_to_non_nullable
-              as String?,
-      managed: null == managed
-          ? _value.managed
-          : managed // ignore: cast_nullable_to_non_nullable
-              as bool,
-      onClassic: null == onClassic
-          ? _value.onClassic
-          : onClassic // ignore: cast_nullable_to_non_nullable
-              as bool,
-      series: freezed == series
-          ? _value.series
-          : series // ignore: cast_nullable_to_non_nullable
-              as String?,
-      systemMode: freezed == systemMode
-          ? _value.systemMode
-          : systemMode // ignore: cast_nullable_to_non_nullable
-              as String?,
-      version: freezed == version
-          ? _value.version
-          : version // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
-  }
-
-  /// Create a copy of SnapdSystemInfoResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $SnapdSystemRefreshInfoCopyWith<$Res> get refresh {
-    return $SnapdSystemRefreshInfoCopyWith<$Res>(_value.refresh, (value) {
-      return _then(_value.copyWith(refresh: value) as $Val);
-    });
-  }
+/// Create a copy of SnapdSystemInfoResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? refresh = null,Object? architecture = freezed,Object? buildId = freezed,Object? confinement = null,Object? features = freezed,Object? kernelVersion = freezed,Object? managed = null,Object? onClassic = null,Object? series = freezed,Object? systemMode = freezed,Object? version = freezed,}) {
+  return _then(_self.copyWith(
+refresh: null == refresh ? _self.refresh : refresh // ignore: cast_nullable_to_non_nullable
+as SnapdSystemRefreshInfo,architecture: freezed == architecture ? _self.architecture : architecture // ignore: cast_nullable_to_non_nullable
+as String?,buildId: freezed == buildId ? _self.buildId : buildId // ignore: cast_nullable_to_non_nullable
+as String?,confinement: null == confinement ? _self.confinement : confinement // ignore: cast_nullable_to_non_nullable
+as SnapConfinement,features: freezed == features ? _self.features : features // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,kernelVersion: freezed == kernelVersion ? _self.kernelVersion : kernelVersion // ignore: cast_nullable_to_non_nullable
+as String?,managed: null == managed ? _self.managed : managed // ignore: cast_nullable_to_non_nullable
+as bool,onClassic: null == onClassic ? _self.onClassic : onClassic // ignore: cast_nullable_to_non_nullable
+as bool,series: freezed == series ? _self.series : series // ignore: cast_nullable_to_non_nullable
+as String?,systemMode: freezed == systemMode ? _self.systemMode : systemMode // ignore: cast_nullable_to_non_nullable
+as String?,version: freezed == version ? _self.version : version // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+/// Create a copy of SnapdSystemInfoResponse
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$SnapdSystemRefreshInfoCopyWith<$Res> get refresh {
+  
+  return $SnapdSystemRefreshInfoCopyWith<$Res>(_self.refresh, (value) {
+    return _then(_self.copyWith(refresh: value));
+  });
+}
 }
 
-/// @nodoc
-abstract class _$$SnapdSystemInfoResponseImplCopyWith<$Res>
-    implements $SnapdSystemInfoResponseCopyWith<$Res> {
-  factory _$$SnapdSystemInfoResponseImplCopyWith(
-          _$SnapdSystemInfoResponseImpl value,
-          $Res Function(_$SnapdSystemInfoResponseImpl) then) =
-      __$$SnapdSystemInfoResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {SnapdSystemRefreshInfo refresh,
-      String? architecture,
-      String? buildId,
-      @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-      SnapConfinement confinement,
-      Map<String, dynamic>? features,
-      String? kernelVersion,
-      bool managed,
-      bool onClassic,
-      String? series,
-      String? systemMode,
-      String? version});
 
-  @override
-  $SnapdSystemRefreshInfoCopyWith<$Res> get refresh;
+/// Adds pattern-matching-related methods to [SnapdSystemInfoResponse].
+extension SnapdSystemInfoResponsePatterns on SnapdSystemInfoResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapdSystemInfoResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapdSystemInfoResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapdSystemInfoResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdSystemInfoResponse():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapdSystemInfoResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdSystemInfoResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( SnapdSystemRefreshInfo refresh,  String? architecture,  String? buildId, @JsonKey(unknownEnumValue: SnapConfinement.unknown)  SnapConfinement confinement,  Map<String, dynamic>? features,  String? kernelVersion,  bool managed,  bool onClassic,  String? series,  String? systemMode,  String? version)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapdSystemInfoResponse() when $default != null:
+return $default(_that.refresh,_that.architecture,_that.buildId,_that.confinement,_that.features,_that.kernelVersion,_that.managed,_that.onClassic,_that.series,_that.systemMode,_that.version);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( SnapdSystemRefreshInfo refresh,  String? architecture,  String? buildId, @JsonKey(unknownEnumValue: SnapConfinement.unknown)  SnapConfinement confinement,  Map<String, dynamic>? features,  String? kernelVersion,  bool managed,  bool onClassic,  String? series,  String? systemMode,  String? version)  $default,) {final _that = this;
+switch (_that) {
+case _SnapdSystemInfoResponse():
+return $default(_that.refresh,_that.architecture,_that.buildId,_that.confinement,_that.features,_that.kernelVersion,_that.managed,_that.onClassic,_that.series,_that.systemMode,_that.version);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( SnapdSystemRefreshInfo refresh,  String? architecture,  String? buildId, @JsonKey(unknownEnumValue: SnapConfinement.unknown)  SnapConfinement confinement,  Map<String, dynamic>? features,  String? kernelVersion,  bool managed,  bool onClassic,  String? series,  String? systemMode,  String? version)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapdSystemInfoResponse() when $default != null:
+return $default(_that.refresh,_that.architecture,_that.buildId,_that.confinement,_that.features,_that.kernelVersion,_that.managed,_that.onClassic,_that.series,_that.systemMode,_that.version);case _:
+  return null;
+
+}
 }
 
-/// @nodoc
-class __$$SnapdSystemInfoResponseImplCopyWithImpl<$Res>
-    extends _$SnapdSystemInfoResponseCopyWithImpl<$Res,
-        _$SnapdSystemInfoResponseImpl>
-    implements _$$SnapdSystemInfoResponseImplCopyWith<$Res> {
-  __$$SnapdSystemInfoResponseImplCopyWithImpl(
-      _$SnapdSystemInfoResponseImpl _value,
-      $Res Function(_$SnapdSystemInfoResponseImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of SnapdSystemInfoResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? refresh = null,
-    Object? architecture = freezed,
-    Object? buildId = freezed,
-    Object? confinement = null,
-    Object? features = freezed,
-    Object? kernelVersion = freezed,
-    Object? managed = null,
-    Object? onClassic = null,
-    Object? series = freezed,
-    Object? systemMode = freezed,
-    Object? version = freezed,
-  }) {
-    return _then(_$SnapdSystemInfoResponseImpl(
-      refresh: null == refresh
-          ? _value.refresh
-          : refresh // ignore: cast_nullable_to_non_nullable
-              as SnapdSystemRefreshInfo,
-      architecture: freezed == architecture
-          ? _value.architecture
-          : architecture // ignore: cast_nullable_to_non_nullable
-              as String?,
-      buildId: freezed == buildId
-          ? _value.buildId
-          : buildId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      confinement: null == confinement
-          ? _value.confinement
-          : confinement // ignore: cast_nullable_to_non_nullable
-              as SnapConfinement,
-      features: freezed == features
-          ? _value._features
-          : features // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-      kernelVersion: freezed == kernelVersion
-          ? _value.kernelVersion
-          : kernelVersion // ignore: cast_nullable_to_non_nullable
-              as String?,
-      managed: null == managed
-          ? _value.managed
-          : managed // ignore: cast_nullable_to_non_nullable
-              as bool,
-      onClassic: null == onClassic
-          ? _value.onClassic
-          : onClassic // ignore: cast_nullable_to_non_nullable
-              as bool,
-      series: freezed == series
-          ? _value.series
-          : series // ignore: cast_nullable_to_non_nullable
-              as String?,
-      systemMode: freezed == systemMode
-          ? _value.systemMode
-          : systemMode // ignore: cast_nullable_to_non_nullable
-              as String?,
-      version: freezed == version
-          ? _value.version
-          : version // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapdSystemInfoResponseImpl implements _SnapdSystemInfoResponse {
-  const _$SnapdSystemInfoResponseImpl(
-      {required this.refresh,
-      this.architecture,
-      this.buildId,
-      @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-      this.confinement = SnapConfinement.unknown,
-      final Map<String, dynamic>? features,
-      this.kernelVersion,
-      this.managed = false,
-      this.onClassic = false,
-      this.series,
-      this.systemMode,
-      this.version})
-      : _features = features;
 
-  factory _$SnapdSystemInfoResponseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapdSystemInfoResponseImplFromJson(json);
+class _SnapdSystemInfoResponse implements SnapdSystemInfoResponse {
+  const _SnapdSystemInfoResponse({required this.refresh, this.architecture, this.buildId, @JsonKey(unknownEnumValue: SnapConfinement.unknown) this.confinement = SnapConfinement.unknown, final  Map<String, dynamic>? features, this.kernelVersion, this.managed = false, this.onClassic = false, this.series, this.systemMode, this.version}): _features = features;
+  factory _SnapdSystemInfoResponse.fromJson(Map<String, dynamic> json) => _$SnapdSystemInfoResponseFromJson(json);
 
-  @override
-  final SnapdSystemRefreshInfo refresh;
-  @override
-  final String? architecture;
-  @override
-  final String? buildId;
-  @override
-  @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-  final SnapConfinement confinement;
-  final Map<String, dynamic>? _features;
-  @override
-  Map<String, dynamic>? get features {
-    final value = _features;
-    if (value == null) return null;
-    if (_features is EqualUnmodifiableMapView) return _features;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
-
-  @override
-  final String? kernelVersion;
-  @override
-  @JsonKey()
-  final bool managed;
-  @override
-  @JsonKey()
-  final bool onClassic;
-  @override
-  final String? series;
-  @override
-  final String? systemMode;
-  @override
-  final String? version;
-
-  @override
-  String toString() {
-    return 'SnapdSystemInfoResponse(refresh: $refresh, architecture: $architecture, buildId: $buildId, confinement: $confinement, features: $features, kernelVersion: $kernelVersion, managed: $managed, onClassic: $onClassic, series: $series, systemMode: $systemMode, version: $version)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapdSystemInfoResponseImpl &&
-            (identical(other.refresh, refresh) || other.refresh == refresh) &&
-            (identical(other.architecture, architecture) ||
-                other.architecture == architecture) &&
-            (identical(other.buildId, buildId) || other.buildId == buildId) &&
-            (identical(other.confinement, confinement) ||
-                other.confinement == confinement) &&
-            const DeepCollectionEquality().equals(other._features, _features) &&
-            (identical(other.kernelVersion, kernelVersion) ||
-                other.kernelVersion == kernelVersion) &&
-            (identical(other.managed, managed) || other.managed == managed) &&
-            (identical(other.onClassic, onClassic) ||
-                other.onClassic == onClassic) &&
-            (identical(other.series, series) || other.series == series) &&
-            (identical(other.systemMode, systemMode) ||
-                other.systemMode == systemMode) &&
-            (identical(other.version, version) || other.version == version));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      refresh,
-      architecture,
-      buildId,
-      confinement,
-      const DeepCollectionEquality().hash(_features),
-      kernelVersion,
-      managed,
-      onClassic,
-      series,
-      systemMode,
-      version);
-
-  /// Create a copy of SnapdSystemInfoResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapdSystemInfoResponseImplCopyWith<_$SnapdSystemInfoResponseImpl>
-      get copyWith => __$$SnapdSystemInfoResponseImplCopyWithImpl<
-          _$SnapdSystemInfoResponseImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapdSystemInfoResponseImplToJson(
-      this,
-    );
-  }
+@override final  SnapdSystemRefreshInfo refresh;
+@override final  String? architecture;
+@override final  String? buildId;
+@override@JsonKey(unknownEnumValue: SnapConfinement.unknown) final  SnapConfinement confinement;
+ final  Map<String, dynamic>? _features;
+@override Map<String, dynamic>? get features {
+  final value = _features;
+  if (value == null) return null;
+  if (_features is EqualUnmodifiableMapView) return _features;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
 }
 
-abstract class _SnapdSystemInfoResponse implements SnapdSystemInfoResponse {
-  const factory _SnapdSystemInfoResponse(
-      {required final SnapdSystemRefreshInfo refresh,
-      final String? architecture,
-      final String? buildId,
-      @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-      final SnapConfinement confinement,
-      final Map<String, dynamic>? features,
-      final String? kernelVersion,
-      final bool managed,
-      final bool onClassic,
-      final String? series,
-      final String? systemMode,
-      final String? version}) = _$SnapdSystemInfoResponseImpl;
+@override final  String? kernelVersion;
+@override@JsonKey() final  bool managed;
+@override@JsonKey() final  bool onClassic;
+@override final  String? series;
+@override final  String? systemMode;
+@override final  String? version;
 
-  factory _SnapdSystemInfoResponse.fromJson(Map<String, dynamic> json) =
-      _$SnapdSystemInfoResponseImpl.fromJson;
+/// Create a copy of SnapdSystemInfoResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapdSystemInfoResponseCopyWith<_SnapdSystemInfoResponse> get copyWith => __$SnapdSystemInfoResponseCopyWithImpl<_SnapdSystemInfoResponse>(this, _$identity);
 
-  @override
-  SnapdSystemRefreshInfo get refresh;
-  @override
-  String? get architecture;
-  @override
-  String? get buildId;
-  @override
-  @JsonKey(unknownEnumValue: SnapConfinement.unknown)
-  SnapConfinement get confinement;
-  @override
-  Map<String, dynamic>? get features;
-  @override
-  String? get kernelVersion;
-  @override
-  bool get managed;
-  @override
-  bool get onClassic;
-  @override
-  String? get series;
-  @override
-  String? get systemMode;
-  @override
-  String? get version;
-
-  /// Create a copy of SnapdSystemInfoResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapdSystemInfoResponseImplCopyWith<_$SnapdSystemInfoResponseImpl>
-      get copyWith => throw _privateConstructorUsedError;
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapdSystemInfoResponseToJson(this, );
 }
 
-SnapdSystemRefreshInfo _$SnapdSystemRefreshInfoFromJson(
-    Map<String, dynamic> json) {
-  return _SnapdSystemRefreshInfo.fromJson(json);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapdSystemInfoResponse&&(identical(other.refresh, refresh) || other.refresh == refresh)&&(identical(other.architecture, architecture) || other.architecture == architecture)&&(identical(other.buildId, buildId) || other.buildId == buildId)&&(identical(other.confinement, confinement) || other.confinement == confinement)&&const DeepCollectionEquality().equals(other._features, _features)&&(identical(other.kernelVersion, kernelVersion) || other.kernelVersion == kernelVersion)&&(identical(other.managed, managed) || other.managed == managed)&&(identical(other.onClassic, onClassic) || other.onClassic == onClassic)&&(identical(other.series, series) || other.series == series)&&(identical(other.systemMode, systemMode) || other.systemMode == systemMode)&&(identical(other.version, version) || other.version == version));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,refresh,architecture,buildId,confinement,const DeepCollectionEquality().hash(_features),kernelVersion,managed,onClassic,series,systemMode,version);
+
+@override
+String toString() {
+  return 'SnapdSystemInfoResponse(refresh: $refresh, architecture: $architecture, buildId: $buildId, confinement: $confinement, features: $features, kernelVersion: $kernelVersion, managed: $managed, onClassic: $onClassic, series: $series, systemMode: $systemMode, version: $version)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapdSystemInfoResponseCopyWith<$Res> implements $SnapdSystemInfoResponseCopyWith<$Res> {
+  factory _$SnapdSystemInfoResponseCopyWith(_SnapdSystemInfoResponse value, $Res Function(_SnapdSystemInfoResponse) _then) = __$SnapdSystemInfoResponseCopyWithImpl;
+@override @useResult
+$Res call({
+ SnapdSystemRefreshInfo refresh, String? architecture, String? buildId,@JsonKey(unknownEnumValue: SnapConfinement.unknown) SnapConfinement confinement, Map<String, dynamic>? features, String? kernelVersion, bool managed, bool onClassic, String? series, String? systemMode, String? version
+});
+
+
+@override $SnapdSystemRefreshInfoCopyWith<$Res> get refresh;
+
+}
+/// @nodoc
+class __$SnapdSystemInfoResponseCopyWithImpl<$Res>
+    implements _$SnapdSystemInfoResponseCopyWith<$Res> {
+  __$SnapdSystemInfoResponseCopyWithImpl(this._self, this._then);
+
+  final _SnapdSystemInfoResponse _self;
+  final $Res Function(_SnapdSystemInfoResponse) _then;
+
+/// Create a copy of SnapdSystemInfoResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? refresh = null,Object? architecture = freezed,Object? buildId = freezed,Object? confinement = null,Object? features = freezed,Object? kernelVersion = freezed,Object? managed = null,Object? onClassic = null,Object? series = freezed,Object? systemMode = freezed,Object? version = freezed,}) {
+  return _then(_SnapdSystemInfoResponse(
+refresh: null == refresh ? _self.refresh : refresh // ignore: cast_nullable_to_non_nullable
+as SnapdSystemRefreshInfo,architecture: freezed == architecture ? _self.architecture : architecture // ignore: cast_nullable_to_non_nullable
+as String?,buildId: freezed == buildId ? _self.buildId : buildId // ignore: cast_nullable_to_non_nullable
+as String?,confinement: null == confinement ? _self.confinement : confinement // ignore: cast_nullable_to_non_nullable
+as SnapConfinement,features: freezed == features ? _self._features : features // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>?,kernelVersion: freezed == kernelVersion ? _self.kernelVersion : kernelVersion // ignore: cast_nullable_to_non_nullable
+as String?,managed: null == managed ? _self.managed : managed // ignore: cast_nullable_to_non_nullable
+as bool,onClassic: null == onClassic ? _self.onClassic : onClassic // ignore: cast_nullable_to_non_nullable
+as bool,series: freezed == series ? _self.series : series // ignore: cast_nullable_to_non_nullable
+as String?,systemMode: freezed == systemMode ? _self.systemMode : systemMode // ignore: cast_nullable_to_non_nullable
+as String?,version: freezed == version ? _self.version : version // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+/// Create a copy of SnapdSystemInfoResponse
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$SnapdSystemRefreshInfoCopyWith<$Res> get refresh {
+  
+  return $SnapdSystemRefreshInfoCopyWith<$Res>(_self.refresh, (value) {
+    return _then(_self.copyWith(refresh: value));
+  });
+}
+}
+
 
 /// @nodoc
 mixin _$SnapdSystemRefreshInfo {
-  @_SnapdDateTimeConverter()
-  DateTime get next => throw _privateConstructorUsedError;
-  DateTime? get last => throw _privateConstructorUsedError;
+
+@_SnapdDateTimeConverter() DateTime get next; DateTime? get last;
+/// Create a copy of SnapdSystemRefreshInfo
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapdSystemRefreshInfoCopyWith<SnapdSystemRefreshInfo> get copyWith => _$SnapdSystemRefreshInfoCopyWithImpl<SnapdSystemRefreshInfo>(this as SnapdSystemRefreshInfo, _$identity);
 
   /// Serializes this SnapdSystemRefreshInfo to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapdSystemRefreshInfo
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapdSystemRefreshInfoCopyWith<SnapdSystemRefreshInfo> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapdSystemRefreshInfo&&(identical(other.next, next) || other.next == next)&&(identical(other.last, last) || other.last == last));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,next,last);
+
+@override
+String toString() {
+  return 'SnapdSystemRefreshInfo(next: $next, last: $last)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapdSystemRefreshInfoCopyWith<$Res> {
-  factory $SnapdSystemRefreshInfoCopyWith(SnapdSystemRefreshInfo value,
-          $Res Function(SnapdSystemRefreshInfo) then) =
-      _$SnapdSystemRefreshInfoCopyWithImpl<$Res, SnapdSystemRefreshInfo>;
-  @useResult
-  $Res call({@_SnapdDateTimeConverter() DateTime next, DateTime? last});
-}
+abstract mixin class $SnapdSystemRefreshInfoCopyWith<$Res>  {
+  factory $SnapdSystemRefreshInfoCopyWith(SnapdSystemRefreshInfo value, $Res Function(SnapdSystemRefreshInfo) _then) = _$SnapdSystemRefreshInfoCopyWithImpl;
+@useResult
+$Res call({
+@_SnapdDateTimeConverter() DateTime next, DateTime? last
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapdSystemRefreshInfoCopyWithImpl<$Res,
-        $Val extends SnapdSystemRefreshInfo>
+class _$SnapdSystemRefreshInfoCopyWithImpl<$Res>
     implements $SnapdSystemRefreshInfoCopyWith<$Res> {
-  _$SnapdSystemRefreshInfoCopyWithImpl(this._value, this._then);
+  _$SnapdSystemRefreshInfoCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapdSystemRefreshInfo _self;
+  final $Res Function(SnapdSystemRefreshInfo) _then;
 
-  /// Create a copy of SnapdSystemRefreshInfo
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? next = null,
-    Object? last = freezed,
-  }) {
-    return _then(_value.copyWith(
-      next: null == next
-          ? _value.next
-          : next // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      last: freezed == last
-          ? _value.last
-          : last // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-    ) as $Val);
-  }
+/// Create a copy of SnapdSystemRefreshInfo
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? next = null,Object? last = freezed,}) {
+  return _then(_self.copyWith(
+next: null == next ? _self.next : next // ignore: cast_nullable_to_non_nullable
+as DateTime,last: freezed == last ? _self.last : last // ignore: cast_nullable_to_non_nullable
+as DateTime?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapdSystemRefreshInfoImplCopyWith<$Res>
-    implements $SnapdSystemRefreshInfoCopyWith<$Res> {
-  factory _$$SnapdSystemRefreshInfoImplCopyWith(
-          _$SnapdSystemRefreshInfoImpl value,
-          $Res Function(_$SnapdSystemRefreshInfoImpl) then) =
-      __$$SnapdSystemRefreshInfoImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({@_SnapdDateTimeConverter() DateTime next, DateTime? last});
 }
 
-/// @nodoc
-class __$$SnapdSystemRefreshInfoImplCopyWithImpl<$Res>
-    extends _$SnapdSystemRefreshInfoCopyWithImpl<$Res,
-        _$SnapdSystemRefreshInfoImpl>
-    implements _$$SnapdSystemRefreshInfoImplCopyWith<$Res> {
-  __$$SnapdSystemRefreshInfoImplCopyWithImpl(
-      _$SnapdSystemRefreshInfoImpl _value,
-      $Res Function(_$SnapdSystemRefreshInfoImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapdSystemRefreshInfo
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? next = null,
-    Object? last = freezed,
-  }) {
-    return _then(_$SnapdSystemRefreshInfoImpl(
-      next: null == next
-          ? _value.next
-          : next // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      last: freezed == last
-          ? _value.last
-          : last // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapdSystemRefreshInfo].
+extension SnapdSystemRefreshInfoPatterns on SnapdSystemRefreshInfo {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapdSystemRefreshInfo value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapdSystemRefreshInfo() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapdSystemRefreshInfo value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdSystemRefreshInfo():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapdSystemRefreshInfo value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdSystemRefreshInfo() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function(@_SnapdDateTimeConverter()  DateTime next,  DateTime? last)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapdSystemRefreshInfo() when $default != null:
+return $default(_that.next,_that.last);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function(@_SnapdDateTimeConverter()  DateTime next,  DateTime? last)  $default,) {final _that = this;
+switch (_that) {
+case _SnapdSystemRefreshInfo():
+return $default(_that.next,_that.last);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function(@_SnapdDateTimeConverter()  DateTime next,  DateTime? last)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapdSystemRefreshInfo() when $default != null:
+return $default(_that.next,_that.last);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapdSystemRefreshInfoImpl implements _SnapdSystemRefreshInfo {
-  const _$SnapdSystemRefreshInfoImpl(
-      {@_SnapdDateTimeConverter() required this.next, this.last});
 
-  factory _$SnapdSystemRefreshInfoImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapdSystemRefreshInfoImplFromJson(json);
+class _SnapdSystemRefreshInfo implements SnapdSystemRefreshInfo {
+  const _SnapdSystemRefreshInfo({@_SnapdDateTimeConverter() required this.next, this.last});
+  factory _SnapdSystemRefreshInfo.fromJson(Map<String, dynamic> json) => _$SnapdSystemRefreshInfoFromJson(json);
 
-  @override
-  @_SnapdDateTimeConverter()
-  final DateTime next;
-  @override
-  final DateTime? last;
+@override@_SnapdDateTimeConverter() final  DateTime next;
+@override final  DateTime? last;
 
-  @override
-  String toString() {
-    return 'SnapdSystemRefreshInfo(next: $next, last: $last)';
-  }
+/// Create a copy of SnapdSystemRefreshInfo
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapdSystemRefreshInfoCopyWith<_SnapdSystemRefreshInfo> get copyWith => __$SnapdSystemRefreshInfoCopyWithImpl<_SnapdSystemRefreshInfo>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapdSystemRefreshInfoImpl &&
-            (identical(other.next, next) || other.next == next) &&
-            (identical(other.last, last) || other.last == last));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, next, last);
-
-  /// Create a copy of SnapdSystemRefreshInfo
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapdSystemRefreshInfoImplCopyWith<_$SnapdSystemRefreshInfoImpl>
-      get copyWith => __$$SnapdSystemRefreshInfoImplCopyWithImpl<
-          _$SnapdSystemRefreshInfoImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapdSystemRefreshInfoImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapdSystemRefreshInfoToJson(this, );
 }
 
-abstract class _SnapdSystemRefreshInfo implements SnapdSystemRefreshInfo {
-  const factory _SnapdSystemRefreshInfo(
-      {@_SnapdDateTimeConverter() required final DateTime next,
-      final DateTime? last}) = _$SnapdSystemRefreshInfoImpl;
-
-  factory _SnapdSystemRefreshInfo.fromJson(Map<String, dynamic> json) =
-      _$SnapdSystemRefreshInfoImpl.fromJson;
-
-  @override
-  @_SnapdDateTimeConverter()
-  DateTime get next;
-  @override
-  DateTime? get last;
-
-  /// Create a copy of SnapdSystemRefreshInfo
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapdSystemRefreshInfoImplCopyWith<_$SnapdSystemRefreshInfoImpl>
-      get copyWith => throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapdSystemRefreshInfo&&(identical(other.next, next) || other.next == next)&&(identical(other.last, last) || other.last == last));
 }
 
-SnapdLoginResponse _$SnapdLoginResponseFromJson(Map<String, dynamic> json) {
-  return _SnapdLoginResponse.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,next,last);
+
+@override
+String toString() {
+  return 'SnapdSystemRefreshInfo(next: $next, last: $last)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapdSystemRefreshInfoCopyWith<$Res> implements $SnapdSystemRefreshInfoCopyWith<$Res> {
+  factory _$SnapdSystemRefreshInfoCopyWith(_SnapdSystemRefreshInfo value, $Res Function(_SnapdSystemRefreshInfo) _then) = __$SnapdSystemRefreshInfoCopyWithImpl;
+@override @useResult
+$Res call({
+@_SnapdDateTimeConverter() DateTime next, DateTime? last
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapdSystemRefreshInfoCopyWithImpl<$Res>
+    implements _$SnapdSystemRefreshInfoCopyWith<$Res> {
+  __$SnapdSystemRefreshInfoCopyWithImpl(this._self, this._then);
+
+  final _SnapdSystemRefreshInfo _self;
+  final $Res Function(_SnapdSystemRefreshInfo) _then;
+
+/// Create a copy of SnapdSystemRefreshInfo
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? next = null,Object? last = freezed,}) {
+  return _then(_SnapdSystemRefreshInfo(
+next: null == next ? _self.next : next // ignore: cast_nullable_to_non_nullable
+as DateTime,last: freezed == last ? _self.last : last // ignore: cast_nullable_to_non_nullable
+as DateTime?,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapdLoginResponse {
-  int get id => throw _privateConstructorUsedError;
-  String? get username => throw _privateConstructorUsedError;
-  String? get email => throw _privateConstructorUsedError;
-  String? get macaroon => throw _privateConstructorUsedError;
-  List<String> get discharges => throw _privateConstructorUsedError;
-  List<String> get sshKeys => throw _privateConstructorUsedError;
+
+ int get id; String? get username; String? get email; String? get macaroon; List<String> get discharges; List<String> get sshKeys;
+/// Create a copy of SnapdLoginResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapdLoginResponseCopyWith<SnapdLoginResponse> get copyWith => _$SnapdLoginResponseCopyWithImpl<SnapdLoginResponse>(this as SnapdLoginResponse, _$identity);
 
   /// Serializes this SnapdLoginResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapdLoginResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapdLoginResponseCopyWith<SnapdLoginResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapdLoginResponse&&(identical(other.id, id) || other.id == id)&&(identical(other.username, username) || other.username == username)&&(identical(other.email, email) || other.email == email)&&(identical(other.macaroon, macaroon) || other.macaroon == macaroon)&&const DeepCollectionEquality().equals(other.discharges, discharges)&&const DeepCollectionEquality().equals(other.sshKeys, sshKeys));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,username,email,macaroon,const DeepCollectionEquality().hash(discharges),const DeepCollectionEquality().hash(sshKeys));
+
+@override
+String toString() {
+  return 'SnapdLoginResponse(id: $id, username: $username, email: $email, macaroon: $macaroon, discharges: $discharges, sshKeys: $sshKeys)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapdLoginResponseCopyWith<$Res> {
-  factory $SnapdLoginResponseCopyWith(
-          SnapdLoginResponse value, $Res Function(SnapdLoginResponse) then) =
-      _$SnapdLoginResponseCopyWithImpl<$Res, SnapdLoginResponse>;
-  @useResult
-  $Res call(
-      {int id,
-      String? username,
-      String? email,
-      String? macaroon,
-      List<String> discharges,
-      List<String> sshKeys});
-}
+abstract mixin class $SnapdLoginResponseCopyWith<$Res>  {
+  factory $SnapdLoginResponseCopyWith(SnapdLoginResponse value, $Res Function(SnapdLoginResponse) _then) = _$SnapdLoginResponseCopyWithImpl;
+@useResult
+$Res call({
+ int id, String? username, String? email, String? macaroon, List<String> discharges, List<String> sshKeys
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapdLoginResponseCopyWithImpl<$Res, $Val extends SnapdLoginResponse>
+class _$SnapdLoginResponseCopyWithImpl<$Res>
     implements $SnapdLoginResponseCopyWith<$Res> {
-  _$SnapdLoginResponseCopyWithImpl(this._value, this._then);
+  _$SnapdLoginResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapdLoginResponse _self;
+  final $Res Function(SnapdLoginResponse) _then;
 
-  /// Create a copy of SnapdLoginResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? username = freezed,
-    Object? email = freezed,
-    Object? macaroon = freezed,
-    Object? discharges = null,
-    Object? sshKeys = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      username: freezed == username
-          ? _value.username
-          : username // ignore: cast_nullable_to_non_nullable
-              as String?,
-      email: freezed == email
-          ? _value.email
-          : email // ignore: cast_nullable_to_non_nullable
-              as String?,
-      macaroon: freezed == macaroon
-          ? _value.macaroon
-          : macaroon // ignore: cast_nullable_to_non_nullable
-              as String?,
-      discharges: null == discharges
-          ? _value.discharges
-          : discharges // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-      sshKeys: null == sshKeys
-          ? _value.sshKeys
-          : sshKeys // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-    ) as $Val);
-  }
+/// Create a copy of SnapdLoginResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? username = freezed,Object? email = freezed,Object? macaroon = freezed,Object? discharges = null,Object? sshKeys = null,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,username: freezed == username ? _self.username : username // ignore: cast_nullable_to_non_nullable
+as String?,email: freezed == email ? _self.email : email // ignore: cast_nullable_to_non_nullable
+as String?,macaroon: freezed == macaroon ? _self.macaroon : macaroon // ignore: cast_nullable_to_non_nullable
+as String?,discharges: null == discharges ? _self.discharges : discharges // ignore: cast_nullable_to_non_nullable
+as List<String>,sshKeys: null == sshKeys ? _self.sshKeys : sshKeys // ignore: cast_nullable_to_non_nullable
+as List<String>,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapdLoginResponseImplCopyWith<$Res>
-    implements $SnapdLoginResponseCopyWith<$Res> {
-  factory _$$SnapdLoginResponseImplCopyWith(_$SnapdLoginResponseImpl value,
-          $Res Function(_$SnapdLoginResponseImpl) then) =
-      __$$SnapdLoginResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int id,
-      String? username,
-      String? email,
-      String? macaroon,
-      List<String> discharges,
-      List<String> sshKeys});
 }
 
-/// @nodoc
-class __$$SnapdLoginResponseImplCopyWithImpl<$Res>
-    extends _$SnapdLoginResponseCopyWithImpl<$Res, _$SnapdLoginResponseImpl>
-    implements _$$SnapdLoginResponseImplCopyWith<$Res> {
-  __$$SnapdLoginResponseImplCopyWithImpl(_$SnapdLoginResponseImpl _value,
-      $Res Function(_$SnapdLoginResponseImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapdLoginResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? username = freezed,
-    Object? email = freezed,
-    Object? macaroon = freezed,
-    Object? discharges = null,
-    Object? sshKeys = null,
-  }) {
-    return _then(_$SnapdLoginResponseImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      username: freezed == username
-          ? _value.username
-          : username // ignore: cast_nullable_to_non_nullable
-              as String?,
-      email: freezed == email
-          ? _value.email
-          : email // ignore: cast_nullable_to_non_nullable
-              as String?,
-      macaroon: freezed == macaroon
-          ? _value.macaroon
-          : macaroon // ignore: cast_nullable_to_non_nullable
-              as String?,
-      discharges: null == discharges
-          ? _value._discharges
-          : discharges // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-      sshKeys: null == sshKeys
-          ? _value._sshKeys
-          : sshKeys // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapdLoginResponse].
+extension SnapdLoginResponsePatterns on SnapdLoginResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapdLoginResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapdLoginResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapdLoginResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdLoginResponse():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapdLoginResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdLoginResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id,  String? username,  String? email,  String? macaroon,  List<String> discharges,  List<String> sshKeys)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapdLoginResponse() when $default != null:
+return $default(_that.id,_that.username,_that.email,_that.macaroon,_that.discharges,_that.sshKeys);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id,  String? username,  String? email,  String? macaroon,  List<String> discharges,  List<String> sshKeys)  $default,) {final _that = this;
+switch (_that) {
+case _SnapdLoginResponse():
+return $default(_that.id,_that.username,_that.email,_that.macaroon,_that.discharges,_that.sshKeys);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id,  String? username,  String? email,  String? macaroon,  List<String> discharges,  List<String> sshKeys)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapdLoginResponse() when $default != null:
+return $default(_that.id,_that.username,_that.email,_that.macaroon,_that.discharges,_that.sshKeys);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapdLoginResponseImpl implements _SnapdLoginResponse {
-  const _$SnapdLoginResponseImpl(
-      {required this.id,
-      this.username,
-      this.email,
-      this.macaroon,
-      final List<String> discharges = const [],
-      final List<String> sshKeys = const []})
-      : _discharges = discharges,
-        _sshKeys = sshKeys;
 
-  factory _$SnapdLoginResponseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapdLoginResponseImplFromJson(json);
+class _SnapdLoginResponse implements SnapdLoginResponse {
+  const _SnapdLoginResponse({required this.id, this.username, this.email, this.macaroon, final  List<String> discharges = const [], final  List<String> sshKeys = const []}): _discharges = discharges,_sshKeys = sshKeys;
+  factory _SnapdLoginResponse.fromJson(Map<String, dynamic> json) => _$SnapdLoginResponseFromJson(json);
 
-  @override
-  final int id;
-  @override
-  final String? username;
-  @override
-  final String? email;
-  @override
-  final String? macaroon;
-  final List<String> _discharges;
-  @override
-  @JsonKey()
-  List<String> get discharges {
-    if (_discharges is EqualUnmodifiableListView) return _discharges;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_discharges);
-  }
-
-  final List<String> _sshKeys;
-  @override
-  @JsonKey()
-  List<String> get sshKeys {
-    if (_sshKeys is EqualUnmodifiableListView) return _sshKeys;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_sshKeys);
-  }
-
-  @override
-  String toString() {
-    return 'SnapdLoginResponse(id: $id, username: $username, email: $email, macaroon: $macaroon, discharges: $discharges, sshKeys: $sshKeys)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapdLoginResponseImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.username, username) ||
-                other.username == username) &&
-            (identical(other.email, email) || other.email == email) &&
-            (identical(other.macaroon, macaroon) ||
-                other.macaroon == macaroon) &&
-            const DeepCollectionEquality()
-                .equals(other._discharges, _discharges) &&
-            const DeepCollectionEquality().equals(other._sshKeys, _sshKeys));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      username,
-      email,
-      macaroon,
-      const DeepCollectionEquality().hash(_discharges),
-      const DeepCollectionEquality().hash(_sshKeys));
-
-  /// Create a copy of SnapdLoginResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapdLoginResponseImplCopyWith<_$SnapdLoginResponseImpl> get copyWith =>
-      __$$SnapdLoginResponseImplCopyWithImpl<_$SnapdLoginResponseImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapdLoginResponseImplToJson(
-      this,
-    );
-  }
+@override final  int id;
+@override final  String? username;
+@override final  String? email;
+@override final  String? macaroon;
+ final  List<String> _discharges;
+@override@JsonKey() List<String> get discharges {
+  if (_discharges is EqualUnmodifiableListView) return _discharges;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_discharges);
 }
 
-abstract class _SnapdLoginResponse implements SnapdLoginResponse {
-  const factory _SnapdLoginResponse(
-      {required final int id,
-      final String? username,
-      final String? email,
-      final String? macaroon,
-      final List<String> discharges,
-      final List<String> sshKeys}) = _$SnapdLoginResponseImpl;
-
-  factory _SnapdLoginResponse.fromJson(Map<String, dynamic> json) =
-      _$SnapdLoginResponseImpl.fromJson;
-
-  @override
-  int get id;
-  @override
-  String? get username;
-  @override
-  String? get email;
-  @override
-  String? get macaroon;
-  @override
-  List<String> get discharges;
-  @override
-  List<String> get sshKeys;
-
-  /// Create a copy of SnapdLoginResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapdLoginResponseImplCopyWith<_$SnapdLoginResponseImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+ final  List<String> _sshKeys;
+@override@JsonKey() List<String> get sshKeys {
+  if (_sshKeys is EqualUnmodifiableListView) return _sshKeys;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_sshKeys);
 }
 
-SnapPlug _$SnapPlugFromJson(Map<String, dynamic> json) {
-  return _SnapPlug.fromJson(json);
+
+/// Create a copy of SnapdLoginResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapdLoginResponseCopyWith<_SnapdLoginResponse> get copyWith => __$SnapdLoginResponseCopyWithImpl<_SnapdLoginResponse>(this, _$identity);
+
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapdLoginResponseToJson(this, );
 }
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapdLoginResponse&&(identical(other.id, id) || other.id == id)&&(identical(other.username, username) || other.username == username)&&(identical(other.email, email) || other.email == email)&&(identical(other.macaroon, macaroon) || other.macaroon == macaroon)&&const DeepCollectionEquality().equals(other._discharges, _discharges)&&const DeepCollectionEquality().equals(other._sshKeys, _sshKeys));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,username,email,macaroon,const DeepCollectionEquality().hash(_discharges),const DeepCollectionEquality().hash(_sshKeys));
+
+@override
+String toString() {
+  return 'SnapdLoginResponse(id: $id, username: $username, email: $email, macaroon: $macaroon, discharges: $discharges, sshKeys: $sshKeys)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapdLoginResponseCopyWith<$Res> implements $SnapdLoginResponseCopyWith<$Res> {
+  factory _$SnapdLoginResponseCopyWith(_SnapdLoginResponse value, $Res Function(_SnapdLoginResponse) _then) = __$SnapdLoginResponseCopyWithImpl;
+@override @useResult
+$Res call({
+ int id, String? username, String? email, String? macaroon, List<String> discharges, List<String> sshKeys
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapdLoginResponseCopyWithImpl<$Res>
+    implements _$SnapdLoginResponseCopyWith<$Res> {
+  __$SnapdLoginResponseCopyWithImpl(this._self, this._then);
+
+  final _SnapdLoginResponse _self;
+  final $Res Function(_SnapdLoginResponse) _then;
+
+/// Create a copy of SnapdLoginResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? username = freezed,Object? email = freezed,Object? macaroon = freezed,Object? discharges = null,Object? sshKeys = null,}) {
+  return _then(_SnapdLoginResponse(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,username: freezed == username ? _self.username : username // ignore: cast_nullable_to_non_nullable
+as String?,email: freezed == email ? _self.email : email // ignore: cast_nullable_to_non_nullable
+as String?,macaroon: freezed == macaroon ? _self.macaroon : macaroon // ignore: cast_nullable_to_non_nullable
+as String?,discharges: null == discharges ? _self._discharges : discharges // ignore: cast_nullable_to_non_nullable
+as List<String>,sshKeys: null == sshKeys ? _self._sshKeys : sshKeys // ignore: cast_nullable_to_non_nullable
+as List<String>,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapPlug {
-  String get snap => throw _privateConstructorUsedError;
-  String get plug => throw _privateConstructorUsedError;
-  @JsonKey(name: 'attrs')
-  Map<String, dynamic> get attributes => throw _privateConstructorUsedError;
-  String? get interface => throw _privateConstructorUsedError;
-  List<SnapSlot> get connections => throw _privateConstructorUsedError;
+
+ String get snap; String get plug;@JsonKey(name: 'attrs') Map<String, dynamic> get attributes; String? get interface; List<SnapSlot> get connections;
+/// Create a copy of SnapPlug
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapPlugCopyWith<SnapPlug> get copyWith => _$SnapPlugCopyWithImpl<SnapPlug>(this as SnapPlug, _$identity);
 
   /// Serializes this SnapPlug to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapPlug
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapPlugCopyWith<SnapPlug> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapPlug&&(identical(other.snap, snap) || other.snap == snap)&&(identical(other.plug, plug) || other.plug == plug)&&const DeepCollectionEquality().equals(other.attributes, attributes)&&(identical(other.interface, interface) || other.interface == interface)&&const DeepCollectionEquality().equals(other.connections, connections));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,snap,plug,const DeepCollectionEquality().hash(attributes),interface,const DeepCollectionEquality().hash(connections));
+
+@override
+String toString() {
+  return 'SnapPlug(snap: $snap, plug: $plug, attributes: $attributes, interface: $interface, connections: $connections)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapPlugCopyWith<$Res> {
-  factory $SnapPlugCopyWith(SnapPlug value, $Res Function(SnapPlug) then) =
-      _$SnapPlugCopyWithImpl<$Res, SnapPlug>;
-  @useResult
-  $Res call(
-      {String snap,
-      String plug,
-      @JsonKey(name: 'attrs') Map<String, dynamic> attributes,
-      String? interface,
-      List<SnapSlot> connections});
-}
+abstract mixin class $SnapPlugCopyWith<$Res>  {
+  factory $SnapPlugCopyWith(SnapPlug value, $Res Function(SnapPlug) _then) = _$SnapPlugCopyWithImpl;
+@useResult
+$Res call({
+ String snap, String plug,@JsonKey(name: 'attrs') Map<String, dynamic> attributes, String? interface, List<SnapSlot> connections
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapPlugCopyWithImpl<$Res, $Val extends SnapPlug>
+class _$SnapPlugCopyWithImpl<$Res>
     implements $SnapPlugCopyWith<$Res> {
-  _$SnapPlugCopyWithImpl(this._value, this._then);
+  _$SnapPlugCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapPlug _self;
+  final $Res Function(SnapPlug) _then;
 
-  /// Create a copy of SnapPlug
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? snap = null,
-    Object? plug = null,
-    Object? attributes = null,
-    Object? interface = freezed,
-    Object? connections = null,
-  }) {
-    return _then(_value.copyWith(
-      snap: null == snap
-          ? _value.snap
-          : snap // ignore: cast_nullable_to_non_nullable
-              as String,
-      plug: null == plug
-          ? _value.plug
-          : plug // ignore: cast_nullable_to_non_nullable
-              as String,
-      attributes: null == attributes
-          ? _value.attributes
-          : attributes // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      interface: freezed == interface
-          ? _value.interface
-          : interface // ignore: cast_nullable_to_non_nullable
-              as String?,
-      connections: null == connections
-          ? _value.connections
-          : connections // ignore: cast_nullable_to_non_nullable
-              as List<SnapSlot>,
-    ) as $Val);
-  }
+/// Create a copy of SnapPlug
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? snap = null,Object? plug = null,Object? attributes = null,Object? interface = freezed,Object? connections = null,}) {
+  return _then(_self.copyWith(
+snap: null == snap ? _self.snap : snap // ignore: cast_nullable_to_non_nullable
+as String,plug: null == plug ? _self.plug : plug // ignore: cast_nullable_to_non_nullable
+as String,attributes: null == attributes ? _self.attributes : attributes // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>,interface: freezed == interface ? _self.interface : interface // ignore: cast_nullable_to_non_nullable
+as String?,connections: null == connections ? _self.connections : connections // ignore: cast_nullable_to_non_nullable
+as List<SnapSlot>,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapPlugImplCopyWith<$Res>
-    implements $SnapPlugCopyWith<$Res> {
-  factory _$$SnapPlugImplCopyWith(
-          _$SnapPlugImpl value, $Res Function(_$SnapPlugImpl) then) =
-      __$$SnapPlugImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String snap,
-      String plug,
-      @JsonKey(name: 'attrs') Map<String, dynamic> attributes,
-      String? interface,
-      List<SnapSlot> connections});
 }
 
-/// @nodoc
-class __$$SnapPlugImplCopyWithImpl<$Res>
-    extends _$SnapPlugCopyWithImpl<$Res, _$SnapPlugImpl>
-    implements _$$SnapPlugImplCopyWith<$Res> {
-  __$$SnapPlugImplCopyWithImpl(
-      _$SnapPlugImpl _value, $Res Function(_$SnapPlugImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapPlug
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? snap = null,
-    Object? plug = null,
-    Object? attributes = null,
-    Object? interface = freezed,
-    Object? connections = null,
-  }) {
-    return _then(_$SnapPlugImpl(
-      snap: null == snap
-          ? _value.snap
-          : snap // ignore: cast_nullable_to_non_nullable
-              as String,
-      plug: null == plug
-          ? _value.plug
-          : plug // ignore: cast_nullable_to_non_nullable
-              as String,
-      attributes: null == attributes
-          ? _value._attributes
-          : attributes // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      interface: freezed == interface
-          ? _value.interface
-          : interface // ignore: cast_nullable_to_non_nullable
-              as String?,
-      connections: null == connections
-          ? _value._connections
-          : connections // ignore: cast_nullable_to_non_nullable
-              as List<SnapSlot>,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapPlug].
+extension SnapPlugPatterns on SnapPlug {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapPlug value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapPlug() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapPlug value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapPlug():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapPlug value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapPlug() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String snap,  String plug, @JsonKey(name: 'attrs')  Map<String, dynamic> attributes,  String? interface,  List<SnapSlot> connections)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapPlug() when $default != null:
+return $default(_that.snap,_that.plug,_that.attributes,_that.interface,_that.connections);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String snap,  String plug, @JsonKey(name: 'attrs')  Map<String, dynamic> attributes,  String? interface,  List<SnapSlot> connections)  $default,) {final _that = this;
+switch (_that) {
+case _SnapPlug():
+return $default(_that.snap,_that.plug,_that.attributes,_that.interface,_that.connections);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String snap,  String plug, @JsonKey(name: 'attrs')  Map<String, dynamic> attributes,  String? interface,  List<SnapSlot> connections)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapPlug() when $default != null:
+return $default(_that.snap,_that.plug,_that.attributes,_that.interface,_that.connections);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapPlugImpl implements _SnapPlug {
-  const _$SnapPlugImpl(
-      {required this.snap,
-      required this.plug,
-      @JsonKey(name: 'attrs') final Map<String, dynamic> attributes = const {},
-      this.interface,
-      final List<SnapSlot> connections = const []})
-      : _attributes = attributes,
-        _connections = connections;
 
-  factory _$SnapPlugImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapPlugImplFromJson(json);
+class _SnapPlug implements SnapPlug {
+  const _SnapPlug({required this.snap, required this.plug, @JsonKey(name: 'attrs') final  Map<String, dynamic> attributes = const {}, this.interface, final  List<SnapSlot> connections = const []}): _attributes = attributes,_connections = connections;
+  factory _SnapPlug.fromJson(Map<String, dynamic> json) => _$SnapPlugFromJson(json);
 
-  @override
-  final String snap;
-  @override
-  final String plug;
-  final Map<String, dynamic> _attributes;
-  @override
-  @JsonKey(name: 'attrs')
-  Map<String, dynamic> get attributes {
-    if (_attributes is EqualUnmodifiableMapView) return _attributes;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_attributes);
-  }
-
-  @override
-  final String? interface;
-  final List<SnapSlot> _connections;
-  @override
-  @JsonKey()
-  List<SnapSlot> get connections {
-    if (_connections is EqualUnmodifiableListView) return _connections;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_connections);
-  }
-
-  @override
-  String toString() {
-    return 'SnapPlug(snap: $snap, plug: $plug, attributes: $attributes, interface: $interface, connections: $connections)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapPlugImpl &&
-            (identical(other.snap, snap) || other.snap == snap) &&
-            (identical(other.plug, plug) || other.plug == plug) &&
-            const DeepCollectionEquality()
-                .equals(other._attributes, _attributes) &&
-            (identical(other.interface, interface) ||
-                other.interface == interface) &&
-            const DeepCollectionEquality()
-                .equals(other._connections, _connections));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      snap,
-      plug,
-      const DeepCollectionEquality().hash(_attributes),
-      interface,
-      const DeepCollectionEquality().hash(_connections));
-
-  /// Create a copy of SnapPlug
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapPlugImplCopyWith<_$SnapPlugImpl> get copyWith =>
-      __$$SnapPlugImplCopyWithImpl<_$SnapPlugImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapPlugImplToJson(
-      this,
-    );
-  }
+@override final  String snap;
+@override final  String plug;
+ final  Map<String, dynamic> _attributes;
+@override@JsonKey(name: 'attrs') Map<String, dynamic> get attributes {
+  if (_attributes is EqualUnmodifiableMapView) return _attributes;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(_attributes);
 }
 
-abstract class _SnapPlug implements SnapPlug {
-  const factory _SnapPlug(
-      {required final String snap,
-      required final String plug,
-      @JsonKey(name: 'attrs') final Map<String, dynamic> attributes,
-      final String? interface,
-      final List<SnapSlot> connections}) = _$SnapPlugImpl;
-
-  factory _SnapPlug.fromJson(Map<String, dynamic> json) =
-      _$SnapPlugImpl.fromJson;
-
-  @override
-  String get snap;
-  @override
-  String get plug;
-  @override
-  @JsonKey(name: 'attrs')
-  Map<String, dynamic> get attributes;
-  @override
-  String? get interface;
-  @override
-  List<SnapSlot> get connections;
-
-  /// Create a copy of SnapPlug
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapPlugImplCopyWith<_$SnapPlugImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override final  String? interface;
+ final  List<SnapSlot> _connections;
+@override@JsonKey() List<SnapSlot> get connections {
+  if (_connections is EqualUnmodifiableListView) return _connections;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_connections);
 }
 
-SnapSlot _$SnapSlotFromJson(Map<String, dynamic> json) {
-  return _SnapSlot.fromJson(json);
+
+/// Create a copy of SnapPlug
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapPlugCopyWith<_SnapPlug> get copyWith => __$SnapPlugCopyWithImpl<_SnapPlug>(this, _$identity);
+
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapPlugToJson(this, );
 }
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapPlug&&(identical(other.snap, snap) || other.snap == snap)&&(identical(other.plug, plug) || other.plug == plug)&&const DeepCollectionEquality().equals(other._attributes, _attributes)&&(identical(other.interface, interface) || other.interface == interface)&&const DeepCollectionEquality().equals(other._connections, _connections));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,snap,plug,const DeepCollectionEquality().hash(_attributes),interface,const DeepCollectionEquality().hash(_connections));
+
+@override
+String toString() {
+  return 'SnapPlug(snap: $snap, plug: $plug, attributes: $attributes, interface: $interface, connections: $connections)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapPlugCopyWith<$Res> implements $SnapPlugCopyWith<$Res> {
+  factory _$SnapPlugCopyWith(_SnapPlug value, $Res Function(_SnapPlug) _then) = __$SnapPlugCopyWithImpl;
+@override @useResult
+$Res call({
+ String snap, String plug,@JsonKey(name: 'attrs') Map<String, dynamic> attributes, String? interface, List<SnapSlot> connections
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapPlugCopyWithImpl<$Res>
+    implements _$SnapPlugCopyWith<$Res> {
+  __$SnapPlugCopyWithImpl(this._self, this._then);
+
+  final _SnapPlug _self;
+  final $Res Function(_SnapPlug) _then;
+
+/// Create a copy of SnapPlug
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? snap = null,Object? plug = null,Object? attributes = null,Object? interface = freezed,Object? connections = null,}) {
+  return _then(_SnapPlug(
+snap: null == snap ? _self.snap : snap // ignore: cast_nullable_to_non_nullable
+as String,plug: null == plug ? _self.plug : plug // ignore: cast_nullable_to_non_nullable
+as String,attributes: null == attributes ? _self._attributes : attributes // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>,interface: freezed == interface ? _self.interface : interface // ignore: cast_nullable_to_non_nullable
+as String?,connections: null == connections ? _self._connections : connections // ignore: cast_nullable_to_non_nullable
+as List<SnapSlot>,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapSlot {
-  String get snap => throw _privateConstructorUsedError;
-  String get slot => throw _privateConstructorUsedError;
-  @JsonKey(name: 'attrs')
-  Map<String, dynamic> get attributes => throw _privateConstructorUsedError;
-  String? get interface => throw _privateConstructorUsedError;
-  List<SnapPlug> get connections => throw _privateConstructorUsedError;
+
+ String get snap; String get slot;@JsonKey(name: 'attrs') Map<String, dynamic> get attributes; String? get interface; List<SnapPlug> get connections;
+/// Create a copy of SnapSlot
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapSlotCopyWith<SnapSlot> get copyWith => _$SnapSlotCopyWithImpl<SnapSlot>(this as SnapSlot, _$identity);
 
   /// Serializes this SnapSlot to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapSlot
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapSlotCopyWith<SnapSlot> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapSlot&&(identical(other.snap, snap) || other.snap == snap)&&(identical(other.slot, slot) || other.slot == slot)&&const DeepCollectionEquality().equals(other.attributes, attributes)&&(identical(other.interface, interface) || other.interface == interface)&&const DeepCollectionEquality().equals(other.connections, connections));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,snap,slot,const DeepCollectionEquality().hash(attributes),interface,const DeepCollectionEquality().hash(connections));
+
+@override
+String toString() {
+  return 'SnapSlot(snap: $snap, slot: $slot, attributes: $attributes, interface: $interface, connections: $connections)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapSlotCopyWith<$Res> {
-  factory $SnapSlotCopyWith(SnapSlot value, $Res Function(SnapSlot) then) =
-      _$SnapSlotCopyWithImpl<$Res, SnapSlot>;
-  @useResult
-  $Res call(
-      {String snap,
-      String slot,
-      @JsonKey(name: 'attrs') Map<String, dynamic> attributes,
-      String? interface,
-      List<SnapPlug> connections});
-}
+abstract mixin class $SnapSlotCopyWith<$Res>  {
+  factory $SnapSlotCopyWith(SnapSlot value, $Res Function(SnapSlot) _then) = _$SnapSlotCopyWithImpl;
+@useResult
+$Res call({
+ String snap, String slot,@JsonKey(name: 'attrs') Map<String, dynamic> attributes, String? interface, List<SnapPlug> connections
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapSlotCopyWithImpl<$Res, $Val extends SnapSlot>
+class _$SnapSlotCopyWithImpl<$Res>
     implements $SnapSlotCopyWith<$Res> {
-  _$SnapSlotCopyWithImpl(this._value, this._then);
+  _$SnapSlotCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapSlot _self;
+  final $Res Function(SnapSlot) _then;
 
-  /// Create a copy of SnapSlot
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? snap = null,
-    Object? slot = null,
-    Object? attributes = null,
-    Object? interface = freezed,
-    Object? connections = null,
-  }) {
-    return _then(_value.copyWith(
-      snap: null == snap
-          ? _value.snap
-          : snap // ignore: cast_nullable_to_non_nullable
-              as String,
-      slot: null == slot
-          ? _value.slot
-          : slot // ignore: cast_nullable_to_non_nullable
-              as String,
-      attributes: null == attributes
-          ? _value.attributes
-          : attributes // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      interface: freezed == interface
-          ? _value.interface
-          : interface // ignore: cast_nullable_to_non_nullable
-              as String?,
-      connections: null == connections
-          ? _value.connections
-          : connections // ignore: cast_nullable_to_non_nullable
-              as List<SnapPlug>,
-    ) as $Val);
-  }
+/// Create a copy of SnapSlot
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? snap = null,Object? slot = null,Object? attributes = null,Object? interface = freezed,Object? connections = null,}) {
+  return _then(_self.copyWith(
+snap: null == snap ? _self.snap : snap // ignore: cast_nullable_to_non_nullable
+as String,slot: null == slot ? _self.slot : slot // ignore: cast_nullable_to_non_nullable
+as String,attributes: null == attributes ? _self.attributes : attributes // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>,interface: freezed == interface ? _self.interface : interface // ignore: cast_nullable_to_non_nullable
+as String?,connections: null == connections ? _self.connections : connections // ignore: cast_nullable_to_non_nullable
+as List<SnapPlug>,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapSlotImplCopyWith<$Res>
-    implements $SnapSlotCopyWith<$Res> {
-  factory _$$SnapSlotImplCopyWith(
-          _$SnapSlotImpl value, $Res Function(_$SnapSlotImpl) then) =
-      __$$SnapSlotImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String snap,
-      String slot,
-      @JsonKey(name: 'attrs') Map<String, dynamic> attributes,
-      String? interface,
-      List<SnapPlug> connections});
 }
 
-/// @nodoc
-class __$$SnapSlotImplCopyWithImpl<$Res>
-    extends _$SnapSlotCopyWithImpl<$Res, _$SnapSlotImpl>
-    implements _$$SnapSlotImplCopyWith<$Res> {
-  __$$SnapSlotImplCopyWithImpl(
-      _$SnapSlotImpl _value, $Res Function(_$SnapSlotImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapSlot
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? snap = null,
-    Object? slot = null,
-    Object? attributes = null,
-    Object? interface = freezed,
-    Object? connections = null,
-  }) {
-    return _then(_$SnapSlotImpl(
-      snap: null == snap
-          ? _value.snap
-          : snap // ignore: cast_nullable_to_non_nullable
-              as String,
-      slot: null == slot
-          ? _value.slot
-          : slot // ignore: cast_nullable_to_non_nullable
-              as String,
-      attributes: null == attributes
-          ? _value._attributes
-          : attributes // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      interface: freezed == interface
-          ? _value.interface
-          : interface // ignore: cast_nullable_to_non_nullable
-              as String?,
-      connections: null == connections
-          ? _value._connections
-          : connections // ignore: cast_nullable_to_non_nullable
-              as List<SnapPlug>,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapSlot].
+extension SnapSlotPatterns on SnapSlot {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapSlot value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapSlot() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapSlot value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapSlot():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapSlot value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapSlot() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String snap,  String slot, @JsonKey(name: 'attrs')  Map<String, dynamic> attributes,  String? interface,  List<SnapPlug> connections)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapSlot() when $default != null:
+return $default(_that.snap,_that.slot,_that.attributes,_that.interface,_that.connections);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String snap,  String slot, @JsonKey(name: 'attrs')  Map<String, dynamic> attributes,  String? interface,  List<SnapPlug> connections)  $default,) {final _that = this;
+switch (_that) {
+case _SnapSlot():
+return $default(_that.snap,_that.slot,_that.attributes,_that.interface,_that.connections);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String snap,  String slot, @JsonKey(name: 'attrs')  Map<String, dynamic> attributes,  String? interface,  List<SnapPlug> connections)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapSlot() when $default != null:
+return $default(_that.snap,_that.slot,_that.attributes,_that.interface,_that.connections);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapSlotImpl implements _SnapSlot {
-  const _$SnapSlotImpl(
-      {required this.snap,
-      required this.slot,
-      @JsonKey(name: 'attrs') final Map<String, dynamic> attributes = const {},
-      this.interface,
-      final List<SnapPlug> connections = const []})
-      : _attributes = attributes,
-        _connections = connections;
 
-  factory _$SnapSlotImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapSlotImplFromJson(json);
+class _SnapSlot implements SnapSlot {
+  const _SnapSlot({required this.snap, required this.slot, @JsonKey(name: 'attrs') final  Map<String, dynamic> attributes = const {}, this.interface, final  List<SnapPlug> connections = const []}): _attributes = attributes,_connections = connections;
+  factory _SnapSlot.fromJson(Map<String, dynamic> json) => _$SnapSlotFromJson(json);
 
-  @override
-  final String snap;
-  @override
-  final String slot;
-  final Map<String, dynamic> _attributes;
-  @override
-  @JsonKey(name: 'attrs')
-  Map<String, dynamic> get attributes {
-    if (_attributes is EqualUnmodifiableMapView) return _attributes;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_attributes);
-  }
-
-  @override
-  final String? interface;
-  final List<SnapPlug> _connections;
-  @override
-  @JsonKey()
-  List<SnapPlug> get connections {
-    if (_connections is EqualUnmodifiableListView) return _connections;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_connections);
-  }
-
-  @override
-  String toString() {
-    return 'SnapSlot(snap: $snap, slot: $slot, attributes: $attributes, interface: $interface, connections: $connections)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapSlotImpl &&
-            (identical(other.snap, snap) || other.snap == snap) &&
-            (identical(other.slot, slot) || other.slot == slot) &&
-            const DeepCollectionEquality()
-                .equals(other._attributes, _attributes) &&
-            (identical(other.interface, interface) ||
-                other.interface == interface) &&
-            const DeepCollectionEquality()
-                .equals(other._connections, _connections));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      snap,
-      slot,
-      const DeepCollectionEquality().hash(_attributes),
-      interface,
-      const DeepCollectionEquality().hash(_connections));
-
-  /// Create a copy of SnapSlot
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapSlotImplCopyWith<_$SnapSlotImpl> get copyWith =>
-      __$$SnapSlotImplCopyWithImpl<_$SnapSlotImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapSlotImplToJson(
-      this,
-    );
-  }
+@override final  String snap;
+@override final  String slot;
+ final  Map<String, dynamic> _attributes;
+@override@JsonKey(name: 'attrs') Map<String, dynamic> get attributes {
+  if (_attributes is EqualUnmodifiableMapView) return _attributes;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(_attributes);
 }
 
-abstract class _SnapSlot implements SnapSlot {
-  const factory _SnapSlot(
-      {required final String snap,
-      required final String slot,
-      @JsonKey(name: 'attrs') final Map<String, dynamic> attributes,
-      final String? interface,
-      final List<SnapPlug> connections}) = _$SnapSlotImpl;
-
-  factory _SnapSlot.fromJson(Map<String, dynamic> json) =
-      _$SnapSlotImpl.fromJson;
-
-  @override
-  String get snap;
-  @override
-  String get slot;
-  @override
-  @JsonKey(name: 'attrs')
-  Map<String, dynamic> get attributes;
-  @override
-  String? get interface;
-  @override
-  List<SnapPlug> get connections;
-
-  /// Create a copy of SnapSlot
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapSlotImplCopyWith<_$SnapSlotImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override final  String? interface;
+ final  List<SnapPlug> _connections;
+@override@JsonKey() List<SnapPlug> get connections {
+  if (_connections is EqualUnmodifiableListView) return _connections;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_connections);
 }
 
-SnapConnection _$SnapConnectionFromJson(Map<String, dynamic> json) {
-  return _SnapConnection.fromJson(json);
+
+/// Create a copy of SnapSlot
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapSlotCopyWith<_SnapSlot> get copyWith => __$SnapSlotCopyWithImpl<_SnapSlot>(this, _$identity);
+
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapSlotToJson(this, );
 }
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapSlot&&(identical(other.snap, snap) || other.snap == snap)&&(identical(other.slot, slot) || other.slot == slot)&&const DeepCollectionEquality().equals(other._attributes, _attributes)&&(identical(other.interface, interface) || other.interface == interface)&&const DeepCollectionEquality().equals(other._connections, _connections));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,snap,slot,const DeepCollectionEquality().hash(_attributes),interface,const DeepCollectionEquality().hash(_connections));
+
+@override
+String toString() {
+  return 'SnapSlot(snap: $snap, slot: $slot, attributes: $attributes, interface: $interface, connections: $connections)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapSlotCopyWith<$Res> implements $SnapSlotCopyWith<$Res> {
+  factory _$SnapSlotCopyWith(_SnapSlot value, $Res Function(_SnapSlot) _then) = __$SnapSlotCopyWithImpl;
+@override @useResult
+$Res call({
+ String snap, String slot,@JsonKey(name: 'attrs') Map<String, dynamic> attributes, String? interface, List<SnapPlug> connections
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapSlotCopyWithImpl<$Res>
+    implements _$SnapSlotCopyWith<$Res> {
+  __$SnapSlotCopyWithImpl(this._self, this._then);
+
+  final _SnapSlot _self;
+  final $Res Function(_SnapSlot) _then;
+
+/// Create a copy of SnapSlot
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? snap = null,Object? slot = null,Object? attributes = null,Object? interface = freezed,Object? connections = null,}) {
+  return _then(_SnapSlot(
+snap: null == snap ? _self.snap : snap // ignore: cast_nullable_to_non_nullable
+as String,slot: null == slot ? _self.slot : slot // ignore: cast_nullable_to_non_nullable
+as String,attributes: null == attributes ? _self._attributes : attributes // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>,interface: freezed == interface ? _self.interface : interface // ignore: cast_nullable_to_non_nullable
+as String?,connections: null == connections ? _self._connections : connections // ignore: cast_nullable_to_non_nullable
+as List<SnapPlug>,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapConnection {
-  SnapSlot get slot => throw _privateConstructorUsedError;
-  SnapPlug get plug => throw _privateConstructorUsedError;
-  String get interface => throw _privateConstructorUsedError;
-  @JsonKey(name: 'slot-attrs')
-  Map<String, dynamic> get slotAttributes => throw _privateConstructorUsedError;
-  @JsonKey(name: 'plug-attrs')
-  Map<String, dynamic> get plugAttributes => throw _privateConstructorUsedError;
-  bool get manual => throw _privateConstructorUsedError;
+
+ SnapSlot get slot; SnapPlug get plug; String get interface;@JsonKey(name: 'slot-attrs') Map<String, dynamic> get slotAttributes;@JsonKey(name: 'plug-attrs') Map<String, dynamic> get plugAttributes; bool get manual;
+/// Create a copy of SnapConnection
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapConnectionCopyWith<SnapConnection> get copyWith => _$SnapConnectionCopyWithImpl<SnapConnection>(this as SnapConnection, _$identity);
 
   /// Serializes this SnapConnection to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapConnection
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapConnectionCopyWith<SnapConnection> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapConnection&&(identical(other.slot, slot) || other.slot == slot)&&(identical(other.plug, plug) || other.plug == plug)&&(identical(other.interface, interface) || other.interface == interface)&&const DeepCollectionEquality().equals(other.slotAttributes, slotAttributes)&&const DeepCollectionEquality().equals(other.plugAttributes, plugAttributes)&&(identical(other.manual, manual) || other.manual == manual));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,slot,plug,interface,const DeepCollectionEquality().hash(slotAttributes),const DeepCollectionEquality().hash(plugAttributes),manual);
+
+@override
+String toString() {
+  return 'SnapConnection(slot: $slot, plug: $plug, interface: $interface, slotAttributes: $slotAttributes, plugAttributes: $plugAttributes, manual: $manual)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapConnectionCopyWith<$Res> {
-  factory $SnapConnectionCopyWith(
-          SnapConnection value, $Res Function(SnapConnection) then) =
-      _$SnapConnectionCopyWithImpl<$Res, SnapConnection>;
-  @useResult
-  $Res call(
-      {SnapSlot slot,
-      SnapPlug plug,
-      String interface,
-      @JsonKey(name: 'slot-attrs') Map<String, dynamic> slotAttributes,
-      @JsonKey(name: 'plug-attrs') Map<String, dynamic> plugAttributes,
-      bool manual});
+abstract mixin class $SnapConnectionCopyWith<$Res>  {
+  factory $SnapConnectionCopyWith(SnapConnection value, $Res Function(SnapConnection) _then) = _$SnapConnectionCopyWithImpl;
+@useResult
+$Res call({
+ SnapSlot slot, SnapPlug plug, String interface,@JsonKey(name: 'slot-attrs') Map<String, dynamic> slotAttributes,@JsonKey(name: 'plug-attrs') Map<String, dynamic> plugAttributes, bool manual
+});
 
-  $SnapSlotCopyWith<$Res> get slot;
-  $SnapPlugCopyWith<$Res> get plug;
+
+$SnapSlotCopyWith<$Res> get slot;$SnapPlugCopyWith<$Res> get plug;
+
 }
-
 /// @nodoc
-class _$SnapConnectionCopyWithImpl<$Res, $Val extends SnapConnection>
+class _$SnapConnectionCopyWithImpl<$Res>
     implements $SnapConnectionCopyWith<$Res> {
-  _$SnapConnectionCopyWithImpl(this._value, this._then);
+  _$SnapConnectionCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapConnection _self;
+  final $Res Function(SnapConnection) _then;
 
-  /// Create a copy of SnapConnection
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? slot = null,
-    Object? plug = null,
-    Object? interface = null,
-    Object? slotAttributes = null,
-    Object? plugAttributes = null,
-    Object? manual = null,
-  }) {
-    return _then(_value.copyWith(
-      slot: null == slot
-          ? _value.slot
-          : slot // ignore: cast_nullable_to_non_nullable
-              as SnapSlot,
-      plug: null == plug
-          ? _value.plug
-          : plug // ignore: cast_nullable_to_non_nullable
-              as SnapPlug,
-      interface: null == interface
-          ? _value.interface
-          : interface // ignore: cast_nullable_to_non_nullable
-              as String,
-      slotAttributes: null == slotAttributes
-          ? _value.slotAttributes
-          : slotAttributes // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      plugAttributes: null == plugAttributes
-          ? _value.plugAttributes
-          : plugAttributes // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      manual: null == manual
-          ? _value.manual
-          : manual // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ) as $Val);
-  }
-
-  /// Create a copy of SnapConnection
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $SnapSlotCopyWith<$Res> get slot {
-    return $SnapSlotCopyWith<$Res>(_value.slot, (value) {
-      return _then(_value.copyWith(slot: value) as $Val);
-    });
-  }
-
-  /// Create a copy of SnapConnection
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $SnapPlugCopyWith<$Res> get plug {
-    return $SnapPlugCopyWith<$Res>(_value.plug, (value) {
-      return _then(_value.copyWith(plug: value) as $Val);
-    });
-  }
+/// Create a copy of SnapConnection
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? slot = null,Object? plug = null,Object? interface = null,Object? slotAttributes = null,Object? plugAttributes = null,Object? manual = null,}) {
+  return _then(_self.copyWith(
+slot: null == slot ? _self.slot : slot // ignore: cast_nullable_to_non_nullable
+as SnapSlot,plug: null == plug ? _self.plug : plug // ignore: cast_nullable_to_non_nullable
+as SnapPlug,interface: null == interface ? _self.interface : interface // ignore: cast_nullable_to_non_nullable
+as String,slotAttributes: null == slotAttributes ? _self.slotAttributes : slotAttributes // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>,plugAttributes: null == plugAttributes ? _self.plugAttributes : plugAttributes // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>,manual: null == manual ? _self.manual : manual // ignore: cast_nullable_to_non_nullable
+as bool,
+  ));
+}
+/// Create a copy of SnapConnection
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$SnapSlotCopyWith<$Res> get slot {
+  
+  return $SnapSlotCopyWith<$Res>(_self.slot, (value) {
+    return _then(_self.copyWith(slot: value));
+  });
+}/// Create a copy of SnapConnection
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$SnapPlugCopyWith<$Res> get plug {
+  
+  return $SnapPlugCopyWith<$Res>(_self.plug, (value) {
+    return _then(_self.copyWith(plug: value));
+  });
+}
 }
 
-/// @nodoc
-abstract class _$$SnapConnectionImplCopyWith<$Res>
-    implements $SnapConnectionCopyWith<$Res> {
-  factory _$$SnapConnectionImplCopyWith(_$SnapConnectionImpl value,
-          $Res Function(_$SnapConnectionImpl) then) =
-      __$$SnapConnectionImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {SnapSlot slot,
-      SnapPlug plug,
-      String interface,
-      @JsonKey(name: 'slot-attrs') Map<String, dynamic> slotAttributes,
-      @JsonKey(name: 'plug-attrs') Map<String, dynamic> plugAttributes,
-      bool manual});
 
-  @override
-  $SnapSlotCopyWith<$Res> get slot;
-  @override
-  $SnapPlugCopyWith<$Res> get plug;
+/// Adds pattern-matching-related methods to [SnapConnection].
+extension SnapConnectionPatterns on SnapConnection {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapConnection value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapConnection() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapConnection value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapConnection():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapConnection value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapConnection() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( SnapSlot slot,  SnapPlug plug,  String interface, @JsonKey(name: 'slot-attrs')  Map<String, dynamic> slotAttributes, @JsonKey(name: 'plug-attrs')  Map<String, dynamic> plugAttributes,  bool manual)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapConnection() when $default != null:
+return $default(_that.slot,_that.plug,_that.interface,_that.slotAttributes,_that.plugAttributes,_that.manual);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( SnapSlot slot,  SnapPlug plug,  String interface, @JsonKey(name: 'slot-attrs')  Map<String, dynamic> slotAttributes, @JsonKey(name: 'plug-attrs')  Map<String, dynamic> plugAttributes,  bool manual)  $default,) {final _that = this;
+switch (_that) {
+case _SnapConnection():
+return $default(_that.slot,_that.plug,_that.interface,_that.slotAttributes,_that.plugAttributes,_that.manual);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( SnapSlot slot,  SnapPlug plug,  String interface, @JsonKey(name: 'slot-attrs')  Map<String, dynamic> slotAttributes, @JsonKey(name: 'plug-attrs')  Map<String, dynamic> plugAttributes,  bool manual)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapConnection() when $default != null:
+return $default(_that.slot,_that.plug,_that.interface,_that.slotAttributes,_that.plugAttributes,_that.manual);case _:
+  return null;
+
+}
 }
 
-/// @nodoc
-class __$$SnapConnectionImplCopyWithImpl<$Res>
-    extends _$SnapConnectionCopyWithImpl<$Res, _$SnapConnectionImpl>
-    implements _$$SnapConnectionImplCopyWith<$Res> {
-  __$$SnapConnectionImplCopyWithImpl(
-      _$SnapConnectionImpl _value, $Res Function(_$SnapConnectionImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of SnapConnection
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? slot = null,
-    Object? plug = null,
-    Object? interface = null,
-    Object? slotAttributes = null,
-    Object? plugAttributes = null,
-    Object? manual = null,
-  }) {
-    return _then(_$SnapConnectionImpl(
-      slot: null == slot
-          ? _value.slot
-          : slot // ignore: cast_nullable_to_non_nullable
-              as SnapSlot,
-      plug: null == plug
-          ? _value.plug
-          : plug // ignore: cast_nullable_to_non_nullable
-              as SnapPlug,
-      interface: null == interface
-          ? _value.interface
-          : interface // ignore: cast_nullable_to_non_nullable
-              as String,
-      slotAttributes: null == slotAttributes
-          ? _value._slotAttributes
-          : slotAttributes // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      plugAttributes: null == plugAttributes
-          ? _value._plugAttributes
-          : plugAttributes // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      manual: null == manual
-          ? _value.manual
-          : manual // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ));
-  }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapConnectionImpl implements _SnapConnection {
-  const _$SnapConnectionImpl(
-      {required this.slot,
-      required this.plug,
-      required this.interface,
-      @JsonKey(name: 'slot-attrs')
-      final Map<String, dynamic> slotAttributes = const {},
-      @JsonKey(name: 'plug-attrs')
-      final Map<String, dynamic> plugAttributes = const {},
-      this.manual = false})
-      : _slotAttributes = slotAttributes,
-        _plugAttributes = plugAttributes;
 
-  factory _$SnapConnectionImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapConnectionImplFromJson(json);
+class _SnapConnection implements SnapConnection {
+  const _SnapConnection({required this.slot, required this.plug, required this.interface, @JsonKey(name: 'slot-attrs') final  Map<String, dynamic> slotAttributes = const {}, @JsonKey(name: 'plug-attrs') final  Map<String, dynamic> plugAttributes = const {}, this.manual = false}): _slotAttributes = slotAttributes,_plugAttributes = plugAttributes;
+  factory _SnapConnection.fromJson(Map<String, dynamic> json) => _$SnapConnectionFromJson(json);
 
-  @override
-  final SnapSlot slot;
-  @override
-  final SnapPlug plug;
-  @override
-  final String interface;
-  final Map<String, dynamic> _slotAttributes;
-  @override
-  @JsonKey(name: 'slot-attrs')
-  Map<String, dynamic> get slotAttributes {
-    if (_slotAttributes is EqualUnmodifiableMapView) return _slotAttributes;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_slotAttributes);
-  }
-
-  final Map<String, dynamic> _plugAttributes;
-  @override
-  @JsonKey(name: 'plug-attrs')
-  Map<String, dynamic> get plugAttributes {
-    if (_plugAttributes is EqualUnmodifiableMapView) return _plugAttributes;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_plugAttributes);
-  }
-
-  @override
-  @JsonKey()
-  final bool manual;
-
-  @override
-  String toString() {
-    return 'SnapConnection(slot: $slot, plug: $plug, interface: $interface, slotAttributes: $slotAttributes, plugAttributes: $plugAttributes, manual: $manual)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapConnectionImpl &&
-            (identical(other.slot, slot) || other.slot == slot) &&
-            (identical(other.plug, plug) || other.plug == plug) &&
-            (identical(other.interface, interface) ||
-                other.interface == interface) &&
-            const DeepCollectionEquality()
-                .equals(other._slotAttributes, _slotAttributes) &&
-            const DeepCollectionEquality()
-                .equals(other._plugAttributes, _plugAttributes) &&
-            (identical(other.manual, manual) || other.manual == manual));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      slot,
-      plug,
-      interface,
-      const DeepCollectionEquality().hash(_slotAttributes),
-      const DeepCollectionEquality().hash(_plugAttributes),
-      manual);
-
-  /// Create a copy of SnapConnection
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapConnectionImplCopyWith<_$SnapConnectionImpl> get copyWith =>
-      __$$SnapConnectionImplCopyWithImpl<_$SnapConnectionImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapConnectionImplToJson(
-      this,
-    );
-  }
+@override final  SnapSlot slot;
+@override final  SnapPlug plug;
+@override final  String interface;
+ final  Map<String, dynamic> _slotAttributes;
+@override@JsonKey(name: 'slot-attrs') Map<String, dynamic> get slotAttributes {
+  if (_slotAttributes is EqualUnmodifiableMapView) return _slotAttributes;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(_slotAttributes);
 }
 
-abstract class _SnapConnection implements SnapConnection {
-  const factory _SnapConnection(
-      {required final SnapSlot slot,
-      required final SnapPlug plug,
-      required final String interface,
-      @JsonKey(name: 'slot-attrs') final Map<String, dynamic> slotAttributes,
-      @JsonKey(name: 'plug-attrs') final Map<String, dynamic> plugAttributes,
-      final bool manual}) = _$SnapConnectionImpl;
-
-  factory _SnapConnection.fromJson(Map<String, dynamic> json) =
-      _$SnapConnectionImpl.fromJson;
-
-  @override
-  SnapSlot get slot;
-  @override
-  SnapPlug get plug;
-  @override
-  String get interface;
-  @override
-  @JsonKey(name: 'slot-attrs')
-  Map<String, dynamic> get slotAttributes;
-  @override
-  @JsonKey(name: 'plug-attrs')
-  Map<String, dynamic> get plugAttributes;
-  @override
-  bool get manual;
-
-  /// Create a copy of SnapConnection
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapConnectionImplCopyWith<_$SnapConnectionImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+ final  Map<String, dynamic> _plugAttributes;
+@override@JsonKey(name: 'plug-attrs') Map<String, dynamic> get plugAttributes {
+  if (_plugAttributes is EqualUnmodifiableMapView) return _plugAttributes;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(_plugAttributes);
 }
 
-SnapdConnectionsResponse _$SnapdConnectionsResponseFromJson(
-    Map<String, dynamic> json) {
-  return _SnapdConnectionsResponse.fromJson(json);
+@override@JsonKey() final  bool manual;
+
+/// Create a copy of SnapConnection
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapConnectionCopyWith<_SnapConnection> get copyWith => __$SnapConnectionCopyWithImpl<_SnapConnection>(this, _$identity);
+
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapConnectionToJson(this, );
 }
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapConnection&&(identical(other.slot, slot) || other.slot == slot)&&(identical(other.plug, plug) || other.plug == plug)&&(identical(other.interface, interface) || other.interface == interface)&&const DeepCollectionEquality().equals(other._slotAttributes, _slotAttributes)&&const DeepCollectionEquality().equals(other._plugAttributes, _plugAttributes)&&(identical(other.manual, manual) || other.manual == manual));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,slot,plug,interface,const DeepCollectionEquality().hash(_slotAttributes),const DeepCollectionEquality().hash(_plugAttributes),manual);
+
+@override
+String toString() {
+  return 'SnapConnection(slot: $slot, plug: $plug, interface: $interface, slotAttributes: $slotAttributes, plugAttributes: $plugAttributes, manual: $manual)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapConnectionCopyWith<$Res> implements $SnapConnectionCopyWith<$Res> {
+  factory _$SnapConnectionCopyWith(_SnapConnection value, $Res Function(_SnapConnection) _then) = __$SnapConnectionCopyWithImpl;
+@override @useResult
+$Res call({
+ SnapSlot slot, SnapPlug plug, String interface,@JsonKey(name: 'slot-attrs') Map<String, dynamic> slotAttributes,@JsonKey(name: 'plug-attrs') Map<String, dynamic> plugAttributes, bool manual
+});
+
+
+@override $SnapSlotCopyWith<$Res> get slot;@override $SnapPlugCopyWith<$Res> get plug;
+
+}
+/// @nodoc
+class __$SnapConnectionCopyWithImpl<$Res>
+    implements _$SnapConnectionCopyWith<$Res> {
+  __$SnapConnectionCopyWithImpl(this._self, this._then);
+
+  final _SnapConnection _self;
+  final $Res Function(_SnapConnection) _then;
+
+/// Create a copy of SnapConnection
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? slot = null,Object? plug = null,Object? interface = null,Object? slotAttributes = null,Object? plugAttributes = null,Object? manual = null,}) {
+  return _then(_SnapConnection(
+slot: null == slot ? _self.slot : slot // ignore: cast_nullable_to_non_nullable
+as SnapSlot,plug: null == plug ? _self.plug : plug // ignore: cast_nullable_to_non_nullable
+as SnapPlug,interface: null == interface ? _self.interface : interface // ignore: cast_nullable_to_non_nullable
+as String,slotAttributes: null == slotAttributes ? _self._slotAttributes : slotAttributes // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>,plugAttributes: null == plugAttributes ? _self._plugAttributes : plugAttributes // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>,manual: null == manual ? _self.manual : manual // ignore: cast_nullable_to_non_nullable
+as bool,
+  ));
+}
+
+/// Create a copy of SnapConnection
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$SnapSlotCopyWith<$Res> get slot {
+  
+  return $SnapSlotCopyWith<$Res>(_self.slot, (value) {
+    return _then(_self.copyWith(slot: value));
+  });
+}/// Create a copy of SnapConnection
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$SnapPlugCopyWith<$Res> get plug {
+  
+  return $SnapPlugCopyWith<$Res>(_self.plug, (value) {
+    return _then(_self.copyWith(plug: value));
+  });
+}
+}
+
 
 /// @nodoc
 mixin _$SnapdConnectionsResponse {
-  List<SnapConnection> get established => throw _privateConstructorUsedError;
-  List<SnapPlug> get plugs => throw _privateConstructorUsedError;
-  List<SnapSlot> get slots => throw _privateConstructorUsedError;
-  List<SnapConnection> get undesired => throw _privateConstructorUsedError;
+
+ List<SnapConnection> get established; List<SnapPlug> get plugs; List<SnapSlot> get slots; List<SnapConnection> get undesired;
+/// Create a copy of SnapdConnectionsResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapdConnectionsResponseCopyWith<SnapdConnectionsResponse> get copyWith => _$SnapdConnectionsResponseCopyWithImpl<SnapdConnectionsResponse>(this as SnapdConnectionsResponse, _$identity);
 
   /// Serializes this SnapdConnectionsResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapdConnectionsResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapdConnectionsResponseCopyWith<SnapdConnectionsResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapdConnectionsResponse&&const DeepCollectionEquality().equals(other.established, established)&&const DeepCollectionEquality().equals(other.plugs, plugs)&&const DeepCollectionEquality().equals(other.slots, slots)&&const DeepCollectionEquality().equals(other.undesired, undesired));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(established),const DeepCollectionEquality().hash(plugs),const DeepCollectionEquality().hash(slots),const DeepCollectionEquality().hash(undesired));
+
+@override
+String toString() {
+  return 'SnapdConnectionsResponse(established: $established, plugs: $plugs, slots: $slots, undesired: $undesired)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapdConnectionsResponseCopyWith<$Res> {
-  factory $SnapdConnectionsResponseCopyWith(SnapdConnectionsResponse value,
-          $Res Function(SnapdConnectionsResponse) then) =
-      _$SnapdConnectionsResponseCopyWithImpl<$Res, SnapdConnectionsResponse>;
-  @useResult
-  $Res call(
-      {List<SnapConnection> established,
-      List<SnapPlug> plugs,
-      List<SnapSlot> slots,
-      List<SnapConnection> undesired});
-}
+abstract mixin class $SnapdConnectionsResponseCopyWith<$Res>  {
+  factory $SnapdConnectionsResponseCopyWith(SnapdConnectionsResponse value, $Res Function(SnapdConnectionsResponse) _then) = _$SnapdConnectionsResponseCopyWithImpl;
+@useResult
+$Res call({
+ List<SnapConnection> established, List<SnapPlug> plugs, List<SnapSlot> slots, List<SnapConnection> undesired
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapdConnectionsResponseCopyWithImpl<$Res,
-        $Val extends SnapdConnectionsResponse>
+class _$SnapdConnectionsResponseCopyWithImpl<$Res>
     implements $SnapdConnectionsResponseCopyWith<$Res> {
-  _$SnapdConnectionsResponseCopyWithImpl(this._value, this._then);
+  _$SnapdConnectionsResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapdConnectionsResponse _self;
+  final $Res Function(SnapdConnectionsResponse) _then;
 
-  /// Create a copy of SnapdConnectionsResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? established = null,
-    Object? plugs = null,
-    Object? slots = null,
-    Object? undesired = null,
-  }) {
-    return _then(_value.copyWith(
-      established: null == established
-          ? _value.established
-          : established // ignore: cast_nullable_to_non_nullable
-              as List<SnapConnection>,
-      plugs: null == plugs
-          ? _value.plugs
-          : plugs // ignore: cast_nullable_to_non_nullable
-              as List<SnapPlug>,
-      slots: null == slots
-          ? _value.slots
-          : slots // ignore: cast_nullable_to_non_nullable
-              as List<SnapSlot>,
-      undesired: null == undesired
-          ? _value.undesired
-          : undesired // ignore: cast_nullable_to_non_nullable
-              as List<SnapConnection>,
-    ) as $Val);
-  }
+/// Create a copy of SnapdConnectionsResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? established = null,Object? plugs = null,Object? slots = null,Object? undesired = null,}) {
+  return _then(_self.copyWith(
+established: null == established ? _self.established : established // ignore: cast_nullable_to_non_nullable
+as List<SnapConnection>,plugs: null == plugs ? _self.plugs : plugs // ignore: cast_nullable_to_non_nullable
+as List<SnapPlug>,slots: null == slots ? _self.slots : slots // ignore: cast_nullable_to_non_nullable
+as List<SnapSlot>,undesired: null == undesired ? _self.undesired : undesired // ignore: cast_nullable_to_non_nullable
+as List<SnapConnection>,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapdConnectionsResponseImplCopyWith<$Res>
-    implements $SnapdConnectionsResponseCopyWith<$Res> {
-  factory _$$SnapdConnectionsResponseImplCopyWith(
-          _$SnapdConnectionsResponseImpl value,
-          $Res Function(_$SnapdConnectionsResponseImpl) then) =
-      __$$SnapdConnectionsResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {List<SnapConnection> established,
-      List<SnapPlug> plugs,
-      List<SnapSlot> slots,
-      List<SnapConnection> undesired});
 }
 
-/// @nodoc
-class __$$SnapdConnectionsResponseImplCopyWithImpl<$Res>
-    extends _$SnapdConnectionsResponseCopyWithImpl<$Res,
-        _$SnapdConnectionsResponseImpl>
-    implements _$$SnapdConnectionsResponseImplCopyWith<$Res> {
-  __$$SnapdConnectionsResponseImplCopyWithImpl(
-      _$SnapdConnectionsResponseImpl _value,
-      $Res Function(_$SnapdConnectionsResponseImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapdConnectionsResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? established = null,
-    Object? plugs = null,
-    Object? slots = null,
-    Object? undesired = null,
-  }) {
-    return _then(_$SnapdConnectionsResponseImpl(
-      established: null == established
-          ? _value._established
-          : established // ignore: cast_nullable_to_non_nullable
-              as List<SnapConnection>,
-      plugs: null == plugs
-          ? _value._plugs
-          : plugs // ignore: cast_nullable_to_non_nullable
-              as List<SnapPlug>,
-      slots: null == slots
-          ? _value._slots
-          : slots // ignore: cast_nullable_to_non_nullable
-              as List<SnapSlot>,
-      undesired: null == undesired
-          ? _value._undesired
-          : undesired // ignore: cast_nullable_to_non_nullable
-              as List<SnapConnection>,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapdConnectionsResponse].
+extension SnapdConnectionsResponsePatterns on SnapdConnectionsResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapdConnectionsResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapdConnectionsResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapdConnectionsResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdConnectionsResponse():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapdConnectionsResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdConnectionsResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( List<SnapConnection> established,  List<SnapPlug> plugs,  List<SnapSlot> slots,  List<SnapConnection> undesired)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapdConnectionsResponse() when $default != null:
+return $default(_that.established,_that.plugs,_that.slots,_that.undesired);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( List<SnapConnection> established,  List<SnapPlug> plugs,  List<SnapSlot> slots,  List<SnapConnection> undesired)  $default,) {final _that = this;
+switch (_that) {
+case _SnapdConnectionsResponse():
+return $default(_that.established,_that.plugs,_that.slots,_that.undesired);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( List<SnapConnection> established,  List<SnapPlug> plugs,  List<SnapSlot> slots,  List<SnapConnection> undesired)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapdConnectionsResponse() when $default != null:
+return $default(_that.established,_that.plugs,_that.slots,_that.undesired);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapdConnectionsResponseImpl implements _SnapdConnectionsResponse {
-  const _$SnapdConnectionsResponseImpl(
-      {final List<SnapConnection> established = const [],
-      final List<SnapPlug> plugs = const [],
-      final List<SnapSlot> slots = const [],
-      final List<SnapConnection> undesired = const []})
-      : _established = established,
-        _plugs = plugs,
-        _slots = slots,
-        _undesired = undesired;
 
-  factory _$SnapdConnectionsResponseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapdConnectionsResponseImplFromJson(json);
+class _SnapdConnectionsResponse implements SnapdConnectionsResponse {
+  const _SnapdConnectionsResponse({final  List<SnapConnection> established = const [], final  List<SnapPlug> plugs = const [], final  List<SnapSlot> slots = const [], final  List<SnapConnection> undesired = const []}): _established = established,_plugs = plugs,_slots = slots,_undesired = undesired;
+  factory _SnapdConnectionsResponse.fromJson(Map<String, dynamic> json) => _$SnapdConnectionsResponseFromJson(json);
 
-  final List<SnapConnection> _established;
-  @override
-  @JsonKey()
-  List<SnapConnection> get established {
-    if (_established is EqualUnmodifiableListView) return _established;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_established);
-  }
-
-  final List<SnapPlug> _plugs;
-  @override
-  @JsonKey()
-  List<SnapPlug> get plugs {
-    if (_plugs is EqualUnmodifiableListView) return _plugs;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_plugs);
-  }
-
-  final List<SnapSlot> _slots;
-  @override
-  @JsonKey()
-  List<SnapSlot> get slots {
-    if (_slots is EqualUnmodifiableListView) return _slots;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_slots);
-  }
-
-  final List<SnapConnection> _undesired;
-  @override
-  @JsonKey()
-  List<SnapConnection> get undesired {
-    if (_undesired is EqualUnmodifiableListView) return _undesired;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_undesired);
-  }
-
-  @override
-  String toString() {
-    return 'SnapdConnectionsResponse(established: $established, plugs: $plugs, slots: $slots, undesired: $undesired)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapdConnectionsResponseImpl &&
-            const DeepCollectionEquality()
-                .equals(other._established, _established) &&
-            const DeepCollectionEquality().equals(other._plugs, _plugs) &&
-            const DeepCollectionEquality().equals(other._slots, _slots) &&
-            const DeepCollectionEquality()
-                .equals(other._undesired, _undesired));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(_established),
-      const DeepCollectionEquality().hash(_plugs),
-      const DeepCollectionEquality().hash(_slots),
-      const DeepCollectionEquality().hash(_undesired));
-
-  /// Create a copy of SnapdConnectionsResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapdConnectionsResponseImplCopyWith<_$SnapdConnectionsResponseImpl>
-      get copyWith => __$$SnapdConnectionsResponseImplCopyWithImpl<
-          _$SnapdConnectionsResponseImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapdConnectionsResponseImplToJson(
-      this,
-    );
-  }
+ final  List<SnapConnection> _established;
+@override@JsonKey() List<SnapConnection> get established {
+  if (_established is EqualUnmodifiableListView) return _established;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_established);
 }
 
-abstract class _SnapdConnectionsResponse implements SnapdConnectionsResponse {
-  const factory _SnapdConnectionsResponse(
-      {final List<SnapConnection> established,
-      final List<SnapPlug> plugs,
-      final List<SnapSlot> slots,
-      final List<SnapConnection> undesired}) = _$SnapdConnectionsResponseImpl;
-
-  factory _SnapdConnectionsResponse.fromJson(Map<String, dynamic> json) =
-      _$SnapdConnectionsResponseImpl.fromJson;
-
-  @override
-  List<SnapConnection> get established;
-  @override
-  List<SnapPlug> get plugs;
-  @override
-  List<SnapSlot> get slots;
-  @override
-  List<SnapConnection> get undesired;
-
-  /// Create a copy of SnapdConnectionsResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapdConnectionsResponseImplCopyWith<_$SnapdConnectionsResponseImpl>
-      get copyWith => throw _privateConstructorUsedError;
+ final  List<SnapPlug> _plugs;
+@override@JsonKey() List<SnapPlug> get plugs {
+  if (_plugs is EqualUnmodifiableListView) return _plugs;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_plugs);
 }
 
-SnapdChange _$SnapdChangeFromJson(Map<String, dynamic> json) {
-  return _SnapdChange.fromJson(json);
+ final  List<SnapSlot> _slots;
+@override@JsonKey() List<SnapSlot> get slots {
+  if (_slots is EqualUnmodifiableListView) return _slots;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_slots);
 }
+
+ final  List<SnapConnection> _undesired;
+@override@JsonKey() List<SnapConnection> get undesired {
+  if (_undesired is EqualUnmodifiableListView) return _undesired;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_undesired);
+}
+
+
+/// Create a copy of SnapdConnectionsResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapdConnectionsResponseCopyWith<_SnapdConnectionsResponse> get copyWith => __$SnapdConnectionsResponseCopyWithImpl<_SnapdConnectionsResponse>(this, _$identity);
+
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapdConnectionsResponseToJson(this, );
+}
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapdConnectionsResponse&&const DeepCollectionEquality().equals(other._established, _established)&&const DeepCollectionEquality().equals(other._plugs, _plugs)&&const DeepCollectionEquality().equals(other._slots, _slots)&&const DeepCollectionEquality().equals(other._undesired, _undesired));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(_established),const DeepCollectionEquality().hash(_plugs),const DeepCollectionEquality().hash(_slots),const DeepCollectionEquality().hash(_undesired));
+
+@override
+String toString() {
+  return 'SnapdConnectionsResponse(established: $established, plugs: $plugs, slots: $slots, undesired: $undesired)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapdConnectionsResponseCopyWith<$Res> implements $SnapdConnectionsResponseCopyWith<$Res> {
+  factory _$SnapdConnectionsResponseCopyWith(_SnapdConnectionsResponse value, $Res Function(_SnapdConnectionsResponse) _then) = __$SnapdConnectionsResponseCopyWithImpl;
+@override @useResult
+$Res call({
+ List<SnapConnection> established, List<SnapPlug> plugs, List<SnapSlot> slots, List<SnapConnection> undesired
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapdConnectionsResponseCopyWithImpl<$Res>
+    implements _$SnapdConnectionsResponseCopyWith<$Res> {
+  __$SnapdConnectionsResponseCopyWithImpl(this._self, this._then);
+
+  final _SnapdConnectionsResponse _self;
+  final $Res Function(_SnapdConnectionsResponse) _then;
+
+/// Create a copy of SnapdConnectionsResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? established = null,Object? plugs = null,Object? slots = null,Object? undesired = null,}) {
+  return _then(_SnapdConnectionsResponse(
+established: null == established ? _self._established : established // ignore: cast_nullable_to_non_nullable
+as List<SnapConnection>,plugs: null == plugs ? _self._plugs : plugs // ignore: cast_nullable_to_non_nullable
+as List<SnapPlug>,slots: null == slots ? _self._slots : slots // ignore: cast_nullable_to_non_nullable
+as List<SnapSlot>,undesired: null == undesired ? _self._undesired : undesired // ignore: cast_nullable_to_non_nullable
+as List<SnapConnection>,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapdChange {
-  String get id => throw _privateConstructorUsedError;
-  DateTime? get spawnTime => throw _privateConstructorUsedError;
-  String? get kind => throw _privateConstructorUsedError;
-  String? get summary => throw _privateConstructorUsedError;
-  String? get status => throw _privateConstructorUsedError;
-  bool get ready => throw _privateConstructorUsedError;
-  DateTime? get readyTime => throw _privateConstructorUsedError;
-  String? get err => throw _privateConstructorUsedError;
-  List<SnapdTask> get tasks => throw _privateConstructorUsedError;
-  @JsonKey(
-      name: 'data',
-      toJson: SnapdChange._snapNamesToJson,
-      fromJson: SnapdChange._snapNamesFromJson)
-  List<String> get snapNames => throw _privateConstructorUsedError;
+
+ String get id; DateTime? get spawnTime; String? get kind; String? get summary; String? get status; bool get ready; DateTime? get readyTime; String? get err; List<SnapdTask> get tasks;@JsonKey(name: 'data', toJson: SnapdChange._snapNamesToJson, fromJson: SnapdChange._snapNamesFromJson) List<String> get snapNames;
+/// Create a copy of SnapdChange
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapdChangeCopyWith<SnapdChange> get copyWith => _$SnapdChangeCopyWithImpl<SnapdChange>(this as SnapdChange, _$identity);
 
   /// Serializes this SnapdChange to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapdChange
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapdChangeCopyWith<SnapdChange> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapdChange&&(identical(other.id, id) || other.id == id)&&(identical(other.spawnTime, spawnTime) || other.spawnTime == spawnTime)&&(identical(other.kind, kind) || other.kind == kind)&&(identical(other.summary, summary) || other.summary == summary)&&(identical(other.status, status) || other.status == status)&&(identical(other.ready, ready) || other.ready == ready)&&(identical(other.readyTime, readyTime) || other.readyTime == readyTime)&&(identical(other.err, err) || other.err == err)&&const DeepCollectionEquality().equals(other.tasks, tasks)&&const DeepCollectionEquality().equals(other.snapNames, snapNames));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,spawnTime,kind,summary,status,ready,readyTime,err,const DeepCollectionEquality().hash(tasks),const DeepCollectionEquality().hash(snapNames));
+
+@override
+String toString() {
+  return 'SnapdChange(id: $id, spawnTime: $spawnTime, kind: $kind, summary: $summary, status: $status, ready: $ready, readyTime: $readyTime, err: $err, tasks: $tasks, snapNames: $snapNames)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapdChangeCopyWith<$Res> {
-  factory $SnapdChangeCopyWith(
-          SnapdChange value, $Res Function(SnapdChange) then) =
-      _$SnapdChangeCopyWithImpl<$Res, SnapdChange>;
-  @useResult
-  $Res call(
-      {String id,
-      DateTime? spawnTime,
-      String? kind,
-      String? summary,
-      String? status,
-      bool ready,
-      DateTime? readyTime,
-      String? err,
-      List<SnapdTask> tasks,
-      @JsonKey(
-          name: 'data',
-          toJson: SnapdChange._snapNamesToJson,
-          fromJson: SnapdChange._snapNamesFromJson)
-      List<String> snapNames});
-}
+abstract mixin class $SnapdChangeCopyWith<$Res>  {
+  factory $SnapdChangeCopyWith(SnapdChange value, $Res Function(SnapdChange) _then) = _$SnapdChangeCopyWithImpl;
+@useResult
+$Res call({
+ String id, DateTime? spawnTime, String? kind, String? summary, String? status, bool ready, DateTime? readyTime, String? err, List<SnapdTask> tasks,@JsonKey(name: 'data', toJson: SnapdChange._snapNamesToJson, fromJson: SnapdChange._snapNamesFromJson) List<String> snapNames
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapdChangeCopyWithImpl<$Res, $Val extends SnapdChange>
+class _$SnapdChangeCopyWithImpl<$Res>
     implements $SnapdChangeCopyWith<$Res> {
-  _$SnapdChangeCopyWithImpl(this._value, this._then);
+  _$SnapdChangeCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapdChange _self;
+  final $Res Function(SnapdChange) _then;
 
-  /// Create a copy of SnapdChange
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? spawnTime = freezed,
-    Object? kind = freezed,
-    Object? summary = freezed,
-    Object? status = freezed,
-    Object? ready = null,
-    Object? readyTime = freezed,
-    Object? err = freezed,
-    Object? tasks = null,
-    Object? snapNames = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      spawnTime: freezed == spawnTime
-          ? _value.spawnTime
-          : spawnTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      kind: freezed == kind
-          ? _value.kind
-          : kind // ignore: cast_nullable_to_non_nullable
-              as String?,
-      summary: freezed == summary
-          ? _value.summary
-          : summary // ignore: cast_nullable_to_non_nullable
-              as String?,
-      status: freezed == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as String?,
-      ready: null == ready
-          ? _value.ready
-          : ready // ignore: cast_nullable_to_non_nullable
-              as bool,
-      readyTime: freezed == readyTime
-          ? _value.readyTime
-          : readyTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      err: freezed == err
-          ? _value.err
-          : err // ignore: cast_nullable_to_non_nullable
-              as String?,
-      tasks: null == tasks
-          ? _value.tasks
-          : tasks // ignore: cast_nullable_to_non_nullable
-              as List<SnapdTask>,
-      snapNames: null == snapNames
-          ? _value.snapNames
-          : snapNames // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-    ) as $Val);
-  }
+/// Create a copy of SnapdChange
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? spawnTime = freezed,Object? kind = freezed,Object? summary = freezed,Object? status = freezed,Object? ready = null,Object? readyTime = freezed,Object? err = freezed,Object? tasks = null,Object? snapNames = null,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,spawnTime: freezed == spawnTime ? _self.spawnTime : spawnTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,kind: freezed == kind ? _self.kind : kind // ignore: cast_nullable_to_non_nullable
+as String?,summary: freezed == summary ? _self.summary : summary // ignore: cast_nullable_to_non_nullable
+as String?,status: freezed == status ? _self.status : status // ignore: cast_nullable_to_non_nullable
+as String?,ready: null == ready ? _self.ready : ready // ignore: cast_nullable_to_non_nullable
+as bool,readyTime: freezed == readyTime ? _self.readyTime : readyTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,err: freezed == err ? _self.err : err // ignore: cast_nullable_to_non_nullable
+as String?,tasks: null == tasks ? _self.tasks : tasks // ignore: cast_nullable_to_non_nullable
+as List<SnapdTask>,snapNames: null == snapNames ? _self.snapNames : snapNames // ignore: cast_nullable_to_non_nullable
+as List<String>,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapdChangeImplCopyWith<$Res>
-    implements $SnapdChangeCopyWith<$Res> {
-  factory _$$SnapdChangeImplCopyWith(
-          _$SnapdChangeImpl value, $Res Function(_$SnapdChangeImpl) then) =
-      __$$SnapdChangeImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String id,
-      DateTime? spawnTime,
-      String? kind,
-      String? summary,
-      String? status,
-      bool ready,
-      DateTime? readyTime,
-      String? err,
-      List<SnapdTask> tasks,
-      @JsonKey(
-          name: 'data',
-          toJson: SnapdChange._snapNamesToJson,
-          fromJson: SnapdChange._snapNamesFromJson)
-      List<String> snapNames});
 }
 
-/// @nodoc
-class __$$SnapdChangeImplCopyWithImpl<$Res>
-    extends _$SnapdChangeCopyWithImpl<$Res, _$SnapdChangeImpl>
-    implements _$$SnapdChangeImplCopyWith<$Res> {
-  __$$SnapdChangeImplCopyWithImpl(
-      _$SnapdChangeImpl _value, $Res Function(_$SnapdChangeImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapdChange
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? spawnTime = freezed,
-    Object? kind = freezed,
-    Object? summary = freezed,
-    Object? status = freezed,
-    Object? ready = null,
-    Object? readyTime = freezed,
-    Object? err = freezed,
-    Object? tasks = null,
-    Object? snapNames = null,
-  }) {
-    return _then(_$SnapdChangeImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      spawnTime: freezed == spawnTime
-          ? _value.spawnTime
-          : spawnTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      kind: freezed == kind
-          ? _value.kind
-          : kind // ignore: cast_nullable_to_non_nullable
-              as String?,
-      summary: freezed == summary
-          ? _value.summary
-          : summary // ignore: cast_nullable_to_non_nullable
-              as String?,
-      status: freezed == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as String?,
-      ready: null == ready
-          ? _value.ready
-          : ready // ignore: cast_nullable_to_non_nullable
-              as bool,
-      readyTime: freezed == readyTime
-          ? _value.readyTime
-          : readyTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      err: freezed == err
-          ? _value.err
-          : err // ignore: cast_nullable_to_non_nullable
-              as String?,
-      tasks: null == tasks
-          ? _value._tasks
-          : tasks // ignore: cast_nullable_to_non_nullable
-              as List<SnapdTask>,
-      snapNames: null == snapNames
-          ? _value._snapNames
-          : snapNames // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapdChange].
+extension SnapdChangePatterns on SnapdChange {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapdChange value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapdChange() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapdChange value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdChange():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapdChange value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdChange() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  DateTime? spawnTime,  String? kind,  String? summary,  String? status,  bool ready,  DateTime? readyTime,  String? err,  List<SnapdTask> tasks, @JsonKey(name: 'data', toJson: SnapdChange._snapNamesToJson, fromJson: SnapdChange._snapNamesFromJson)  List<String> snapNames)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapdChange() when $default != null:
+return $default(_that.id,_that.spawnTime,_that.kind,_that.summary,_that.status,_that.ready,_that.readyTime,_that.err,_that.tasks,_that.snapNames);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  DateTime? spawnTime,  String? kind,  String? summary,  String? status,  bool ready,  DateTime? readyTime,  String? err,  List<SnapdTask> tasks, @JsonKey(name: 'data', toJson: SnapdChange._snapNamesToJson, fromJson: SnapdChange._snapNamesFromJson)  List<String> snapNames)  $default,) {final _that = this;
+switch (_that) {
+case _SnapdChange():
+return $default(_that.id,_that.spawnTime,_that.kind,_that.summary,_that.status,_that.ready,_that.readyTime,_that.err,_that.tasks,_that.snapNames);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  DateTime? spawnTime,  String? kind,  String? summary,  String? status,  bool ready,  DateTime? readyTime,  String? err,  List<SnapdTask> tasks, @JsonKey(name: 'data', toJson: SnapdChange._snapNamesToJson, fromJson: SnapdChange._snapNamesFromJson)  List<String> snapNames)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapdChange() when $default != null:
+return $default(_that.id,_that.spawnTime,_that.kind,_that.summary,_that.status,_that.ready,_that.readyTime,_that.err,_that.tasks,_that.snapNames);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapdChangeImpl implements _SnapdChange {
-  const _$SnapdChangeImpl(
-      {required this.id,
-      this.spawnTime,
-      this.kind,
-      this.summary,
-      this.status,
-      this.ready = false,
-      this.readyTime,
-      this.err,
-      final List<SnapdTask> tasks = const [],
-      @JsonKey(
-          name: 'data',
-          toJson: SnapdChange._snapNamesToJson,
-          fromJson: SnapdChange._snapNamesFromJson)
-      final List<String> snapNames = const []})
-      : _tasks = tasks,
-        _snapNames = snapNames;
 
-  factory _$SnapdChangeImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapdChangeImplFromJson(json);
+class _SnapdChange implements SnapdChange {
+  const _SnapdChange({required this.id, this.spawnTime, this.kind, this.summary, this.status, this.ready = false, this.readyTime, this.err, final  List<SnapdTask> tasks = const [], @JsonKey(name: 'data', toJson: SnapdChange._snapNamesToJson, fromJson: SnapdChange._snapNamesFromJson) final  List<String> snapNames = const []}): _tasks = tasks,_snapNames = snapNames;
+  factory _SnapdChange.fromJson(Map<String, dynamic> json) => _$SnapdChangeFromJson(json);
 
-  @override
-  final String id;
-  @override
-  final DateTime? spawnTime;
-  @override
-  final String? kind;
-  @override
-  final String? summary;
-  @override
-  final String? status;
-  @override
-  @JsonKey()
-  final bool ready;
-  @override
-  final DateTime? readyTime;
-  @override
-  final String? err;
-  final List<SnapdTask> _tasks;
-  @override
-  @JsonKey()
-  List<SnapdTask> get tasks {
-    if (_tasks is EqualUnmodifiableListView) return _tasks;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_tasks);
-  }
-
-  final List<String> _snapNames;
-  @override
-  @JsonKey(
-      name: 'data',
-      toJson: SnapdChange._snapNamesToJson,
-      fromJson: SnapdChange._snapNamesFromJson)
-  List<String> get snapNames {
-    if (_snapNames is EqualUnmodifiableListView) return _snapNames;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_snapNames);
-  }
-
-  @override
-  String toString() {
-    return 'SnapdChange(id: $id, spawnTime: $spawnTime, kind: $kind, summary: $summary, status: $status, ready: $ready, readyTime: $readyTime, err: $err, tasks: $tasks, snapNames: $snapNames)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapdChangeImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.spawnTime, spawnTime) ||
-                other.spawnTime == spawnTime) &&
-            (identical(other.kind, kind) || other.kind == kind) &&
-            (identical(other.summary, summary) || other.summary == summary) &&
-            (identical(other.status, status) || other.status == status) &&
-            (identical(other.ready, ready) || other.ready == ready) &&
-            (identical(other.readyTime, readyTime) ||
-                other.readyTime == readyTime) &&
-            (identical(other.err, err) || other.err == err) &&
-            const DeepCollectionEquality().equals(other._tasks, _tasks) &&
-            const DeepCollectionEquality()
-                .equals(other._snapNames, _snapNames));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      spawnTime,
-      kind,
-      summary,
-      status,
-      ready,
-      readyTime,
-      err,
-      const DeepCollectionEquality().hash(_tasks),
-      const DeepCollectionEquality().hash(_snapNames));
-
-  /// Create a copy of SnapdChange
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapdChangeImplCopyWith<_$SnapdChangeImpl> get copyWith =>
-      __$$SnapdChangeImplCopyWithImpl<_$SnapdChangeImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapdChangeImplToJson(
-      this,
-    );
-  }
+@override final  String id;
+@override final  DateTime? spawnTime;
+@override final  String? kind;
+@override final  String? summary;
+@override final  String? status;
+@override@JsonKey() final  bool ready;
+@override final  DateTime? readyTime;
+@override final  String? err;
+ final  List<SnapdTask> _tasks;
+@override@JsonKey() List<SnapdTask> get tasks {
+  if (_tasks is EqualUnmodifiableListView) return _tasks;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_tasks);
 }
 
-abstract class _SnapdChange implements SnapdChange {
-  const factory _SnapdChange(
-      {required final String id,
-      final DateTime? spawnTime,
-      final String? kind,
-      final String? summary,
-      final String? status,
-      final bool ready,
-      final DateTime? readyTime,
-      final String? err,
-      final List<SnapdTask> tasks,
-      @JsonKey(
-          name: 'data',
-          toJson: SnapdChange._snapNamesToJson,
-          fromJson: SnapdChange._snapNamesFromJson)
-      final List<String> snapNames}) = _$SnapdChangeImpl;
-
-  factory _SnapdChange.fromJson(Map<String, dynamic> json) =
-      _$SnapdChangeImpl.fromJson;
-
-  @override
-  String get id;
-  @override
-  DateTime? get spawnTime;
-  @override
-  String? get kind;
-  @override
-  String? get summary;
-  @override
-  String? get status;
-  @override
-  bool get ready;
-  @override
-  DateTime? get readyTime;
-  @override
-  String? get err;
-  @override
-  List<SnapdTask> get tasks;
-  @override
-  @JsonKey(
-      name: 'data',
-      toJson: SnapdChange._snapNamesToJson,
-      fromJson: SnapdChange._snapNamesFromJson)
-  List<String> get snapNames;
-
-  /// Create a copy of SnapdChange
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapdChangeImplCopyWith<_$SnapdChangeImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+ final  List<String> _snapNames;
+@override@JsonKey(name: 'data', toJson: SnapdChange._snapNamesToJson, fromJson: SnapdChange._snapNamesFromJson) List<String> get snapNames {
+  if (_snapNames is EqualUnmodifiableListView) return _snapNames;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_snapNames);
 }
 
-SnapdTask _$SnapdTaskFromJson(Map<String, dynamic> json) {
-  return _SnapdTask.fromJson(json);
+
+/// Create a copy of SnapdChange
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapdChangeCopyWith<_SnapdChange> get copyWith => __$SnapdChangeCopyWithImpl<_SnapdChange>(this, _$identity);
+
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapdChangeToJson(this, );
 }
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapdChange&&(identical(other.id, id) || other.id == id)&&(identical(other.spawnTime, spawnTime) || other.spawnTime == spawnTime)&&(identical(other.kind, kind) || other.kind == kind)&&(identical(other.summary, summary) || other.summary == summary)&&(identical(other.status, status) || other.status == status)&&(identical(other.ready, ready) || other.ready == ready)&&(identical(other.readyTime, readyTime) || other.readyTime == readyTime)&&(identical(other.err, err) || other.err == err)&&const DeepCollectionEquality().equals(other._tasks, _tasks)&&const DeepCollectionEquality().equals(other._snapNames, _snapNames));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,spawnTime,kind,summary,status,ready,readyTime,err,const DeepCollectionEquality().hash(_tasks),const DeepCollectionEquality().hash(_snapNames));
+
+@override
+String toString() {
+  return 'SnapdChange(id: $id, spawnTime: $spawnTime, kind: $kind, summary: $summary, status: $status, ready: $ready, readyTime: $readyTime, err: $err, tasks: $tasks, snapNames: $snapNames)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapdChangeCopyWith<$Res> implements $SnapdChangeCopyWith<$Res> {
+  factory _$SnapdChangeCopyWith(_SnapdChange value, $Res Function(_SnapdChange) _then) = __$SnapdChangeCopyWithImpl;
+@override @useResult
+$Res call({
+ String id, DateTime? spawnTime, String? kind, String? summary, String? status, bool ready, DateTime? readyTime, String? err, List<SnapdTask> tasks,@JsonKey(name: 'data', toJson: SnapdChange._snapNamesToJson, fromJson: SnapdChange._snapNamesFromJson) List<String> snapNames
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapdChangeCopyWithImpl<$Res>
+    implements _$SnapdChangeCopyWith<$Res> {
+  __$SnapdChangeCopyWithImpl(this._self, this._then);
+
+  final _SnapdChange _self;
+  final $Res Function(_SnapdChange) _then;
+
+/// Create a copy of SnapdChange
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? spawnTime = freezed,Object? kind = freezed,Object? summary = freezed,Object? status = freezed,Object? ready = null,Object? readyTime = freezed,Object? err = freezed,Object? tasks = null,Object? snapNames = null,}) {
+  return _then(_SnapdChange(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,spawnTime: freezed == spawnTime ? _self.spawnTime : spawnTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,kind: freezed == kind ? _self.kind : kind // ignore: cast_nullable_to_non_nullable
+as String?,summary: freezed == summary ? _self.summary : summary // ignore: cast_nullable_to_non_nullable
+as String?,status: freezed == status ? _self.status : status // ignore: cast_nullable_to_non_nullable
+as String?,ready: null == ready ? _self.ready : ready // ignore: cast_nullable_to_non_nullable
+as bool,readyTime: freezed == readyTime ? _self.readyTime : readyTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,err: freezed == err ? _self.err : err // ignore: cast_nullable_to_non_nullable
+as String?,tasks: null == tasks ? _self._tasks : tasks // ignore: cast_nullable_to_non_nullable
+as List<SnapdTask>,snapNames: null == snapNames ? _self._snapNames : snapNames // ignore: cast_nullable_to_non_nullable
+as List<String>,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapdTask {
-  String get id => throw _privateConstructorUsedError;
-  DateTime? get spawnTime => throw _privateConstructorUsedError;
-  String? get kind => throw _privateConstructorUsedError;
-  String get summary => throw _privateConstructorUsedError;
-  String? get status => throw _privateConstructorUsedError;
-  SnapdTaskProgress get progress => throw _privateConstructorUsedError;
-  DateTime? get readyTime => throw _privateConstructorUsedError;
+
+ String get id; DateTime? get spawnTime; String? get kind; String get summary; String? get status; SnapdTaskProgress get progress; DateTime? get readyTime;
+/// Create a copy of SnapdTask
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapdTaskCopyWith<SnapdTask> get copyWith => _$SnapdTaskCopyWithImpl<SnapdTask>(this as SnapdTask, _$identity);
 
   /// Serializes this SnapdTask to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapdTask
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapdTaskCopyWith<SnapdTask> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapdTask&&(identical(other.id, id) || other.id == id)&&(identical(other.spawnTime, spawnTime) || other.spawnTime == spawnTime)&&(identical(other.kind, kind) || other.kind == kind)&&(identical(other.summary, summary) || other.summary == summary)&&(identical(other.status, status) || other.status == status)&&(identical(other.progress, progress) || other.progress == progress)&&(identical(other.readyTime, readyTime) || other.readyTime == readyTime));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,spawnTime,kind,summary,status,progress,readyTime);
+
+@override
+String toString() {
+  return 'SnapdTask(id: $id, spawnTime: $spawnTime, kind: $kind, summary: $summary, status: $status, progress: $progress, readyTime: $readyTime)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapdTaskCopyWith<$Res> {
-  factory $SnapdTaskCopyWith(SnapdTask value, $Res Function(SnapdTask) then) =
-      _$SnapdTaskCopyWithImpl<$Res, SnapdTask>;
-  @useResult
-  $Res call(
-      {String id,
-      DateTime? spawnTime,
-      String? kind,
-      String summary,
-      String? status,
-      SnapdTaskProgress progress,
-      DateTime? readyTime});
+abstract mixin class $SnapdTaskCopyWith<$Res>  {
+  factory $SnapdTaskCopyWith(SnapdTask value, $Res Function(SnapdTask) _then) = _$SnapdTaskCopyWithImpl;
+@useResult
+$Res call({
+ String id, DateTime? spawnTime, String? kind, String summary, String? status, SnapdTaskProgress progress, DateTime? readyTime
+});
 
-  $SnapdTaskProgressCopyWith<$Res> get progress;
+
+$SnapdTaskProgressCopyWith<$Res> get progress;
+
 }
-
 /// @nodoc
-class _$SnapdTaskCopyWithImpl<$Res, $Val extends SnapdTask>
+class _$SnapdTaskCopyWithImpl<$Res>
     implements $SnapdTaskCopyWith<$Res> {
-  _$SnapdTaskCopyWithImpl(this._value, this._then);
+  _$SnapdTaskCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapdTask _self;
+  final $Res Function(SnapdTask) _then;
 
-  /// Create a copy of SnapdTask
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? spawnTime = freezed,
-    Object? kind = freezed,
-    Object? summary = null,
-    Object? status = freezed,
-    Object? progress = null,
-    Object? readyTime = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      spawnTime: freezed == spawnTime
-          ? _value.spawnTime
-          : spawnTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      kind: freezed == kind
-          ? _value.kind
-          : kind // ignore: cast_nullable_to_non_nullable
-              as String?,
-      summary: null == summary
-          ? _value.summary
-          : summary // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: freezed == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as String?,
-      progress: null == progress
-          ? _value.progress
-          : progress // ignore: cast_nullable_to_non_nullable
-              as SnapdTaskProgress,
-      readyTime: freezed == readyTime
-          ? _value.readyTime
-          : readyTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-    ) as $Val);
-  }
-
-  /// Create a copy of SnapdTask
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $SnapdTaskProgressCopyWith<$Res> get progress {
-    return $SnapdTaskProgressCopyWith<$Res>(_value.progress, (value) {
-      return _then(_value.copyWith(progress: value) as $Val);
-    });
-  }
+/// Create a copy of SnapdTask
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? spawnTime = freezed,Object? kind = freezed,Object? summary = null,Object? status = freezed,Object? progress = null,Object? readyTime = freezed,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,spawnTime: freezed == spawnTime ? _self.spawnTime : spawnTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,kind: freezed == kind ? _self.kind : kind // ignore: cast_nullable_to_non_nullable
+as String?,summary: null == summary ? _self.summary : summary // ignore: cast_nullable_to_non_nullable
+as String,status: freezed == status ? _self.status : status // ignore: cast_nullable_to_non_nullable
+as String?,progress: null == progress ? _self.progress : progress // ignore: cast_nullable_to_non_nullable
+as SnapdTaskProgress,readyTime: freezed == readyTime ? _self.readyTime : readyTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,
+  ));
+}
+/// Create a copy of SnapdTask
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$SnapdTaskProgressCopyWith<$Res> get progress {
+  
+  return $SnapdTaskProgressCopyWith<$Res>(_self.progress, (value) {
+    return _then(_self.copyWith(progress: value));
+  });
+}
 }
 
-/// @nodoc
-abstract class _$$SnapdTaskImplCopyWith<$Res>
-    implements $SnapdTaskCopyWith<$Res> {
-  factory _$$SnapdTaskImplCopyWith(
-          _$SnapdTaskImpl value, $Res Function(_$SnapdTaskImpl) then) =
-      __$$SnapdTaskImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String id,
-      DateTime? spawnTime,
-      String? kind,
-      String summary,
-      String? status,
-      SnapdTaskProgress progress,
-      DateTime? readyTime});
 
-  @override
-  $SnapdTaskProgressCopyWith<$Res> get progress;
+/// Adds pattern-matching-related methods to [SnapdTask].
+extension SnapdTaskPatterns on SnapdTask {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapdTask value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapdTask() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapdTask value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdTask():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapdTask value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdTask() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  DateTime? spawnTime,  String? kind,  String summary,  String? status,  SnapdTaskProgress progress,  DateTime? readyTime)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapdTask() when $default != null:
+return $default(_that.id,_that.spawnTime,_that.kind,_that.summary,_that.status,_that.progress,_that.readyTime);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  DateTime? spawnTime,  String? kind,  String summary,  String? status,  SnapdTaskProgress progress,  DateTime? readyTime)  $default,) {final _that = this;
+switch (_that) {
+case _SnapdTask():
+return $default(_that.id,_that.spawnTime,_that.kind,_that.summary,_that.status,_that.progress,_that.readyTime);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  DateTime? spawnTime,  String? kind,  String summary,  String? status,  SnapdTaskProgress progress,  DateTime? readyTime)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapdTask() when $default != null:
+return $default(_that.id,_that.spawnTime,_that.kind,_that.summary,_that.status,_that.progress,_that.readyTime);case _:
+  return null;
+
+}
 }
 
-/// @nodoc
-class __$$SnapdTaskImplCopyWithImpl<$Res>
-    extends _$SnapdTaskCopyWithImpl<$Res, _$SnapdTaskImpl>
-    implements _$$SnapdTaskImplCopyWith<$Res> {
-  __$$SnapdTaskImplCopyWithImpl(
-      _$SnapdTaskImpl _value, $Res Function(_$SnapdTaskImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of SnapdTask
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? spawnTime = freezed,
-    Object? kind = freezed,
-    Object? summary = null,
-    Object? status = freezed,
-    Object? progress = null,
-    Object? readyTime = freezed,
-  }) {
-    return _then(_$SnapdTaskImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      spawnTime: freezed == spawnTime
-          ? _value.spawnTime
-          : spawnTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      kind: freezed == kind
-          ? _value.kind
-          : kind // ignore: cast_nullable_to_non_nullable
-              as String?,
-      summary: null == summary
-          ? _value.summary
-          : summary // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: freezed == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as String?,
-      progress: null == progress
-          ? _value.progress
-          : progress // ignore: cast_nullable_to_non_nullable
-              as SnapdTaskProgress,
-      readyTime: freezed == readyTime
-          ? _value.readyTime
-          : readyTime // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-    ));
-  }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapdTaskImpl implements _SnapdTask {
-  const _$SnapdTaskImpl(
-      {required this.id,
-      this.spawnTime,
-      this.kind,
-      this.summary = '',
-      this.status,
-      this.progress = const SnapdTaskProgress(),
-      this.readyTime});
 
-  factory _$SnapdTaskImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapdTaskImplFromJson(json);
+class _SnapdTask implements SnapdTask {
+  const _SnapdTask({required this.id, this.spawnTime, this.kind, this.summary = '', this.status, this.progress = const SnapdTaskProgress(), this.readyTime});
+  factory _SnapdTask.fromJson(Map<String, dynamic> json) => _$SnapdTaskFromJson(json);
 
-  @override
-  final String id;
-  @override
-  final DateTime? spawnTime;
-  @override
-  final String? kind;
-  @override
-  @JsonKey()
-  final String summary;
-  @override
-  final String? status;
-  @override
-  @JsonKey()
-  final SnapdTaskProgress progress;
-  @override
-  final DateTime? readyTime;
+@override final  String id;
+@override final  DateTime? spawnTime;
+@override final  String? kind;
+@override@JsonKey() final  String summary;
+@override final  String? status;
+@override@JsonKey() final  SnapdTaskProgress progress;
+@override final  DateTime? readyTime;
 
-  @override
-  String toString() {
-    return 'SnapdTask(id: $id, spawnTime: $spawnTime, kind: $kind, summary: $summary, status: $status, progress: $progress, readyTime: $readyTime)';
-  }
+/// Create a copy of SnapdTask
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapdTaskCopyWith<_SnapdTask> get copyWith => __$SnapdTaskCopyWithImpl<_SnapdTask>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapdTaskImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.spawnTime, spawnTime) ||
-                other.spawnTime == spawnTime) &&
-            (identical(other.kind, kind) || other.kind == kind) &&
-            (identical(other.summary, summary) || other.summary == summary) &&
-            (identical(other.status, status) || other.status == status) &&
-            (identical(other.progress, progress) ||
-                other.progress == progress) &&
-            (identical(other.readyTime, readyTime) ||
-                other.readyTime == readyTime));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType, id, spawnTime, kind, summary, status, progress, readyTime);
-
-  /// Create a copy of SnapdTask
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapdTaskImplCopyWith<_$SnapdTaskImpl> get copyWith =>
-      __$$SnapdTaskImplCopyWithImpl<_$SnapdTaskImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapdTaskImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapdTaskToJson(this, );
 }
 
-abstract class _SnapdTask implements SnapdTask {
-  const factory _SnapdTask(
-      {required final String id,
-      final DateTime? spawnTime,
-      final String? kind,
-      final String summary,
-      final String? status,
-      final SnapdTaskProgress progress,
-      final DateTime? readyTime}) = _$SnapdTaskImpl;
-
-  factory _SnapdTask.fromJson(Map<String, dynamic> json) =
-      _$SnapdTaskImpl.fromJson;
-
-  @override
-  String get id;
-  @override
-  DateTime? get spawnTime;
-  @override
-  String? get kind;
-  @override
-  String get summary;
-  @override
-  String? get status;
-  @override
-  SnapdTaskProgress get progress;
-  @override
-  DateTime? get readyTime;
-
-  /// Create a copy of SnapdTask
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapdTaskImplCopyWith<_$SnapdTaskImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapdTask&&(identical(other.id, id) || other.id == id)&&(identical(other.spawnTime, spawnTime) || other.spawnTime == spawnTime)&&(identical(other.kind, kind) || other.kind == kind)&&(identical(other.summary, summary) || other.summary == summary)&&(identical(other.status, status) || other.status == status)&&(identical(other.progress, progress) || other.progress == progress)&&(identical(other.readyTime, readyTime) || other.readyTime == readyTime));
 }
 
-SnapdTaskProgress _$SnapdTaskProgressFromJson(Map<String, dynamic> json) {
-  return _SnapdTaskProgress.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,spawnTime,kind,summary,status,progress,readyTime);
+
+@override
+String toString() {
+  return 'SnapdTask(id: $id, spawnTime: $spawnTime, kind: $kind, summary: $summary, status: $status, progress: $progress, readyTime: $readyTime)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapdTaskCopyWith<$Res> implements $SnapdTaskCopyWith<$Res> {
+  factory _$SnapdTaskCopyWith(_SnapdTask value, $Res Function(_SnapdTask) _then) = __$SnapdTaskCopyWithImpl;
+@override @useResult
+$Res call({
+ String id, DateTime? spawnTime, String? kind, String summary, String? status, SnapdTaskProgress progress, DateTime? readyTime
+});
+
+
+@override $SnapdTaskProgressCopyWith<$Res> get progress;
+
+}
+/// @nodoc
+class __$SnapdTaskCopyWithImpl<$Res>
+    implements _$SnapdTaskCopyWith<$Res> {
+  __$SnapdTaskCopyWithImpl(this._self, this._then);
+
+  final _SnapdTask _self;
+  final $Res Function(_SnapdTask) _then;
+
+/// Create a copy of SnapdTask
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? spawnTime = freezed,Object? kind = freezed,Object? summary = null,Object? status = freezed,Object? progress = null,Object? readyTime = freezed,}) {
+  return _then(_SnapdTask(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,spawnTime: freezed == spawnTime ? _self.spawnTime : spawnTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,kind: freezed == kind ? _self.kind : kind // ignore: cast_nullable_to_non_nullable
+as String?,summary: null == summary ? _self.summary : summary // ignore: cast_nullable_to_non_nullable
+as String,status: freezed == status ? _self.status : status // ignore: cast_nullable_to_non_nullable
+as String?,progress: null == progress ? _self.progress : progress // ignore: cast_nullable_to_non_nullable
+as SnapdTaskProgress,readyTime: freezed == readyTime ? _self.readyTime : readyTime // ignore: cast_nullable_to_non_nullable
+as DateTime?,
+  ));
+}
+
+/// Create a copy of SnapdTask
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$SnapdTaskProgressCopyWith<$Res> get progress {
+  
+  return $SnapdTaskProgressCopyWith<$Res>(_self.progress, (value) {
+    return _then(_self.copyWith(progress: value));
+  });
+}
+}
+
 
 /// @nodoc
 mixin _$SnapdTaskProgress {
-  String get label => throw _privateConstructorUsedError;
-  int get done => throw _privateConstructorUsedError;
-  int get total => throw _privateConstructorUsedError;
+
+ String get label; int get done; int get total;
+/// Create a copy of SnapdTaskProgress
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapdTaskProgressCopyWith<SnapdTaskProgress> get copyWith => _$SnapdTaskProgressCopyWithImpl<SnapdTaskProgress>(this as SnapdTaskProgress, _$identity);
 
   /// Serializes this SnapdTaskProgress to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapdTaskProgress
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapdTaskProgressCopyWith<SnapdTaskProgress> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapdTaskProgress&&(identical(other.label, label) || other.label == label)&&(identical(other.done, done) || other.done == done)&&(identical(other.total, total) || other.total == total));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,label,done,total);
+
+@override
+String toString() {
+  return 'SnapdTaskProgress(label: $label, done: $done, total: $total)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapdTaskProgressCopyWith<$Res> {
-  factory $SnapdTaskProgressCopyWith(
-          SnapdTaskProgress value, $Res Function(SnapdTaskProgress) then) =
-      _$SnapdTaskProgressCopyWithImpl<$Res, SnapdTaskProgress>;
-  @useResult
-  $Res call({String label, int done, int total});
-}
+abstract mixin class $SnapdTaskProgressCopyWith<$Res>  {
+  factory $SnapdTaskProgressCopyWith(SnapdTaskProgress value, $Res Function(SnapdTaskProgress) _then) = _$SnapdTaskProgressCopyWithImpl;
+@useResult
+$Res call({
+ String label, int done, int total
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapdTaskProgressCopyWithImpl<$Res, $Val extends SnapdTaskProgress>
+class _$SnapdTaskProgressCopyWithImpl<$Res>
     implements $SnapdTaskProgressCopyWith<$Res> {
-  _$SnapdTaskProgressCopyWithImpl(this._value, this._then);
+  _$SnapdTaskProgressCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapdTaskProgress _self;
+  final $Res Function(SnapdTaskProgress) _then;
 
-  /// Create a copy of SnapdTaskProgress
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? label = null,
-    Object? done = null,
-    Object? total = null,
-  }) {
-    return _then(_value.copyWith(
-      label: null == label
-          ? _value.label
-          : label // ignore: cast_nullable_to_non_nullable
-              as String,
-      done: null == done
-          ? _value.done
-          : done // ignore: cast_nullable_to_non_nullable
-              as int,
-      total: null == total
-          ? _value.total
-          : total // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
+/// Create a copy of SnapdTaskProgress
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? label = null,Object? done = null,Object? total = null,}) {
+  return _then(_self.copyWith(
+label: null == label ? _self.label : label // ignore: cast_nullable_to_non_nullable
+as String,done: null == done ? _self.done : done // ignore: cast_nullable_to_non_nullable
+as int,total: null == total ? _self.total : total // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapdTaskProgressImplCopyWith<$Res>
-    implements $SnapdTaskProgressCopyWith<$Res> {
-  factory _$$SnapdTaskProgressImplCopyWith(_$SnapdTaskProgressImpl value,
-          $Res Function(_$SnapdTaskProgressImpl) then) =
-      __$$SnapdTaskProgressImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String label, int done, int total});
 }
 
-/// @nodoc
-class __$$SnapdTaskProgressImplCopyWithImpl<$Res>
-    extends _$SnapdTaskProgressCopyWithImpl<$Res, _$SnapdTaskProgressImpl>
-    implements _$$SnapdTaskProgressImplCopyWith<$Res> {
-  __$$SnapdTaskProgressImplCopyWithImpl(_$SnapdTaskProgressImpl _value,
-      $Res Function(_$SnapdTaskProgressImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapdTaskProgress
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? label = null,
-    Object? done = null,
-    Object? total = null,
-  }) {
-    return _then(_$SnapdTaskProgressImpl(
-      label: null == label
-          ? _value.label
-          : label // ignore: cast_nullable_to_non_nullable
-              as String,
-      done: null == done
-          ? _value.done
-          : done // ignore: cast_nullable_to_non_nullable
-              as int,
-      total: null == total
-          ? _value.total
-          : total // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapdTaskProgress].
+extension SnapdTaskProgressPatterns on SnapdTaskProgress {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapdTaskProgress value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapdTaskProgress() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapdTaskProgress value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdTaskProgress():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapdTaskProgress value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdTaskProgress() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String label,  int done,  int total)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapdTaskProgress() when $default != null:
+return $default(_that.label,_that.done,_that.total);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String label,  int done,  int total)  $default,) {final _that = this;
+switch (_that) {
+case _SnapdTaskProgress():
+return $default(_that.label,_that.done,_that.total);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String label,  int done,  int total)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapdTaskProgress() when $default != null:
+return $default(_that.label,_that.done,_that.total);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapdTaskProgressImpl implements _SnapdTaskProgress {
-  const _$SnapdTaskProgressImpl(
-      {this.label = '', this.done = 0, this.total = 0});
 
-  factory _$SnapdTaskProgressImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapdTaskProgressImplFromJson(json);
+class _SnapdTaskProgress implements SnapdTaskProgress {
+  const _SnapdTaskProgress({this.label = '', this.done = 0, this.total = 0});
+  factory _SnapdTaskProgress.fromJson(Map<String, dynamic> json) => _$SnapdTaskProgressFromJson(json);
 
-  @override
-  @JsonKey()
-  final String label;
-  @override
-  @JsonKey()
-  final int done;
-  @override
-  @JsonKey()
-  final int total;
+@override@JsonKey() final  String label;
+@override@JsonKey() final  int done;
+@override@JsonKey() final  int total;
 
-  @override
-  String toString() {
-    return 'SnapdTaskProgress(label: $label, done: $done, total: $total)';
-  }
+/// Create a copy of SnapdTaskProgress
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapdTaskProgressCopyWith<_SnapdTaskProgress> get copyWith => __$SnapdTaskProgressCopyWithImpl<_SnapdTaskProgress>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapdTaskProgressImpl &&
-            (identical(other.label, label) || other.label == label) &&
-            (identical(other.done, done) || other.done == done) &&
-            (identical(other.total, total) || other.total == total));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, label, done, total);
-
-  /// Create a copy of SnapdTaskProgress
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapdTaskProgressImplCopyWith<_$SnapdTaskProgressImpl> get copyWith =>
-      __$$SnapdTaskProgressImplCopyWithImpl<_$SnapdTaskProgressImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapdTaskProgressImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapdTaskProgressToJson(this, );
 }
 
-abstract class _SnapdTaskProgress implements SnapdTaskProgress {
-  const factory _SnapdTaskProgress(
-      {final String label,
-      final int done,
-      final int total}) = _$SnapdTaskProgressImpl;
-
-  factory _SnapdTaskProgress.fromJson(Map<String, dynamic> json) =
-      _$SnapdTaskProgressImpl.fromJson;
-
-  @override
-  String get label;
-  @override
-  int get done;
-  @override
-  int get total;
-
-  /// Create a copy of SnapdTaskProgress
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapdTaskProgressImplCopyWith<_$SnapdTaskProgressImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapdTaskProgress&&(identical(other.label, label) || other.label == label)&&(identical(other.done, done) || other.done == done)&&(identical(other.total, total) || other.total == total));
 }
 
-SnapdRule _$SnapdRuleFromJson(Map<String, dynamic> json) {
-  return _SnapdRule.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,label,done,total);
+
+@override
+String toString() {
+  return 'SnapdTaskProgress(label: $label, done: $done, total: $total)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapdTaskProgressCopyWith<$Res> implements $SnapdTaskProgressCopyWith<$Res> {
+  factory _$SnapdTaskProgressCopyWith(_SnapdTaskProgress value, $Res Function(_SnapdTaskProgress) _then) = __$SnapdTaskProgressCopyWithImpl;
+@override @useResult
+$Res call({
+ String label, int done, int total
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapdTaskProgressCopyWithImpl<$Res>
+    implements _$SnapdTaskProgressCopyWith<$Res> {
+  __$SnapdTaskProgressCopyWithImpl(this._self, this._then);
+
+  final _SnapdTaskProgress _self;
+  final $Res Function(_SnapdTaskProgress) _then;
+
+/// Create a copy of SnapdTaskProgress
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? label = null,Object? done = null,Object? total = null,}) {
+  return _then(_SnapdTaskProgress(
+label: null == label ? _self.label : label // ignore: cast_nullable_to_non_nullable
+as String,done: null == done ? _self.done : done // ignore: cast_nullable_to_non_nullable
+as int,total: null == total ? _self.total : total // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapdRule {
-  String get id => throw _privateConstructorUsedError;
-  DateTime get timestamp => throw _privateConstructorUsedError;
-  String get snap => throw _privateConstructorUsedError;
-  String get interface => throw _privateConstructorUsedError;
-  Map<String, dynamic> get constraints =>
-      throw _privateConstructorUsedError; // Snapd 1.67 and earlier returned the outcome, lifespan and expiration fields
+
+ String get id; DateTime get timestamp; String get snap; String get interface; Map<String, dynamic> get constraints;// Snapd 1.67 and earlier returned the outcome, lifespan and expiration fields
 // at the top level rather than as part of `constraints`
-  SnapdRequestOutcome? get outcome => throw _privateConstructorUsedError;
-  SnapdRequestLifespan? get lifespan => throw _privateConstructorUsedError;
-  DateTime? get expiration => throw _privateConstructorUsedError;
+ SnapdRequestOutcome? get outcome; SnapdRequestLifespan? get lifespan; DateTime? get expiration;
+/// Create a copy of SnapdRule
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapdRuleCopyWith<SnapdRule> get copyWith => _$SnapdRuleCopyWithImpl<SnapdRule>(this as SnapdRule, _$identity);
 
   /// Serializes this SnapdRule to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapdRule
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapdRuleCopyWith<SnapdRule> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapdRule&&(identical(other.id, id) || other.id == id)&&(identical(other.timestamp, timestamp) || other.timestamp == timestamp)&&(identical(other.snap, snap) || other.snap == snap)&&(identical(other.interface, interface) || other.interface == interface)&&const DeepCollectionEquality().equals(other.constraints, constraints)&&(identical(other.outcome, outcome) || other.outcome == outcome)&&(identical(other.lifespan, lifespan) || other.lifespan == lifespan)&&(identical(other.expiration, expiration) || other.expiration == expiration));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,timestamp,snap,interface,const DeepCollectionEquality().hash(constraints),outcome,lifespan,expiration);
+
+@override
+String toString() {
+  return 'SnapdRule(id: $id, timestamp: $timestamp, snap: $snap, interface: $interface, constraints: $constraints, outcome: $outcome, lifespan: $lifespan, expiration: $expiration)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapdRuleCopyWith<$Res> {
-  factory $SnapdRuleCopyWith(SnapdRule value, $Res Function(SnapdRule) then) =
-      _$SnapdRuleCopyWithImpl<$Res, SnapdRule>;
-  @useResult
-  $Res call(
-      {String id,
-      DateTime timestamp,
-      String snap,
-      String interface,
-      Map<String, dynamic> constraints,
-      SnapdRequestOutcome? outcome,
-      SnapdRequestLifespan? lifespan,
-      DateTime? expiration});
-}
+abstract mixin class $SnapdRuleCopyWith<$Res>  {
+  factory $SnapdRuleCopyWith(SnapdRule value, $Res Function(SnapdRule) _then) = _$SnapdRuleCopyWithImpl;
+@useResult
+$Res call({
+ String id, DateTime timestamp, String snap, String interface, Map<String, dynamic> constraints, SnapdRequestOutcome? outcome, SnapdRequestLifespan? lifespan, DateTime? expiration
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapdRuleCopyWithImpl<$Res, $Val extends SnapdRule>
+class _$SnapdRuleCopyWithImpl<$Res>
     implements $SnapdRuleCopyWith<$Res> {
-  _$SnapdRuleCopyWithImpl(this._value, this._then);
+  _$SnapdRuleCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapdRule _self;
+  final $Res Function(SnapdRule) _then;
 
-  /// Create a copy of SnapdRule
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? timestamp = null,
-    Object? snap = null,
-    Object? interface = null,
-    Object? constraints = null,
-    Object? outcome = freezed,
-    Object? lifespan = freezed,
-    Object? expiration = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      timestamp: null == timestamp
-          ? _value.timestamp
-          : timestamp // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      snap: null == snap
-          ? _value.snap
-          : snap // ignore: cast_nullable_to_non_nullable
-              as String,
-      interface: null == interface
-          ? _value.interface
-          : interface // ignore: cast_nullable_to_non_nullable
-              as String,
-      constraints: null == constraints
-          ? _value.constraints
-          : constraints // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      outcome: freezed == outcome
-          ? _value.outcome
-          : outcome // ignore: cast_nullable_to_non_nullable
-              as SnapdRequestOutcome?,
-      lifespan: freezed == lifespan
-          ? _value.lifespan
-          : lifespan // ignore: cast_nullable_to_non_nullable
-              as SnapdRequestLifespan?,
-      expiration: freezed == expiration
-          ? _value.expiration
-          : expiration // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-    ) as $Val);
-  }
+/// Create a copy of SnapdRule
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? timestamp = null,Object? snap = null,Object? interface = null,Object? constraints = null,Object? outcome = freezed,Object? lifespan = freezed,Object? expiration = freezed,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,timestamp: null == timestamp ? _self.timestamp : timestamp // ignore: cast_nullable_to_non_nullable
+as DateTime,snap: null == snap ? _self.snap : snap // ignore: cast_nullable_to_non_nullable
+as String,interface: null == interface ? _self.interface : interface // ignore: cast_nullable_to_non_nullable
+as String,constraints: null == constraints ? _self.constraints : constraints // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>,outcome: freezed == outcome ? _self.outcome : outcome // ignore: cast_nullable_to_non_nullable
+as SnapdRequestOutcome?,lifespan: freezed == lifespan ? _self.lifespan : lifespan // ignore: cast_nullable_to_non_nullable
+as SnapdRequestLifespan?,expiration: freezed == expiration ? _self.expiration : expiration // ignore: cast_nullable_to_non_nullable
+as DateTime?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapdRuleImplCopyWith<$Res>
-    implements $SnapdRuleCopyWith<$Res> {
-  factory _$$SnapdRuleImplCopyWith(
-          _$SnapdRuleImpl value, $Res Function(_$SnapdRuleImpl) then) =
-      __$$SnapdRuleImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String id,
-      DateTime timestamp,
-      String snap,
-      String interface,
-      Map<String, dynamic> constraints,
-      SnapdRequestOutcome? outcome,
-      SnapdRequestLifespan? lifespan,
-      DateTime? expiration});
 }
 
-/// @nodoc
-class __$$SnapdRuleImplCopyWithImpl<$Res>
-    extends _$SnapdRuleCopyWithImpl<$Res, _$SnapdRuleImpl>
-    implements _$$SnapdRuleImplCopyWith<$Res> {
-  __$$SnapdRuleImplCopyWithImpl(
-      _$SnapdRuleImpl _value, $Res Function(_$SnapdRuleImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapdRule
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? timestamp = null,
-    Object? snap = null,
-    Object? interface = null,
-    Object? constraints = null,
-    Object? outcome = freezed,
-    Object? lifespan = freezed,
-    Object? expiration = freezed,
-  }) {
-    return _then(_$SnapdRuleImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      timestamp: null == timestamp
-          ? _value.timestamp
-          : timestamp // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      snap: null == snap
-          ? _value.snap
-          : snap // ignore: cast_nullable_to_non_nullable
-              as String,
-      interface: null == interface
-          ? _value.interface
-          : interface // ignore: cast_nullable_to_non_nullable
-              as String,
-      constraints: null == constraints
-          ? _value._constraints
-          : constraints // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      outcome: freezed == outcome
-          ? _value.outcome
-          : outcome // ignore: cast_nullable_to_non_nullable
-              as SnapdRequestOutcome?,
-      lifespan: freezed == lifespan
-          ? _value.lifespan
-          : lifespan // ignore: cast_nullable_to_non_nullable
-              as SnapdRequestLifespan?,
-      expiration: freezed == expiration
-          ? _value.expiration
-          : expiration // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapdRule].
+extension SnapdRulePatterns on SnapdRule {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapdRule value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapdRule() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapdRule value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdRule():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapdRule value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdRule() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  DateTime timestamp,  String snap,  String interface,  Map<String, dynamic> constraints,  SnapdRequestOutcome? outcome,  SnapdRequestLifespan? lifespan,  DateTime? expiration)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapdRule() when $default != null:
+return $default(_that.id,_that.timestamp,_that.snap,_that.interface,_that.constraints,_that.outcome,_that.lifespan,_that.expiration);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  DateTime timestamp,  String snap,  String interface,  Map<String, dynamic> constraints,  SnapdRequestOutcome? outcome,  SnapdRequestLifespan? lifespan,  DateTime? expiration)  $default,) {final _that = this;
+switch (_that) {
+case _SnapdRule():
+return $default(_that.id,_that.timestamp,_that.snap,_that.interface,_that.constraints,_that.outcome,_that.lifespan,_that.expiration);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  DateTime timestamp,  String snap,  String interface,  Map<String, dynamic> constraints,  SnapdRequestOutcome? outcome,  SnapdRequestLifespan? lifespan,  DateTime? expiration)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapdRule() when $default != null:
+return $default(_that.id,_that.timestamp,_that.snap,_that.interface,_that.constraints,_that.outcome,_that.lifespan,_that.expiration);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapdRuleImpl implements _SnapdRule {
-  const _$SnapdRuleImpl(
-      {required this.id,
-      required this.timestamp,
-      required this.snap,
-      required this.interface,
-      required final Map<String, dynamic> constraints,
-      this.outcome,
-      this.lifespan,
-      this.expiration})
-      : _constraints = constraints;
 
-  factory _$SnapdRuleImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapdRuleImplFromJson(json);
+class _SnapdRule implements SnapdRule {
+  const _SnapdRule({required this.id, required this.timestamp, required this.snap, required this.interface, required final  Map<String, dynamic> constraints, this.outcome, this.lifespan, this.expiration}): _constraints = constraints;
+  factory _SnapdRule.fromJson(Map<String, dynamic> json) => _$SnapdRuleFromJson(json);
 
-  @override
-  final String id;
-  @override
-  final DateTime timestamp;
-  @override
-  final String snap;
-  @override
-  final String interface;
-  final Map<String, dynamic> _constraints;
-  @override
-  Map<String, dynamic> get constraints {
-    if (_constraints is EqualUnmodifiableMapView) return _constraints;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_constraints);
-  }
+@override final  String id;
+@override final  DateTime timestamp;
+@override final  String snap;
+@override final  String interface;
+ final  Map<String, dynamic> _constraints;
+@override Map<String, dynamic> get constraints {
+  if (_constraints is EqualUnmodifiableMapView) return _constraints;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(_constraints);
+}
 
 // Snapd 1.67 and earlier returned the outcome, lifespan and expiration fields
 // at the top level rather than as part of `constraints`
-  @override
-  final SnapdRequestOutcome? outcome;
-  @override
-  final SnapdRequestLifespan? lifespan;
-  @override
-  final DateTime? expiration;
+@override final  SnapdRequestOutcome? outcome;
+@override final  SnapdRequestLifespan? lifespan;
+@override final  DateTime? expiration;
 
-  @override
-  String toString() {
-    return 'SnapdRule(id: $id, timestamp: $timestamp, snap: $snap, interface: $interface, constraints: $constraints, outcome: $outcome, lifespan: $lifespan, expiration: $expiration)';
-  }
+/// Create a copy of SnapdRule
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapdRuleCopyWith<_SnapdRule> get copyWith => __$SnapdRuleCopyWithImpl<_SnapdRule>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapdRuleImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.timestamp, timestamp) ||
-                other.timestamp == timestamp) &&
-            (identical(other.snap, snap) || other.snap == snap) &&
-            (identical(other.interface, interface) ||
-                other.interface == interface) &&
-            const DeepCollectionEquality()
-                .equals(other._constraints, _constraints) &&
-            (identical(other.outcome, outcome) || other.outcome == outcome) &&
-            (identical(other.lifespan, lifespan) ||
-                other.lifespan == lifespan) &&
-            (identical(other.expiration, expiration) ||
-                other.expiration == expiration));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      timestamp,
-      snap,
-      interface,
-      const DeepCollectionEquality().hash(_constraints),
-      outcome,
-      lifespan,
-      expiration);
-
-  /// Create a copy of SnapdRule
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapdRuleImplCopyWith<_$SnapdRuleImpl> get copyWith =>
-      __$$SnapdRuleImplCopyWithImpl<_$SnapdRuleImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapdRuleImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapdRuleToJson(this, );
 }
 
-abstract class _SnapdRule implements SnapdRule {
-  const factory _SnapdRule(
-      {required final String id,
-      required final DateTime timestamp,
-      required final String snap,
-      required final String interface,
-      required final Map<String, dynamic> constraints,
-      final SnapdRequestOutcome? outcome,
-      final SnapdRequestLifespan? lifespan,
-      final DateTime? expiration}) = _$SnapdRuleImpl;
-
-  factory _SnapdRule.fromJson(Map<String, dynamic> json) =
-      _$SnapdRuleImpl.fromJson;
-
-  @override
-  String get id;
-  @override
-  DateTime get timestamp;
-  @override
-  String get snap;
-  @override
-  String get interface;
-  @override
-  Map<String, dynamic>
-      get constraints; // Snapd 1.67 and earlier returned the outcome, lifespan and expiration fields
-// at the top level rather than as part of `constraints`
-  @override
-  SnapdRequestOutcome? get outcome;
-  @override
-  SnapdRequestLifespan? get lifespan;
-  @override
-  DateTime? get expiration;
-
-  /// Create a copy of SnapdRule
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapdRuleImplCopyWith<_$SnapdRuleImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapdRule&&(identical(other.id, id) || other.id == id)&&(identical(other.timestamp, timestamp) || other.timestamp == timestamp)&&(identical(other.snap, snap) || other.snap == snap)&&(identical(other.interface, interface) || other.interface == interface)&&const DeepCollectionEquality().equals(other._constraints, _constraints)&&(identical(other.outcome, outcome) || other.outcome == outcome)&&(identical(other.lifespan, lifespan) || other.lifespan == lifespan)&&(identical(other.expiration, expiration) || other.expiration == expiration));
 }
 
-SnapdRuleMask _$SnapdRuleMaskFromJson(Map<String, dynamic> json) {
-  return _SnapdRuleMask.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,timestamp,snap,interface,const DeepCollectionEquality().hash(_constraints),outcome,lifespan,expiration);
+
+@override
+String toString() {
+  return 'SnapdRule(id: $id, timestamp: $timestamp, snap: $snap, interface: $interface, constraints: $constraints, outcome: $outcome, lifespan: $lifespan, expiration: $expiration)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapdRuleCopyWith<$Res> implements $SnapdRuleCopyWith<$Res> {
+  factory _$SnapdRuleCopyWith(_SnapdRule value, $Res Function(_SnapdRule) _then) = __$SnapdRuleCopyWithImpl;
+@override @useResult
+$Res call({
+ String id, DateTime timestamp, String snap, String interface, Map<String, dynamic> constraints, SnapdRequestOutcome? outcome, SnapdRequestLifespan? lifespan, DateTime? expiration
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapdRuleCopyWithImpl<$Res>
+    implements _$SnapdRuleCopyWith<$Res> {
+  __$SnapdRuleCopyWithImpl(this._self, this._then);
+
+  final _SnapdRule _self;
+  final $Res Function(_SnapdRule) _then;
+
+/// Create a copy of SnapdRule
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? timestamp = null,Object? snap = null,Object? interface = null,Object? constraints = null,Object? outcome = freezed,Object? lifespan = freezed,Object? expiration = freezed,}) {
+  return _then(_SnapdRule(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,timestamp: null == timestamp ? _self.timestamp : timestamp // ignore: cast_nullable_to_non_nullable
+as DateTime,snap: null == snap ? _self.snap : snap // ignore: cast_nullable_to_non_nullable
+as String,interface: null == interface ? _self.interface : interface // ignore: cast_nullable_to_non_nullable
+as String,constraints: null == constraints ? _self._constraints : constraints // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>,outcome: freezed == outcome ? _self.outcome : outcome // ignore: cast_nullable_to_non_nullable
+as SnapdRequestOutcome?,lifespan: freezed == lifespan ? _self.lifespan : lifespan // ignore: cast_nullable_to_non_nullable
+as SnapdRequestLifespan?,expiration: freezed == expiration ? _self.expiration : expiration // ignore: cast_nullable_to_non_nullable
+as DateTime?,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapdRuleMask {
-  String get snap => throw _privateConstructorUsedError;
-  String get interface => throw _privateConstructorUsedError;
-  Map<String, dynamic> get constraints => throw _privateConstructorUsedError;
+
+ String get snap; String get interface; Map<String, dynamic> get constraints;
+/// Create a copy of SnapdRuleMask
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapdRuleMaskCopyWith<SnapdRuleMask> get copyWith => _$SnapdRuleMaskCopyWithImpl<SnapdRuleMask>(this as SnapdRuleMask, _$identity);
 
   /// Serializes this SnapdRuleMask to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapdRuleMask
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapdRuleMaskCopyWith<SnapdRuleMask> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapdRuleMask&&(identical(other.snap, snap) || other.snap == snap)&&(identical(other.interface, interface) || other.interface == interface)&&const DeepCollectionEquality().equals(other.constraints, constraints));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,snap,interface,const DeepCollectionEquality().hash(constraints));
+
+@override
+String toString() {
+  return 'SnapdRuleMask(snap: $snap, interface: $interface, constraints: $constraints)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapdRuleMaskCopyWith<$Res> {
-  factory $SnapdRuleMaskCopyWith(
-          SnapdRuleMask value, $Res Function(SnapdRuleMask) then) =
-      _$SnapdRuleMaskCopyWithImpl<$Res, SnapdRuleMask>;
-  @useResult
-  $Res call({String snap, String interface, Map<String, dynamic> constraints});
-}
+abstract mixin class $SnapdRuleMaskCopyWith<$Res>  {
+  factory $SnapdRuleMaskCopyWith(SnapdRuleMask value, $Res Function(SnapdRuleMask) _then) = _$SnapdRuleMaskCopyWithImpl;
+@useResult
+$Res call({
+ String snap, String interface, Map<String, dynamic> constraints
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapdRuleMaskCopyWithImpl<$Res, $Val extends SnapdRuleMask>
+class _$SnapdRuleMaskCopyWithImpl<$Res>
     implements $SnapdRuleMaskCopyWith<$Res> {
-  _$SnapdRuleMaskCopyWithImpl(this._value, this._then);
+  _$SnapdRuleMaskCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapdRuleMask _self;
+  final $Res Function(SnapdRuleMask) _then;
 
-  /// Create a copy of SnapdRuleMask
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? snap = null,
-    Object? interface = null,
-    Object? constraints = null,
-  }) {
-    return _then(_value.copyWith(
-      snap: null == snap
-          ? _value.snap
-          : snap // ignore: cast_nullable_to_non_nullable
-              as String,
-      interface: null == interface
-          ? _value.interface
-          : interface // ignore: cast_nullable_to_non_nullable
-              as String,
-      constraints: null == constraints
-          ? _value.constraints
-          : constraints // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-    ) as $Val);
-  }
+/// Create a copy of SnapdRuleMask
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? snap = null,Object? interface = null,Object? constraints = null,}) {
+  return _then(_self.copyWith(
+snap: null == snap ? _self.snap : snap // ignore: cast_nullable_to_non_nullable
+as String,interface: null == interface ? _self.interface : interface // ignore: cast_nullable_to_non_nullable
+as String,constraints: null == constraints ? _self.constraints : constraints // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapdRuleMaskImplCopyWith<$Res>
-    implements $SnapdRuleMaskCopyWith<$Res> {
-  factory _$$SnapdRuleMaskImplCopyWith(
-          _$SnapdRuleMaskImpl value, $Res Function(_$SnapdRuleMaskImpl) then) =
-      __$$SnapdRuleMaskImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String snap, String interface, Map<String, dynamic> constraints});
 }
 
-/// @nodoc
-class __$$SnapdRuleMaskImplCopyWithImpl<$Res>
-    extends _$SnapdRuleMaskCopyWithImpl<$Res, _$SnapdRuleMaskImpl>
-    implements _$$SnapdRuleMaskImplCopyWith<$Res> {
-  __$$SnapdRuleMaskImplCopyWithImpl(
-      _$SnapdRuleMaskImpl _value, $Res Function(_$SnapdRuleMaskImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapdRuleMask
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? snap = null,
-    Object? interface = null,
-    Object? constraints = null,
-  }) {
-    return _then(_$SnapdRuleMaskImpl(
-      snap: null == snap
-          ? _value.snap
-          : snap // ignore: cast_nullable_to_non_nullable
-              as String,
-      interface: null == interface
-          ? _value.interface
-          : interface // ignore: cast_nullable_to_non_nullable
-              as String,
-      constraints: null == constraints
-          ? _value._constraints
-          : constraints // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapdRuleMask].
+extension SnapdRuleMaskPatterns on SnapdRuleMask {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapdRuleMask value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapdRuleMask() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapdRuleMask value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdRuleMask():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapdRuleMask value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdRuleMask() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String snap,  String interface,  Map<String, dynamic> constraints)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapdRuleMask() when $default != null:
+return $default(_that.snap,_that.interface,_that.constraints);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String snap,  String interface,  Map<String, dynamic> constraints)  $default,) {final _that = this;
+switch (_that) {
+case _SnapdRuleMask():
+return $default(_that.snap,_that.interface,_that.constraints);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String snap,  String interface,  Map<String, dynamic> constraints)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapdRuleMask() when $default != null:
+return $default(_that.snap,_that.interface,_that.constraints);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapdRuleMaskImpl implements _SnapdRuleMask {
-  const _$SnapdRuleMaskImpl(
-      {required this.snap,
-      required this.interface,
-      required final Map<String, dynamic> constraints})
-      : _constraints = constraints;
 
-  factory _$SnapdRuleMaskImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapdRuleMaskImplFromJson(json);
+class _SnapdRuleMask implements SnapdRuleMask {
+  const _SnapdRuleMask({required this.snap, required this.interface, required final  Map<String, dynamic> constraints}): _constraints = constraints;
+  factory _SnapdRuleMask.fromJson(Map<String, dynamic> json) => _$SnapdRuleMaskFromJson(json);
 
-  @override
-  final String snap;
-  @override
-  final String interface;
-  final Map<String, dynamic> _constraints;
-  @override
-  Map<String, dynamic> get constraints {
-    if (_constraints is EqualUnmodifiableMapView) return _constraints;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_constraints);
-  }
-
-  @override
-  String toString() {
-    return 'SnapdRuleMask(snap: $snap, interface: $interface, constraints: $constraints)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapdRuleMaskImpl &&
-            (identical(other.snap, snap) || other.snap == snap) &&
-            (identical(other.interface, interface) ||
-                other.interface == interface) &&
-            const DeepCollectionEquality()
-                .equals(other._constraints, _constraints));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, snap, interface,
-      const DeepCollectionEquality().hash(_constraints));
-
-  /// Create a copy of SnapdRuleMask
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapdRuleMaskImplCopyWith<_$SnapdRuleMaskImpl> get copyWith =>
-      __$$SnapdRuleMaskImplCopyWithImpl<_$SnapdRuleMaskImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapdRuleMaskImplToJson(
-      this,
-    );
-  }
+@override final  String snap;
+@override final  String interface;
+ final  Map<String, dynamic> _constraints;
+@override Map<String, dynamic> get constraints {
+  if (_constraints is EqualUnmodifiableMapView) return _constraints;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(_constraints);
 }
 
-abstract class _SnapdRuleMask implements SnapdRuleMask {
-  const factory _SnapdRuleMask(
-      {required final String snap,
-      required final String interface,
-      required final Map<String, dynamic> constraints}) = _$SnapdRuleMaskImpl;
 
-  factory _SnapdRuleMask.fromJson(Map<String, dynamic> json) =
-      _$SnapdRuleMaskImpl.fromJson;
+/// Create a copy of SnapdRuleMask
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapdRuleMaskCopyWith<_SnapdRuleMask> get copyWith => __$SnapdRuleMaskCopyWithImpl<_SnapdRuleMask>(this, _$identity);
 
-  @override
-  String get snap;
-  @override
-  String get interface;
-  @override
-  Map<String, dynamic> get constraints;
-
-  /// Create a copy of SnapdRuleMask
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapdRuleMaskImplCopyWith<_$SnapdRuleMaskImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapdRuleMaskToJson(this, );
 }
 
-SnapdNotice _$SnapdNoticeFromJson(Map<String, dynamic> json) {
-  return _SnapdNotice.fromJson(json);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapdRuleMask&&(identical(other.snap, snap) || other.snap == snap)&&(identical(other.interface, interface) || other.interface == interface)&&const DeepCollectionEquality().equals(other._constraints, _constraints));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,snap,interface,const DeepCollectionEquality().hash(_constraints));
+
+@override
+String toString() {
+  return 'SnapdRuleMask(snap: $snap, interface: $interface, constraints: $constraints)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapdRuleMaskCopyWith<$Res> implements $SnapdRuleMaskCopyWith<$Res> {
+  factory _$SnapdRuleMaskCopyWith(_SnapdRuleMask value, $Res Function(_SnapdRuleMask) _then) = __$SnapdRuleMaskCopyWithImpl;
+@override @useResult
+$Res call({
+ String snap, String interface, Map<String, dynamic> constraints
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapdRuleMaskCopyWithImpl<$Res>
+    implements _$SnapdRuleMaskCopyWith<$Res> {
+  __$SnapdRuleMaskCopyWithImpl(this._self, this._then);
+
+  final _SnapdRuleMask _self;
+  final $Res Function(_SnapdRuleMask) _then;
+
+/// Create a copy of SnapdRuleMask
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? snap = null,Object? interface = null,Object? constraints = null,}) {
+  return _then(_SnapdRuleMask(
+snap: null == snap ? _self.snap : snap // ignore: cast_nullable_to_non_nullable
+as String,interface: null == interface ? _self.interface : interface // ignore: cast_nullable_to_non_nullable
+as String,constraints: null == constraints ? _self._constraints : constraints // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapdNotice {
-  String get id => throw _privateConstructorUsedError;
-  SnapdNoticeType get type => throw _privateConstructorUsedError;
-  String get key => throw _privateConstructorUsedError;
-  @_SnapdDateTimeConverter()
-  DateTime get firstOccured => throw _privateConstructorUsedError;
-  @_SnapdDateTimeConverter()
-  DateTime get lastOccured => throw _privateConstructorUsedError;
-  @_SnapdDateTimeConverter()
-  DateTime get lastRepeated => throw _privateConstructorUsedError;
-  int get occurrences => throw _privateConstructorUsedError;
-  String get expireAfter => throw _privateConstructorUsedError;
-  int? get userId => throw _privateConstructorUsedError;
-  Map<String, String>? get lastData => throw _privateConstructorUsedError;
+
+ String get id; SnapdNoticeType get type; String get key;@_SnapdDateTimeConverter() DateTime get firstOccured;@_SnapdDateTimeConverter() DateTime get lastOccured;@_SnapdDateTimeConverter() DateTime get lastRepeated; int get occurrences; String get expireAfter; int? get userId; Map<String, String>? get lastData;
+/// Create a copy of SnapdNotice
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapdNoticeCopyWith<SnapdNotice> get copyWith => _$SnapdNoticeCopyWithImpl<SnapdNotice>(this as SnapdNotice, _$identity);
 
   /// Serializes this SnapdNotice to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapdNotice
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapdNoticeCopyWith<SnapdNotice> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapdNotice&&(identical(other.id, id) || other.id == id)&&(identical(other.type, type) || other.type == type)&&(identical(other.key, key) || other.key == key)&&(identical(other.firstOccured, firstOccured) || other.firstOccured == firstOccured)&&(identical(other.lastOccured, lastOccured) || other.lastOccured == lastOccured)&&(identical(other.lastRepeated, lastRepeated) || other.lastRepeated == lastRepeated)&&(identical(other.occurrences, occurrences) || other.occurrences == occurrences)&&(identical(other.expireAfter, expireAfter) || other.expireAfter == expireAfter)&&(identical(other.userId, userId) || other.userId == userId)&&const DeepCollectionEquality().equals(other.lastData, lastData));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,type,key,firstOccured,lastOccured,lastRepeated,occurrences,expireAfter,userId,const DeepCollectionEquality().hash(lastData));
+
+@override
+String toString() {
+  return 'SnapdNotice(id: $id, type: $type, key: $key, firstOccured: $firstOccured, lastOccured: $lastOccured, lastRepeated: $lastRepeated, occurrences: $occurrences, expireAfter: $expireAfter, userId: $userId, lastData: $lastData)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapdNoticeCopyWith<$Res> {
-  factory $SnapdNoticeCopyWith(
-          SnapdNotice value, $Res Function(SnapdNotice) then) =
-      _$SnapdNoticeCopyWithImpl<$Res, SnapdNotice>;
-  @useResult
-  $Res call(
-      {String id,
-      SnapdNoticeType type,
-      String key,
-      @_SnapdDateTimeConverter() DateTime firstOccured,
-      @_SnapdDateTimeConverter() DateTime lastOccured,
-      @_SnapdDateTimeConverter() DateTime lastRepeated,
-      int occurrences,
-      String expireAfter,
-      int? userId,
-      Map<String, String>? lastData});
-}
+abstract mixin class $SnapdNoticeCopyWith<$Res>  {
+  factory $SnapdNoticeCopyWith(SnapdNotice value, $Res Function(SnapdNotice) _then) = _$SnapdNoticeCopyWithImpl;
+@useResult
+$Res call({
+ String id, SnapdNoticeType type, String key,@_SnapdDateTimeConverter() DateTime firstOccured,@_SnapdDateTimeConverter() DateTime lastOccured,@_SnapdDateTimeConverter() DateTime lastRepeated, int occurrences, String expireAfter, int? userId, Map<String, String>? lastData
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapdNoticeCopyWithImpl<$Res, $Val extends SnapdNotice>
+class _$SnapdNoticeCopyWithImpl<$Res>
     implements $SnapdNoticeCopyWith<$Res> {
-  _$SnapdNoticeCopyWithImpl(this._value, this._then);
+  _$SnapdNoticeCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapdNotice _self;
+  final $Res Function(SnapdNotice) _then;
 
-  /// Create a copy of SnapdNotice
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? type = null,
-    Object? key = null,
-    Object? firstOccured = null,
-    Object? lastOccured = null,
-    Object? lastRepeated = null,
-    Object? occurrences = null,
-    Object? expireAfter = null,
-    Object? userId = freezed,
-    Object? lastData = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as SnapdNoticeType,
-      key: null == key
-          ? _value.key
-          : key // ignore: cast_nullable_to_non_nullable
-              as String,
-      firstOccured: null == firstOccured
-          ? _value.firstOccured
-          : firstOccured // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      lastOccured: null == lastOccured
-          ? _value.lastOccured
-          : lastOccured // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      lastRepeated: null == lastRepeated
-          ? _value.lastRepeated
-          : lastRepeated // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      occurrences: null == occurrences
-          ? _value.occurrences
-          : occurrences // ignore: cast_nullable_to_non_nullable
-              as int,
-      expireAfter: null == expireAfter
-          ? _value.expireAfter
-          : expireAfter // ignore: cast_nullable_to_non_nullable
-              as String,
-      userId: freezed == userId
-          ? _value.userId
-          : userId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      lastData: freezed == lastData
-          ? _value.lastData
-          : lastData // ignore: cast_nullable_to_non_nullable
-              as Map<String, String>?,
-    ) as $Val);
-  }
+/// Create a copy of SnapdNotice
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? type = null,Object? key = null,Object? firstOccured = null,Object? lastOccured = null,Object? lastRepeated = null,Object? occurrences = null,Object? expireAfter = null,Object? userId = freezed,Object? lastData = freezed,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as SnapdNoticeType,key: null == key ? _self.key : key // ignore: cast_nullable_to_non_nullable
+as String,firstOccured: null == firstOccured ? _self.firstOccured : firstOccured // ignore: cast_nullable_to_non_nullable
+as DateTime,lastOccured: null == lastOccured ? _self.lastOccured : lastOccured // ignore: cast_nullable_to_non_nullable
+as DateTime,lastRepeated: null == lastRepeated ? _self.lastRepeated : lastRepeated // ignore: cast_nullable_to_non_nullable
+as DateTime,occurrences: null == occurrences ? _self.occurrences : occurrences // ignore: cast_nullable_to_non_nullable
+as int,expireAfter: null == expireAfter ? _self.expireAfter : expireAfter // ignore: cast_nullable_to_non_nullable
+as String,userId: freezed == userId ? _self.userId : userId // ignore: cast_nullable_to_non_nullable
+as int?,lastData: freezed == lastData ? _self.lastData : lastData // ignore: cast_nullable_to_non_nullable
+as Map<String, String>?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapdNoticeImplCopyWith<$Res>
-    implements $SnapdNoticeCopyWith<$Res> {
-  factory _$$SnapdNoticeImplCopyWith(
-          _$SnapdNoticeImpl value, $Res Function(_$SnapdNoticeImpl) then) =
-      __$$SnapdNoticeImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String id,
-      SnapdNoticeType type,
-      String key,
-      @_SnapdDateTimeConverter() DateTime firstOccured,
-      @_SnapdDateTimeConverter() DateTime lastOccured,
-      @_SnapdDateTimeConverter() DateTime lastRepeated,
-      int occurrences,
-      String expireAfter,
-      int? userId,
-      Map<String, String>? lastData});
 }
 
-/// @nodoc
-class __$$SnapdNoticeImplCopyWithImpl<$Res>
-    extends _$SnapdNoticeCopyWithImpl<$Res, _$SnapdNoticeImpl>
-    implements _$$SnapdNoticeImplCopyWith<$Res> {
-  __$$SnapdNoticeImplCopyWithImpl(
-      _$SnapdNoticeImpl _value, $Res Function(_$SnapdNoticeImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapdNotice
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? type = null,
-    Object? key = null,
-    Object? firstOccured = null,
-    Object? lastOccured = null,
-    Object? lastRepeated = null,
-    Object? occurrences = null,
-    Object? expireAfter = null,
-    Object? userId = freezed,
-    Object? lastData = freezed,
-  }) {
-    return _then(_$SnapdNoticeImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as SnapdNoticeType,
-      key: null == key
-          ? _value.key
-          : key // ignore: cast_nullable_to_non_nullable
-              as String,
-      firstOccured: null == firstOccured
-          ? _value.firstOccured
-          : firstOccured // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      lastOccured: null == lastOccured
-          ? _value.lastOccured
-          : lastOccured // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      lastRepeated: null == lastRepeated
-          ? _value.lastRepeated
-          : lastRepeated // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      occurrences: null == occurrences
-          ? _value.occurrences
-          : occurrences // ignore: cast_nullable_to_non_nullable
-              as int,
-      expireAfter: null == expireAfter
-          ? _value.expireAfter
-          : expireAfter // ignore: cast_nullable_to_non_nullable
-              as String,
-      userId: freezed == userId
-          ? _value.userId
-          : userId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      lastData: freezed == lastData
-          ? _value._lastData
-          : lastData // ignore: cast_nullable_to_non_nullable
-              as Map<String, String>?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapdNotice].
+extension SnapdNoticePatterns on SnapdNotice {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapdNotice value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapdNotice() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapdNotice value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdNotice():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapdNotice value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdNotice() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  SnapdNoticeType type,  String key, @_SnapdDateTimeConverter()  DateTime firstOccured, @_SnapdDateTimeConverter()  DateTime lastOccured, @_SnapdDateTimeConverter()  DateTime lastRepeated,  int occurrences,  String expireAfter,  int? userId,  Map<String, String>? lastData)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapdNotice() when $default != null:
+return $default(_that.id,_that.type,_that.key,_that.firstOccured,_that.lastOccured,_that.lastRepeated,_that.occurrences,_that.expireAfter,_that.userId,_that.lastData);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  SnapdNoticeType type,  String key, @_SnapdDateTimeConverter()  DateTime firstOccured, @_SnapdDateTimeConverter()  DateTime lastOccured, @_SnapdDateTimeConverter()  DateTime lastRepeated,  int occurrences,  String expireAfter,  int? userId,  Map<String, String>? lastData)  $default,) {final _that = this;
+switch (_that) {
+case _SnapdNotice():
+return $default(_that.id,_that.type,_that.key,_that.firstOccured,_that.lastOccured,_that.lastRepeated,_that.occurrences,_that.expireAfter,_that.userId,_that.lastData);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  SnapdNoticeType type,  String key, @_SnapdDateTimeConverter()  DateTime firstOccured, @_SnapdDateTimeConverter()  DateTime lastOccured, @_SnapdDateTimeConverter()  DateTime lastRepeated,  int occurrences,  String expireAfter,  int? userId,  Map<String, String>? lastData)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapdNotice() when $default != null:
+return $default(_that.id,_that.type,_that.key,_that.firstOccured,_that.lastOccured,_that.lastRepeated,_that.occurrences,_that.expireAfter,_that.userId,_that.lastData);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapdNoticeImpl implements _SnapdNotice {
-  const _$SnapdNoticeImpl(
-      {required this.id,
-      required this.type,
-      required this.key,
-      @_SnapdDateTimeConverter() required this.firstOccured,
-      @_SnapdDateTimeConverter() required this.lastOccured,
-      @_SnapdDateTimeConverter() required this.lastRepeated,
-      required this.occurrences,
-      required this.expireAfter,
-      this.userId,
-      final Map<String, String>? lastData})
-      : _lastData = lastData;
 
-  factory _$SnapdNoticeImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapdNoticeImplFromJson(json);
+class _SnapdNotice implements SnapdNotice {
+  const _SnapdNotice({required this.id, required this.type, required this.key, @_SnapdDateTimeConverter() required this.firstOccured, @_SnapdDateTimeConverter() required this.lastOccured, @_SnapdDateTimeConverter() required this.lastRepeated, required this.occurrences, required this.expireAfter, this.userId, final  Map<String, String>? lastData}): _lastData = lastData;
+  factory _SnapdNotice.fromJson(Map<String, dynamic> json) => _$SnapdNoticeFromJson(json);
 
-  @override
-  final String id;
-  @override
-  final SnapdNoticeType type;
-  @override
-  final String key;
-  @override
-  @_SnapdDateTimeConverter()
-  final DateTime firstOccured;
-  @override
-  @_SnapdDateTimeConverter()
-  final DateTime lastOccured;
-  @override
-  @_SnapdDateTimeConverter()
-  final DateTime lastRepeated;
-  @override
-  final int occurrences;
-  @override
-  final String expireAfter;
-  @override
-  final int? userId;
-  final Map<String, String>? _lastData;
-  @override
-  Map<String, String>? get lastData {
-    final value = _lastData;
-    if (value == null) return null;
-    if (_lastData is EqualUnmodifiableMapView) return _lastData;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
-
-  @override
-  String toString() {
-    return 'SnapdNotice(id: $id, type: $type, key: $key, firstOccured: $firstOccured, lastOccured: $lastOccured, lastRepeated: $lastRepeated, occurrences: $occurrences, expireAfter: $expireAfter, userId: $userId, lastData: $lastData)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapdNoticeImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.type, type) || other.type == type) &&
-            (identical(other.key, key) || other.key == key) &&
-            (identical(other.firstOccured, firstOccured) ||
-                other.firstOccured == firstOccured) &&
-            (identical(other.lastOccured, lastOccured) ||
-                other.lastOccured == lastOccured) &&
-            (identical(other.lastRepeated, lastRepeated) ||
-                other.lastRepeated == lastRepeated) &&
-            (identical(other.occurrences, occurrences) ||
-                other.occurrences == occurrences) &&
-            (identical(other.expireAfter, expireAfter) ||
-                other.expireAfter == expireAfter) &&
-            (identical(other.userId, userId) || other.userId == userId) &&
-            const DeepCollectionEquality().equals(other._lastData, _lastData));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      type,
-      key,
-      firstOccured,
-      lastOccured,
-      lastRepeated,
-      occurrences,
-      expireAfter,
-      userId,
-      const DeepCollectionEquality().hash(_lastData));
-
-  /// Create a copy of SnapdNotice
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapdNoticeImplCopyWith<_$SnapdNoticeImpl> get copyWith =>
-      __$$SnapdNoticeImplCopyWithImpl<_$SnapdNoticeImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapdNoticeImplToJson(
-      this,
-    );
-  }
+@override final  String id;
+@override final  SnapdNoticeType type;
+@override final  String key;
+@override@_SnapdDateTimeConverter() final  DateTime firstOccured;
+@override@_SnapdDateTimeConverter() final  DateTime lastOccured;
+@override@_SnapdDateTimeConverter() final  DateTime lastRepeated;
+@override final  int occurrences;
+@override final  String expireAfter;
+@override final  int? userId;
+ final  Map<String, String>? _lastData;
+@override Map<String, String>? get lastData {
+  final value = _lastData;
+  if (value == null) return null;
+  if (_lastData is EqualUnmodifiableMapView) return _lastData;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(value);
 }
 
-abstract class _SnapdNotice implements SnapdNotice {
-  const factory _SnapdNotice(
-      {required final String id,
-      required final SnapdNoticeType type,
-      required final String key,
-      @_SnapdDateTimeConverter() required final DateTime firstOccured,
-      @_SnapdDateTimeConverter() required final DateTime lastOccured,
-      @_SnapdDateTimeConverter() required final DateTime lastRepeated,
-      required final int occurrences,
-      required final String expireAfter,
-      final int? userId,
-      final Map<String, String>? lastData}) = _$SnapdNoticeImpl;
 
-  factory _SnapdNotice.fromJson(Map<String, dynamic> json) =
-      _$SnapdNoticeImpl.fromJson;
+/// Create a copy of SnapdNotice
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapdNoticeCopyWith<_SnapdNotice> get copyWith => __$SnapdNoticeCopyWithImpl<_SnapdNotice>(this, _$identity);
 
-  @override
-  String get id;
-  @override
-  SnapdNoticeType get type;
-  @override
-  String get key;
-  @override
-  @_SnapdDateTimeConverter()
-  DateTime get firstOccured;
-  @override
-  @_SnapdDateTimeConverter()
-  DateTime get lastOccured;
-  @override
-  @_SnapdDateTimeConverter()
-  DateTime get lastRepeated;
-  @override
-  int get occurrences;
-  @override
-  String get expireAfter;
-  @override
-  int? get userId;
-  @override
-  Map<String, String>? get lastData;
-
-  /// Create a copy of SnapdNotice
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapdNoticeImplCopyWith<_$SnapdNoticeImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapdNoticeToJson(this, );
 }
 
-SnapdGenerateRecoveryKeyResponse _$SnapdGenerateRecoveryKeyResponseFromJson(
-    Map<String, dynamic> json) {
-  return _SnapdGenerateRecoveryKeyResponse.fromJson(json);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapdNotice&&(identical(other.id, id) || other.id == id)&&(identical(other.type, type) || other.type == type)&&(identical(other.key, key) || other.key == key)&&(identical(other.firstOccured, firstOccured) || other.firstOccured == firstOccured)&&(identical(other.lastOccured, lastOccured) || other.lastOccured == lastOccured)&&(identical(other.lastRepeated, lastRepeated) || other.lastRepeated == lastRepeated)&&(identical(other.occurrences, occurrences) || other.occurrences == occurrences)&&(identical(other.expireAfter, expireAfter) || other.expireAfter == expireAfter)&&(identical(other.userId, userId) || other.userId == userId)&&const DeepCollectionEquality().equals(other._lastData, _lastData));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,type,key,firstOccured,lastOccured,lastRepeated,occurrences,expireAfter,userId,const DeepCollectionEquality().hash(_lastData));
+
+@override
+String toString() {
+  return 'SnapdNotice(id: $id, type: $type, key: $key, firstOccured: $firstOccured, lastOccured: $lastOccured, lastRepeated: $lastRepeated, occurrences: $occurrences, expireAfter: $expireAfter, userId: $userId, lastData: $lastData)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapdNoticeCopyWith<$Res> implements $SnapdNoticeCopyWith<$Res> {
+  factory _$SnapdNoticeCopyWith(_SnapdNotice value, $Res Function(_SnapdNotice) _then) = __$SnapdNoticeCopyWithImpl;
+@override @useResult
+$Res call({
+ String id, SnapdNoticeType type, String key,@_SnapdDateTimeConverter() DateTime firstOccured,@_SnapdDateTimeConverter() DateTime lastOccured,@_SnapdDateTimeConverter() DateTime lastRepeated, int occurrences, String expireAfter, int? userId, Map<String, String>? lastData
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapdNoticeCopyWithImpl<$Res>
+    implements _$SnapdNoticeCopyWith<$Res> {
+  __$SnapdNoticeCopyWithImpl(this._self, this._then);
+
+  final _SnapdNotice _self;
+  final $Res Function(_SnapdNotice) _then;
+
+/// Create a copy of SnapdNotice
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? type = null,Object? key = null,Object? firstOccured = null,Object? lastOccured = null,Object? lastRepeated = null,Object? occurrences = null,Object? expireAfter = null,Object? userId = freezed,Object? lastData = freezed,}) {
+  return _then(_SnapdNotice(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as SnapdNoticeType,key: null == key ? _self.key : key // ignore: cast_nullable_to_non_nullable
+as String,firstOccured: null == firstOccured ? _self.firstOccured : firstOccured // ignore: cast_nullable_to_non_nullable
+as DateTime,lastOccured: null == lastOccured ? _self.lastOccured : lastOccured // ignore: cast_nullable_to_non_nullable
+as DateTime,lastRepeated: null == lastRepeated ? _self.lastRepeated : lastRepeated // ignore: cast_nullable_to_non_nullable
+as DateTime,occurrences: null == occurrences ? _self.occurrences : occurrences // ignore: cast_nullable_to_non_nullable
+as int,expireAfter: null == expireAfter ? _self.expireAfter : expireAfter // ignore: cast_nullable_to_non_nullable
+as String,userId: freezed == userId ? _self.userId : userId // ignore: cast_nullable_to_non_nullable
+as int?,lastData: freezed == lastData ? _self._lastData : lastData // ignore: cast_nullable_to_non_nullable
+as Map<String, String>?,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapdGenerateRecoveryKeyResponse {
-  String get recoveryKey => throw _privateConstructorUsedError;
-  String get keyId => throw _privateConstructorUsedError;
+
+ String get recoveryKey; String get keyId;
+/// Create a copy of SnapdGenerateRecoveryKeyResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapdGenerateRecoveryKeyResponseCopyWith<SnapdGenerateRecoveryKeyResponse> get copyWith => _$SnapdGenerateRecoveryKeyResponseCopyWithImpl<SnapdGenerateRecoveryKeyResponse>(this as SnapdGenerateRecoveryKeyResponse, _$identity);
 
   /// Serializes this SnapdGenerateRecoveryKeyResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapdGenerateRecoveryKeyResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapdGenerateRecoveryKeyResponseCopyWith<SnapdGenerateRecoveryKeyResponse>
-      get copyWith => throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapdGenerateRecoveryKeyResponse&&(identical(other.recoveryKey, recoveryKey) || other.recoveryKey == recoveryKey)&&(identical(other.keyId, keyId) || other.keyId == keyId));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,recoveryKey,keyId);
+
+@override
+String toString() {
+  return 'SnapdGenerateRecoveryKeyResponse(recoveryKey: $recoveryKey, keyId: $keyId)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapdGenerateRecoveryKeyResponseCopyWith<$Res> {
-  factory $SnapdGenerateRecoveryKeyResponseCopyWith(
-          SnapdGenerateRecoveryKeyResponse value,
-          $Res Function(SnapdGenerateRecoveryKeyResponse) then) =
-      _$SnapdGenerateRecoveryKeyResponseCopyWithImpl<$Res,
-          SnapdGenerateRecoveryKeyResponse>;
-  @useResult
-  $Res call({String recoveryKey, String keyId});
-}
+abstract mixin class $SnapdGenerateRecoveryKeyResponseCopyWith<$Res>  {
+  factory $SnapdGenerateRecoveryKeyResponseCopyWith(SnapdGenerateRecoveryKeyResponse value, $Res Function(SnapdGenerateRecoveryKeyResponse) _then) = _$SnapdGenerateRecoveryKeyResponseCopyWithImpl;
+@useResult
+$Res call({
+ String recoveryKey, String keyId
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapdGenerateRecoveryKeyResponseCopyWithImpl<$Res,
-        $Val extends SnapdGenerateRecoveryKeyResponse>
+class _$SnapdGenerateRecoveryKeyResponseCopyWithImpl<$Res>
     implements $SnapdGenerateRecoveryKeyResponseCopyWith<$Res> {
-  _$SnapdGenerateRecoveryKeyResponseCopyWithImpl(this._value, this._then);
+  _$SnapdGenerateRecoveryKeyResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapdGenerateRecoveryKeyResponse _self;
+  final $Res Function(SnapdGenerateRecoveryKeyResponse) _then;
 
-  /// Create a copy of SnapdGenerateRecoveryKeyResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? recoveryKey = null,
-    Object? keyId = null,
-  }) {
-    return _then(_value.copyWith(
-      recoveryKey: null == recoveryKey
-          ? _value.recoveryKey
-          : recoveryKey // ignore: cast_nullable_to_non_nullable
-              as String,
-      keyId: null == keyId
-          ? _value.keyId
-          : keyId // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
+/// Create a copy of SnapdGenerateRecoveryKeyResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? recoveryKey = null,Object? keyId = null,}) {
+  return _then(_self.copyWith(
+recoveryKey: null == recoveryKey ? _self.recoveryKey : recoveryKey // ignore: cast_nullable_to_non_nullable
+as String,keyId: null == keyId ? _self.keyId : keyId // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapdGenerateRecoveryKeyResponseImplCopyWith<$Res>
-    implements $SnapdGenerateRecoveryKeyResponseCopyWith<$Res> {
-  factory _$$SnapdGenerateRecoveryKeyResponseImplCopyWith(
-          _$SnapdGenerateRecoveryKeyResponseImpl value,
-          $Res Function(_$SnapdGenerateRecoveryKeyResponseImpl) then) =
-      __$$SnapdGenerateRecoveryKeyResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String recoveryKey, String keyId});
 }
 
-/// @nodoc
-class __$$SnapdGenerateRecoveryKeyResponseImplCopyWithImpl<$Res>
-    extends _$SnapdGenerateRecoveryKeyResponseCopyWithImpl<$Res,
-        _$SnapdGenerateRecoveryKeyResponseImpl>
-    implements _$$SnapdGenerateRecoveryKeyResponseImplCopyWith<$Res> {
-  __$$SnapdGenerateRecoveryKeyResponseImplCopyWithImpl(
-      _$SnapdGenerateRecoveryKeyResponseImpl _value,
-      $Res Function(_$SnapdGenerateRecoveryKeyResponseImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapdGenerateRecoveryKeyResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? recoveryKey = null,
-    Object? keyId = null,
-  }) {
-    return _then(_$SnapdGenerateRecoveryKeyResponseImpl(
-      recoveryKey: null == recoveryKey
-          ? _value.recoveryKey
-          : recoveryKey // ignore: cast_nullable_to_non_nullable
-              as String,
-      keyId: null == keyId
-          ? _value.keyId
-          : keyId // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapdGenerateRecoveryKeyResponse].
+extension SnapdGenerateRecoveryKeyResponsePatterns on SnapdGenerateRecoveryKeyResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapdGenerateRecoveryKeyResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapdGenerateRecoveryKeyResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapdGenerateRecoveryKeyResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdGenerateRecoveryKeyResponse():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapdGenerateRecoveryKeyResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdGenerateRecoveryKeyResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String recoveryKey,  String keyId)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapdGenerateRecoveryKeyResponse() when $default != null:
+return $default(_that.recoveryKey,_that.keyId);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String recoveryKey,  String keyId)  $default,) {final _that = this;
+switch (_that) {
+case _SnapdGenerateRecoveryKeyResponse():
+return $default(_that.recoveryKey,_that.keyId);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String recoveryKey,  String keyId)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapdGenerateRecoveryKeyResponse() when $default != null:
+return $default(_that.recoveryKey,_that.keyId);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapdGenerateRecoveryKeyResponseImpl
-    implements _SnapdGenerateRecoveryKeyResponse {
-  const _$SnapdGenerateRecoveryKeyResponseImpl(
-      {required this.recoveryKey, required this.keyId});
 
-  factory _$SnapdGenerateRecoveryKeyResponseImpl.fromJson(
-          Map<String, dynamic> json) =>
-      _$$SnapdGenerateRecoveryKeyResponseImplFromJson(json);
+class _SnapdGenerateRecoveryKeyResponse implements SnapdGenerateRecoveryKeyResponse {
+  const _SnapdGenerateRecoveryKeyResponse({required this.recoveryKey, required this.keyId});
+  factory _SnapdGenerateRecoveryKeyResponse.fromJson(Map<String, dynamic> json) => _$SnapdGenerateRecoveryKeyResponseFromJson(json);
 
-  @override
-  final String recoveryKey;
-  @override
-  final String keyId;
+@override final  String recoveryKey;
+@override final  String keyId;
 
-  @override
-  String toString() {
-    return 'SnapdGenerateRecoveryKeyResponse(recoveryKey: $recoveryKey, keyId: $keyId)';
-  }
+/// Create a copy of SnapdGenerateRecoveryKeyResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapdGenerateRecoveryKeyResponseCopyWith<_SnapdGenerateRecoveryKeyResponse> get copyWith => __$SnapdGenerateRecoveryKeyResponseCopyWithImpl<_SnapdGenerateRecoveryKeyResponse>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapdGenerateRecoveryKeyResponseImpl &&
-            (identical(other.recoveryKey, recoveryKey) ||
-                other.recoveryKey == recoveryKey) &&
-            (identical(other.keyId, keyId) || other.keyId == keyId));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, recoveryKey, keyId);
-
-  /// Create a copy of SnapdGenerateRecoveryKeyResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapdGenerateRecoveryKeyResponseImplCopyWith<
-          _$SnapdGenerateRecoveryKeyResponseImpl>
-      get copyWith => __$$SnapdGenerateRecoveryKeyResponseImplCopyWithImpl<
-          _$SnapdGenerateRecoveryKeyResponseImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapdGenerateRecoveryKeyResponseImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapdGenerateRecoveryKeyResponseToJson(this, );
 }
 
-abstract class _SnapdGenerateRecoveryKeyResponse
-    implements SnapdGenerateRecoveryKeyResponse {
-  const factory _SnapdGenerateRecoveryKeyResponse(
-      {required final String recoveryKey,
-      required final String keyId}) = _$SnapdGenerateRecoveryKeyResponseImpl;
-
-  factory _SnapdGenerateRecoveryKeyResponse.fromJson(
-          Map<String, dynamic> json) =
-      _$SnapdGenerateRecoveryKeyResponseImpl.fromJson;
-
-  @override
-  String get recoveryKey;
-  @override
-  String get keyId;
-
-  /// Create a copy of SnapdGenerateRecoveryKeyResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapdGenerateRecoveryKeyResponseImplCopyWith<
-          _$SnapdGenerateRecoveryKeyResponseImpl>
-      get copyWith => throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapdGenerateRecoveryKeyResponse&&(identical(other.recoveryKey, recoveryKey) || other.recoveryKey == recoveryKey)&&(identical(other.keyId, keyId) || other.keyId == keyId));
 }
 
-SnapdSystemVolume _$SnapdSystemVolumeFromJson(Map<String, dynamic> json) {
-  return _SnapdSystemVolume.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,recoveryKey,keyId);
+
+@override
+String toString() {
+  return 'SnapdGenerateRecoveryKeyResponse(recoveryKey: $recoveryKey, keyId: $keyId)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapdGenerateRecoveryKeyResponseCopyWith<$Res> implements $SnapdGenerateRecoveryKeyResponseCopyWith<$Res> {
+  factory _$SnapdGenerateRecoveryKeyResponseCopyWith(_SnapdGenerateRecoveryKeyResponse value, $Res Function(_SnapdGenerateRecoveryKeyResponse) _then) = __$SnapdGenerateRecoveryKeyResponseCopyWithImpl;
+@override @useResult
+$Res call({
+ String recoveryKey, String keyId
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapdGenerateRecoveryKeyResponseCopyWithImpl<$Res>
+    implements _$SnapdGenerateRecoveryKeyResponseCopyWith<$Res> {
+  __$SnapdGenerateRecoveryKeyResponseCopyWithImpl(this._self, this._then);
+
+  final _SnapdGenerateRecoveryKeyResponse _self;
+  final $Res Function(_SnapdGenerateRecoveryKeyResponse) _then;
+
+/// Create a copy of SnapdGenerateRecoveryKeyResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? recoveryKey = null,Object? keyId = null,}) {
+  return _then(_SnapdGenerateRecoveryKeyResponse(
+recoveryKey: null == recoveryKey ? _self.recoveryKey : recoveryKey // ignore: cast_nullable_to_non_nullable
+as String,keyId: null == keyId ? _self.keyId : keyId // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapdSystemVolume {
-  String get volumeName => throw _privateConstructorUsedError;
-  String get name => throw _privateConstructorUsedError;
-  bool get encrypted => throw _privateConstructorUsedError;
-  Map<String, SnapdSystemVolumeKeySlot> get keyslots =>
-      throw _privateConstructorUsedError;
+
+ String get volumeName; String get name; bool get encrypted; Map<String, SnapdSystemVolumeKeySlot> get keyslots;
+/// Create a copy of SnapdSystemVolume
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapdSystemVolumeCopyWith<SnapdSystemVolume> get copyWith => _$SnapdSystemVolumeCopyWithImpl<SnapdSystemVolume>(this as SnapdSystemVolume, _$identity);
 
   /// Serializes this SnapdSystemVolume to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapdSystemVolume
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapdSystemVolumeCopyWith<SnapdSystemVolume> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapdSystemVolume&&(identical(other.volumeName, volumeName) || other.volumeName == volumeName)&&(identical(other.name, name) || other.name == name)&&(identical(other.encrypted, encrypted) || other.encrypted == encrypted)&&const DeepCollectionEquality().equals(other.keyslots, keyslots));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,volumeName,name,encrypted,const DeepCollectionEquality().hash(keyslots));
+
+@override
+String toString() {
+  return 'SnapdSystemVolume(volumeName: $volumeName, name: $name, encrypted: $encrypted, keyslots: $keyslots)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapdSystemVolumeCopyWith<$Res> {
-  factory $SnapdSystemVolumeCopyWith(
-          SnapdSystemVolume value, $Res Function(SnapdSystemVolume) then) =
-      _$SnapdSystemVolumeCopyWithImpl<$Res, SnapdSystemVolume>;
-  @useResult
-  $Res call(
-      {String volumeName,
-      String name,
-      bool encrypted,
-      Map<String, SnapdSystemVolumeKeySlot> keyslots});
-}
+abstract mixin class $SnapdSystemVolumeCopyWith<$Res>  {
+  factory $SnapdSystemVolumeCopyWith(SnapdSystemVolume value, $Res Function(SnapdSystemVolume) _then) = _$SnapdSystemVolumeCopyWithImpl;
+@useResult
+$Res call({
+ String volumeName, String name, bool encrypted, Map<String, SnapdSystemVolumeKeySlot> keyslots
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapdSystemVolumeCopyWithImpl<$Res, $Val extends SnapdSystemVolume>
+class _$SnapdSystemVolumeCopyWithImpl<$Res>
     implements $SnapdSystemVolumeCopyWith<$Res> {
-  _$SnapdSystemVolumeCopyWithImpl(this._value, this._then);
+  _$SnapdSystemVolumeCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapdSystemVolume _self;
+  final $Res Function(SnapdSystemVolume) _then;
 
-  /// Create a copy of SnapdSystemVolume
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? volumeName = null,
-    Object? name = null,
-    Object? encrypted = null,
-    Object? keyslots = null,
-  }) {
-    return _then(_value.copyWith(
-      volumeName: null == volumeName
-          ? _value.volumeName
-          : volumeName // ignore: cast_nullable_to_non_nullable
-              as String,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      encrypted: null == encrypted
-          ? _value.encrypted
-          : encrypted // ignore: cast_nullable_to_non_nullable
-              as bool,
-      keyslots: null == keyslots
-          ? _value.keyslots
-          : keyslots // ignore: cast_nullable_to_non_nullable
-              as Map<String, SnapdSystemVolumeKeySlot>,
-    ) as $Val);
-  }
+/// Create a copy of SnapdSystemVolume
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? volumeName = null,Object? name = null,Object? encrypted = null,Object? keyslots = null,}) {
+  return _then(_self.copyWith(
+volumeName: null == volumeName ? _self.volumeName : volumeName // ignore: cast_nullable_to_non_nullable
+as String,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,encrypted: null == encrypted ? _self.encrypted : encrypted // ignore: cast_nullable_to_non_nullable
+as bool,keyslots: null == keyslots ? _self.keyslots : keyslots // ignore: cast_nullable_to_non_nullable
+as Map<String, SnapdSystemVolumeKeySlot>,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapdSystemVolumeImplCopyWith<$Res>
-    implements $SnapdSystemVolumeCopyWith<$Res> {
-  factory _$$SnapdSystemVolumeImplCopyWith(_$SnapdSystemVolumeImpl value,
-          $Res Function(_$SnapdSystemVolumeImpl) then) =
-      __$$SnapdSystemVolumeImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String volumeName,
-      String name,
-      bool encrypted,
-      Map<String, SnapdSystemVolumeKeySlot> keyslots});
 }
 
-/// @nodoc
-class __$$SnapdSystemVolumeImplCopyWithImpl<$Res>
-    extends _$SnapdSystemVolumeCopyWithImpl<$Res, _$SnapdSystemVolumeImpl>
-    implements _$$SnapdSystemVolumeImplCopyWith<$Res> {
-  __$$SnapdSystemVolumeImplCopyWithImpl(_$SnapdSystemVolumeImpl _value,
-      $Res Function(_$SnapdSystemVolumeImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapdSystemVolume
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? volumeName = null,
-    Object? name = null,
-    Object? encrypted = null,
-    Object? keyslots = null,
-  }) {
-    return _then(_$SnapdSystemVolumeImpl(
-      volumeName: null == volumeName
-          ? _value.volumeName
-          : volumeName // ignore: cast_nullable_to_non_nullable
-              as String,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      encrypted: null == encrypted
-          ? _value.encrypted
-          : encrypted // ignore: cast_nullable_to_non_nullable
-              as bool,
-      keyslots: null == keyslots
-          ? _value._keyslots
-          : keyslots // ignore: cast_nullable_to_non_nullable
-              as Map<String, SnapdSystemVolumeKeySlot>,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapdSystemVolume].
+extension SnapdSystemVolumePatterns on SnapdSystemVolume {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapdSystemVolume value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapdSystemVolume() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapdSystemVolume value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdSystemVolume():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapdSystemVolume value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdSystemVolume() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String volumeName,  String name,  bool encrypted,  Map<String, SnapdSystemVolumeKeySlot> keyslots)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapdSystemVolume() when $default != null:
+return $default(_that.volumeName,_that.name,_that.encrypted,_that.keyslots);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String volumeName,  String name,  bool encrypted,  Map<String, SnapdSystemVolumeKeySlot> keyslots)  $default,) {final _that = this;
+switch (_that) {
+case _SnapdSystemVolume():
+return $default(_that.volumeName,_that.name,_that.encrypted,_that.keyslots);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String volumeName,  String name,  bool encrypted,  Map<String, SnapdSystemVolumeKeySlot> keyslots)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapdSystemVolume() when $default != null:
+return $default(_that.volumeName,_that.name,_that.encrypted,_that.keyslots);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapdSystemVolumeImpl implements _SnapdSystemVolume {
-  const _$SnapdSystemVolumeImpl(
-      {required this.volumeName,
-      required this.name,
-      required this.encrypted,
-      final Map<String, SnapdSystemVolumeKeySlot> keyslots = const {}})
-      : _keyslots = keyslots;
 
-  factory _$SnapdSystemVolumeImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapdSystemVolumeImplFromJson(json);
+class _SnapdSystemVolume implements SnapdSystemVolume {
+  const _SnapdSystemVolume({required this.volumeName, required this.name, required this.encrypted, final  Map<String, SnapdSystemVolumeKeySlot> keyslots = const {}}): _keyslots = keyslots;
+  factory _SnapdSystemVolume.fromJson(Map<String, dynamic> json) => _$SnapdSystemVolumeFromJson(json);
 
-  @override
-  final String volumeName;
-  @override
-  final String name;
-  @override
-  final bool encrypted;
-  final Map<String, SnapdSystemVolumeKeySlot> _keyslots;
-  @override
-  @JsonKey()
-  Map<String, SnapdSystemVolumeKeySlot> get keyslots {
-    if (_keyslots is EqualUnmodifiableMapView) return _keyslots;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_keyslots);
-  }
-
-  @override
-  String toString() {
-    return 'SnapdSystemVolume(volumeName: $volumeName, name: $name, encrypted: $encrypted, keyslots: $keyslots)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapdSystemVolumeImpl &&
-            (identical(other.volumeName, volumeName) ||
-                other.volumeName == volumeName) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.encrypted, encrypted) ||
-                other.encrypted == encrypted) &&
-            const DeepCollectionEquality().equals(other._keyslots, _keyslots));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, volumeName, name, encrypted,
-      const DeepCollectionEquality().hash(_keyslots));
-
-  /// Create a copy of SnapdSystemVolume
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapdSystemVolumeImplCopyWith<_$SnapdSystemVolumeImpl> get copyWith =>
-      __$$SnapdSystemVolumeImplCopyWithImpl<_$SnapdSystemVolumeImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapdSystemVolumeImplToJson(
-      this,
-    );
-  }
+@override final  String volumeName;
+@override final  String name;
+@override final  bool encrypted;
+ final  Map<String, SnapdSystemVolumeKeySlot> _keyslots;
+@override@JsonKey() Map<String, SnapdSystemVolumeKeySlot> get keyslots {
+  if (_keyslots is EqualUnmodifiableMapView) return _keyslots;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(_keyslots);
 }
 
-abstract class _SnapdSystemVolume implements SnapdSystemVolume {
-  const factory _SnapdSystemVolume(
-          {required final String volumeName,
-          required final String name,
-          required final bool encrypted,
-          final Map<String, SnapdSystemVolumeKeySlot> keyslots}) =
-      _$SnapdSystemVolumeImpl;
 
-  factory _SnapdSystemVolume.fromJson(Map<String, dynamic> json) =
-      _$SnapdSystemVolumeImpl.fromJson;
+/// Create a copy of SnapdSystemVolume
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapdSystemVolumeCopyWith<_SnapdSystemVolume> get copyWith => __$SnapdSystemVolumeCopyWithImpl<_SnapdSystemVolume>(this, _$identity);
 
-  @override
-  String get volumeName;
-  @override
-  String get name;
-  @override
-  bool get encrypted;
-  @override
-  Map<String, SnapdSystemVolumeKeySlot> get keyslots;
-
-  /// Create a copy of SnapdSystemVolume
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapdSystemVolumeImplCopyWith<_$SnapdSystemVolumeImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapdSystemVolumeToJson(this, );
 }
 
-SnapdSystemVolumeTargetKeySlot _$SnapdSystemVolumeTargetKeySlotFromJson(
-    Map<String, dynamic> json) {
-  return _SnapdSystemVolumeTargetKeySlot.fromJson(json);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapdSystemVolume&&(identical(other.volumeName, volumeName) || other.volumeName == volumeName)&&(identical(other.name, name) || other.name == name)&&(identical(other.encrypted, encrypted) || other.encrypted == encrypted)&&const DeepCollectionEquality().equals(other._keyslots, _keyslots));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,volumeName,name,encrypted,const DeepCollectionEquality().hash(_keyslots));
+
+@override
+String toString() {
+  return 'SnapdSystemVolume(volumeName: $volumeName, name: $name, encrypted: $encrypted, keyslots: $keyslots)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapdSystemVolumeCopyWith<$Res> implements $SnapdSystemVolumeCopyWith<$Res> {
+  factory _$SnapdSystemVolumeCopyWith(_SnapdSystemVolume value, $Res Function(_SnapdSystemVolume) _then) = __$SnapdSystemVolumeCopyWithImpl;
+@override @useResult
+$Res call({
+ String volumeName, String name, bool encrypted, Map<String, SnapdSystemVolumeKeySlot> keyslots
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapdSystemVolumeCopyWithImpl<$Res>
+    implements _$SnapdSystemVolumeCopyWith<$Res> {
+  __$SnapdSystemVolumeCopyWithImpl(this._self, this._then);
+
+  final _SnapdSystemVolume _self;
+  final $Res Function(_SnapdSystemVolume) _then;
+
+/// Create a copy of SnapdSystemVolume
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? volumeName = null,Object? name = null,Object? encrypted = null,Object? keyslots = null,}) {
+  return _then(_SnapdSystemVolume(
+volumeName: null == volumeName ? _self.volumeName : volumeName // ignore: cast_nullable_to_non_nullable
+as String,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,encrypted: null == encrypted ? _self.encrypted : encrypted // ignore: cast_nullable_to_non_nullable
+as bool,keyslots: null == keyslots ? _self._keyslots : keyslots // ignore: cast_nullable_to_non_nullable
+as Map<String, SnapdSystemVolumeKeySlot>,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapdSystemVolumeTargetKeySlot {
-  @JsonKey(name: 'container-role')
-  String get containerRole => throw _privateConstructorUsedError;
-  String get name => throw _privateConstructorUsedError;
+
+@JsonKey(name: 'container-role') String get containerRole; String get name;
+/// Create a copy of SnapdSystemVolumeTargetKeySlot
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapdSystemVolumeTargetKeySlotCopyWith<SnapdSystemVolumeTargetKeySlot> get copyWith => _$SnapdSystemVolumeTargetKeySlotCopyWithImpl<SnapdSystemVolumeTargetKeySlot>(this as SnapdSystemVolumeTargetKeySlot, _$identity);
 
   /// Serializes this SnapdSystemVolumeTargetKeySlot to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapdSystemVolumeTargetKeySlot
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapdSystemVolumeTargetKeySlotCopyWith<SnapdSystemVolumeTargetKeySlot>
-      get copyWith => throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapdSystemVolumeTargetKeySlot&&(identical(other.containerRole, containerRole) || other.containerRole == containerRole)&&(identical(other.name, name) || other.name == name));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,containerRole,name);
+
+@override
+String toString() {
+  return 'SnapdSystemVolumeTargetKeySlot(containerRole: $containerRole, name: $name)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapdSystemVolumeTargetKeySlotCopyWith<$Res> {
-  factory $SnapdSystemVolumeTargetKeySlotCopyWith(
-          SnapdSystemVolumeTargetKeySlot value,
-          $Res Function(SnapdSystemVolumeTargetKeySlot) then) =
-      _$SnapdSystemVolumeTargetKeySlotCopyWithImpl<$Res,
-          SnapdSystemVolumeTargetKeySlot>;
-  @useResult
-  $Res call(
-      {@JsonKey(name: 'container-role') String containerRole, String name});
-}
+abstract mixin class $SnapdSystemVolumeTargetKeySlotCopyWith<$Res>  {
+  factory $SnapdSystemVolumeTargetKeySlotCopyWith(SnapdSystemVolumeTargetKeySlot value, $Res Function(SnapdSystemVolumeTargetKeySlot) _then) = _$SnapdSystemVolumeTargetKeySlotCopyWithImpl;
+@useResult
+$Res call({
+@JsonKey(name: 'container-role') String containerRole, String name
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapdSystemVolumeTargetKeySlotCopyWithImpl<$Res,
-        $Val extends SnapdSystemVolumeTargetKeySlot>
+class _$SnapdSystemVolumeTargetKeySlotCopyWithImpl<$Res>
     implements $SnapdSystemVolumeTargetKeySlotCopyWith<$Res> {
-  _$SnapdSystemVolumeTargetKeySlotCopyWithImpl(this._value, this._then);
+  _$SnapdSystemVolumeTargetKeySlotCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapdSystemVolumeTargetKeySlot _self;
+  final $Res Function(SnapdSystemVolumeTargetKeySlot) _then;
 
-  /// Create a copy of SnapdSystemVolumeTargetKeySlot
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? containerRole = null,
-    Object? name = null,
-  }) {
-    return _then(_value.copyWith(
-      containerRole: null == containerRole
-          ? _value.containerRole
-          : containerRole // ignore: cast_nullable_to_non_nullable
-              as String,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
+/// Create a copy of SnapdSystemVolumeTargetKeySlot
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? containerRole = null,Object? name = null,}) {
+  return _then(_self.copyWith(
+containerRole: null == containerRole ? _self.containerRole : containerRole // ignore: cast_nullable_to_non_nullable
+as String,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapdSystemVolumeTargetKeySlotImplCopyWith<$Res>
-    implements $SnapdSystemVolumeTargetKeySlotCopyWith<$Res> {
-  factory _$$SnapdSystemVolumeTargetKeySlotImplCopyWith(
-          _$SnapdSystemVolumeTargetKeySlotImpl value,
-          $Res Function(_$SnapdSystemVolumeTargetKeySlotImpl) then) =
-      __$$SnapdSystemVolumeTargetKeySlotImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {@JsonKey(name: 'container-role') String containerRole, String name});
 }
 
-/// @nodoc
-class __$$SnapdSystemVolumeTargetKeySlotImplCopyWithImpl<$Res>
-    extends _$SnapdSystemVolumeTargetKeySlotCopyWithImpl<$Res,
-        _$SnapdSystemVolumeTargetKeySlotImpl>
-    implements _$$SnapdSystemVolumeTargetKeySlotImplCopyWith<$Res> {
-  __$$SnapdSystemVolumeTargetKeySlotImplCopyWithImpl(
-      _$SnapdSystemVolumeTargetKeySlotImpl _value,
-      $Res Function(_$SnapdSystemVolumeTargetKeySlotImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapdSystemVolumeTargetKeySlot
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? containerRole = null,
-    Object? name = null,
-  }) {
-    return _then(_$SnapdSystemVolumeTargetKeySlotImpl(
-      containerRole: null == containerRole
-          ? _value.containerRole
-          : containerRole // ignore: cast_nullable_to_non_nullable
-              as String,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapdSystemVolumeTargetKeySlot].
+extension SnapdSystemVolumeTargetKeySlotPatterns on SnapdSystemVolumeTargetKeySlot {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapdSystemVolumeTargetKeySlot value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapdSystemVolumeTargetKeySlot() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapdSystemVolumeTargetKeySlot value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdSystemVolumeTargetKeySlot():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapdSystemVolumeTargetKeySlot value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdSystemVolumeTargetKeySlot() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function(@JsonKey(name: 'container-role')  String containerRole,  String name)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapdSystemVolumeTargetKeySlot() when $default != null:
+return $default(_that.containerRole,_that.name);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function(@JsonKey(name: 'container-role')  String containerRole,  String name)  $default,) {final _that = this;
+switch (_that) {
+case _SnapdSystemVolumeTargetKeySlot():
+return $default(_that.containerRole,_that.name);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function(@JsonKey(name: 'container-role')  String containerRole,  String name)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapdSystemVolumeTargetKeySlot() when $default != null:
+return $default(_that.containerRole,_that.name);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapdSystemVolumeTargetKeySlotImpl
-    implements _SnapdSystemVolumeTargetKeySlot {
-  const _$SnapdSystemVolumeTargetKeySlotImpl(
-      {@JsonKey(name: 'container-role') required this.containerRole,
-      required this.name});
 
-  factory _$SnapdSystemVolumeTargetKeySlotImpl.fromJson(
-          Map<String, dynamic> json) =>
-      _$$SnapdSystemVolumeTargetKeySlotImplFromJson(json);
+class _SnapdSystemVolumeTargetKeySlot implements SnapdSystemVolumeTargetKeySlot {
+  const _SnapdSystemVolumeTargetKeySlot({@JsonKey(name: 'container-role') required this.containerRole, required this.name});
+  factory _SnapdSystemVolumeTargetKeySlot.fromJson(Map<String, dynamic> json) => _$SnapdSystemVolumeTargetKeySlotFromJson(json);
 
-  @override
-  @JsonKey(name: 'container-role')
-  final String containerRole;
-  @override
-  final String name;
+@override@JsonKey(name: 'container-role') final  String containerRole;
+@override final  String name;
 
-  @override
-  String toString() {
-    return 'SnapdSystemVolumeTargetKeySlot(containerRole: $containerRole, name: $name)';
-  }
+/// Create a copy of SnapdSystemVolumeTargetKeySlot
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapdSystemVolumeTargetKeySlotCopyWith<_SnapdSystemVolumeTargetKeySlot> get copyWith => __$SnapdSystemVolumeTargetKeySlotCopyWithImpl<_SnapdSystemVolumeTargetKeySlot>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapdSystemVolumeTargetKeySlotImpl &&
-            (identical(other.containerRole, containerRole) ||
-                other.containerRole == containerRole) &&
-            (identical(other.name, name) || other.name == name));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, containerRole, name);
-
-  /// Create a copy of SnapdSystemVolumeTargetKeySlot
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapdSystemVolumeTargetKeySlotImplCopyWith<
-          _$SnapdSystemVolumeTargetKeySlotImpl>
-      get copyWith => __$$SnapdSystemVolumeTargetKeySlotImplCopyWithImpl<
-          _$SnapdSystemVolumeTargetKeySlotImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapdSystemVolumeTargetKeySlotImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapdSystemVolumeTargetKeySlotToJson(this, );
 }
 
-abstract class _SnapdSystemVolumeTargetKeySlot
-    implements SnapdSystemVolumeTargetKeySlot {
-  const factory _SnapdSystemVolumeTargetKeySlot(
-      {@JsonKey(name: 'container-role') required final String containerRole,
-      required final String name}) = _$SnapdSystemVolumeTargetKeySlotImpl;
-
-  factory _SnapdSystemVolumeTargetKeySlot.fromJson(Map<String, dynamic> json) =
-      _$SnapdSystemVolumeTargetKeySlotImpl.fromJson;
-
-  @override
-  @JsonKey(name: 'container-role')
-  String get containerRole;
-  @override
-  String get name;
-
-  /// Create a copy of SnapdSystemVolumeTargetKeySlot
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapdSystemVolumeTargetKeySlotImplCopyWith<
-          _$SnapdSystemVolumeTargetKeySlotImpl>
-      get copyWith => throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapdSystemVolumeTargetKeySlot&&(identical(other.containerRole, containerRole) || other.containerRole == containerRole)&&(identical(other.name, name) || other.name == name));
 }
 
-SnapdSystemVolumeKeySlot _$SnapdSystemVolumeKeySlotFromJson(
-    Map<String, dynamic> json) {
-  return _SnapdSystemVolumeKeySlot.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,containerRole,name);
+
+@override
+String toString() {
+  return 'SnapdSystemVolumeTargetKeySlot(containerRole: $containerRole, name: $name)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapdSystemVolumeTargetKeySlotCopyWith<$Res> implements $SnapdSystemVolumeTargetKeySlotCopyWith<$Res> {
+  factory _$SnapdSystemVolumeTargetKeySlotCopyWith(_SnapdSystemVolumeTargetKeySlot value, $Res Function(_SnapdSystemVolumeTargetKeySlot) _then) = __$SnapdSystemVolumeTargetKeySlotCopyWithImpl;
+@override @useResult
+$Res call({
+@JsonKey(name: 'container-role') String containerRole, String name
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapdSystemVolumeTargetKeySlotCopyWithImpl<$Res>
+    implements _$SnapdSystemVolumeTargetKeySlotCopyWith<$Res> {
+  __$SnapdSystemVolumeTargetKeySlotCopyWithImpl(this._self, this._then);
+
+  final _SnapdSystemVolumeTargetKeySlot _self;
+  final $Res Function(_SnapdSystemVolumeTargetKeySlot) _then;
+
+/// Create a copy of SnapdSystemVolumeTargetKeySlot
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? containerRole = null,Object? name = null,}) {
+  return _then(_SnapdSystemVolumeTargetKeySlot(
+containerRole: null == containerRole ? _self.containerRole : containerRole // ignore: cast_nullable_to_non_nullable
+as String,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapdSystemVolumeKeySlot {
-  /// The key slot name, used to identify the key slot.
-  SnapdSystemVolumeKeySlotType get type => throw _privateConstructorUsedError;
-  List<String>? get roles =>
-      throw _privateConstructorUsedError; // only for platform keys
-  String? get platformName =>
-      throw _privateConstructorUsedError; // only for platform keys
-  SnapdSystemVolumeAuthMode? get authMode => throw _privateConstructorUsedError;
+
+/// The key slot name, used to identify the key slot.
+ SnapdSystemVolumeKeySlotType get type; List<String>? get roles;// only for platform keys
+ String? get platformName;// only for platform keys
+ SnapdSystemVolumeAuthMode? get authMode;
+/// Create a copy of SnapdSystemVolumeKeySlot
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapdSystemVolumeKeySlotCopyWith<SnapdSystemVolumeKeySlot> get copyWith => _$SnapdSystemVolumeKeySlotCopyWithImpl<SnapdSystemVolumeKeySlot>(this as SnapdSystemVolumeKeySlot, _$identity);
 
   /// Serializes this SnapdSystemVolumeKeySlot to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapdSystemVolumeKeySlot
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapdSystemVolumeKeySlotCopyWith<SnapdSystemVolumeKeySlot> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapdSystemVolumeKeySlot&&(identical(other.type, type) || other.type == type)&&const DeepCollectionEquality().equals(other.roles, roles)&&(identical(other.platformName, platformName) || other.platformName == platformName)&&(identical(other.authMode, authMode) || other.authMode == authMode));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,type,const DeepCollectionEquality().hash(roles),platformName,authMode);
+
+@override
+String toString() {
+  return 'SnapdSystemVolumeKeySlot(type: $type, roles: $roles, platformName: $platformName, authMode: $authMode)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapdSystemVolumeKeySlotCopyWith<$Res> {
-  factory $SnapdSystemVolumeKeySlotCopyWith(SnapdSystemVolumeKeySlot value,
-          $Res Function(SnapdSystemVolumeKeySlot) then) =
-      _$SnapdSystemVolumeKeySlotCopyWithImpl<$Res, SnapdSystemVolumeKeySlot>;
-  @useResult
-  $Res call(
-      {SnapdSystemVolumeKeySlotType type,
-      List<String>? roles,
-      String? platformName,
-      SnapdSystemVolumeAuthMode? authMode});
-}
+abstract mixin class $SnapdSystemVolumeKeySlotCopyWith<$Res>  {
+  factory $SnapdSystemVolumeKeySlotCopyWith(SnapdSystemVolumeKeySlot value, $Res Function(SnapdSystemVolumeKeySlot) _then) = _$SnapdSystemVolumeKeySlotCopyWithImpl;
+@useResult
+$Res call({
+ SnapdSystemVolumeKeySlotType type, List<String>? roles, String? platformName, SnapdSystemVolumeAuthMode? authMode
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapdSystemVolumeKeySlotCopyWithImpl<$Res,
-        $Val extends SnapdSystemVolumeKeySlot>
+class _$SnapdSystemVolumeKeySlotCopyWithImpl<$Res>
     implements $SnapdSystemVolumeKeySlotCopyWith<$Res> {
-  _$SnapdSystemVolumeKeySlotCopyWithImpl(this._value, this._then);
+  _$SnapdSystemVolumeKeySlotCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapdSystemVolumeKeySlot _self;
+  final $Res Function(SnapdSystemVolumeKeySlot) _then;
 
-  /// Create a copy of SnapdSystemVolumeKeySlot
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? type = null,
-    Object? roles = freezed,
-    Object? platformName = freezed,
-    Object? authMode = freezed,
-  }) {
-    return _then(_value.copyWith(
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as SnapdSystemVolumeKeySlotType,
-      roles: freezed == roles
-          ? _value.roles
-          : roles // ignore: cast_nullable_to_non_nullable
-              as List<String>?,
-      platformName: freezed == platformName
-          ? _value.platformName
-          : platformName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      authMode: freezed == authMode
-          ? _value.authMode
-          : authMode // ignore: cast_nullable_to_non_nullable
-              as SnapdSystemVolumeAuthMode?,
-    ) as $Val);
-  }
+/// Create a copy of SnapdSystemVolumeKeySlot
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? type = null,Object? roles = freezed,Object? platformName = freezed,Object? authMode = freezed,}) {
+  return _then(_self.copyWith(
+type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as SnapdSystemVolumeKeySlotType,roles: freezed == roles ? _self.roles : roles // ignore: cast_nullable_to_non_nullable
+as List<String>?,platformName: freezed == platformName ? _self.platformName : platformName // ignore: cast_nullable_to_non_nullable
+as String?,authMode: freezed == authMode ? _self.authMode : authMode // ignore: cast_nullable_to_non_nullable
+as SnapdSystemVolumeAuthMode?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapdSystemVolumeKeySlotImplCopyWith<$Res>
-    implements $SnapdSystemVolumeKeySlotCopyWith<$Res> {
-  factory _$$SnapdSystemVolumeKeySlotImplCopyWith(
-          _$SnapdSystemVolumeKeySlotImpl value,
-          $Res Function(_$SnapdSystemVolumeKeySlotImpl) then) =
-      __$$SnapdSystemVolumeKeySlotImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {SnapdSystemVolumeKeySlotType type,
-      List<String>? roles,
-      String? platformName,
-      SnapdSystemVolumeAuthMode? authMode});
 }
 
-/// @nodoc
-class __$$SnapdSystemVolumeKeySlotImplCopyWithImpl<$Res>
-    extends _$SnapdSystemVolumeKeySlotCopyWithImpl<$Res,
-        _$SnapdSystemVolumeKeySlotImpl>
-    implements _$$SnapdSystemVolumeKeySlotImplCopyWith<$Res> {
-  __$$SnapdSystemVolumeKeySlotImplCopyWithImpl(
-      _$SnapdSystemVolumeKeySlotImpl _value,
-      $Res Function(_$SnapdSystemVolumeKeySlotImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapdSystemVolumeKeySlot
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? type = null,
-    Object? roles = freezed,
-    Object? platformName = freezed,
-    Object? authMode = freezed,
-  }) {
-    return _then(_$SnapdSystemVolumeKeySlotImpl(
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as SnapdSystemVolumeKeySlotType,
-      roles: freezed == roles
-          ? _value._roles
-          : roles // ignore: cast_nullable_to_non_nullable
-              as List<String>?,
-      platformName: freezed == platformName
-          ? _value.platformName
-          : platformName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      authMode: freezed == authMode
-          ? _value.authMode
-          : authMode // ignore: cast_nullable_to_non_nullable
-              as SnapdSystemVolumeAuthMode?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapdSystemVolumeKeySlot].
+extension SnapdSystemVolumeKeySlotPatterns on SnapdSystemVolumeKeySlot {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapdSystemVolumeKeySlot value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapdSystemVolumeKeySlot() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapdSystemVolumeKeySlot value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdSystemVolumeKeySlot():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapdSystemVolumeKeySlot value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdSystemVolumeKeySlot() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( SnapdSystemVolumeKeySlotType type,  List<String>? roles,  String? platformName,  SnapdSystemVolumeAuthMode? authMode)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapdSystemVolumeKeySlot() when $default != null:
+return $default(_that.type,_that.roles,_that.platformName,_that.authMode);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( SnapdSystemVolumeKeySlotType type,  List<String>? roles,  String? platformName,  SnapdSystemVolumeAuthMode? authMode)  $default,) {final _that = this;
+switch (_that) {
+case _SnapdSystemVolumeKeySlot():
+return $default(_that.type,_that.roles,_that.platformName,_that.authMode);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( SnapdSystemVolumeKeySlotType type,  List<String>? roles,  String? platformName,  SnapdSystemVolumeAuthMode? authMode)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapdSystemVolumeKeySlot() when $default != null:
+return $default(_that.type,_that.roles,_that.platformName,_that.authMode);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapdSystemVolumeKeySlotImpl implements _SnapdSystemVolumeKeySlot {
-  const _$SnapdSystemVolumeKeySlotImpl(
-      {required this.type,
-      final List<String>? roles,
-      this.platformName,
-      this.authMode})
-      : _roles = roles;
 
-  factory _$SnapdSystemVolumeKeySlotImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapdSystemVolumeKeySlotImplFromJson(json);
+class _SnapdSystemVolumeKeySlot implements SnapdSystemVolumeKeySlot {
+  const _SnapdSystemVolumeKeySlot({required this.type, final  List<String>? roles, this.platformName, this.authMode}): _roles = roles;
+  factory _SnapdSystemVolumeKeySlot.fromJson(Map<String, dynamic> json) => _$SnapdSystemVolumeKeySlotFromJson(json);
 
-  /// The key slot name, used to identify the key slot.
-  @override
-  final SnapdSystemVolumeKeySlotType type;
-  final List<String>? _roles;
-  @override
-  List<String>? get roles {
-    final value = _roles;
-    if (value == null) return null;
-    if (_roles is EqualUnmodifiableListView) return _roles;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
-  }
+/// The key slot name, used to identify the key slot.
+@override final  SnapdSystemVolumeKeySlotType type;
+ final  List<String>? _roles;
+@override List<String>? get roles {
+  final value = _roles;
+  if (value == null) return null;
+  if (_roles is EqualUnmodifiableListView) return _roles;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(value);
+}
 
 // only for platform keys
-  @override
-  final String? platformName;
+@override final  String? platformName;
 // only for platform keys
-  @override
-  final SnapdSystemVolumeAuthMode? authMode;
+@override final  SnapdSystemVolumeAuthMode? authMode;
 
-  @override
-  String toString() {
-    return 'SnapdSystemVolumeKeySlot(type: $type, roles: $roles, platformName: $platformName, authMode: $authMode)';
-  }
+/// Create a copy of SnapdSystemVolumeKeySlot
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapdSystemVolumeKeySlotCopyWith<_SnapdSystemVolumeKeySlot> get copyWith => __$SnapdSystemVolumeKeySlotCopyWithImpl<_SnapdSystemVolumeKeySlot>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapdSystemVolumeKeySlotImpl &&
-            (identical(other.type, type) || other.type == type) &&
-            const DeepCollectionEquality().equals(other._roles, _roles) &&
-            (identical(other.platformName, platformName) ||
-                other.platformName == platformName) &&
-            (identical(other.authMode, authMode) ||
-                other.authMode == authMode));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, type,
-      const DeepCollectionEquality().hash(_roles), platformName, authMode);
-
-  /// Create a copy of SnapdSystemVolumeKeySlot
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapdSystemVolumeKeySlotImplCopyWith<_$SnapdSystemVolumeKeySlotImpl>
-      get copyWith => __$$SnapdSystemVolumeKeySlotImplCopyWithImpl<
-          _$SnapdSystemVolumeKeySlotImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapdSystemVolumeKeySlotImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapdSystemVolumeKeySlotToJson(this, );
 }
 
-abstract class _SnapdSystemVolumeKeySlot implements SnapdSystemVolumeKeySlot {
-  const factory _SnapdSystemVolumeKeySlot(
-          {required final SnapdSystemVolumeKeySlotType type,
-          final List<String>? roles,
-          final String? platformName,
-          final SnapdSystemVolumeAuthMode? authMode}) =
-      _$SnapdSystemVolumeKeySlotImpl;
-
-  factory _SnapdSystemVolumeKeySlot.fromJson(Map<String, dynamic> json) =
-      _$SnapdSystemVolumeKeySlotImpl.fromJson;
-
-  /// The key slot name, used to identify the key slot.
-  @override
-  SnapdSystemVolumeKeySlotType get type;
-  @override
-  List<String>? get roles; // only for platform keys
-  @override
-  String? get platformName; // only for platform keys
-  @override
-  SnapdSystemVolumeAuthMode? get authMode;
-
-  /// Create a copy of SnapdSystemVolumeKeySlot
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapdSystemVolumeKeySlotImplCopyWith<_$SnapdSystemVolumeKeySlotImpl>
-      get copyWith => throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapdSystemVolumeKeySlot&&(identical(other.type, type) || other.type == type)&&const DeepCollectionEquality().equals(other._roles, _roles)&&(identical(other.platformName, platformName) || other.platformName == platformName)&&(identical(other.authMode, authMode) || other.authMode == authMode));
 }
 
-SnapdSystemVolumesResponse _$SnapdSystemVolumesResponseFromJson(
-    Map<String, dynamic> json) {
-  return _SnapdSystemVolumesResponse.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,type,const DeepCollectionEquality().hash(_roles),platformName,authMode);
+
+@override
+String toString() {
+  return 'SnapdSystemVolumeKeySlot(type: $type, roles: $roles, platformName: $platformName, authMode: $authMode)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapdSystemVolumeKeySlotCopyWith<$Res> implements $SnapdSystemVolumeKeySlotCopyWith<$Res> {
+  factory _$SnapdSystemVolumeKeySlotCopyWith(_SnapdSystemVolumeKeySlot value, $Res Function(_SnapdSystemVolumeKeySlot) _then) = __$SnapdSystemVolumeKeySlotCopyWithImpl;
+@override @useResult
+$Res call({
+ SnapdSystemVolumeKeySlotType type, List<String>? roles, String? platformName, SnapdSystemVolumeAuthMode? authMode
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapdSystemVolumeKeySlotCopyWithImpl<$Res>
+    implements _$SnapdSystemVolumeKeySlotCopyWith<$Res> {
+  __$SnapdSystemVolumeKeySlotCopyWithImpl(this._self, this._then);
+
+  final _SnapdSystemVolumeKeySlot _self;
+  final $Res Function(_SnapdSystemVolumeKeySlot) _then;
+
+/// Create a copy of SnapdSystemVolumeKeySlot
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? type = null,Object? roles = freezed,Object? platformName = freezed,Object? authMode = freezed,}) {
+  return _then(_SnapdSystemVolumeKeySlot(
+type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as SnapdSystemVolumeKeySlotType,roles: freezed == roles ? _self._roles : roles // ignore: cast_nullable_to_non_nullable
+as List<String>?,platformName: freezed == platformName ? _self.platformName : platformName // ignore: cast_nullable_to_non_nullable
+as String?,authMode: freezed == authMode ? _self.authMode : authMode // ignore: cast_nullable_to_non_nullable
+as SnapdSystemVolumeAuthMode?,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapdSystemVolumesResponse {
-  Map<String, SnapdSystemVolume> get byContainerRole =>
-      throw _privateConstructorUsedError;
+
+ Map<String, SnapdSystemVolume> get byContainerRole;
+/// Create a copy of SnapdSystemVolumesResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapdSystemVolumesResponseCopyWith<SnapdSystemVolumesResponse> get copyWith => _$SnapdSystemVolumesResponseCopyWithImpl<SnapdSystemVolumesResponse>(this as SnapdSystemVolumesResponse, _$identity);
 
   /// Serializes this SnapdSystemVolumesResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapdSystemVolumesResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapdSystemVolumesResponseCopyWith<SnapdSystemVolumesResponse>
-      get copyWith => throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapdSystemVolumesResponse&&const DeepCollectionEquality().equals(other.byContainerRole, byContainerRole));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(byContainerRole));
+
+@override
+String toString() {
+  return 'SnapdSystemVolumesResponse(byContainerRole: $byContainerRole)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapdSystemVolumesResponseCopyWith<$Res> {
-  factory $SnapdSystemVolumesResponseCopyWith(SnapdSystemVolumesResponse value,
-          $Res Function(SnapdSystemVolumesResponse) then) =
-      _$SnapdSystemVolumesResponseCopyWithImpl<$Res,
-          SnapdSystemVolumesResponse>;
-  @useResult
-  $Res call({Map<String, SnapdSystemVolume> byContainerRole});
-}
+abstract mixin class $SnapdSystemVolumesResponseCopyWith<$Res>  {
+  factory $SnapdSystemVolumesResponseCopyWith(SnapdSystemVolumesResponse value, $Res Function(SnapdSystemVolumesResponse) _then) = _$SnapdSystemVolumesResponseCopyWithImpl;
+@useResult
+$Res call({
+ Map<String, SnapdSystemVolume> byContainerRole
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapdSystemVolumesResponseCopyWithImpl<$Res,
-        $Val extends SnapdSystemVolumesResponse>
+class _$SnapdSystemVolumesResponseCopyWithImpl<$Res>
     implements $SnapdSystemVolumesResponseCopyWith<$Res> {
-  _$SnapdSystemVolumesResponseCopyWithImpl(this._value, this._then);
+  _$SnapdSystemVolumesResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapdSystemVolumesResponse _self;
+  final $Res Function(SnapdSystemVolumesResponse) _then;
 
-  /// Create a copy of SnapdSystemVolumesResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? byContainerRole = null,
-  }) {
-    return _then(_value.copyWith(
-      byContainerRole: null == byContainerRole
-          ? _value.byContainerRole
-          : byContainerRole // ignore: cast_nullable_to_non_nullable
-              as Map<String, SnapdSystemVolume>,
-    ) as $Val);
-  }
+/// Create a copy of SnapdSystemVolumesResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? byContainerRole = null,}) {
+  return _then(_self.copyWith(
+byContainerRole: null == byContainerRole ? _self.byContainerRole : byContainerRole // ignore: cast_nullable_to_non_nullable
+as Map<String, SnapdSystemVolume>,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapdSystemVolumesResponseImplCopyWith<$Res>
-    implements $SnapdSystemVolumesResponseCopyWith<$Res> {
-  factory _$$SnapdSystemVolumesResponseImplCopyWith(
-          _$SnapdSystemVolumesResponseImpl value,
-          $Res Function(_$SnapdSystemVolumesResponseImpl) then) =
-      __$$SnapdSystemVolumesResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({Map<String, SnapdSystemVolume> byContainerRole});
 }
 
-/// @nodoc
-class __$$SnapdSystemVolumesResponseImplCopyWithImpl<$Res>
-    extends _$SnapdSystemVolumesResponseCopyWithImpl<$Res,
-        _$SnapdSystemVolumesResponseImpl>
-    implements _$$SnapdSystemVolumesResponseImplCopyWith<$Res> {
-  __$$SnapdSystemVolumesResponseImplCopyWithImpl(
-      _$SnapdSystemVolumesResponseImpl _value,
-      $Res Function(_$SnapdSystemVolumesResponseImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapdSystemVolumesResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? byContainerRole = null,
-  }) {
-    return _then(_$SnapdSystemVolumesResponseImpl(
-      byContainerRole: null == byContainerRole
-          ? _value._byContainerRole
-          : byContainerRole // ignore: cast_nullable_to_non_nullable
-              as Map<String, SnapdSystemVolume>,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapdSystemVolumesResponse].
+extension SnapdSystemVolumesResponsePatterns on SnapdSystemVolumesResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapdSystemVolumesResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapdSystemVolumesResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapdSystemVolumesResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdSystemVolumesResponse():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapdSystemVolumesResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdSystemVolumesResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( Map<String, SnapdSystemVolume> byContainerRole)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapdSystemVolumesResponse() when $default != null:
+return $default(_that.byContainerRole);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( Map<String, SnapdSystemVolume> byContainerRole)  $default,) {final _that = this;
+switch (_that) {
+case _SnapdSystemVolumesResponse():
+return $default(_that.byContainerRole);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( Map<String, SnapdSystemVolume> byContainerRole)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapdSystemVolumesResponse() when $default != null:
+return $default(_that.byContainerRole);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapdSystemVolumesResponseImpl implements _SnapdSystemVolumesResponse {
-  const _$SnapdSystemVolumesResponseImpl(
-      {final Map<String, SnapdSystemVolume> byContainerRole = const {}})
-      : _byContainerRole = byContainerRole;
 
-  factory _$SnapdSystemVolumesResponseImpl.fromJson(
-          Map<String, dynamic> json) =>
-      _$$SnapdSystemVolumesResponseImplFromJson(json);
+class _SnapdSystemVolumesResponse implements SnapdSystemVolumesResponse {
+  const _SnapdSystemVolumesResponse({final  Map<String, SnapdSystemVolume> byContainerRole = const {}}): _byContainerRole = byContainerRole;
+  factory _SnapdSystemVolumesResponse.fromJson(Map<String, dynamic> json) => _$SnapdSystemVolumesResponseFromJson(json);
 
-  final Map<String, SnapdSystemVolume> _byContainerRole;
-  @override
-  @JsonKey()
-  Map<String, SnapdSystemVolume> get byContainerRole {
-    if (_byContainerRole is EqualUnmodifiableMapView) return _byContainerRole;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_byContainerRole);
-  }
-
-  @override
-  String toString() {
-    return 'SnapdSystemVolumesResponse(byContainerRole: $byContainerRole)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapdSystemVolumesResponseImpl &&
-            const DeepCollectionEquality()
-                .equals(other._byContainerRole, _byContainerRole));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(_byContainerRole));
-
-  /// Create a copy of SnapdSystemVolumesResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapdSystemVolumesResponseImplCopyWith<_$SnapdSystemVolumesResponseImpl>
-      get copyWith => __$$SnapdSystemVolumesResponseImplCopyWithImpl<
-          _$SnapdSystemVolumesResponseImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapdSystemVolumesResponseImplToJson(
-      this,
-    );
-  }
+ final  Map<String, SnapdSystemVolume> _byContainerRole;
+@override@JsonKey() Map<String, SnapdSystemVolume> get byContainerRole {
+  if (_byContainerRole is EqualUnmodifiableMapView) return _byContainerRole;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(_byContainerRole);
 }
 
-abstract class _SnapdSystemVolumesResponse
-    implements SnapdSystemVolumesResponse {
-  const factory _SnapdSystemVolumesResponse(
-          {final Map<String, SnapdSystemVolume> byContainerRole}) =
-      _$SnapdSystemVolumesResponseImpl;
 
-  factory _SnapdSystemVolumesResponse.fromJson(Map<String, dynamic> json) =
-      _$SnapdSystemVolumesResponseImpl.fromJson;
+/// Create a copy of SnapdSystemVolumesResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapdSystemVolumesResponseCopyWith<_SnapdSystemVolumesResponse> get copyWith => __$SnapdSystemVolumesResponseCopyWithImpl<_SnapdSystemVolumesResponse>(this, _$identity);
 
-  @override
-  Map<String, SnapdSystemVolume> get byContainerRole;
-
-  /// Create a copy of SnapdSystemVolumesResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapdSystemVolumesResponseImplCopyWith<_$SnapdSystemVolumesResponseImpl>
-      get copyWith => throw _privateConstructorUsedError;
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapdSystemVolumesResponseToJson(this, );
 }
 
-SnapdEntropyResponse _$SnapdEntropyResponseFromJson(Map<String, dynamic> json) {
-  return _SnapdEntropyResponse.fromJson(json);
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapdSystemVolumesResponse&&const DeepCollectionEquality().equals(other._byContainerRole, _byContainerRole));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(_byContainerRole));
+
+@override
+String toString() {
+  return 'SnapdSystemVolumesResponse(byContainerRole: $byContainerRole)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapdSystemVolumesResponseCopyWith<$Res> implements $SnapdSystemVolumesResponseCopyWith<$Res> {
+  factory _$SnapdSystemVolumesResponseCopyWith(_SnapdSystemVolumesResponse value, $Res Function(_SnapdSystemVolumesResponse) _then) = __$SnapdSystemVolumesResponseCopyWithImpl;
+@override @useResult
+$Res call({
+ Map<String, SnapdSystemVolume> byContainerRole
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapdSystemVolumesResponseCopyWithImpl<$Res>
+    implements _$SnapdSystemVolumesResponseCopyWith<$Res> {
+  __$SnapdSystemVolumesResponseCopyWithImpl(this._self, this._then);
+
+  final _SnapdSystemVolumesResponse _self;
+  final $Res Function(_SnapdSystemVolumesResponse) _then;
+
+/// Create a copy of SnapdSystemVolumesResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? byContainerRole = null,}) {
+  return _then(_SnapdSystemVolumesResponse(
+byContainerRole: null == byContainerRole ? _self._byContainerRole : byContainerRole // ignore: cast_nullable_to_non_nullable
+as Map<String, SnapdSystemVolume>,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapdEntropyResponse {
-  int get entropyBits => throw _privateConstructorUsedError;
-  int get minEntropyBits => throw _privateConstructorUsedError;
-  int get optimalEntropyBits => throw _privateConstructorUsedError;
+
+ int get entropyBits; int get minEntropyBits; int get optimalEntropyBits;
+/// Create a copy of SnapdEntropyResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapdEntropyResponseCopyWith<SnapdEntropyResponse> get copyWith => _$SnapdEntropyResponseCopyWithImpl<SnapdEntropyResponse>(this as SnapdEntropyResponse, _$identity);
 
   /// Serializes this SnapdEntropyResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapdEntropyResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapdEntropyResponseCopyWith<SnapdEntropyResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapdEntropyResponse&&(identical(other.entropyBits, entropyBits) || other.entropyBits == entropyBits)&&(identical(other.minEntropyBits, minEntropyBits) || other.minEntropyBits == minEntropyBits)&&(identical(other.optimalEntropyBits, optimalEntropyBits) || other.optimalEntropyBits == optimalEntropyBits));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,entropyBits,minEntropyBits,optimalEntropyBits);
+
+@override
+String toString() {
+  return 'SnapdEntropyResponse(entropyBits: $entropyBits, minEntropyBits: $minEntropyBits, optimalEntropyBits: $optimalEntropyBits)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapdEntropyResponseCopyWith<$Res> {
-  factory $SnapdEntropyResponseCopyWith(SnapdEntropyResponse value,
-          $Res Function(SnapdEntropyResponse) then) =
-      _$SnapdEntropyResponseCopyWithImpl<$Res, SnapdEntropyResponse>;
-  @useResult
-  $Res call({int entropyBits, int minEntropyBits, int optimalEntropyBits});
-}
+abstract mixin class $SnapdEntropyResponseCopyWith<$Res>  {
+  factory $SnapdEntropyResponseCopyWith(SnapdEntropyResponse value, $Res Function(SnapdEntropyResponse) _then) = _$SnapdEntropyResponseCopyWithImpl;
+@useResult
+$Res call({
+ int entropyBits, int minEntropyBits, int optimalEntropyBits
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapdEntropyResponseCopyWithImpl<$Res,
-        $Val extends SnapdEntropyResponse>
+class _$SnapdEntropyResponseCopyWithImpl<$Res>
     implements $SnapdEntropyResponseCopyWith<$Res> {
-  _$SnapdEntropyResponseCopyWithImpl(this._value, this._then);
+  _$SnapdEntropyResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapdEntropyResponse _self;
+  final $Res Function(SnapdEntropyResponse) _then;
 
-  /// Create a copy of SnapdEntropyResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? entropyBits = null,
-    Object? minEntropyBits = null,
-    Object? optimalEntropyBits = null,
-  }) {
-    return _then(_value.copyWith(
-      entropyBits: null == entropyBits
-          ? _value.entropyBits
-          : entropyBits // ignore: cast_nullable_to_non_nullable
-              as int,
-      minEntropyBits: null == minEntropyBits
-          ? _value.minEntropyBits
-          : minEntropyBits // ignore: cast_nullable_to_non_nullable
-              as int,
-      optimalEntropyBits: null == optimalEntropyBits
-          ? _value.optimalEntropyBits
-          : optimalEntropyBits // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
+/// Create a copy of SnapdEntropyResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? entropyBits = null,Object? minEntropyBits = null,Object? optimalEntropyBits = null,}) {
+  return _then(_self.copyWith(
+entropyBits: null == entropyBits ? _self.entropyBits : entropyBits // ignore: cast_nullable_to_non_nullable
+as int,minEntropyBits: null == minEntropyBits ? _self.minEntropyBits : minEntropyBits // ignore: cast_nullable_to_non_nullable
+as int,optimalEntropyBits: null == optimalEntropyBits ? _self.optimalEntropyBits : optimalEntropyBits // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapdEntropyResponseImplCopyWith<$Res>
-    implements $SnapdEntropyResponseCopyWith<$Res> {
-  factory _$$SnapdEntropyResponseImplCopyWith(_$SnapdEntropyResponseImpl value,
-          $Res Function(_$SnapdEntropyResponseImpl) then) =
-      __$$SnapdEntropyResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({int entropyBits, int minEntropyBits, int optimalEntropyBits});
 }
 
-/// @nodoc
-class __$$SnapdEntropyResponseImplCopyWithImpl<$Res>
-    extends _$SnapdEntropyResponseCopyWithImpl<$Res, _$SnapdEntropyResponseImpl>
-    implements _$$SnapdEntropyResponseImplCopyWith<$Res> {
-  __$$SnapdEntropyResponseImplCopyWithImpl(_$SnapdEntropyResponseImpl _value,
-      $Res Function(_$SnapdEntropyResponseImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapdEntropyResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? entropyBits = null,
-    Object? minEntropyBits = null,
-    Object? optimalEntropyBits = null,
-  }) {
-    return _then(_$SnapdEntropyResponseImpl(
-      entropyBits: null == entropyBits
-          ? _value.entropyBits
-          : entropyBits // ignore: cast_nullable_to_non_nullable
-              as int,
-      minEntropyBits: null == minEntropyBits
-          ? _value.minEntropyBits
-          : minEntropyBits // ignore: cast_nullable_to_non_nullable
-              as int,
-      optimalEntropyBits: null == optimalEntropyBits
-          ? _value.optimalEntropyBits
-          : optimalEntropyBits // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapdEntropyResponse].
+extension SnapdEntropyResponsePatterns on SnapdEntropyResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapdEntropyResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapdEntropyResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapdEntropyResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdEntropyResponse():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapdEntropyResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdEntropyResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int entropyBits,  int minEntropyBits,  int optimalEntropyBits)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapdEntropyResponse() when $default != null:
+return $default(_that.entropyBits,_that.minEntropyBits,_that.optimalEntropyBits);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int entropyBits,  int minEntropyBits,  int optimalEntropyBits)  $default,) {final _that = this;
+switch (_that) {
+case _SnapdEntropyResponse():
+return $default(_that.entropyBits,_that.minEntropyBits,_that.optimalEntropyBits);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int entropyBits,  int minEntropyBits,  int optimalEntropyBits)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapdEntropyResponse() when $default != null:
+return $default(_that.entropyBits,_that.minEntropyBits,_that.optimalEntropyBits);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapdEntropyResponseImpl implements _SnapdEntropyResponse {
-  const _$SnapdEntropyResponseImpl(
-      {required this.entropyBits,
-      required this.minEntropyBits,
-      required this.optimalEntropyBits});
 
-  factory _$SnapdEntropyResponseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SnapdEntropyResponseImplFromJson(json);
+class _SnapdEntropyResponse implements SnapdEntropyResponse {
+  const _SnapdEntropyResponse({required this.entropyBits, required this.minEntropyBits, required this.optimalEntropyBits});
+  factory _SnapdEntropyResponse.fromJson(Map<String, dynamic> json) => _$SnapdEntropyResponseFromJson(json);
 
-  @override
-  final int entropyBits;
-  @override
-  final int minEntropyBits;
-  @override
-  final int optimalEntropyBits;
+@override final  int entropyBits;
+@override final  int minEntropyBits;
+@override final  int optimalEntropyBits;
 
-  @override
-  String toString() {
-    return 'SnapdEntropyResponse(entropyBits: $entropyBits, minEntropyBits: $minEntropyBits, optimalEntropyBits: $optimalEntropyBits)';
-  }
+/// Create a copy of SnapdEntropyResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapdEntropyResponseCopyWith<_SnapdEntropyResponse> get copyWith => __$SnapdEntropyResponseCopyWithImpl<_SnapdEntropyResponse>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapdEntropyResponseImpl &&
-            (identical(other.entropyBits, entropyBits) ||
-                other.entropyBits == entropyBits) &&
-            (identical(other.minEntropyBits, minEntropyBits) ||
-                other.minEntropyBits == minEntropyBits) &&
-            (identical(other.optimalEntropyBits, optimalEntropyBits) ||
-                other.optimalEntropyBits == optimalEntropyBits));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, entropyBits, minEntropyBits, optimalEntropyBits);
-
-  /// Create a copy of SnapdEntropyResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapdEntropyResponseImplCopyWith<_$SnapdEntropyResponseImpl>
-      get copyWith =>
-          __$$SnapdEntropyResponseImplCopyWithImpl<_$SnapdEntropyResponseImpl>(
-              this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapdEntropyResponseImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapdEntropyResponseToJson(this, );
 }
 
-abstract class _SnapdEntropyResponse implements SnapdEntropyResponse {
-  const factory _SnapdEntropyResponse(
-      {required final int entropyBits,
-      required final int minEntropyBits,
-      required final int optimalEntropyBits}) = _$SnapdEntropyResponseImpl;
-
-  factory _SnapdEntropyResponse.fromJson(Map<String, dynamic> json) =
-      _$SnapdEntropyResponseImpl.fromJson;
-
-  @override
-  int get entropyBits;
-  @override
-  int get minEntropyBits;
-  @override
-  int get optimalEntropyBits;
-
-  /// Create a copy of SnapdEntropyResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapdEntropyResponseImplCopyWith<_$SnapdEntropyResponseImpl>
-      get copyWith => throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapdEntropyResponse&&(identical(other.entropyBits, entropyBits) || other.entropyBits == entropyBits)&&(identical(other.minEntropyBits, minEntropyBits) || other.minEntropyBits == minEntropyBits)&&(identical(other.optimalEntropyBits, optimalEntropyBits) || other.optimalEntropyBits == optimalEntropyBits));
 }
 
-SnapdStorageEncryptedResponse _$SnapdStorageEncryptedResponseFromJson(
-    Map<String, dynamic> json) {
-  return _SnapdStorageEncryptedResponse.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,entropyBits,minEntropyBits,optimalEntropyBits);
+
+@override
+String toString() {
+  return 'SnapdEntropyResponse(entropyBits: $entropyBits, minEntropyBits: $minEntropyBits, optimalEntropyBits: $optimalEntropyBits)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapdEntropyResponseCopyWith<$Res> implements $SnapdEntropyResponseCopyWith<$Res> {
+  factory _$SnapdEntropyResponseCopyWith(_SnapdEntropyResponse value, $Res Function(_SnapdEntropyResponse) _then) = __$SnapdEntropyResponseCopyWithImpl;
+@override @useResult
+$Res call({
+ int entropyBits, int minEntropyBits, int optimalEntropyBits
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapdEntropyResponseCopyWithImpl<$Res>
+    implements _$SnapdEntropyResponseCopyWith<$Res> {
+  __$SnapdEntropyResponseCopyWithImpl(this._self, this._then);
+
+  final _SnapdEntropyResponse _self;
+  final $Res Function(_SnapdEntropyResponse) _then;
+
+/// Create a copy of SnapdEntropyResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? entropyBits = null,Object? minEntropyBits = null,Object? optimalEntropyBits = null,}) {
+  return _then(_SnapdEntropyResponse(
+entropyBits: null == entropyBits ? _self.entropyBits : entropyBits // ignore: cast_nullable_to_non_nullable
+as int,minEntropyBits: null == minEntropyBits ? _self.minEntropyBits : minEntropyBits // ignore: cast_nullable_to_non_nullable
+as int,optimalEntropyBits: null == optimalEntropyBits ? _self.optimalEntropyBits : optimalEntropyBits // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$SnapdStorageEncryptedResponse {
-  SnapdStorageEncryptionStatus get status => throw _privateConstructorUsedError;
+
+ SnapdStorageEncryptionStatus get status;
+/// Create a copy of SnapdStorageEncryptedResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$SnapdStorageEncryptedResponseCopyWith<SnapdStorageEncryptedResponse> get copyWith => _$SnapdStorageEncryptedResponseCopyWithImpl<SnapdStorageEncryptedResponse>(this as SnapdStorageEncryptedResponse, _$identity);
 
   /// Serializes this SnapdStorageEncryptedResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of SnapdStorageEncryptedResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $SnapdStorageEncryptedResponseCopyWith<SnapdStorageEncryptedResponse>
-      get copyWith => throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SnapdStorageEncryptedResponse&&(identical(other.status, status) || other.status == status));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,status);
+
+@override
+String toString() {
+  return 'SnapdStorageEncryptedResponse(status: $status)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $SnapdStorageEncryptedResponseCopyWith<$Res> {
-  factory $SnapdStorageEncryptedResponseCopyWith(
-          SnapdStorageEncryptedResponse value,
-          $Res Function(SnapdStorageEncryptedResponse) then) =
-      _$SnapdStorageEncryptedResponseCopyWithImpl<$Res,
-          SnapdStorageEncryptedResponse>;
-  @useResult
-  $Res call({SnapdStorageEncryptionStatus status});
-}
+abstract mixin class $SnapdStorageEncryptedResponseCopyWith<$Res>  {
+  factory $SnapdStorageEncryptedResponseCopyWith(SnapdStorageEncryptedResponse value, $Res Function(SnapdStorageEncryptedResponse) _then) = _$SnapdStorageEncryptedResponseCopyWithImpl;
+@useResult
+$Res call({
+ SnapdStorageEncryptionStatus status
+});
 
+
+
+
+}
 /// @nodoc
-class _$SnapdStorageEncryptedResponseCopyWithImpl<$Res,
-        $Val extends SnapdStorageEncryptedResponse>
+class _$SnapdStorageEncryptedResponseCopyWithImpl<$Res>
     implements $SnapdStorageEncryptedResponseCopyWith<$Res> {
-  _$SnapdStorageEncryptedResponseCopyWithImpl(this._value, this._then);
+  _$SnapdStorageEncryptedResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SnapdStorageEncryptedResponse _self;
+  final $Res Function(SnapdStorageEncryptedResponse) _then;
 
-  /// Create a copy of SnapdStorageEncryptedResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? status = null,
-  }) {
-    return _then(_value.copyWith(
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as SnapdStorageEncryptionStatus,
-    ) as $Val);
-  }
+/// Create a copy of SnapdStorageEncryptedResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? status = null,}) {
+  return _then(_self.copyWith(
+status: null == status ? _self.status : status // ignore: cast_nullable_to_non_nullable
+as SnapdStorageEncryptionStatus,
+  ));
 }
 
-/// @nodoc
-abstract class _$$SnapdStorageEncryptedResponseImplCopyWith<$Res>
-    implements $SnapdStorageEncryptedResponseCopyWith<$Res> {
-  factory _$$SnapdStorageEncryptedResponseImplCopyWith(
-          _$SnapdStorageEncryptedResponseImpl value,
-          $Res Function(_$SnapdStorageEncryptedResponseImpl) then) =
-      __$$SnapdStorageEncryptedResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({SnapdStorageEncryptionStatus status});
 }
 
-/// @nodoc
-class __$$SnapdStorageEncryptedResponseImplCopyWithImpl<$Res>
-    extends _$SnapdStorageEncryptedResponseCopyWithImpl<$Res,
-        _$SnapdStorageEncryptedResponseImpl>
-    implements _$$SnapdStorageEncryptedResponseImplCopyWith<$Res> {
-  __$$SnapdStorageEncryptedResponseImplCopyWithImpl(
-      _$SnapdStorageEncryptedResponseImpl _value,
-      $Res Function(_$SnapdStorageEncryptedResponseImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of SnapdStorageEncryptedResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? status = null,
-  }) {
-    return _then(_$SnapdStorageEncryptedResponseImpl(
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as SnapdStorageEncryptionStatus,
-    ));
-  }
+/// Adds pattern-matching-related methods to [SnapdStorageEncryptedResponse].
+extension SnapdStorageEncryptedResponsePatterns on SnapdStorageEncryptedResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _SnapdStorageEncryptedResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _SnapdStorageEncryptedResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _SnapdStorageEncryptedResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdStorageEncryptedResponse():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _SnapdStorageEncryptedResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _SnapdStorageEncryptedResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( SnapdStorageEncryptionStatus status)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _SnapdStorageEncryptedResponse() when $default != null:
+return $default(_that.status);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( SnapdStorageEncryptionStatus status)  $default,) {final _that = this;
+switch (_that) {
+case _SnapdStorageEncryptedResponse():
+return $default(_that.status);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( SnapdStorageEncryptionStatus status)?  $default,) {final _that = this;
+switch (_that) {
+case _SnapdStorageEncryptedResponse() when $default != null:
+return $default(_that.status);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SnapdStorageEncryptedResponseImpl
-    implements _SnapdStorageEncryptedResponse {
-  const _$SnapdStorageEncryptedResponseImpl({required this.status});
 
-  factory _$SnapdStorageEncryptedResponseImpl.fromJson(
-          Map<String, dynamic> json) =>
-      _$$SnapdStorageEncryptedResponseImplFromJson(json);
+class _SnapdStorageEncryptedResponse implements SnapdStorageEncryptedResponse {
+  const _SnapdStorageEncryptedResponse({required this.status});
+  factory _SnapdStorageEncryptedResponse.fromJson(Map<String, dynamic> json) => _$SnapdStorageEncryptedResponseFromJson(json);
 
-  @override
-  final SnapdStorageEncryptionStatus status;
+@override final  SnapdStorageEncryptionStatus status;
 
-  @override
-  String toString() {
-    return 'SnapdStorageEncryptedResponse(status: $status)';
-  }
+/// Create a copy of SnapdStorageEncryptedResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$SnapdStorageEncryptedResponseCopyWith<_SnapdStorageEncryptedResponse> get copyWith => __$SnapdStorageEncryptedResponseCopyWithImpl<_SnapdStorageEncryptedResponse>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SnapdStorageEncryptedResponseImpl &&
-            (identical(other.status, status) || other.status == status));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, status);
-
-  /// Create a copy of SnapdStorageEncryptedResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SnapdStorageEncryptedResponseImplCopyWith<
-          _$SnapdStorageEncryptedResponseImpl>
-      get copyWith => __$$SnapdStorageEncryptedResponseImplCopyWithImpl<
-          _$SnapdStorageEncryptedResponseImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SnapdStorageEncryptedResponseImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$SnapdStorageEncryptedResponseToJson(this, );
 }
 
-abstract class _SnapdStorageEncryptedResponse
-    implements SnapdStorageEncryptedResponse {
-  const factory _SnapdStorageEncryptedResponse(
-          {required final SnapdStorageEncryptionStatus status}) =
-      _$SnapdStorageEncryptedResponseImpl;
-
-  factory _SnapdStorageEncryptedResponse.fromJson(Map<String, dynamic> json) =
-      _$SnapdStorageEncryptedResponseImpl.fromJson;
-
-  @override
-  SnapdStorageEncryptionStatus get status;
-
-  /// Create a copy of SnapdStorageEncryptedResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SnapdStorageEncryptedResponseImplCopyWith<
-          _$SnapdStorageEncryptedResponseImpl>
-      get copyWith => throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SnapdStorageEncryptedResponse&&(identical(other.status, status) || other.status == status));
 }
 
-RefreshInhibit _$RefreshInhibitFromJson(Map<String, dynamic> json) {
-  return _RefreshInhibit.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,status);
+
+@override
+String toString() {
+  return 'SnapdStorageEncryptedResponse(status: $status)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$SnapdStorageEncryptedResponseCopyWith<$Res> implements $SnapdStorageEncryptedResponseCopyWith<$Res> {
+  factory _$SnapdStorageEncryptedResponseCopyWith(_SnapdStorageEncryptedResponse value, $Res Function(_SnapdStorageEncryptedResponse) _then) = __$SnapdStorageEncryptedResponseCopyWithImpl;
+@override @useResult
+$Res call({
+ SnapdStorageEncryptionStatus status
+});
+
+
+
+
+}
+/// @nodoc
+class __$SnapdStorageEncryptedResponseCopyWithImpl<$Res>
+    implements _$SnapdStorageEncryptedResponseCopyWith<$Res> {
+  __$SnapdStorageEncryptedResponseCopyWithImpl(this._self, this._then);
+
+  final _SnapdStorageEncryptedResponse _self;
+  final $Res Function(_SnapdStorageEncryptedResponse) _then;
+
+/// Create a copy of SnapdStorageEncryptedResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? status = null,}) {
+  return _then(_SnapdStorageEncryptedResponse(
+status: null == status ? _self.status : status // ignore: cast_nullable_to_non_nullable
+as SnapdStorageEncryptionStatus,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$RefreshInhibit {
-  @_SnapdDateTimeConverter()
-  DateTime get proceedTime => throw _privateConstructorUsedError;
+
+@_SnapdDateTimeConverter() DateTime get proceedTime;
+/// Create a copy of RefreshInhibit
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$RefreshInhibitCopyWith<RefreshInhibit> get copyWith => _$RefreshInhibitCopyWithImpl<RefreshInhibit>(this as RefreshInhibit, _$identity);
 
   /// Serializes this RefreshInhibit to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of RefreshInhibit
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $RefreshInhibitCopyWith<RefreshInhibit> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is RefreshInhibit&&(identical(other.proceedTime, proceedTime) || other.proceedTime == proceedTime));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,proceedTime);
+
+@override
+String toString() {
+  return 'RefreshInhibit(proceedTime: $proceedTime)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $RefreshInhibitCopyWith<$Res> {
-  factory $RefreshInhibitCopyWith(
-          RefreshInhibit value, $Res Function(RefreshInhibit) then) =
-      _$RefreshInhibitCopyWithImpl<$Res, RefreshInhibit>;
-  @useResult
-  $Res call({@_SnapdDateTimeConverter() DateTime proceedTime});
-}
+abstract mixin class $RefreshInhibitCopyWith<$Res>  {
+  factory $RefreshInhibitCopyWith(RefreshInhibit value, $Res Function(RefreshInhibit) _then) = _$RefreshInhibitCopyWithImpl;
+@useResult
+$Res call({
+@_SnapdDateTimeConverter() DateTime proceedTime
+});
 
+
+
+
+}
 /// @nodoc
-class _$RefreshInhibitCopyWithImpl<$Res, $Val extends RefreshInhibit>
+class _$RefreshInhibitCopyWithImpl<$Res>
     implements $RefreshInhibitCopyWith<$Res> {
-  _$RefreshInhibitCopyWithImpl(this._value, this._then);
+  _$RefreshInhibitCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final RefreshInhibit _self;
+  final $Res Function(RefreshInhibit) _then;
 
-  /// Create a copy of RefreshInhibit
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? proceedTime = null,
-  }) {
-    return _then(_value.copyWith(
-      proceedTime: null == proceedTime
-          ? _value.proceedTime
-          : proceedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-    ) as $Val);
-  }
+/// Create a copy of RefreshInhibit
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? proceedTime = null,}) {
+  return _then(_self.copyWith(
+proceedTime: null == proceedTime ? _self.proceedTime : proceedTime // ignore: cast_nullable_to_non_nullable
+as DateTime,
+  ));
 }
 
-/// @nodoc
-abstract class _$$RefreshInhibitImplCopyWith<$Res>
-    implements $RefreshInhibitCopyWith<$Res> {
-  factory _$$RefreshInhibitImplCopyWith(_$RefreshInhibitImpl value,
-          $Res Function(_$RefreshInhibitImpl) then) =
-      __$$RefreshInhibitImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({@_SnapdDateTimeConverter() DateTime proceedTime});
 }
 
-/// @nodoc
-class __$$RefreshInhibitImplCopyWithImpl<$Res>
-    extends _$RefreshInhibitCopyWithImpl<$Res, _$RefreshInhibitImpl>
-    implements _$$RefreshInhibitImplCopyWith<$Res> {
-  __$$RefreshInhibitImplCopyWithImpl(
-      _$RefreshInhibitImpl _value, $Res Function(_$RefreshInhibitImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of RefreshInhibit
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? proceedTime = null,
-  }) {
-    return _then(_$RefreshInhibitImpl(
-      proceedTime: null == proceedTime
-          ? _value.proceedTime
-          : proceedTime // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-    ));
-  }
+/// Adds pattern-matching-related methods to [RefreshInhibit].
+extension RefreshInhibitPatterns on RefreshInhibit {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _RefreshInhibit value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _RefreshInhibit() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _RefreshInhibit value)  $default,){
+final _that = this;
+switch (_that) {
+case _RefreshInhibit():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _RefreshInhibit value)?  $default,){
+final _that = this;
+switch (_that) {
+case _RefreshInhibit() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function(@_SnapdDateTimeConverter()  DateTime proceedTime)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _RefreshInhibit() when $default != null:
+return $default(_that.proceedTime);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function(@_SnapdDateTimeConverter()  DateTime proceedTime)  $default,) {final _that = this;
+switch (_that) {
+case _RefreshInhibit():
+return $default(_that.proceedTime);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function(@_SnapdDateTimeConverter()  DateTime proceedTime)?  $default,) {final _that = this;
+switch (_that) {
+case _RefreshInhibit() when $default != null:
+return $default(_that.proceedTime);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$RefreshInhibitImpl implements _RefreshInhibit {
-  const _$RefreshInhibitImpl(
-      {@_SnapdDateTimeConverter() required this.proceedTime});
 
-  factory _$RefreshInhibitImpl.fromJson(Map<String, dynamic> json) =>
-      _$$RefreshInhibitImplFromJson(json);
+class _RefreshInhibit implements RefreshInhibit {
+  const _RefreshInhibit({@_SnapdDateTimeConverter() required this.proceedTime});
+  factory _RefreshInhibit.fromJson(Map<String, dynamic> json) => _$RefreshInhibitFromJson(json);
 
-  @override
-  @_SnapdDateTimeConverter()
-  final DateTime proceedTime;
+@override@_SnapdDateTimeConverter() final  DateTime proceedTime;
 
-  @override
-  String toString() {
-    return 'RefreshInhibit(proceedTime: $proceedTime)';
-  }
+/// Create a copy of RefreshInhibit
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$RefreshInhibitCopyWith<_RefreshInhibit> get copyWith => __$RefreshInhibitCopyWithImpl<_RefreshInhibit>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$RefreshInhibitImpl &&
-            (identical(other.proceedTime, proceedTime) ||
-                other.proceedTime == proceedTime));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, proceedTime);
-
-  /// Create a copy of RefreshInhibit
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$RefreshInhibitImplCopyWith<_$RefreshInhibitImpl> get copyWith =>
-      __$$RefreshInhibitImplCopyWithImpl<_$RefreshInhibitImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$RefreshInhibitImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$RefreshInhibitToJson(this, );
 }
 
-abstract class _RefreshInhibit implements RefreshInhibit {
-  const factory _RefreshInhibit(
-          {@_SnapdDateTimeConverter() required final DateTime proceedTime}) =
-      _$RefreshInhibitImpl;
-
-  factory _RefreshInhibit.fromJson(Map<String, dynamic> json) =
-      _$RefreshInhibitImpl.fromJson;
-
-  @override
-  @_SnapdDateTimeConverter()
-  DateTime get proceedTime;
-
-  /// Create a copy of RefreshInhibit
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$RefreshInhibitImplCopyWith<_$RefreshInhibitImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _RefreshInhibit&&(identical(other.proceedTime, proceedTime) || other.proceedTime == proceedTime));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,proceedTime);
+
+@override
+String toString() {
+  return 'RefreshInhibit(proceedTime: $proceedTime)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$RefreshInhibitCopyWith<$Res> implements $RefreshInhibitCopyWith<$Res> {
+  factory _$RefreshInhibitCopyWith(_RefreshInhibit value, $Res Function(_RefreshInhibit) _then) = __$RefreshInhibitCopyWithImpl;
+@override @useResult
+$Res call({
+@_SnapdDateTimeConverter() DateTime proceedTime
+});
+
+
+
+
+}
+/// @nodoc
+class __$RefreshInhibitCopyWithImpl<$Res>
+    implements _$RefreshInhibitCopyWith<$Res> {
+  __$RefreshInhibitCopyWithImpl(this._self, this._then);
+
+  final _RefreshInhibit _self;
+  final $Res Function(_RefreshInhibit) _then;
+
+/// Create a copy of RefreshInhibit
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? proceedTime = null,}) {
+  return _then(_RefreshInhibit(
+proceedTime: null == proceedTime ? _self.proceedTime : proceedTime // ignore: cast_nullable_to_non_nullable
+as DateTime,
+  ));
+}
+
+
+}
+
+// dart format on
