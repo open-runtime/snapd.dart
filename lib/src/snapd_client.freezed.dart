@@ -121,10 +121,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapApp():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -183,10 +180,7 @@ return $default(_that.name,_that.snap,_that.desktopFile,_that.daemon,_that.enabl
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String name,  String? snap,  String? desktopFile,  String? daemon,  bool enabled,  bool active,  String? commonId)  $default,) {final _that = this;
 switch (_that) {
 case _SnapApp():
-return $default(_that.name,_that.snap,_that.desktopFile,_that.daemon,_that.enabled,_that.active,_that.commonId);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.name,_that.snap,_that.desktopFile,_that.daemon,_that.enabled,_that.active,_that.commonId);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -397,10 +391,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapCategory():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -459,10 +450,7 @@ return $default(_that.name,_that.featured);case _:
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String name,  bool featured)  $default,) {final _that = this;
 switch (_that) {
 case _SnapCategory():
-return $default(_that.name,_that.featured);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.name,_that.featured);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -662,10 +650,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapCategoryDetails():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -724,10 +709,7 @@ return $default(_that.name);case _:
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String name)  $default,) {final _that = this;
 switch (_that) {
 case _SnapCategoryDetails():
-return $default(_that.name);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.name);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -929,10 +911,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapChannel():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -991,10 +970,7 @@ return $default(_that.releasedAt,_that.confinement,_that.revision,_that.size,_th
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( DateTime releasedAt, @JsonKey(unknownEnumValue: SnapConfinement.unknown)  SnapConfinement confinement,  String? revision,  int size,  String? version)  $default,) {final _that = this;
 switch (_that) {
 case _SnapChannel():
-return $default(_that.releasedAt,_that.confinement,_that.revision,_that.size,_that.version);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.releasedAt,_that.confinement,_that.revision,_that.size,_that.version);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -1203,10 +1179,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapPublisher():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -1265,10 +1238,7 @@ return $default(_that.id,_that.displayName,_that.username,_that.validation);case
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String displayName,  String? username,  String? validation)  $default,) {final _that = this;
 switch (_that) {
 case _SnapPublisher():
-return $default(_that.id,_that.displayName,_that.username,_that.validation);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.id,_that.displayName,_that.username,_that.validation);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -1475,10 +1445,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapMedia():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -1537,10 +1504,7 @@ return $default(_that.type,_that.url,_that.width,_that.height);case _:
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String type,  String url,  int? width,  int? height)  $default,) {final _that = this;
 switch (_that) {
 case _SnapMedia():
-return $default(_that.type,_that.url,_that.width,_that.height);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.type,_that.url,_that.width,_that.height);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -1801,10 +1765,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _Snap():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -1863,10 +1824,7 @@ return $default(_that.id,_that.name,_that.version,_that.channel,_that.type,_that
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String name,  String version,  String channel,  String type, @JsonKey(fromJson: Snap._parseRevision)  int revision,  String contact,  String description,  String summary,  Map<String, SnapChannel> channels,  List<SnapApp> apps,  List<SnapCategory> categories,  List<String> tracks,  List<String> commonIds,  Map<String, List<String>> links,  List<SnapMedia> media, @JsonKey(unknownEnumValue: SnapConfinement.unknown)  SnapConfinement confinement,  SnapStatus status,  bool devmode,  bool jailmode,  bool private,  String? base,  String? title,  String? trackingChannel,  String? website,  String? license,  String? mountedFrom,  String? storeUrl,  DateTime? hold,  DateTime? installDate,  int? downloadSize,  int? installedSize,  SnapPublisher? publisher,  RefreshInhibit? refreshInhibit)  $default,) {final _that = this;
 switch (_that) {
 case _Snap():
-return $default(_that.id,_that.name,_that.version,_that.channel,_that.type,_that.revision,_that.contact,_that.description,_that.summary,_that.channels,_that.apps,_that.categories,_that.tracks,_that.commonIds,_that.links,_that.media,_that.confinement,_that.status,_that.devmode,_that.jailmode,_that.private,_that.base,_that.title,_that.trackingChannel,_that.website,_that.license,_that.mountedFrom,_that.storeUrl,_that.hold,_that.installDate,_that.downloadSize,_that.installedSize,_that.publisher,_that.refreshInhibit);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.id,_that.name,_that.version,_that.channel,_that.type,_that.revision,_that.contact,_that.description,_that.summary,_that.channels,_that.apps,_that.categories,_that.tracks,_that.commonIds,_that.links,_that.media,_that.confinement,_that.status,_that.devmode,_that.jailmode,_that.private,_that.base,_that.title,_that.trackingChannel,_that.website,_that.license,_that.mountedFrom,_that.storeUrl,_that.hold,_that.installDate,_that.downloadSize,_that.installedSize,_that.publisher,_that.refreshInhibit);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -2194,10 +2152,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapIcon():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -2256,10 +2211,7 @@ return $default(_that.contentType,_that.bytes);case _:
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String contentType,  Uint8List bytes)  $default,) {final _that = this;
 switch (_that) {
 case _SnapIcon():
-return $default(_that.contentType,_that.bytes);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.contentType,_that.bytes);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -2464,10 +2416,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapDeclaration():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -2526,10 +2475,7 @@ return $default(_that.snapId,_that.type,_that.authorityId,_that.revision,_that.s
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String snapId,  String? type,  String? authorityId,  int revision,  int series,  String? publisherId,  String? snapName,  String? timestamp,  String? signKey)  $default,) {final _that = this;
 switch (_that) {
 case _SnapDeclaration():
-return $default(_that.snapId,_that.type,_that.authorityId,_that.revision,_that.series,_that.publisherId,_that.snapName,_that.timestamp,_that.signKey);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.snapId,_that.type,_that.authorityId,_that.revision,_that.series,_that.publisherId,_that.snapName,_that.timestamp,_that.signKey);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -2762,10 +2708,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapdSystemInfoResponse():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -2824,10 +2767,7 @@ return $default(_that.refresh,_that.architecture,_that.buildId,_that.confinement
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( SnapdSystemRefreshInfo refresh,  String? architecture,  String? buildId, @JsonKey(unknownEnumValue: SnapConfinement.unknown)  SnapConfinement confinement,  Map<String, dynamic>? features,  String? kernelVersion,  bool managed,  bool onClassic,  String? series,  String? systemMode,  String? version)  $default,) {final _that = this;
 switch (_that) {
 case _SnapdSystemInfoResponse():
-return $default(_that.refresh,_that.architecture,_that.buildId,_that.confinement,_that.features,_that.kernelVersion,_that.managed,_that.onClassic,_that.series,_that.systemMode,_that.version);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.refresh,_that.architecture,_that.buildId,_that.confinement,_that.features,_that.kernelVersion,_that.managed,_that.onClassic,_that.series,_that.systemMode,_that.version);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -3063,10 +3003,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapdSystemRefreshInfo():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -3125,10 +3062,7 @@ return $default(_that.next,_that.last);case _:
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function(@_SnapdDateTimeConverter()  DateTime next,  DateTime? last)  $default,) {final _that = this;
 switch (_that) {
 case _SnapdSystemRefreshInfo():
-return $default(_that.next,_that.last);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.next,_that.last);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -3333,10 +3267,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapdLoginResponse():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -3395,10 +3326,7 @@ return $default(_that.id,_that.username,_that.email,_that.macaroon,_that.dischar
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id,  String? username,  String? email,  String? macaroon,  List<String> discharges,  List<String> sshKeys)  $default,) {final _that = this;
 switch (_that) {
 case _SnapdLoginResponse():
-return $default(_that.id,_that.username,_that.email,_that.macaroon,_that.discharges,_that.sshKeys);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.id,_that.username,_that.email,_that.macaroon,_that.discharges,_that.sshKeys);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -3622,10 +3550,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapPlug():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -3684,10 +3609,7 @@ return $default(_that.snap,_that.plug,_that.attributes,_that.interface,_that.con
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String snap,  String plug, @JsonKey(name: 'attrs')  Map<String, dynamic> attributes,  String? interface,  List<SnapSlot> connections)  $default,) {final _that = this;
 switch (_that) {
 case _SnapPlug():
-return $default(_that.snap,_that.plug,_that.attributes,_that.interface,_that.connections);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.snap,_that.plug,_that.attributes,_that.interface,_that.connections);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -3909,10 +3831,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapSlot():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -3971,10 +3890,7 @@ return $default(_that.snap,_that.slot,_that.attributes,_that.interface,_that.con
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String snap,  String slot, @JsonKey(name: 'attrs')  Map<String, dynamic> attributes,  String? interface,  List<SnapPlug> connections)  $default,) {final _that = this;
 switch (_that) {
 case _SnapSlot():
-return $default(_that.snap,_that.slot,_that.attributes,_that.interface,_that.connections);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.snap,_that.slot,_that.attributes,_that.interface,_that.connections);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -4215,10 +4131,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapConnection():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -4277,10 +4190,7 @@ return $default(_that.slot,_that.plug,_that.interface,_that.slotAttributes,_that
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( SnapSlot slot,  SnapPlug plug,  String interface, @JsonKey(name: 'slot-attrs')  Map<String, dynamic> slotAttributes, @JsonKey(name: 'plug-attrs')  Map<String, dynamic> plugAttributes,  bool manual)  $default,) {final _that = this;
 switch (_that) {
 case _SnapConnection():
-return $default(_that.slot,_that.plug,_that.interface,_that.slotAttributes,_that.plugAttributes,_that.manual);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.slot,_that.plug,_that.interface,_that.slotAttributes,_that.plugAttributes,_that.manual);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -4521,10 +4431,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapdConnectionsResponse():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -4583,10 +4490,7 @@ return $default(_that.established,_that.plugs,_that.slots,_that.undesired);case 
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( List<SnapConnection> established,  List<SnapPlug> plugs,  List<SnapSlot> slots,  List<SnapConnection> undesired)  $default,) {final _that = this;
 switch (_that) {
 case _SnapdConnectionsResponse():
-return $default(_that.established,_that.plugs,_that.slots,_that.undesired);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.established,_that.plugs,_that.slots,_that.undesired);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -4823,10 +4727,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapdChange():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -4885,10 +4786,7 @@ return $default(_that.id,_that.spawnTime,_that.kind,_that.summary,_that.status,_
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  DateTime? spawnTime,  String? kind,  String? summary,  String? status,  bool ready,  DateTime? readyTime,  String? err,  List<SnapdTask> tasks, @JsonKey(name: 'data', toJson: SnapdChange._snapNamesToJson, fromJson: SnapdChange._snapNamesFromJson)  List<String> snapNames)  $default,) {final _that = this;
 switch (_that) {
 case _SnapdChange():
-return $default(_that.id,_that.spawnTime,_that.kind,_that.summary,_that.status,_that.ready,_that.readyTime,_that.err,_that.tasks,_that.snapNames);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.id,_that.spawnTime,_that.kind,_that.summary,_that.status,_that.ready,_that.readyTime,_that.err,_that.tasks,_that.snapNames);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -5131,10 +5029,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapdTask():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -5193,10 +5088,7 @@ return $default(_that.id,_that.spawnTime,_that.kind,_that.summary,_that.status,_
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  DateTime? spawnTime,  String? kind,  String summary,  String? status,  SnapdTaskProgress progress,  DateTime? readyTime)  $default,) {final _that = this;
 switch (_that) {
 case _SnapdTask():
-return $default(_that.id,_that.spawnTime,_that.kind,_that.summary,_that.status,_that.progress,_that.readyTime);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.id,_that.spawnTime,_that.kind,_that.summary,_that.status,_that.progress,_that.readyTime);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -5417,10 +5309,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapdTaskProgress():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -5479,10 +5368,7 @@ return $default(_that.label,_that.done,_that.total);case _:
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String label,  int done,  int total)  $default,) {final _that = this;
 switch (_that) {
 case _SnapdTaskProgress():
-return $default(_that.label,_that.done,_that.total);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.label,_that.done,_that.total);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -5693,10 +5579,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapdRule():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -5755,10 +5638,7 @@ return $default(_that.id,_that.timestamp,_that.snap,_that.interface,_that.constr
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  DateTime timestamp,  String snap,  String interface,  Map<String, dynamic> constraints,  SnapdRequestOutcome? outcome,  SnapdRequestLifespan? lifespan,  DateTime? expiration)  $default,) {final _that = this;
 switch (_that) {
 case _SnapdRule():
-return $default(_that.id,_that.timestamp,_that.snap,_that.interface,_that.constraints,_that.outcome,_that.lifespan,_that.expiration);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.id,_that.timestamp,_that.snap,_that.interface,_that.constraints,_that.outcome,_that.lifespan,_that.expiration);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -5980,10 +5860,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapdRuleMask():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -6042,10 +5919,7 @@ return $default(_that.snap,_that.interface,_that.constraints);case _:
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String snap,  String interface,  Map<String, dynamic> constraints)  $default,) {final _that = this;
 switch (_that) {
 case _SnapdRuleMask():
-return $default(_that.snap,_that.interface,_that.constraints);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.snap,_that.interface,_that.constraints);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -6262,10 +6136,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapdNotice():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -6324,10 +6195,7 @@ return $default(_that.id,_that.type,_that.key,_that.firstOccured,_that.lastOccur
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  SnapdNoticeType type,  String key, @_SnapdDateTimeConverter()  DateTime firstOccured, @_SnapdDateTimeConverter()  DateTime lastOccured, @_SnapdDateTimeConverter()  DateTime lastRepeated,  int occurrences,  String expireAfter,  int? userId,  Map<String, String>? lastData)  $default,) {final _that = this;
 switch (_that) {
 case _SnapdNotice():
-return $default(_that.id,_that.type,_that.key,_that.firstOccured,_that.lastOccured,_that.lastRepeated,_that.occurrences,_that.expireAfter,_that.userId,_that.lastData);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.id,_that.type,_that.key,_that.firstOccured,_that.lastOccured,_that.lastRepeated,_that.occurrences,_that.expireAfter,_that.userId,_that.lastData);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -6552,10 +6420,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapdGenerateRecoveryKeyResponse():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -6614,10 +6479,7 @@ return $default(_that.recoveryKey,_that.keyId);case _:
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String recoveryKey,  String keyId)  $default,) {final _that = this;
 switch (_that) {
 case _SnapdGenerateRecoveryKeyResponse():
-return $default(_that.recoveryKey,_that.keyId);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.recoveryKey,_that.keyId);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -6820,10 +6682,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapdSystemVolume():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -6882,10 +6741,7 @@ return $default(_that.volumeName,_that.name,_that.encrypted,_that.keyslots);case
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String volumeName,  String name,  bool encrypted,  Map<String, SnapdSystemVolumeKeySlot> keyslots)  $default,) {final _that = this;
 switch (_that) {
 case _SnapdSystemVolume():
-return $default(_that.volumeName,_that.name,_that.encrypted,_that.keyslots);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.volumeName,_that.name,_that.encrypted,_that.keyslots);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -7096,10 +6952,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapdSystemVolumeTargetKeySlot():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -7158,10 +7011,7 @@ return $default(_that.containerRole,_that.name);case _:
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function(@JsonKey(name: 'container-role')  String containerRole,  String name)  $default,) {final _that = this;
 switch (_that) {
 case _SnapdSystemVolumeTargetKeySlot():
-return $default(_that.containerRole,_that.name);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.containerRole,_that.name);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -7367,10 +7217,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapdSystemVolumeKeySlot():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -7429,10 +7276,7 @@ return $default(_that.type,_that.roles,_that.platformName,_that.authMode);case _
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( SnapdSystemVolumeKeySlotType type,  List<String>? roles,  String? platformName,  SnapdSystemVolumeAuthMode? authMode)  $default,) {final _that = this;
 switch (_that) {
 case _SnapdSystemVolumeKeySlot():
-return $default(_that.type,_that.roles,_that.platformName,_that.authMode);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.type,_that.roles,_that.platformName,_that.authMode);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -7647,10 +7491,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapdSystemVolumesResponse():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -7709,10 +7550,7 @@ return $default(_that.byContainerRole);case _:
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( Map<String, SnapdSystemVolume> byContainerRole)  $default,) {final _that = this;
 switch (_that) {
 case _SnapdSystemVolumesResponse():
-return $default(_that.byContainerRole);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.byContainerRole);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -7918,10 +7756,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapdEntropyResponse():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -7980,10 +7815,7 @@ return $default(_that.entropyBits,_that.minEntropyBits,_that.optimalEntropyBits)
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int entropyBits,  int minEntropyBits,  int optimalEntropyBits)  $default,) {final _that = this;
 switch (_that) {
 case _SnapdEntropyResponse():
-return $default(_that.entropyBits,_that.minEntropyBits,_that.optimalEntropyBits);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.entropyBits,_that.minEntropyBits,_that.optimalEntropyBits);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -8185,10 +8017,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _SnapdStorageEncryptedResponse():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -8247,10 +8076,7 @@ return $default(_that.status);case _:
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( SnapdStorageEncryptionStatus status)  $default,) {final _that = this;
 switch (_that) {
 case _SnapdStorageEncryptedResponse():
-return $default(_that.status);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.status);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
@@ -8448,10 +8274,7 @@ return $default(_that);case _:
 final _that = this;
 switch (_that) {
 case _RefreshInhibit():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that);}
 }
 /// A variant of `map` that fallback to returning `null`.
 ///
@@ -8510,10 +8333,7 @@ return $default(_that.proceedTime);case _:
 @optionalTypeArgs TResult when<TResult extends Object?>(TResult Function(@_SnapdDateTimeConverter()  DateTime proceedTime)  $default,) {final _that = this;
 switch (_that) {
 case _RefreshInhibit():
-return $default(_that.proceedTime);case _:
-  throw StateError('Unexpected subclass');
-
-}
+return $default(_that.proceedTime);}
 }
 /// A variant of `when` that fallback to returning `null`
 ///
